@@ -1,0 +1,5 @@
+target/
+.maven-repository/
+.playwright-browsers/
+crawler-output/
+*.class
