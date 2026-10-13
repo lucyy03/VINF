@@ -36,10 +36,10 @@ public class MusicBrainzCrawler {
         "SchoolAlbumCrawler/2.0 (STUBA educational HTML crawl"
             + (System.getenv("CRAWLER_CONTACT") == null ? "" : "; " + System.getenv("CRAWLER_CONTACT")) + ")";
 
-    private static final int MAX_PAGES = 100;
-    private static final int MAX_DEPTH = 2;
+    private static final int MAX_PAGES = 1000;
+    private static final int MAX_DEPTH = 10;
     // Includes robots.txt, verification POSTs, redirects and unsuccessful requests.
-    private static final int MAX_REQUESTS = 350;
+    private static final int MAX_REQUESTS = 1300;
     private static int requestCount = 0;
 
     private static final long MIN_DELAY_MS = 3000;
@@ -53,6 +53,7 @@ public class MusicBrainzCrawler {
         .connectTimeout(Duration.ofSeconds(15))
         .build();
 
+    private static Path checkpointDirectory;
     private static BrowserTransport browserTransport;
     private static RobotsRules activeRobots;
 
@@ -61,7 +62,13 @@ public class MusicBrainzCrawler {
 
     public static void main(String[] args) {
         try {
-            runCrawler();
+            Files.createDirectories(Path.of("crawler-output"));
+            try (java.nio.channels.FileChannel lockChannel = java.nio.channels.FileChannel.open(
+                    Path.of("crawler-output", "crawler.lock"), StandardOpenOption.CREATE, StandardOpenOption.WRITE);
+                 java.nio.channels.FileLock lock = lockChannel.tryLock()) {
+                if (lock == null) throw new IOException("Another crawler is already running.");
+                runCrawler(args);
+            }
         } catch (Exception e) {
             System.err.println("Crawler stopped: " + e.getMessage());
             e.printStackTrace();
@@ -71,10 +78,18 @@ public class MusicBrainzCrawler {
         }
     }
 
-    private static void runCrawler() throws Exception {
+    private static void runCrawler(String[] args) throws Exception {
         validateConfiguration();
 
-        Path outputDirectory = createOutputDirectory();
+        Checkpoint recovered = selectCheckpoint(args);
+        Path outputDirectory = recovered == null ? createOutputDirectory() : recovered.directory;
+        checkpointDirectory = outputDirectory;
+        if (recovered != null) {
+            loadRequestState(outputDirectory);
+            recovered.restoreOutputs();
+            System.out.println("Recovering " + outputDirectory + "; completed pages: " + recovered.pages);
+        }
+        if (requestCount >= MAX_REQUESTS) throw new IOException("Saved request budget exhausted; recovery cannot reset it.");
         Path htmlDirectory = outputDirectory.resolve("html");
 
         Files.createDirectories(htmlDirectory);
@@ -85,6 +100,7 @@ public class MusicBrainzCrawler {
         Path crawlLogFile = outputDirectory.resolve("crawl_log.tsv");
         Path robotsFile = outputDirectory.resolve("robots.txt");
 
+        if (recovered == null) {
         writeLine(
             pagesFile,
             "id\turl\tdepth\tstatus\tcontent_type\thtml_file"
@@ -105,9 +121,17 @@ public class MusicBrainzCrawler {
             "time\turl\tdepth\tresult\thttp_status\tdetail"
         );
 
+        }
+
         System.out.println("Loading robots.txt...");
 
-        RobotsFetch robotsFetch = fetchRobotsTxt();
+        RobotsFetch robotsFetch;
+        try {
+            robotsFetch = fetchRobotsTxt();
+        } catch (StopCrawlException e) {
+            if (recovered != null) markCheckpointStopped(outputDirectory);
+            throw e;
+        }
 
         Files.writeString(
             robotsFile,
@@ -124,6 +148,8 @@ public class MusicBrainzCrawler {
             MIN_DELAY_MS,
             robotsRules.crawlDelayMs()
         );
+        atomicText(outputDirectory.resolve("request_state.tsv"), requestCount + "\t"
+            + lastRequestStartedAtMs + "\t" + requestDelayMs + "\n");
 
         System.out.println("robots.txt loaded and saved.");
         System.out.println(
@@ -155,24 +181,17 @@ public class MusicBrainzCrawler {
             );
         }
 
-        Queue<CrawlItem> queue = new ArrayDeque<>();
-
-        Set<String> queued = new HashSet<>();
-        Set<String> visited = new HashSet<>();
-
-        Set<String> savedInternalEdges =
-            new HashSet<>();
-
-        Set<String> savedExternalEdges =
-            new HashSet<>();
-
-        queue.add(
-            new CrawlItem(startUrl, 0)
-        );
-
-        queued.add(startUrl);
-
-        int successfulPages = 0;
+        Queue<CrawlItem> queue = recovered == null ? new ArrayDeque<>() : recovered.queue;
+        Set<String> queued = recovered == null ? new HashSet<>() : recovered.queued;
+        Set<String> visited = recovered == null ? new HashSet<>() : recovered.visited;
+        Set<String> savedInternalEdges = recovered == null ? new HashSet<>() : recovered.internalEdges;
+        Set<String> savedExternalEdges = recovered == null ? new HashSet<>() : recovered.externalEdges;
+        if (recovered == null) { queue.add(new CrawlItem(startUrl, 0)); queued.add(startUrl); }
+        int successfulPages = recovered == null ? 0 : recovered.pages;
+        Checkpoint checkpoint = new Checkpoint(outputDirectory, queue, queued, visited,
+            savedInternalEdges, savedExternalEdges, successfulPages);
+        checkpoint.save("ACTIVE");
+        boolean stoppedBySite = false;
 
         while (
             !queue.isEmpty()
@@ -201,6 +220,7 @@ public class MusicBrainzCrawler {
                     "not requested"
                 );
 
+                checkpoint.save("ACTIVE");
                 continue;
             }
 
@@ -241,6 +261,13 @@ public class MusicBrainzCrawler {
                         + e.getMessage()
                 );
 
+                // Keep the pre-page checkpoint for transport failures. Site blocks are
+                // deliberate stops and must not become automatic recovery retries.
+                int status = Integer.parseInt(e.statusCode());
+                if (status == 403 || status == 429 || status >= 500
+                    || e.getMessage().startsWith("Browser verification/access challenge"))
+                    markCheckpointStopped(outputDirectory);
+                stoppedBySite = true;
                 break;
             } catch (IOException e) {
                 writeCrawlLog(
@@ -258,7 +285,7 @@ public class MusicBrainzCrawler {
                 );
 
                 System.out.println();
-
+                checkpoint.save("ACTIVE");
                 continue;
             }
 
@@ -401,6 +428,9 @@ public class MusicBrainzCrawler {
                 }
             }
 
+            checkpoint.pages = successfulPages;
+            checkpoint.save("ACTIVE");
+
             System.out.println(
                 "  links found: "
                     + links.size()
@@ -429,6 +459,7 @@ public class MusicBrainzCrawler {
             System.out.println();
         }
 
+        if (!stoppedBySite) checkpoint.save("COMPLETE");
         System.out.println(
             "Crawler finished."
         );
@@ -451,14 +482,203 @@ public class MusicBrainzCrawler {
         );
     }
 
+    private static final List<String> OUTPUT_FILES = List.of(
+        "pages.tsv", "internal_links.tsv", "external_links.tsv", "crawl_log.tsv");
+
+    private static void atomicText(Path target, String text) throws IOException {
+        Path temporary = target.resolveSibling(target.getFileName() + ".tmp");
+        byte[] bytes = text.getBytes(StandardCharsets.UTF_8);
+        try (java.nio.channels.FileChannel channel = java.nio.channels.FileChannel.open(temporary,
+                StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE)) {
+            java.nio.ByteBuffer buffer = java.nio.ByteBuffer.wrap(bytes);
+            while (buffer.hasRemaining()) channel.write(buffer);
+            channel.force(true);
+        }
+        // Do not fall back to a non-atomic replacement: the old checkpoint must remain intact.
+        Files.move(temporary, target, java.nio.file.StandardCopyOption.ATOMIC_MOVE,
+            java.nio.file.StandardCopyOption.REPLACE_EXISTING);
+    }
+
+    private static String encoded(String value) {
+        return java.util.Base64.getEncoder().encodeToString(value.getBytes(StandardCharsets.UTF_8));
+    }
+
+    private static String decoded(String value) {
+        return new String(java.util.Base64.getDecoder().decode(value), StandardCharsets.UTF_8);
+    }
+
+    private static void reserveRequest() throws IOException {
+        if (requestCount >= MAX_REQUESTS) throw new IOException("Total request budget exhausted.");
+        requestCount++;
+        lastRequestStartedAtMs = System.currentTimeMillis();
+        // Persist before sending: a crash may overcount a request, but cannot reset the budget.
+        if (checkpointDirectory != null) atomicText(checkpointDirectory.resolve("request_state.tsv"),
+            requestCount + "\t" + lastRequestStartedAtMs + "\t" + requestDelayMs + "\n");
+    }
+
+    private static void loadRequestState(Path directory) throws IOException {
+        String[] fields = Files.readString(directory.resolve("request_state.tsv")).trim().split("\t");
+        try {
+            requestCount = Integer.parseInt(fields[0]);
+            lastRequestStartedAtMs = Long.parseLong(fields[1]);
+            requestDelayMs = Math.max(MIN_DELAY_MS, Long.parseLong(fields[2]));
+            if (requestCount < 0 || requestCount > MAX_REQUESTS || lastRequestStartedAtMs < 0)
+                throw new IllegalArgumentException("invalid request state");
+        } catch (RuntimeException e) { throw new IOException("Invalid saved request state", e); }
+    }
+
+    private static void markCheckpointStopped(Path directory) throws IOException {
+        Path file = directory.resolve("checkpoint.tsv");
+        String text = Files.readString(file);
+        atomicText(file, text.replaceFirst("STATE\\tACTIVE", "STATE\tSTOPPED"));
+    }
+
+    private static Checkpoint selectCheckpoint(String[] args) throws IOException {
+        if (args.length > 1 || (args.length == 1 && !args[0].equals("--fresh") && !args[0].equals("--recover")))
+            throw new IOException("Use --fresh or --recover (or no arguments for the prompt).");
+        Path pointer = Path.of("crawler-output", "latest_checkpoint.tsv");
+        Path directory = null;
+        if (Files.exists(pointer)) {
+            Path root = Path.of("crawler-output").toAbsolutePath().normalize();
+            directory = root.resolve(Files.readString(pointer).trim()).normalize();
+            if (!root.equals(directory.getParent())) throw new IOException("Invalid checkpoint directory.");
+        }
+        if (args.length == 1 && args[0].equals("--fresh")) return null;
+        if (directory == null) {
+            if (args.length == 1) throw new IOException("No checkpoint exists yet.");
+            return null;
+        }
+        String choice = args.length == 1 ? "recover" : null;
+        if (choice == null) {
+            System.out.println("Latest checkpoint: " + directory);
+            System.out.print("Type fresh to start over, or recover to recover that run: ");
+            choice = new java.io.BufferedReader(new java.io.InputStreamReader(System.in,
+                StandardCharsets.UTF_8)).readLine();
+        }
+        if (choice != null && choice.trim().equalsIgnoreCase("fresh")) return null;
+        if (choice == null || !choice.trim().equalsIgnoreCase("recover"))
+            throw new IOException("No choice made. Run with --fresh or --recover.");
+        Checkpoint checkpoint = Checkpoint.read(directory);
+        if (!checkpoint.state.equals("ACTIVE")) throw new IOException(
+            "This run is " + checkpoint.state + ". Recovery is only for an interrupted run, "
+            + "not a completed run or site blocking. Choose fresh for an intentional new run.");
+        return checkpoint;
+    }
+
+    private static final class Checkpoint {
+        final Path directory;
+        final Queue<CrawlItem> queue;
+        final Set<String> queued, visited, internalEdges, externalEdges;
+        final java.util.Map<String, Long> sizes = new java.util.HashMap<>();
+        int pages;
+        String state;
+
+        Checkpoint(Path directory, Queue<CrawlItem> queue, Set<String> queued, Set<String> visited,
+                   Set<String> internalEdges, Set<String> externalEdges, int pages) {
+            this.directory = directory; this.queue = queue; this.queued = queued; this.visited = visited;
+            this.internalEdges = internalEdges; this.externalEdges = externalEdges; this.pages = pages;
+        }
+
+        void save(String state) throws IOException {
+            StringBuilder text = new StringBuilder("VERSION\t1\nSTATE\t" + state + "\nCONFIG\t"
+                + encoded(START_URL) + "\t" + MAX_PAGES + "\t" + MAX_DEPTH + "\t" + MAX_REQUESTS
+                + "\nPAGES\t" + pages + "\n");
+            for (String name : OUTPUT_FILES) {
+                try (java.nio.channels.FileChannel channel = java.nio.channels.FileChannel.open(
+                        directory.resolve(name), StandardOpenOption.WRITE)) {
+                    channel.force(true);
+                    text.append("OUTPUT\t").append(name).append('\t').append(channel.size()).append('\n');
+                }
+            }
+            // Flush page bytes before publishing a checkpoint referencing them.
+            if (pages > 0) try (java.nio.channels.FileChannel channel = java.nio.channels.FileChannel.open(
+                    directory.resolve("html").resolve(String.format("%04d.html", pages)), StandardOpenOption.WRITE)) {
+                channel.force(true);
+            }
+            for (CrawlItem item : queue) text.append("QUEUE\t").append(encoded(item.url()))
+                .append('\t').append(item.depth()).append('\n');
+            appendSet(text, "QUEUED", queued); appendSet(text, "VISITED", visited);
+            appendSet(text, "INTERNAL", internalEdges); appendSet(text, "EXTERNAL", externalEdges);
+            atomicText(directory.resolve("checkpoint.tsv"), text.toString());
+            atomicText(directory.getParent().resolve("latest_checkpoint.tsv"), directory.getFileName() + "\n");
+            this.state = state;
+        }
+
+        private static void appendSet(StringBuilder text, String kind, Set<String> values) {
+            for (String value : values) text.append(kind).append('\t').append(encoded(value)).append('\n');
+        }
+
+        static Checkpoint read(Path directory) throws IOException {
+            Checkpoint result = new Checkpoint(directory, new ArrayDeque<>(), new HashSet<>(), new HashSet<>(),
+                new HashSet<>(), new HashSet<>(), -1);
+            boolean version = false, config = false;
+            try {
+                for (String line : Files.readAllLines(directory.resolve("checkpoint.tsv"), StandardCharsets.UTF_8)) {
+                    String[] f = line.split("\t", -1);
+                    switch (f[0]) {
+                        case "VERSION" -> version = f[1].equals("1");
+                        case "STATE" -> result.state = f[1];
+                        case "CONFIG" -> config = decoded(f[1]).equals(START_URL)
+                            && Integer.parseInt(f[2]) == MAX_PAGES && Integer.parseInt(f[3]) == MAX_DEPTH
+                            && Integer.parseInt(f[4]) == MAX_REQUESTS;
+                        case "PAGES" -> result.pages = Integer.parseInt(f[1]);
+                        case "OUTPUT" -> {
+                            if (!OUTPUT_FILES.contains(f[1])) throw new IllegalArgumentException("Unknown output");
+                            long size = Long.parseLong(f[2]);
+                            if (size < 0) throw new IllegalArgumentException("Negative output size");
+                            result.sizes.put(f[1], size);
+                        }
+                        case "QUEUE" -> {
+                            String url = decoded(f[1]); int depth = Integer.parseInt(f[2]);
+                            if (!isRelevantEntityUrl(url) || depth < 0 || depth > MAX_DEPTH)
+                                throw new IllegalArgumentException("Invalid queued URL/depth");
+                            result.queue.add(new CrawlItem(url, depth));
+                        }
+                        case "QUEUED" -> result.queued.add(decoded(f[1]));
+                        case "VISITED" -> result.visited.add(decoded(f[1]));
+                        case "INTERNAL" -> result.internalEdges.add(decoded(f[1]));
+                        case "EXTERNAL" -> result.externalEdges.add(decoded(f[1]));
+                        default -> throw new IllegalArgumentException("Unknown checkpoint record");
+                    }
+                }
+                if (!version || !config || result.state == null || result.pages < 0 || result.pages > MAX_PAGES
+                    || result.sizes.size() != OUTPUT_FILES.size()) throw new IllegalArgumentException("Incompatible checkpoint");
+                for (CrawlItem item : result.queue) if (!result.queued.contains(item.url()) || result.visited.contains(item.url()))
+                    throw new IllegalArgumentException("Inconsistent queue");
+                return result;
+            } catch (RuntimeException e) { throw new IOException("Invalid/incompatible checkpoint; originals preserved", e); }
+        }
+
+        void restoreOutputs() throws IOException {
+            // Validate everything before truncating anything.
+            for (String name : OUTPUT_FILES) if (Files.size(directory.resolve(name)) < sizes.get(name))
+                throw new IOException("Committed output is missing/truncated: " + name);
+            for (int id = 1; id <= pages; id++) if (!Files.isRegularFile(
+                    directory.resolve("html").resolve(String.format("%04d.html", id))))
+                throw new IOException("Committed HTML is missing: " + id);
+            for (String name : OUTPUT_FILES) try (java.nio.channels.FileChannel channel = java.nio.channels.FileChannel.open(
+                    directory.resolve(name), StandardOpenOption.WRITE)) {
+                channel.truncate(sizes.get(name)); channel.force(true);
+            }
+            // Remove only uncommitted numbered HTML files within this run's html directory.
+            try (var files = Files.list(directory.resolve("html"))) {
+                for (Path file : files.toList()) {
+                    String name = file.getFileName().toString();
+                    if (name.matches("[0-9]+\\.html") && Integer.parseInt(name.substring(0, name.indexOf('.'))) > pages)
+                        Files.delete(file);
+                }
+            }
+        }
+    }
+
     private static void validateConfiguration() {
         if (
             USER_AGENT.contains(
-                "YOUR_EMAIL"
+                "EMAIL"
             )
         ) {
             throw new IllegalStateException(
-                "Replace YOUR_EMAIL@example.com in USER_AGENT with a real contact before running."
+                "EMAIL@example.com in USER_AGENT"
             );
         }
 
@@ -576,8 +796,7 @@ public class MusicBrainzCrawler {
                             stopReason = "Total request budget exhausted";
                             route.abort(); return;
                         }
-                        requestCount++;
-                        lastRequestStartedAtMs = System.currentTimeMillis();
+                        reserveRequest();
                         com.microsoft.playwright.APIResponse response = route.fetch(
                             new com.microsoft.playwright.Route.FetchOptions().setMaxRedirects(0)
                                 .setMaxRetries(0).setTimeout(30000));
@@ -669,9 +888,7 @@ public class MusicBrainzCrawler {
             InterruptedException {
 
         waitForRequestSlot();
-        if (++requestCount > MAX_REQUESTS) {
-            throw new IOException("Total request budget exhausted (including robots.txt).");
-        }
+        reserveRequest();
 
         HttpRequest request =
             HttpRequest.newBuilder()
@@ -693,9 +910,6 @@ public class MusicBrainzCrawler {
                 )
                 .GET()
                 .build();
-
-        lastRequestStartedAtMs =
-            System.currentTimeMillis();
 
         return HTTP_CLIENT.send(
             request,

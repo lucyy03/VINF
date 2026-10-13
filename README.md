@@ -36,7 +36,46 @@ $env:CRAWLER_CONTACT = "mailto:your-real-address"
 Replace the example with your actual contact; it is appended to the declared bot
 user agent. Do not put passwords or API keys there.
 
-## Limits and access
+## Crash recovery
+
+Each new run saves `checkpoint.tsv` and `request_state.tsv` inside its output folder.
+`crawler-output/latest_checkpoint.tsv` identifies the latest run with a checkpoint.
+Keep the whole output folder to recover it, including the HTML and TSV files.
+
+The usual command (or `run-crawler.ps1`) asks `fresh` or `recover` when a checkpoint
+exists. For an explicit choice in PowerShell:
+
+```powershell
+.\run-crawler.ps1 -Mode fresh
+.\run-crawler.ps1 -Mode recover
+```
+
+Or append `"-Dexec.args=--fresh"` or `"-Dexec.args=--recover"` to the Maven crawler
+command. Run only one of these modes at a time. With no checkpoint, the default
+starts fresh; explicit recovery reports that no checkpoint exists.
+
+Recovery continues in the same folder with the saved BFS queue, visited URLs, link
+deduplication and page count. A checkpoint commits only after the HTML, page record
+and extracted links have been written. Partial TSV appends are rolled back to saved
+byte offsets and uncommitted numbered HTML files are removed, so the interrupted
+page can be retried under the next ID. Already committed pages are not downloaded
+again. Requests sent before a crash cannot be undone, so one unfinished page may
+be requested again. The cumulative request count is persisted before each request,
+and recovering never resets the 350-request budget. Robots.txt is loaded again and
+the last saved request timing and delay apply on restart.
+
+Recovery is for interrupted runs, not completed crawls. Site blocking marks the run
+STOPPED and refuses recovery; it does not automatically retry access restrictions.
+Changing the start URL, page limit, depth or request budget makes a checkpoint
+incompatible. Invalid or missing committed data causes recovery to fail instead of
+silently starting over. A file lock prevents concurrent crawler processes.
+
+Checkpoint replacement is atomic and file data is flushed before committing.
+This protects against ordinary process crashes and Ctrl+C, but is not a guarantee
+against disk failure or every possible power-loss scenario. Runs created before
+this feature have no checkpoint and cannot be recovered through this mechanism.
+
+## Request limits
 
 Defaults: up to 100 saved pages, depth 2, 350 network requests including robots.txt and browser
 document requests. Requests start at least 3 seconds apart, or longer if robots.txt
