@@ -27,78 +27,159 @@ Install is needed once. Set `PLAYWRIGHT_BROWSERS_PATH` again in a new terminal.
 Open this folder as a Maven project in your IDE: plain `javac MusicBrainzCrawler.java`
 no longer supplies the required dependencies.
 
-Optionally identify yourself with a real contact before launching the crawler:
+The user agent identifies this as an educational crawler. No email is requested
+or required. The browser has no stealth modifications or imported cookies.
+
+## Offline statistics
+
+Run this while the crawler is stopped; it makes no network requests:
 
 ```powershell
-$env:CRAWLER_CONTACT = "mailto:your-real-address"
+mvn "-Dmaven.repo.local=.maven-repository" compile exec:java "-Dexec.mainClass=CrawlStatistics" "-Dexec.args=crawler-output/2026-10-13_16-45-01_7721259650104813825"
 ```
 
-Replace the example with your actual contact; it is appended to the declared bot
-user agent. Do not put passwords or API keys there.
+The report is saved separately in `analysis-output/<run-name>/statistics.tsv` and
+`document_audit.tsv`. Existing HTML, crawl TSVs and checkpoints are not rewritten.
+`html_bytes` counts all HTML files; `all_files_bytes` counts all regular files in
+that run, including checkpoints and metadata. These are logical file lengths, not
+filesystem allocation sizes. Divide bytes by 1,048,576 for MiB or 1,000,000 for MB.
+
+`valid_entity_documents` requires a unique MusicBrainz entity URL/file, a successful
+HTML response and a complete-looking MusicBrainz document that is not a known
+challenge page. This is an input-quality check, not an assessment of relevance to
+the project or proof that every entity field was extracted correctly. The per-file
+audit identifies missing HTML, duplicate entries, challenges and malformed rows.
+Token counts are not implemented yet and are not approximated from word counts.
+
+Offline checks:
+
+```powershell
+mvn "-Dmaven.repo.local=.maven-repository" compile exec:java "-Dexec.mainClass=StatisticsChecks"
+```
+
+## Long runs and command-line configuration
+
+The crawler is not capped at 100 pages. The default target is 1,000, and the target
+can be changed without editing or recompiling the source by hand:
+
+```powershell
+.\run-crawler.ps1 -Mode fresh -Pages 10000 -Depth 10
+```
+
+Equivalent Maven command after setting `PLAYWRIGHT_BROWSERS_PATH` as above:
+
+```powershell
+mvn "-Dmaven.repo.local=.maven-repository" compile exec:java "-Dexec.mainClass=MusicBrainzCrawler" "-Dexec.args=--fresh --pages 10000 --depth 10"
+```
+
+Options:
+
+| Java argument | PowerShell launcher | Meaning |
+|---|---|---|
+| `--fresh` / `--recover` | `-Mode fresh` / `-Mode recover` | New run or crash recovery |
+| `--pages N` | `-Pages N` | Target successful pages; default 1,000 |
+| `--depth N` | `-Depth N` | Maximum BFS depth; default 10 |
+| `--max-requests N` | `-MaxRequests N` | Cumulative request budget; default `4 * pages + 100` |
+| `--max-frontier N` | `-MaxFrontier N` | Pending queue cap; default 20,000 |
+| `--min-free-mib N` | `-MinFreeMiB N` | Free-space floor; default 512 MiB, minimum 128 |
+| `--start-url URL` | Use Maven | Initial HTTPS entity URL on musicbrainz.org |
+| `--help` | Use Maven | Print usage without crawling |
+
+For a target of 10,000 the default budget is 40,100 requests, including robots,
+verification, redirects and failed requests. More pages do not mean a higher request
+rate. Ten thousand single-request pages take at least roughly 8 h 20 min with the
+3-second spacing; verification and loading extend this. Existing 100-page HTML is
+62.06 MiB, so a proportional extrapolation is about 6.06 GiB for 10,000 HTML pages,
+plus metadata. Actual sizes can differ substantially.
+
+The pending frontier is bounded. When full, additional links are still recorded in
+TSV with `queued_for_crawl=false`, but not scheduled at that moment. They may be seen
+again later. This is a bounded discovery crawl, not a promise to exhaust every link
+on MusicBrainz. Terminal states distinguish target completion, link/depth exhaustion
+and request-budget exhaustion. `run_summary.tsv` records the outcome and remaining
+frontier. `frontier_deferred_this_process` is a diagnostic for the current process,
+not a cumulative count across recoveries.
 
 ## Crash recovery
 
-Each new run saves `checkpoint.tsv` and `request_state.tsv` inside its output folder.
-`crawler-output/latest_checkpoint.tsv` identifies the latest run with a checkpoint.
-Keep the whole output folder to recover it, including the HTML and TSV files.
-
-The usual command (or `run-crawler.ps1`) asks `fresh` or `recover` when a checkpoint
-exists. For an explicit choice in PowerShell:
+Keep the entire output folder: HTML, crawl TSVs, `request_state.tsv`,
+`checkpoint.tsv`, `checkpoint-base.tsv`, and `checkpoint-journal/`.
+`crawler-output/latest_checkpoint.tsv` points to the latest run.
 
 ```powershell
-.\run-crawler.ps1 -Mode fresh
 .\run-crawler.ps1 -Mode recover
 ```
 
-Or append `"-Dexec.args=--fresh"` or `"-Dexec.args=--recover"` to the Maven crawler
-command. Run only one of these modes at a time. With no checkpoint, the default
-starts fresh; explicit recovery reports that no checkpoint exists.
+Recovery loads the saved target, depth and other settings automatically. Do not
+repeat configuration arguments unless they exactly match. It reuses the same
+folder, numbering and BFS queue, and never resets the cumulative request budget.
+The usual command without a mode asks `fresh` or `recover` if a checkpoint exists.
 
-Recovery continues in the same folder with the saved BFS queue, visited URLs, link
-deduplication and page count. A checkpoint commits only after the HTML, page record
-and extracted links have been written. Partial TSV appends are rolled back to saved
-byte offsets and uncommitted numbered HTML files are removed, so the interrupted
-page can be retried under the next ID. Already committed pages are not downloaded
-again. Requests sent before a crash cannot be undone, so one unfinished page may
-be requested again. The cumulative request count is persisted before each request,
-and recovering never resets the 350-request budget. Robots.txt is loaded again and
-the last saved request timing and delay apply on restart.
+Each page commit flushes its HTML and TSV data, writes a small journal delta and
+atomically replaces a small manifest. Historical edges are stored in TSV, not kept
+in growing global sets or copied into every checkpoint. Recovery replays only
+committed deltas, trims uncommitted TSV appends and removes uncommitted numbered
+HTML. One interrupted network request/page can be repeated; committed pages are
+not downloaded again. Uncommitted journal files are ignored and replaced on retry.
 
-Recovery is for interrupted runs, not completed crawls. Site blocking marks the run
-STOPPED and refuses recovery; it does not automatically retry access restrictions.
-Changing the start URL, page limit, depth or request budget makes a checkpoint
-incompatible. Invalid or missing committed data causes recovery to fail instead of
-silently starting over. A file lock prevents concurrent crawler processes.
+Ctrl+C or a process crash uses the last committed checkpoint. Alternatively create
+an empty `stop.request` in the run folder for a pause between pages, then remove it
+before recovery. Low free space stops before the next page and preserves recovery;
+free disk space before restarting. File locking prevents simultaneous production
+crawler instances. Keep the machine awake and connected for unattended operation.
 
-Checkpoint replacement is atomic and file data is flushed before committing.
-This protects against ordinary process crashes and Ctrl+C, but is not a guarantee
-against disk failure or every possible power-loss scenario. Runs created before
-this feature have no checkpoint and cannot be recovered through this mechanism.
+Old version-1 ACTIVE checkpoints are read using their original settings and upgraded
+when recovery commits. Completed, exhausted and site-blocked runs are not crash
+recovery candidates. Runs without any checkpoint cannot be recovered. This protects
+ordinary process interruptions, not arbitrary disk damage or every power-loss case.
 
-## Request limits
+## Request policy and browser lifecycle
 
-Defaults: up to 100 saved pages, depth 2, 350 network requests including robots.txt and browser
-document requests. Requests start at least 3 seconds apart, or longer if robots.txt
-requires it. HTTP 403, 429 and server errors stop browser crawling, without retry.
-The request budget also includes verification and redirects. Reaching 100 pages is
-not guaranteed: blocking, exhausted requests or no more eligible links can stop the run
-earlier. Allow at least 5 minutes, and longer for verification and loading.
-Robots retrieval fails closed. Chromium uses an isolated session, the declared
-SchoolAlbumCrawler user agent, browser sandbox, and no stealth modifications.
+Requests are sequential and start at least 3 seconds apart, or longer for crawl-delay.
+Robots are loaded on restart and refreshed hourly during a long run, including a
+check before browser requests when due. Failed policy retrieval stops access;
+403/429/server errors and persistent browser challenges are not automatically retried.
+The robots document is capped at 1 MiB while receiving; page responses/serialized DOMs
+larger than 25 MiB are rejected (browser responses have already been buffered when
+that size check runs). Disk checks reserve the free-space floor plus one page.
 
-External requests and subresources are blocked. Normal inline JavaScript may run,
-including the site's standard verification form; its document POST is subject to
-the same host, robots, rate and request-budget checks. No custom verification solver,
-cookie import, proxy rotation or alternate user-agent identity is used.
+Only main-frame MusicBrainz entity navigation and the site's standard verification
+form are allowed. External hosts, subresources, subframes, service workers and
+WebSockets are blocked. Redirect GETs are routed through the same checks and budget.
+The browser is sandboxed, has an isolated session and declared educational user agent,
+with no stealth modifications, email requirement, cookie imports or proxy rotation.
+Inline scripts run normally; there is no custom verification solver.
 
-A challenge that remains after 30 seconds is saved as `html/blocked.html` and logged
-as STOPPED. This is not a successful album download. Playwright does not guarantee
-access, and assignment permission to use Playwright is not permission from the site.
-If access remains blocked, seek guidance from MusicBrainz instead of escalating retries.
+Chromium is closed and recreated after each 250 committed pages to bound session
+lifetime and release browser/API resources. `request_log.tsv` records request
+reservations; a reservation may exist even if a crash prevents sending the request.
+The durable counter is conservative and is never decreased on recovery.
 
-Robots matching supports agent groups, literal prefixes, `*`, terminal `$`, and allow
-tie-breaking. It is a small site-focused parser, not a full RFC 9309 implementation
-(percent-encoded octet equivalence is not fully implemented).
+Respecting robots is not authorization to scrape; see [RFC 9309](https://www.rfc-editor.org/rfc/rfc9309.html).
+No test guarantees uninterrupted access to MusicBrainz, absence of blocking, or
+permission from the operator. Do not run multiple copies or force retries after a block.
+
+## Offline validation
+
+```powershell
+mvn "-Dmaven.repo.local=.maven-repository" compile exec:java "-Dexec.mainClass=CrawlerChecks"
+mvn "-Dmaven.repo.local=.maven-repository" exec:java "-Dexec.mainClass=CrawlerSafetyChecks"
+mvn "-Dmaven.repo.local=.maven-repository" exec:java "-Dexec.mainClass=LongRunChecks"
+```
+
+`LongRunChecks` drives the actual crawl/commit loop with 10,000 synthetic documents,
+simulates a crash after 4,321 committed pages, adds partial output, resets process
+state, recovers and verifies numbering, unique documents, all HTML files, request
+counts, policy refresh and final journal replay. Its outputs and evidence stay under
+`target/`. It makes no HTTP requests and does not launch Chromium. Synthetic pages
+are small: this tests control flow and persistence, not transferring 10,000 live pages
+or a multi-gigabyte browser-memory endurance benchmark.
+
+`CrawlerSafetyChecks` covers bounded frontier progress, depth exhaustion, hard request
+budget, 429 recovery refusal, changed robots rules, disk-space stops, URL/robots
+encoding and oversized robots response cancellation. With `-Dexec.args=--browser`
+it additionally launches/closes installed Chromium twice and verifies that external
+navigation is refused before any crawler request is sent.
 
 ## References
 

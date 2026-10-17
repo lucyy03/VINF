@@ -3,3 +3,4 @@ target/
 .playwright-browsers/
 crawler-output/
 *.class
+/CONSULTATION-28-10.md

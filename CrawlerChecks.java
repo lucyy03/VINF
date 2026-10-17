@@ -121,7 +121,7 @@ public class CrawlerChecks {
         }
         check(Files.readString(directory.resolve("pages.tsv")).endsWith("tail"), "Validate before changing originals");
         String validCheckpoint = Files.readString(directory.resolve("checkpoint.tsv"));
-        Files.writeString(directory.resolve("checkpoint.tsv"), validCheckpoint.replace("VERSION\t1", "VERSION\t999"));
+        Files.writeString(directory.resolve("checkpoint.tsv"), validCheckpoint.replaceFirst("VERSION\t[0-9]+", "VERSION\t999"));
         try {
             call(checkpointClass, "read", new Class<?>[]{Path.class}, null, directory);
             throw new AssertionError("Incompatible checkpoint must be rejected");

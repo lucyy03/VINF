@@ -1,0 +1,11 @@
+id	url	html_file	entity_type	bytes	result	title
+1	https://musicbrainz.org/release-group/b1392450-e666-3926-a536-22c65f834433	html/0001.html	release-group	103023	OK	Release group “OK Computer” by Radiohead - MusicBrainz
+2	https://musicbrainz.org/artist/a74b1b7f-71a5-4011-9441-d0b5e4122711	html/0002.html	artist	173601	OK	Radiohead - MusicBrainz
+3	https://musicbrainz.org/release/1834eae1-741b-3c03-9ca5-0df3decb43ea	html/0003.html	release	1433441	OK	Release “OK Computer” by Radiohead - MusicBrainz
+4	https://musicbrainz.org/release/425d8db9-88a3-31e2-bd23-b1a967626dd5	html/0004.html	release	1441747	OK	Release “OK Computer” by Radiohead - MusicBrainz
+5	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf	html/0005.html	release	1444940	OK	Release “OK Computer” by Radiohead - MusicBrainz
+6	https://musicbrainz.org/release/c7569949-0f67-4682-a0d8-75c4290c52dc	html/0006.html	release	1443229	OK	Release “OK Computer” by Radiohead - MusicBrainz
+7	https://musicbrainz.org/release/ad0e6676-3e55-4bd6-a9ed-7f6424fd46f6	html/0007.html	release	1414269	OK	Release “OK Computer” by Radiohead - MusicBrainz
+8	https://musicbrainz.org/release/541a0976-ca45-3c0f-89e5-26bc376f58d1	html/0008.html	release	1431647	OK	Release “OK Computer” by Radiohead - MusicBrainz
+9	https://musicbrainz.org/release/fba5f8fe-c6c8-4511-8562-c9febf482674	html/0009.html	release	1430415	OK	Release “OK Computer” by Radiohead - MusicBrainz
+10	https://musicbrainz.org/release/a64e09a7-2f26-4d7a-8505-f2561ad3299b	html/0010.html	release	1413523	OK	Release “OK Computer” by Radiohead - MusicBrainz
