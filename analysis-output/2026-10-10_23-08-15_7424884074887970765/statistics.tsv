@@ -14,3 +14,5 @@ html_files_on_disk	100	count
 unreferenced_html_files	0	count
 html_bytes	65069940	bytes
 all_files_bytes	67656390	bytes
+pagination_documents	0	count
+unique_entities	100	count

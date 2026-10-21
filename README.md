@@ -322,3 +322,152 @@ navigation is refused before any crawler request is sent.
 
 `CrawlerChecks` is an offline regression executable. It reads the saved challenge
 from the original run and checks link extraction, origin restrictions and robots rules.
+
+## Zber naprieč interpretmi (šírka)
+
+`crawl-seeds.tsv` obsahuje šesť počiatočných interpretov: Radiohead, Beyoncé,
+Daft Punk, Nina Simone, Kendrick Lamar a Metallica. Odkazy smerujú na ich
+MusicBrainz profily. Zoznam môžete rozšíriť (stĺpce `name` a `url`, oddelené tabulátorom).
+
+Malý živý test spustite až po ukončení predchádzajúceho crawlera:
+
+```powershell
+.\run-crawler.ps1 -Mode fresh -Pages 20 -Seeds crawl-seeds.tsv -Depth 2 -ReleasesPerGroup 3
+```
+
+Crawler najprv prejde počiatočných interpretov a potom strieda ich vetvy na rovnakej
+hĺbke podľa počtu pokusov. Hĺbka má prednosť: pri limite 20 stránok môže výsledok
+obsahovať najmä interpretov a release groups; konkrétne vydania prídu na ďalšej
+úrovni. Z každej release group zaradí najviac tri nové vydania. Ostatné odkazy
+zaznamená do `internal_links.tsv`, ale nemusí ich navštíviť. Limity nezaručujú
+úplnú diskografiu ani reprezentatívnu vzorku MusicBrainz; stránkované odkazy s query
+parametrami crawler nenavštevuje. Počet stránok je maximum, nie záruka.
+
+`seed_sources.tsv` uchová počiatočné adresy, `breadth_coverage.tsv` po ukončení
+počet pokusov a uložených typov stránok podľa počiatočnej vetvy. Zdieľaná stránka
+patrí vetve, ktorá ju objavila prvá; nejde o hudobné priradenie interpreta.
+
+Obnova použije uložené zdroje, limity aj poradie (súbor so zdrojmi netreba znovu zadávať):
+
+```powershell
+.\run-crawler.ps1 -Mode recover
+```
+
+Novú stratégiu začnite cez `fresh`; existujúcemu checkpointu ju nemožno pridať.
+Nové checkpointy majú verziu 3; čítanie starých verzií 1 a 2 zostáva podporované.
+Staršiu verziu programu nepoužívajte na obnovu nového checkpointu.
+Súbežné požiadavky sa nepridávajú; pôvodné kontroly robots, tempa, rozpočtu,
+blokovania a voľného disku zostávajú aktívne. Tento krok nezaručuje povolenie
+ľubovoľne veľkého zberu ani vylúčenie blokovania serverom.
+
+Offline kontrola používa iba umelé stránky a zahŕňa pád po siedmej stránke,
+obnovu, striedanie troch vetiev a limit vydaní:
+
+```powershell
+mvn "-Dmaven.repo.local=.maven-repository" compile exec:java "-Dexec.mainClass=BreadthChecks"
+```
+
+### Pokrytie požadovaných údajov
+
+Rozšírenie zdrojov samo nepridáva nové extrakčné polia. Pred veľkým zberom treba
+dokončiť a otestovať zostávajúce polia, potom rozšíriť index.
+
+| Údaj | Aktuálny REGEX extraktor |
+| --- | --- |
+| Názov albumu/release group, interpret, MusicBrainz ID, typ | Implementované |
+| Formát, krajiny a dátumy konkrétnych vydaní | Implementované |
+| Základné údaje interpreta | Čiastočne: typ, oblasť, začiatok |
+| Wikipedia/Wikidata odkazy | Implementované ako odkazy nájdené v HTML |
+| Žánre a tagy | Žánre implementované; všeobecné tagy doplniť |
+| Dátum prvého vydania release group | Doplniť; minimum stiahnutých edícií nie je zaručený prvý dátum |
+| Hodnotenie, ak dostupné | Doplniť |
+| Skladby a ich dĺžky | Doplniť z HTML konkrétnych vydaní |
+| Vydavateľstvo | Doplniť |
+| Úplný zoznam konkrétnych vydaní | Odkazy sa zbierajú; návštevy sú obmedzené konfiguráciou |
+
+
+### Rozv?janie novoobjaven?ch interpretov
+
+Pre nov? ?irok? zber je predvolen? h?bka 6. BFS st?le spracuje plyt?ie str?nky
+pred hlb??mi; v???ia maxim?lna h?bka dovol? rozvin?? aj albumy ?al??ch interpretov.
+Po?iato?n? zoznam nie je whitelist. Z ka?d?ho interpreta sa zarad? najviac 20
+nov?ch release groups a z ka?dej skupiny najviac 3 nov? vydania. Toto s? limity
+nov?ch odkazov zaraden?ch z danej str?nky, nie ?plnos? diskografie. Poradie
+vybran?ch albumov vych?dza z poradia odkazov v HTML; nejde o n?hodn? vzorku.
+
+Na ?al?? mal? test pou?ite men?? limit albumov, aby sa crawler r?chlej?ie dostal
+aj ku konkr?tnym vydaniam:
+
+```powershell
+.\run-crawler.ps1 -Mode fresh -Pages 50 -Seeds crawl-seeds.tsv -Depth 6 -AlbumsPerArtist 3 -ReleasesPerGroup 2
+```
+
+Obnova zachov? p?vodn? h?bku a limity. Nov? nastavenie nepremen? existuj?ci
+20-str?nkov? beh na v????. Star? checkpointy bez limitu albumov sa obnovuj? bez
+nov?ho obmedzenia albumov. Glob?lne limity str?nok, po?iadaviek, frontu a disku
+platia aj pri v???ej h?bke. Dostupnos? odkazov, robots a reakcie servera m??u
+zber ukon?i? pred cie?ov?m po?tom. Str?nkovanie diskografi? zatia? zost?va mimo
+podporovan?ho rozsahu; presn? po?et dosiahnute?n?ch re?lnych str?nok nebol overen?.
+
+`BreadthChecks` overuje aj interpreta mimo seed zoznamu, rozvinutie jeho albumov
+na h?bke 3 a vydan? na h?bke 4, oba limity, deduplik?ciu a obnovu po p?de.
+
+
+### Roz??ren? REGEX v?stupy (offline)
+
+Po spusten? `MusicBrainzRegexExtractor` pribudn? v rovnakom prie?inku `regex`:
+
+- `tracks.tsv`: jeden riadok na skladbu vydania; poradov? ??slo v extrakcii,
+  MusicBrainz track ID, p?vodn? poz?cia (napr. A1), n?zov, recording ID,
+  zobrazen? d??ka a prepo?et na milisekundy. Ch?baj?ca/nezn?ma d??ka ost?va pr?zdna.
+- `labels.tsv`: vydavate?stvo konkr?tneho vydania, jeho ID a katal?gov? ??sla.
+- `entity_details.tsv`: ?al?ie vidite?n? tagy, hodnotenie (0 a? 5), rozsah hodnotenia,
+  najstar?? vidite?n? d?tum zo zoznamu vydan? a ?al?ie dostupn? ?daje interpreta.
+
+Hodnotenie zobrazen? na str?nke vydania patr? release group, ?o v?slovne uv?dza
+`rating_scope=release-group`. Nejde o hodnotenie tejto konkr?tnej ed?cie ani skladby.
+`earliest_listed_release_date` je najstar?? d?tum n?jden? v aktu?lnom HTML release
+group, s p?vodnou presnos?ou (napr. iba rok). Nie je garantovan?m prv?m vydan?m:
+zoznam m??e by? str?nkovan? a ne?pln?. Pr?zdne hodnoty znamenaj?, ?e ?daj nebol
+n?jden? v podporovanej ?trukt?re HTML; nedokazuj?, ?e ?daj v MusicBrainz neexistuje.
+Zoznam tagov obsahuje iba vidite?n? tagy, nie cel? obsah str?nky ?See all tags?.
+
+P?vodn? `entities.tsv`, `release_events.tsv`, `entity_links.tsv` zost?vaj? kompatibiln?.
+Indexer u? prip?ja n?zvy skladieb, men? vydavate?stiev, katal?gov? ??sla, ?al?ie tagy a dopl?uj?ce ?daje interpreta.
+Uk??ky pre dokument?ciu s? v `REGEX-EXAMPLES.md`; zverejnenie na wiki je samostatn? krok.
+
+```powershell
+mvn "-Dmaven.repo.local=.maven-repository" compile exec:java "-Dexec.mainClass=DetailsChecks"
+```
+
+
+### Indexovanie roz??ren?ch ?dajov
+
+Nov? TSV sa prip?jaj? pod?a `source_url` a `page_id`. Nespr?vna v?zba alebo
+skladba/vydavate?stvo priraden? in?mu typu ne? release zastav? zostavenie indexu.
+Rovnak? textov? hodnoty v doplnkov?ch tabu?k?ch sa na jednej str?nke indexuj? iba
+raz. S?bory s? volite?n?, preto zost?va podporovan? zostavenie zo star??ch v?stupov.
+Existuj?ci po?koden? doplnkov? s?bor sa nepresko??. Hash ka?d?ho pou?it?ho vstupu
+sa ulo?? do manifestu a pred dokon?en?m sa op?? skontroluje.
+
+V?sledkom zost?va str?nka albumu/vydania/interpreta, nie samostatn? dokument pre
+ka?d? skladbu. Hodnotenie ani d??ka skladby zatia? nie s? numerick? filtre/rankovacie
+pravidl?; oba existuj?ce sp?soby radenia na?alej pou??vaj? TF-IDF a kos?nus.
+Pozorovan? minimum d?tumov sa nezamie?a za potvrden? prv? d?tum vydania a indexer
+ho neprid?va medzi d?tumy udalost? konkr?tneho vydania.
+
+```powershell
+mvn "-Dmaven.repo.local=.maven-repository" exec:java "-Dexec.mainClass=MusicBrainzIndexer" "-Dexec.args=analysis-output/2026-10-10_23-08-15_7424884074887970765/regex"
+mvn "-Dmaven.repo.local=.maven-repository" exec:java "-Dexec.mainClass=MusicBrainzSearch" "-Dexec.args=--compare --top 3 --query Radiohead Airbag Parlophone"
+```
+
+Nov? index m??e zmeni? sk?re aj poradie p?vodn?ch dopytov, preto?e dokumenty u?
+obsahuj? viac slov. Predo?l? v?sledky porovn?vajte iba s rovnakou gener?ciou indexu.
+
+
+Praktick? postup pre dlh?? beh, obnovu a spracovanie v?sledkov: [LONG-RUN.md](LONG-RUN.md).
+Lok?lne porovnanie roz??ren?ch dopytov: `test-fixtures/search-expanded-queries.tsv`;
+v?sledky nad 100-str?nkovou kolekciou s? v jej `search-expanded.tsv`.
+Kontrolovan? pr?klady: `TCNODATA 02` vracia str?nku 9 v oboch met?dach,
+`atmospheric` zah??a str?nku 1 a neexistuj?ce slovo nem? v?sledky. Toto s?
+regresn? pr?klady; nejde o nez?visl? ve?k? benchmark relevancie.

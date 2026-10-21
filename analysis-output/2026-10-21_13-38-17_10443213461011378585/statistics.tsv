@@ -1,0 +1,16 @@
+metric	value	unit
+page_records	50	count
+malformed_records	0	count
+duplicate_url_records	0	count
+duplicate_html_records	0	count
+missing_html_records	0	count
+challenge_records	0	count
+invalid_document_records	0	count
+valid_entity_documents	50	count
+artist_documents	32	count
+release_documents	0	count
+release_group_documents	18	count
+html_files_on_disk	50	count
+unreferenced_html_files	0	count
+html_bytes	6034102	bytes
+all_files_bytes	7961754	bytes

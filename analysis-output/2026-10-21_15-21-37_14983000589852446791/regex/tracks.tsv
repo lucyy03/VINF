@@ -1,0 +1,213 @@
+page_id	source_url	sequence	track_mbid	position	name	recording_mbid	duration	duration_ms
+39	https://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305	1	79dae63a-a654-355e-b84c-709b47771284	A1	Daftendirekt	10cdacde-e54a-412a-863b-81d9ea6b3df2	2:44	164000
+39	https://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305	2	3730e91b-e02c-33b2-b666-a2fd9eb8df48	A2	WDPK 83.7 FM	9fc87ed0-cf62-4447-b411-d0832eb9daae	0:28	28000
+39	https://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305	3	0fe47adb-58ad-3c93-8411-f6a3f0f34d5d	A3	Revolution 909	0a6e234d-0c9d-41e0-bce7-5c0ca09befbd	5:26	326000
+39	https://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305	4	237ce375-6968-3a73-9f1b-6510993231ff	A4	Da Funk	4cde50af-2c78-4202-b8d0-30c1d916db97	5:28	328000
+39	https://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305	5	124fa941-c5ac-387b-8b3e-04a075eed1ec	A5	Phœnix	28651acc-1f13-4431-b2de-d93a33a50084	4:55	295000
+39	https://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305	6	3c4ee5db-5e9b-36e2-97c3-b70548f67a23	B1	Fresh	9ca385f4-4082-494a-974a-b1a8aa997838	4:03	243000
+39	https://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305	7	4fd9949e-d588-3b72-973c-41b7dd829143	B2	Around the World	7813d6e5-fe21-4cd0-8f8b-82b7c15662ae	7:07	427000
+39	https://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305	8	f6379358-fb1b-3750-be75-c99702887676	B3	Rollin' & Scratchin'	bfbd9b4b-12c6-405d-9681-45cb71057985	7:26	446000
+39	https://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305	9	fe1ed63d-9af0-3d64-ad7c-36086081d9f7	C1	Teachers	3707ab0d-ff31-46a2-9056-d094bae44c3e	2:52	172000
+39	https://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305	10	14edb116-3090-3f47-89fe-0941fbdd603a	C2	High Fidelity	95ab771e-62b4-4324-befd-024356c190c6	6:00	360000
+39	https://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305	11	2e1da66b-07fe-3424-9ca3-f5d05869cfea	C3	Rock'n Roll	a42b76a0-3bd1-4c3a-8e83-751f48d818ec	7:32	452000
+39	https://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305	12	7ca7e4e3-488e-31d7-9587-7a99a75b67c9	C4	Oh Yeah	89ae9c78-7e38-40ec-bf9f-79d1f2678890	2:00	120000
+39	https://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305	13	72ea2c67-0122-364d-bd11-a724d6d7f8e5	D1	Burnin'	5fceebe4-d425-4e83-85d0-b4ee61b8d8d6	6:53	413000
+39	https://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305	14	77a39353-b941-3ff8-aaba-3a09deb956e7	D2	Indo Silver Club	1285a717-b387-4353-91d4-3ea357dfc9c5	4:32	272000
+39	https://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305	15	b4ed04e8-6265-33e7-82e1-378e3b04f99c	D3	Alive	a08473a1-e622-49cc-bb97-65f813429025	5:15	315000
+39	https://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305	16	88b88133-4bd8-3431-b4b0-e9b769825649	D4	Funk Ad	eab36835-9fa7-4598-a50a-8bb114c9c5fb	0:50	50000
+41	https://musicbrainz.org/release/8f663ff6-b63f-4501-86ae-40b3cc41448b	1	23354b7d-8cb5-377b-9704-9c37e6c25118	A1	Mood Indigo	27c49e38-69b8-48ae-bf8e-0f6f0afad3d3	4:00	240000
+41	https://musicbrainz.org/release/8f663ff6-b63f-4501-86ae-40b3cc41448b	2	a8653b06-7bf7-3045-b654-789ad8422468	A2	Don’t Smoke in Bed	421ee3bc-7da1-4e92-bd24-4a9d77e26300	3:09	189000
+41	https://musicbrainz.org/release/8f663ff6-b63f-4501-86ae-40b3cc41448b	3	d270a693-ac3b-37e4-a38d-126c1373cd25	A3	He Needs Me	d970015a-3b3f-41bc-8c5c-843969af6e1d	2:26	146000
+41	https://musicbrainz.org/release/8f663ff6-b63f-4501-86ae-40b3cc41448b	4	a0e67f1a-988d-3b74-81f6-44bbb128c743	A4	Little Girl Blue	b9c130ff-9c7f-4ef6-9d44-943f67683004	4:12	252000
+41	https://musicbrainz.org/release/8f663ff6-b63f-4501-86ae-40b3cc41448b	5	e5ae85fc-dbce-3457-b603-1ebd7f9f8eb1	A5	Love Me or Leave Me	2773d0b5-cb8a-4f48-a0da-4f673cedca13	3:18	198000
+41	https://musicbrainz.org/release/8f663ff6-b63f-4501-86ae-40b3cc41448b	6	fd4e43ea-7ced-35bb-80ca-3c0f02b1b293	A6	My Baby Just Cares for Me	a2c3d299-167c-47d4-ae4a-2f8b607645c6	3:33	213000
+41	https://musicbrainz.org/release/8f663ff6-b63f-4501-86ae-40b3cc41448b	7	c7e4a7c9-1ece-3ea1-834b-3785280098d6	B1	Good Bait	721a4b68-2e91-4780-8e42-6c0fa9315ab7	5:25	325000
+41	https://musicbrainz.org/release/8f663ff6-b63f-4501-86ae-40b3cc41448b	8	02d8a52c-d897-3f5d-8c01-0a9991834569	B2	Plain Gold Ring	dd0dae0c-4d13-4302-8dc8-beae52f450db	3:50	230000
+41	https://musicbrainz.org/release/8f663ff6-b63f-4501-86ae-40b3cc41448b	9	e43e8dcd-4b76-34b8-ae4d-1c1e0a841e26	B3	You’ll Never Walk Alone	10d72b72-3094-422f-b04d-8401f2dbac71	3:58	238000
+41	https://musicbrainz.org/release/8f663ff6-b63f-4501-86ae-40b3cc41448b	10	c6fccae4-9277-34f7-bec6-e55f12dfd773	B4	Porgy	87c06608-a5f9-40b8-84ec-92c2a4b86ebb	4:03	243000
+41	https://musicbrainz.org/release/8f663ff6-b63f-4501-86ae-40b3cc41448b	11	2ffe4f22-9ca4-38f4-a4aa-e3c24c8cad5b	B5	Central Park Blues	02676543-7534-4ea2-830b-e2cd49deb43d	3:05	185000
+42	https://musicbrainz.org/release/d0b24c41-8562-47fb-bfe7-5f03397c41c7	1	f264fa55-43db-3cdd-b9a9-4a399c690c0b	1	Fuck Your Ethnicity	cdffc58c-5b84-4d70-bf52-5179919d55b1	3:44	224000
+42	https://musicbrainz.org/release/d0b24c41-8562-47fb-bfe7-5f03397c41c7	2	2686493e-6b86-3bd3-8119-e8f4510d249f	2	Hol’ Up	e93ffc87-5306-4975-8d7a-298914cb96b9	2:53	173000
+42	https://musicbrainz.org/release/d0b24c41-8562-47fb-bfe7-5f03397c41c7	3	22b1b138-3906-324b-ac2e-6018fe2eb00d	3	A.D.H.D	5fb18e9d-fb24-4d96-8410-032d3fc89568	3:35	215000
+42	https://musicbrainz.org/release/d0b24c41-8562-47fb-bfe7-5f03397c41c7	4	f6918523-925c-33a7-8bc5-d90447893b9b	4	No Makeup (Her Vice)	b22a6497-79a6-4a3a-81ba-e3b84f989501	3:55	235000
+42	https://musicbrainz.org/release/d0b24c41-8562-47fb-bfe7-5f03397c41c7	5	a5a28fe4-3ea4-3a80-8ea1-6df3ad7204c9	5	Tammy’s Song (Her Evils)	3e574af4-2c79-4346-a39d-1ef21041238e	2:41	161000
+42	https://musicbrainz.org/release/d0b24c41-8562-47fb-bfe7-5f03397c41c7	6	60285920-b448-3473-9c68-05f21f174710	6	Chapter Six	f9cacc1a-f4a1-4c6d-aa3f-25d543648e8f	2:41	161000
+42	https://musicbrainz.org/release/d0b24c41-8562-47fb-bfe7-5f03397c41c7	7	6e148e53-6efa-3f87-b483-908ab8a32507	7	Ronald Reagan Era (His Evils)	6150f46b-0d50-4944-af2a-5a8707778a07	3:36	216000
+42	https://musicbrainz.org/release/d0b24c41-8562-47fb-bfe7-5f03397c41c7	8	e2c26930-9143-34df-a1d9-c1c5b721e072	8	Poe Mans Dream (His Vice)	e12ea507-6da8-4c37-90cb-f3af5bb2e469	4:21	261000
+42	https://musicbrainz.org/release/d0b24c41-8562-47fb-bfe7-5f03397c41c7	9	4cd9be8a-fc71-3f70-ab65-203f76439c6a	9	The Spiteful Chant	117bdb40-40b9-4f81-a3ee-c70d4586ce44	5:21	321000
+42	https://musicbrainz.org/release/d0b24c41-8562-47fb-bfe7-5f03397c41c7	10	dba4967e-2f40-30f0-813c-2800162afedb	10	Chapter Ten	71e79c40-5cd5-49b3-9879-8326bd7f9879	1:15	75000
+42	https://musicbrainz.org/release/d0b24c41-8562-47fb-bfe7-5f03397c41c7	11	7cfa8b77-7f5a-3fdf-a8dd-b676ecf5257b	11	Keisha’s Song (Her Pain)	95d28bba-a66d-46dc-89fb-4405ffdbd96f	3:47	227000
+42	https://musicbrainz.org/release/d0b24c41-8562-47fb-bfe7-5f03397c41c7	12	c54e11fd-7f64-3d20-b483-47e5c09effdf	12	Rigamortis	ce98f7f8-b85f-4d6f-b108-505de842e41a	2:48	168000
+42	https://musicbrainz.org/release/d0b24c41-8562-47fb-bfe7-5f03397c41c7	13	f0a17f13-6bed-3770-b384-9ce3875ba789	13	Kush & Corinthians (His Pain)	3827f444-b31a-432a-9de5-d9922f838354	5:04	304000
+42	https://musicbrainz.org/release/d0b24c41-8562-47fb-bfe7-5f03397c41c7	14	51a46685-8dbb-3668-a27d-c445c1e8234f	14	Blow My High (Members Only)	023ea0ea-40c2-4ab1-bf74-c0022e45c0c8	3:35	215000
+42	https://musicbrainz.org/release/d0b24c41-8562-47fb-bfe7-5f03397c41c7	15	9c2ddad9-12a9-37bc-be5d-2b2ae0a497c9	15	Ab‐Soul’s Outro	4f589e97-ee02-46cc-a0a2-4ad8714bc610	5:50	350000
+42	https://musicbrainz.org/release/d0b24c41-8562-47fb-bfe7-5f03397c41c7	16	4780f3f0-1bb1-3808-8cbc-fe4b5738ee04	16	HiiiPoWeR	5339459c-d3b2-44c8-bf30-11feb9d2db87	4:39	279000
+43	https://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec	1	5cca4452-5be1-33a6-ab6b-853e26062b77	1	Daftendirekt	10cdacde-e54a-412a-863b-81d9ea6b3df2	2:45	165000
+43	https://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec	2	2b70551c-3a17-32f3-b7a6-662a6c0c9cd5	2	WDPK 83.7 FM	9fc87ed0-cf62-4447-b411-d0832eb9daae	0:28	28000
+43	https://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec	3	88dc0917-3846-3562-ba40-c9297c0c0a64	3	Revolution 909	0a6e234d-0c9d-41e0-bce7-5c0ca09befbd	5:27	327000
+43	https://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec	4	7584cc62-afb0-348d-89d6-b069a9f2a2f2	4	Da Funk	4cde50af-2c78-4202-b8d0-30c1d916db97	5:29	329000
+43	https://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec	5	fcdb77c8-95dc-3d62-b205-1923bc591f54	5	Phœnix	28651acc-1f13-4431-b2de-d93a33a50084	4:57	297000
+43	https://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec	6	2d592140-f239-33de-ac7a-680cf06d339a	6	Fresh	9ca385f4-4082-494a-974a-b1a8aa997838	4:04	244000
+43	https://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec	7	f67ed6b3-3ee6-3e8a-ba4b-269f5b58688d	7	Around the World	7813d6e5-fe21-4cd0-8f8b-82b7c15662ae	7:10	430000
+43	https://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec	8	c7f94633-caeb-3367-8577-be77beacf9a0	8	Rollin’ & Scratchin’	bfbd9b4b-12c6-405d-9681-45cb71057985	7:28	448000
+43	https://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec	9	c55097b3-ea30-3be7-9ea2-3f03ff0b10e5	9	Teachers	3707ab0d-ff31-46a2-9056-d094bae44c3e	2:53	173000
+43	https://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec	10	c39e2e43-b249-3a2a-af8e-a846adbd2048	10	High Fidelity	95ab771e-62b4-4324-befd-024356c190c6	6:02	362000
+43	https://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec	11	a11be911-99cd-3195-a0fb-b339df18692a	11	Rock’n Roll	a42b76a0-3bd1-4c3a-8e83-751f48d818ec	7:34	454000
+43	https://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec	12	b2d7e334-d117-33ee-a881-afbd60e5cfc5	12	Oh Yeah	89ae9c78-7e38-40ec-bf9f-79d1f2678890	2:01	121000
+43	https://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec	13	0fa875ae-0a6f-3768-afad-6375441bb0d3	13	Burnin’	5fceebe4-d425-4e83-85d0-b4ee61b8d8d6	6:54	414000
+43	https://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec	14	dc470a77-6255-304e-aa43-90f6b7f5b058	14	Indo Silver Club	1285a717-b387-4353-91d4-3ea357dfc9c5	4:35	275000
+43	https://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec	15	1c2d1bbd-cfa2-3932-8abd-6486e6a564fa	15	Alive	a08473a1-e622-49cc-bb97-65f813429025	5:15	315000
+43	https://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec	16	32047b83-8920-3a94-a7d2-4dca6ba2b1ce	16	Funk Ad	eab36835-9fa7-4598-a50a-8bb114c9c5fb	0:51	51000
+45	https://musicbrainz.org/release/3ace029c-dd68-4133-9eec-1377aa4bc908	1	72280a85-8a3e-40d0-bee5-7b443cbf1bae	1	Crazy in Love	ce547594-5199-49a2-9cb7-ff39e64a469f	3:56	236000
+45	https://musicbrainz.org/release/3ace029c-dd68-4133-9eec-1377aa4bc908	2	325c5eea-82be-4e3f-b2e2-a400f68ba6a5	2	Naughty Girl	f848422b-bd77-4515-9442-df7135748ad5	3:29	209000
+45	https://musicbrainz.org/release/3ace029c-dd68-4133-9eec-1377aa4bc908	3	5edf6661-52b0-45a8-be5f-a8e3972d4a6a	3	Baby Boy	1a949e29-88cd-482b-8958-4ad3d7e2b956	4:05	245000
+45	https://musicbrainz.org/release/3ace029c-dd68-4133-9eec-1377aa4bc908	4	c1004c00-94ac-45d1-bd88-74b93653c068	4	Hip Hop Star	1feaddda-a8ba-40b1-903f-3c3db523ece0	3:43	223000
+45	https://musicbrainz.org/release/3ace029c-dd68-4133-9eec-1377aa4bc908	5	df4127fc-c457-4e01-8ab7-0179f27e7f0f	5	Be With You	b5b9909e-99d9-4151-b228-77ef1a1f8ca1	4:20	260000
+45	https://musicbrainz.org/release/3ace029c-dd68-4133-9eec-1377aa4bc908	6	13d3ba3a-da3a-46ca-b38d-b63b719b5da6	6	Me, Myself and I	446028c6-591a-4c1e-ac2b-d0a27d8d7013	5:01	301000
+45	https://musicbrainz.org/release/3ace029c-dd68-4133-9eec-1377aa4bc908	7	be5c0ed7-d19f-4b6c-81d3-e3ba13ba0551	7	Yes	088bd823-2f3a-4221-b09a-ad99b2d06781	4:19	259000
+45	https://musicbrainz.org/release/3ace029c-dd68-4133-9eec-1377aa4bc908	8	7180c01a-22c4-4244-b7a6-1d86a3a36b3b	8	Signs	6a0c5648-83c6-42f4-8afc-b4c7c5230e0c	4:59	299000
+45	https://musicbrainz.org/release/3ace029c-dd68-4133-9eec-1377aa4bc908	9	d433920b-fca3-4ab5-b0ec-8584013152f2	9	Speechless	d222c51d-fb6f-481d-9f8f-306503f6a9bb	6:00	360000
+45	https://musicbrainz.org/release/3ace029c-dd68-4133-9eec-1377aa4bc908	10	ca95e5e6-fd14-4f3b-b813-414db1660218	10	That's How You Like It	dedf412c-1b48-4064-802c-411be6c36bf4	3:39	219000
+45	https://musicbrainz.org/release/3ace029c-dd68-4133-9eec-1377aa4bc908	11	741bd0ea-dd1b-4ff1-9aa5-bde15b967011	11	The Closer I Get to You	60a46310-5e97-443d-b1bc-40b128a2aacd	4:58	298000
+45	https://musicbrainz.org/release/3ace029c-dd68-4133-9eec-1377aa4bc908	12	5a20559c-ba53-4bc6-804e-642abbc2c074	12	Dangerously in Love	7b71b173-277d-4fe6-82b4-6410354562c1	4:53	293000
+45	https://musicbrainz.org/release/3ace029c-dd68-4133-9eec-1377aa4bc908	13	702202af-4c79-45ec-8f42-2ce9238c19af	13	Beyoncé (interlude)	7d26b22c-2dce-4751-834f-d53d7d0258b5	0:16	16000
+45	https://musicbrainz.org/release/3ace029c-dd68-4133-9eec-1377aa4bc908	14	44e349a5-30e0-4911-8a29-a3377b4c6fd0	14	Gift From Virgo	8d1a68b9-372d-40c2-af79-4b31c9c71cb2	2:44	164000
+45	https://musicbrainz.org/release/3ace029c-dd68-4133-9eec-1377aa4bc908	15	048d7391-ed4c-4ddb-bffa-a7e1d298e47d	15	Work It Out	2ccc5b7b-bf46-418b-bfb5-9999ea92b609	4:06	246000
+45	https://musicbrainz.org/release/3ace029c-dd68-4133-9eec-1377aa4bc908	16	c4d3eb5e-47f5-4c0c-9107-7e6028a29519	16	'03 Bonnie & Clyde	5465ca86-3881-4349-81b2-6efbd3a59451	3:24	204000
+46	https://musicbrainz.org/release/84ff6198-11d6-499d-a8ec-27f8943aa897	1	67722708-035d-45d5-9ee8-bd960ae0a2e5	A1	Mood Indigo	27c49e38-69b8-48ae-bf8e-0f6f0afad3d3	4:00	240000
+46	https://musicbrainz.org/release/84ff6198-11d6-499d-a8ec-27f8943aa897	2	e5a1a464-fd48-435b-8adf-6047f1719a69	A2	Don’t Smoke in Bed	421ee3bc-7da1-4e92-bd24-4a9d77e26300	3:09	189000
+46	https://musicbrainz.org/release/84ff6198-11d6-499d-a8ec-27f8943aa897	3	55036cce-37ad-45e4-adf1-5cbc3c21e036	A3	He Needs Me	d970015a-3b3f-41bc-8c5c-843969af6e1d	2:26	146000
+46	https://musicbrainz.org/release/84ff6198-11d6-499d-a8ec-27f8943aa897	4	52a0f0d5-663b-4c6b-8094-c5bade318541	A4	Little Girl Blue	b9c130ff-9c7f-4ef6-9d44-943f67683004	4:12	252000
+46	https://musicbrainz.org/release/84ff6198-11d6-499d-a8ec-27f8943aa897	5	078b9f50-ea7d-4289-8678-c287899fb403	A5	Love Me or Leave Me	2773d0b5-cb8a-4f48-a0da-4f673cedca13	3:18	198000
+46	https://musicbrainz.org/release/84ff6198-11d6-499d-a8ec-27f8943aa897	6	f291089c-97e9-4260-b6ef-2d85785bb9d1	A6	My Baby Just Cares for Me	a2c3d299-167c-47d4-ae4a-2f8b607645c6	3:33	213000
+46	https://musicbrainz.org/release/84ff6198-11d6-499d-a8ec-27f8943aa897	7	dc723c69-ff36-4180-b4f5-9a1cbcec7766	B1	Good Bait	721a4b68-2e91-4780-8e42-6c0fa9315ab7	5:25	325000
+46	https://musicbrainz.org/release/84ff6198-11d6-499d-a8ec-27f8943aa897	8	ffb1924c-73c7-45a3-8fdf-e42289d89b94	B2	Plain Gold Ring	dd0dae0c-4d13-4302-8dc8-beae52f450db	3:50	230000
+46	https://musicbrainz.org/release/84ff6198-11d6-499d-a8ec-27f8943aa897	9	eece32bf-deb6-4447-a85d-12e193f6f36d	B3	You’ll Never Walk Alone	10d72b72-3094-422f-b04d-8401f2dbac71	3:58	238000
+46	https://musicbrainz.org/release/84ff6198-11d6-499d-a8ec-27f8943aa897	10	5d4e2786-fb2d-47ef-ab9f-abbf2e2be8e0	B4	I Loves You Porgy	87c06608-a5f9-40b8-84ec-92c2a4b86ebb	4:03	243000
+46	https://musicbrainz.org/release/84ff6198-11d6-499d-a8ec-27f8943aa897	11	5cf0f639-9c01-4db7-817e-920ed90bc9a6	B5	Central Park Blues	02676543-7534-4ea2-830b-e2cd49deb43d	3:05	185000
+47	https://musicbrainz.org/release/17696ce7-ba44-4e66-8ca3-8b1d2ec47d31	1	c7df3aad-a78a-4abf-a173-7878aa1cccc3	1	Fuck Your Ethnicity	cdffc58c-5b84-4d70-bf52-5179919d55b1	3:45	225000
+47	https://musicbrainz.org/release/17696ce7-ba44-4e66-8ca3-8b1d2ec47d31	2	5463c330-c25f-4077-a4cf-d3540c149dba	2	Hol’ Up	e93ffc87-5306-4975-8d7a-298914cb96b9	2:53	173000
+47	https://musicbrainz.org/release/17696ce7-ba44-4e66-8ca3-8b1d2ec47d31	3	f5fa5595-5d66-4ee4-87ee-15fa806a9eb5	3	A.D.H.D	5fb18e9d-fb24-4d96-8410-032d3fc89568	3:36	216000
+47	https://musicbrainz.org/release/17696ce7-ba44-4e66-8ca3-8b1d2ec47d31	4	9cf61e6f-f202-4cc6-841f-94f20733eb99	4	No Makeup (Her Vice)	b22a6497-79a6-4a3a-81ba-e3b84f989501	3:56	236000
+47	https://musicbrainz.org/release/17696ce7-ba44-4e66-8ca3-8b1d2ec47d31	5	dd3310dd-fdee-4e28-b543-8867b345ed02	5	Tammy’s Song (Her Evils)	3e574af4-2c79-4346-a39d-1ef21041238e	2:42	162000
+47	https://musicbrainz.org/release/17696ce7-ba44-4e66-8ca3-8b1d2ec47d31	6	2b7583ee-40d0-423b-847b-ad90ab20cd1a	6	Chapter Six	f9cacc1a-f4a1-4c6d-aa3f-25d543648e8f	2:41	161000
+47	https://musicbrainz.org/release/17696ce7-ba44-4e66-8ca3-8b1d2ec47d31	7	db38a652-dfa2-4c8c-b076-57afb3f39c29	7	Ronald Reagan Era (His Evils)	6150f46b-0d50-4944-af2a-5a8707778a07	3:37	217000
+47	https://musicbrainz.org/release/17696ce7-ba44-4e66-8ca3-8b1d2ec47d31	8	22fb26fd-b3e0-403b-9e97-03666066d694	8	Poe Mans Dream (His Vice)	e12ea507-6da8-4c37-90cb-f3af5bb2e469	4:22	262000
+47	https://musicbrainz.org/release/17696ce7-ba44-4e66-8ca3-8b1d2ec47d31	9	76d84196-44bd-4460-91ee-331cfd5c7407	9	The Spiteful Chant	117bdb40-40b9-4f81-a3ee-c70d4586ce44	5:21	321000
+47	https://musicbrainz.org/release/17696ce7-ba44-4e66-8ca3-8b1d2ec47d31	10	343bf657-14f4-4191-8e3b-c69c2a18c31c	10	Chapter Ten	71e79c40-5cd5-49b3-9879-8326bd7f9879	1:16	76000
+47	https://musicbrainz.org/release/17696ce7-ba44-4e66-8ca3-8b1d2ec47d31	11	f4893d89-78ac-4159-b8c7-f0fe86e3c26f	11	Keisha’s Song (Her Pain)	95d28bba-a66d-46dc-89fb-4405ffdbd96f	3:47	227000
+47	https://musicbrainz.org/release/17696ce7-ba44-4e66-8ca3-8b1d2ec47d31	12	04846cbf-c8af-40ae-b861-4e9e1c9af286	12	Rigamortis	ce98f7f8-b85f-4d6f-b108-505de842e41a	2:49	169000
+47	https://musicbrainz.org/release/17696ce7-ba44-4e66-8ca3-8b1d2ec47d31	13	2b0061b7-250b-49af-b519-7e815821c8f5	13	Kush & Corinthians (His Pain)	3827f444-b31a-432a-9de5-d9922f838354	5:05	305000
+47	https://musicbrainz.org/release/17696ce7-ba44-4e66-8ca3-8b1d2ec47d31	14	77f1c61a-3645-48df-b79e-a59a9cd2d2cf	14	Members Only	023ea0ea-40c2-4ab1-bf74-c0022e45c0c8	3:36	216000
+47	https://musicbrainz.org/release/17696ce7-ba44-4e66-8ca3-8b1d2ec47d31	15	fe027e96-8be7-406e-8764-868f0912a23e	15	Ab‐Soul’s Outro	4f589e97-ee02-46cc-a0a2-4ad8714bc610	5:50	350000
+47	https://musicbrainz.org/release/17696ce7-ba44-4e66-8ca3-8b1d2ec47d31	16	72089ae7-5913-426f-906a-0a7ef55718fe	16	HiiiPoWeR	5339459c-d3b2-44c8-bf30-11feb9d2db87	4:40	280000
+48	https://musicbrainz.org/release/a89e1d92-5381-4dab-ba51-733137d0e431	1	2785af38-4f5f-370c-9972-cb7f0390592a	A1	Hit the Lights	a620f5e7-ae9d-4089-a947-a1cee4a9435e	4:17	257000
+48	https://musicbrainz.org/release/a89e1d92-5381-4dab-ba51-733137d0e431	2	fcb2a6c6-33b9-3a68-8482-9d359db33629	A2	The Four Horsemen	04fc57f2-4dc8-4b84-801b-3699508597e8	7:13	433000
+48	https://musicbrainz.org/release/a89e1d92-5381-4dab-ba51-733137d0e431	3	91c4cd18-cec6-35ac-9438-db24a2e140da	A3	Motorbreath	65ca9607-fa5d-4b5d-b830-3fb168ac9064	3:08	188000
+48	https://musicbrainz.org/release/a89e1d92-5381-4dab-ba51-733137d0e431	4	35ee3502-31a5-3ae5-b04f-f9e7f5734faa	A4	Jump in the Fire	321b3122-f443-4709-8098-3afba7cddca9	4:41	281000
+48	https://musicbrainz.org/release/a89e1d92-5381-4dab-ba51-733137d0e431	5	c3f375e5-98a9-3815-bde5-f779ef6d1cd9	A5	(Anesthesia) – Pulling Teeth	78095e21-30cf-47eb-b367-3af6ee426af5	4:15	255000
+48	https://musicbrainz.org/release/a89e1d92-5381-4dab-ba51-733137d0e431	6	0f183fa3-72e0-329a-8c7c-d8cb875ae1d2	A6	Whiplash	de69dad2-f3b8-46db-8170-03e2b46cb81a	4:09	249000
+48	https://musicbrainz.org/release/a89e1d92-5381-4dab-ba51-733137d0e431	7	3589cc8f-63ca-374c-8378-890e2b027bfe	B1	Phantom Lord	34c59fdf-c713-462f-a6c9-8f0bdbc83bcc	5:02	302000
+48	https://musicbrainz.org/release/a89e1d92-5381-4dab-ba51-733137d0e431	8	17c93517-43fa-31f4-8307-0adba554d5bc	B2	No Remorse	2f66e372-fa35-4ffb-bbd8-741e1e2a3245	6:27	387000
+48	https://musicbrainz.org/release/a89e1d92-5381-4dab-ba51-733137d0e431	9	dd5f5db3-db17-39de-8984-fb1a2ea44fae	B3	Seek & Destroy	bf92a969-2999-4a70-bda0-3a85f672accf	6:56	416000
+48	https://musicbrainz.org/release/a89e1d92-5381-4dab-ba51-733137d0e431	10	8f04d90d-a017-30a9-b0bd-eea9a6240613	B4	Metal Militia	deff32f2-05b2-45b8-8cf1-582369e0a819	5:11	311000
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1	1	43780a3f-739f-4464-a3a0-34af503bca09	1	Crazy in Love	ce547594-5199-49a2-9cb7-ff39e64a469f	3:55	235000
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1	2	3d95b79a-f405-41da-8561-a582a035b77d	2	Naughty Girl	f848422b-bd77-4515-9442-df7135748ad5	3:28	208000
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1	3	629df2d0-048c-4a14-9ea6-82e73671d121	3	Baby Boy	1a949e29-88cd-482b-8958-4ad3d7e2b956	4:04	244000
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1	4	409b6a42-2c88-4ce0-b2ac-4c8576b792e3	4	Hip Hop Star	1feaddda-a8ba-40b1-903f-3c3db523ece0	3:42	222000
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1	5	0846fe42-cbf9-4e7c-b13e-0e3b1818f234	5	Be With You	b5b9909e-99d9-4151-b228-77ef1a1f8ca1	4:20	260000
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1	6	33315f3c-3108-48bb-9997-cbdc543f06a7	6	Me, Myself and I	446028c6-591a-4c1e-ac2b-d0a27d8d7013	5:01	301000
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1	7	45f13465-e6fd-4fa3-95ee-6b21a8f6fd07	7	Yes	088bd823-2f3a-4221-b09a-ad99b2d06781	4:19	259000
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1	8	467c7f98-14de-4d9b-a4e6-a1bb9a516e72	8	Signs	6a0c5648-83c6-42f4-8afc-b4c7c5230e0c	4:57	297000
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1	9	1b2c82b1-08c3-4181-b714-b25f6fdf6340	9	Speechless	d222c51d-fb6f-481d-9f8f-306503f6a9bb	6:00	360000
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1	10	6f7fccd9-4049-45ee-871e-c70edb8f5c8b	10	That’s How You Like It	dedf412c-1b48-4064-802c-411be6c36bf4	3:39	219000
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1	11	120211e2-980f-4fb3-8c51-5a2ff93f948d	11	The Closer I Get to You	60a46310-5e97-443d-b1bc-40b128a2aacd	4:57	297000
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1	12	10010778-2ccd-40b6-bbff-921281c27b03	12	Dangerously in Love	7b71b173-277d-4fe6-82b4-6410354562c1	4:52	292000
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1	13	b73a6549-d519-4372-aba4-a334bf7a8345	13	Beyoncé (interlude)	7d26b22c-2dce-4751-834f-d53d7d0258b5	0:16	16000
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1	14	4def50c6-af0c-43e0-b4e2-cc7700970a64	14	Gift From Virgo	8d1a68b9-372d-40c2-af79-4b31c9c71cb2	2:43	163000
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1	15	2f7b065a-4b53-4e89-9c54-0eedc595d725	15	Work It Out	2ccc5b7b-bf46-418b-bfb5-9999ea92b609	4:07	247000
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1	16	2f95d6cc-4883-4e16-b53b-5ee0564d0149	16	Daddy	df2f5560-892f-450d-bf50-075cf9cf79cd	4:57	297000
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1	17	c99a2a0b-b4a5-471e-81c9-00fcc3bfe963	16	’03 Bonnie & Clyde	5465ca86-3881-4349-81b2-6efbd3a59451	3:25	205000
+54	https://musicbrainz.org/release/834a7aa9-c7f5-3571-a812-46c6d134a98d	1	0c42a388-8107-30c2-95e9-87beb2084b43	A1	Hit the Lights	a620f5e7-ae9d-4089-a947-a1cee4a9435e	4:17	257000
+54	https://musicbrainz.org/release/834a7aa9-c7f5-3571-a812-46c6d134a98d	2	f061efe4-468b-3139-b24e-5e737269b8e1	A2	The Four Horsemen	04fc57f2-4dc8-4b84-801b-3699508597e8	7:13	433000
+54	https://musicbrainz.org/release/834a7aa9-c7f5-3571-a812-46c6d134a98d	3	13083d8f-9b21-3e25-a5f7-337d45e0ba0a	A3	Motorbreath	65ca9607-fa5d-4b5d-b830-3fb168ac9064	3:08	188000
+54	https://musicbrainz.org/release/834a7aa9-c7f5-3571-a812-46c6d134a98d	4	0df0ce74-f5ac-3913-9c11-99165271c66e	A4	Jump in the Fire	321b3122-f443-4709-8098-3afba7cddca9	4:41	281000
+54	https://musicbrainz.org/release/834a7aa9-c7f5-3571-a812-46c6d134a98d	5	899023b4-f38e-308c-b75d-0727c23f6136	A5	(Anesthesia) – Pulling Teeth	78095e21-30cf-47eb-b367-3af6ee426af5	4:15	255000
+54	https://musicbrainz.org/release/834a7aa9-c7f5-3571-a812-46c6d134a98d	6	224a897d-2f7f-3ed6-ad43-3bec8a8961ed	A6	Whiplash	de69dad2-f3b8-46db-8170-03e2b46cb81a	4:09	249000
+54	https://musicbrainz.org/release/834a7aa9-c7f5-3571-a812-46c6d134a98d	7	55361890-fc62-3f49-b25b-ac94ff6fbb32	B1	Phantom Lord	34c59fdf-c713-462f-a6c9-8f0bdbc83bcc	5:02	302000
+54	https://musicbrainz.org/release/834a7aa9-c7f5-3571-a812-46c6d134a98d	8	f2ee4dd9-93d1-3d9d-9485-e2541cd2828f	B2	No Remorse	2f66e372-fa35-4ffb-bbd8-741e1e2a3245	6:27	387000
+54	https://musicbrainz.org/release/834a7aa9-c7f5-3571-a812-46c6d134a98d	9	50f0e696-60c3-315e-9f41-ed626dcef582	B3	Seek & Destroy	bf92a969-2999-4a70-bda0-3a85f672accf	6:56	416000
+54	https://musicbrainz.org/release/834a7aa9-c7f5-3571-a812-46c6d134a98d	10	8a78a7e9-0acd-3b68-8c5d-789f8eec97f2	B4	Metal Militia	deff32f2-05b2-45b8-8cf1-582369e0a819	5:11	311000
+60	https://musicbrainz.org/release/286912b9-24d1-4073-9f0d-b03cffad61f8	1	7b8715b2-0fbe-46f4-8634-ba72b6147a22	1	You	abb8911f-ad4d-493c-9f56-a34f67f4eeac	3:29	209000
+60	https://musicbrainz.org/release/286912b9-24d1-4073-9f0d-b03cffad61f8	2	e533ae37-aebe-4a8e-86b5-307aeec57404	2	Creep	70595637-9310-45f2-a266-58f8de4874a7	3:56	236000
+60	https://musicbrainz.org/release/286912b9-24d1-4073-9f0d-b03cffad61f8	3	b16d2af6-2a6c-4ad0-aaad-13f473151b8c	3	How Do You?	174e57b1-0a79-4103-92c2-ec3d109347c1	2:12	132000
+60	https://musicbrainz.org/release/286912b9-24d1-4073-9f0d-b03cffad61f8	4	68228080-a8b8-4c95-8213-4074e5c8f3af	4	Stop Whispering	e4e67aad-31f7-49cd-a3d4-65c4f7fbe66e	5:26	326000
+60	https://musicbrainz.org/release/286912b9-24d1-4073-9f0d-b03cffad61f8	5	bd4faeb2-850a-42ac-b83a-814803ef61b6	5	Thinking About You	2f795d53-4034-4704-bf4b-aa54a12ba187	2:42	162000
+60	https://musicbrainz.org/release/286912b9-24d1-4073-9f0d-b03cffad61f8	6	6807f2f1-1aea-4d1a-aaeb-d887f1f6eedb	6	Anyone Can Play Guitar	4e934b0e-4e35-418a-a620-109ba80c4476	3:38	218000
+60	https://musicbrainz.org/release/286912b9-24d1-4073-9f0d-b03cffad61f8	7	2b4f521e-fe4d-4562-a30b-fcd9a73c32e3	7	Ripcord	b20fd3d0-1ec5-40ed-93cd-5f82fd3727a6	3:10	190000
+60	https://musicbrainz.org/release/286912b9-24d1-4073-9f0d-b03cffad61f8	8	9f8e6ffb-888a-4bc8-a6d3-c79f775add2f	8	Vegetable	6afeef75-2c2b-48c0-905b-af1ca5c3f23a	3:13	193000
+60	https://musicbrainz.org/release/286912b9-24d1-4073-9f0d-b03cffad61f8	9	db624302-5678-4b87-9079-f6191c861b52	9	Prove Yourself	3b53ea59-7270-4339-88df-8f2cc7a2fb44	2:25	145000
+60	https://musicbrainz.org/release/286912b9-24d1-4073-9f0d-b03cffad61f8	10	2c83b704-da08-4f08-9547-4b7cf1f13a2e	10	I Can’t	1a9cf8b6-8edf-44b4-bdf8-17dcd8459ee1	4:13	253000
+60	https://musicbrainz.org/release/286912b9-24d1-4073-9f0d-b03cffad61f8	11	ebd00652-2f52-460e-bd18-9494e0c9dcb5	11	Lurgee	c17a2b44-8b59-4575-a557-b0bfa03df868	3:08	188000
+60	https://musicbrainz.org/release/286912b9-24d1-4073-9f0d-b03cffad61f8	12	6e8d5652-72c8-4113-b032-a24286fa2fc7	12	Blow Out	64cc6006-e1f4-4528-9789-5162c0c82e50	4:40	280000
+66	https://musicbrainz.org/release/8125fd6f-addc-45a8-ba34-4b023aeae962	1	67a0de2d-5ee0-4a97-8aaa-bbad60bf31da	1	You	abb8911f-ad4d-493c-9f56-a34f67f4eeac	3:29	209000
+66	https://musicbrainz.org/release/8125fd6f-addc-45a8-ba34-4b023aeae962	2	c4d8081a-98fd-43ce-aa83-d2911d1d6569	2	Creep	70595637-9310-45f2-a266-58f8de4874a7	3:56	236000
+66	https://musicbrainz.org/release/8125fd6f-addc-45a8-ba34-4b023aeae962	3	d82baecf-8564-4ccd-977e-4b839a432311	3	How Do You?	174e57b1-0a79-4103-92c2-ec3d109347c1	2:12	132000
+66	https://musicbrainz.org/release/8125fd6f-addc-45a8-ba34-4b023aeae962	4	1a9e172a-647f-496c-a127-b40c8d1243ad	4	Stop Whispering	e4e67aad-31f7-49cd-a3d4-65c4f7fbe66e	5:26	326000
+66	https://musicbrainz.org/release/8125fd6f-addc-45a8-ba34-4b023aeae962	5	08894712-6ca2-4d93-8886-9221d586963b	5	Thinking About You	2f795d53-4034-4704-bf4b-aa54a12ba187	2:42	162000
+66	https://musicbrainz.org/release/8125fd6f-addc-45a8-ba34-4b023aeae962	6	b9bbbe44-468f-4ab6-ace9-5a65e9e07c8a	6	Anyone Can Play Guitar	4e934b0e-4e35-418a-a620-109ba80c4476	3:38	218000
+66	https://musicbrainz.org/release/8125fd6f-addc-45a8-ba34-4b023aeae962	7	565f6cd0-c44f-4c5c-b790-629e22673922	7	Ripcord	b20fd3d0-1ec5-40ed-93cd-5f82fd3727a6	3:10	190000
+66	https://musicbrainz.org/release/8125fd6f-addc-45a8-ba34-4b023aeae962	8	9e0b1460-cf9b-4894-a2c9-b592a33e3b76	8	Vegetable	6afeef75-2c2b-48c0-905b-af1ca5c3f23a	3:13	193000
+66	https://musicbrainz.org/release/8125fd6f-addc-45a8-ba34-4b023aeae962	9	cc85ecaf-cadf-4e06-8118-d14f40010108	9	Prove Yourself	3b53ea59-7270-4339-88df-8f2cc7a2fb44	2:25	145000
+66	https://musicbrainz.org/release/8125fd6f-addc-45a8-ba34-4b023aeae962	10	74b8f9e1-14b0-4d5d-beff-982e2b5cf1f8	10	I Can’t	1a9cf8b6-8edf-44b4-bdf8-17dcd8459ee1	4:13	253000
+66	https://musicbrainz.org/release/8125fd6f-addc-45a8-ba34-4b023aeae962	11	337017e5-9a7f-492a-9901-ca0b83c5433a	11	Lurgee	c17a2b44-8b59-4575-a557-b0bfa03df868	3:08	188000
+66	https://musicbrainz.org/release/8125fd6f-addc-45a8-ba34-4b023aeae962	12	0fd651eb-669e-460e-a055-a399160b581c	12	Blow Out	64cc6006-e1f4-4528-9789-5162c0c82e50	4:40	280000
+77	https://musicbrainz.org/release/869ba1e5-b110-3d87-9da3-9d024a8c2687	1	bd667e66-acd8-333a-8642-cdb3b6620c6b	1	Deja vu	d6e63fc9-dacc-488d-af7a-a2da63b731da	4:00	240000
+77	https://musicbrainz.org/release/869ba1e5-b110-3d87-9da3-9d024a8c2687	2	7a85348f-e776-3bb9-a359-ce245dae77b7	2	Get Me Bodied	436bea6c-0985-4c43-9349-e35ca4b8436a	3:26	206000
+77	https://musicbrainz.org/release/869ba1e5-b110-3d87-9da3-9d024a8c2687	3	56558aa0-80e2-3baa-a17c-b22420a458bc	3	Suga Mama	6114cc2f-1f6f-40d1-b61c-0baf35962eb4	3:25	205000
+77	https://musicbrainz.org/release/869ba1e5-b110-3d87-9da3-9d024a8c2687	4	9ba3112f-e979-3831-9a70-d48987dbc003	4	Upgrade U	f6f31fd5-2b5c-480c-8f5c-128499e87e23	4:33	273000
+77	https://musicbrainz.org/release/869ba1e5-b110-3d87-9da3-9d024a8c2687	5	5e4a56ed-9ade-3f2d-8edb-d20a54888771	5	Ring the Alarm	c48ff423-0380-48f0-8485-4f8dd2da1c6e	3:23	203000
+77	https://musicbrainz.org/release/869ba1e5-b110-3d87-9da3-9d024a8c2687	6	6cbf5a9d-c373-3a7a-9e8a-3ecd40790b89	6	Kitty Kat	ba90035f-c63f-482e-ac9c-5bd239d2521f	3:56	236000
+77	https://musicbrainz.org/release/869ba1e5-b110-3d87-9da3-9d024a8c2687	7	c1b64d8e-3c05-3791-886f-ae99728d1e6a	7	Freakum Dress	2c111a06-cba3-401c-901c-60cfdbd5afe4	3:21	201000
+77	https://musicbrainz.org/release/869ba1e5-b110-3d87-9da3-9d024a8c2687	8	6812afd9-f6f3-35f0-8701-919198dff607	8	Green Light	ab1fe470-bf85-42fe-9813-cb5cc23ad55e	3:30	210000
+77	https://musicbrainz.org/release/869ba1e5-b110-3d87-9da3-9d024a8c2687	9	612711e8-82db-3f5d-890c-498c77d4f358	9	Irreplaceable	0a65e058-83c4-4982-9a5e-d2495fc4565c	3:48	228000
+77	https://musicbrainz.org/release/869ba1e5-b110-3d87-9da3-9d024a8c2687	10	308e91c8-9daa-33a7-b661-cd15363aa5c4	10	Resentment	42556c51-8c96-47bf-b2a3-d307f12b34ec	15:29	929000
+78	https://musicbrainz.org/release/2de6d2c1-349b-4f89-9b84-9653624293a4	1	adc29d36-2889-4c70-b35a-ca1d9066bd5e	1	Sherane a.k.a Master Splinter’s Daughter	0eb9cab9-0e38-43d3-aeb6-68384e209a0c	4:34	274000
+78	https://musicbrainz.org/release/2de6d2c1-349b-4f89-9b84-9653624293a4	2	98819d78-5b3e-42ea-9865-56aa84882213	2	Bitch, Don’t Kill My Vibe	54494123-9670-4b2d-83ad-85c46c8f5200	5:11	311000
+78	https://musicbrainz.org/release/2de6d2c1-349b-4f89-9b84-9653624293a4	3	81c6e628-a1d5-4f76-8efb-47e94442b7d6	3	Backseat Freestyle	a3c6af59-af56-4d61-beac-032df8fc4015	3:33	213000
+78	https://musicbrainz.org/release/2de6d2c1-349b-4f89-9b84-9653624293a4	4	ca20af57-625f-474f-aec7-585b86ad3992	4	The Art of Peer Pressure	fd83178d-c064-4689-9c09-bef8f1c4cad9	5:25	325000
+78	https://musicbrainz.org/release/2de6d2c1-349b-4f89-9b84-9653624293a4	5	4dba6558-0a6c-4875-99fc-e675dd1f50be	5	Money Trees	c294757b-0430-4eb4-ae7a-6abcffb87405	6:27	387000
+78	https://musicbrainz.org/release/2de6d2c1-349b-4f89-9b84-9653624293a4	6	c0e3d9fc-8727-42c5-9472-393e5000fb0f	6	Poetic Justice	21842c0b-b4ac-4418-878c-4f377032f0fe	5:00	300000
+78	https://musicbrainz.org/release/2de6d2c1-349b-4f89-9b84-9653624293a4	7	69f0cb64-6e06-45e1-b425-947f71bb2f7d	7	good kid	421d5f93-107c-46b3-953e-cad600e1e25c	3:34	214000
+78	https://musicbrainz.org/release/2de6d2c1-349b-4f89-9b84-9653624293a4	8	7b933189-8963-425d-a598-44854772ee49	8	m.A.A.d city	d142987d-69a5-426c-8d41-20ce2cc1534b	5:50	350000
+78	https://musicbrainz.org/release/2de6d2c1-349b-4f89-9b84-9653624293a4	9	324196eb-3d04-402b-bc12-451a623c5390	9	Swimming Pools (Drank) (extended version)	7dee4afc-5931-4295-955a-7ae44f403e70	5:14	314000
+78	https://musicbrainz.org/release/2de6d2c1-349b-4f89-9b84-9653624293a4	10	e3e632ec-13f8-476a-bffd-fd3e30b891d4	10	Sing About Me, I’m Dying of Thirst	f0fc2708-edfa-431c-80bd-305796cc5a48	12:04	724000
+78	https://musicbrainz.org/release/2de6d2c1-349b-4f89-9b84-9653624293a4	11	d18c86bc-490c-4d78-8b14-fec5d474904b	11	Real	02fac8cb-82c0-4129-803e-f675e8468a93	7:23	443000
+78	https://musicbrainz.org/release/2de6d2c1-349b-4f89-9b84-9653624293a4	12	e70b3347-ae5b-4944-86df-eb1759c702ad	12	Compton	115be1e6-3937-41ef-96dd-11b768c3a56e	4:08	248000
+83	https://musicbrainz.org/release/698f4979-df26-4ab3-88e2-251278817ece	1	c7b8a546-7181-3708-99e5-21abb4bc9790	1	Deja vu	d6e63fc9-dacc-488d-af7a-a2da63b731da	4:00	240000
+83	https://musicbrainz.org/release/698f4979-df26-4ab3-88e2-251278817ece	2	fbee5d36-fae4-3c63-909f-5d3777dc8ce9	2	Get Me Bodied	436bea6c-0985-4c43-9349-e35ca4b8436a	3:26	206000
+83	https://musicbrainz.org/release/698f4979-df26-4ab3-88e2-251278817ece	3	ad742ca4-f4cf-39f6-a354-a0832bfbeccf	3	Suga Mama	6114cc2f-1f6f-40d1-b61c-0baf35962eb4	3:25	205000
+83	https://musicbrainz.org/release/698f4979-df26-4ab3-88e2-251278817ece	4	ac2a86c8-b223-3d7a-a898-9c84ff802241	4	Upgrade U	f6f31fd5-2b5c-480c-8f5c-128499e87e23	4:33	273000
+83	https://musicbrainz.org/release/698f4979-df26-4ab3-88e2-251278817ece	5	9de21383-4d19-3944-b1f2-998a2c06865e	5	Ring the Alarm	c48ff423-0380-48f0-8485-4f8dd2da1c6e	3:23	203000
+83	https://musicbrainz.org/release/698f4979-df26-4ab3-88e2-251278817ece	6	8c309fab-5c36-31cb-be55-124ca1f51cc3	6	Kitty Kat	ba90035f-c63f-482e-ac9c-5bd239d2521f	3:56	236000
+83	https://musicbrainz.org/release/698f4979-df26-4ab3-88e2-251278817ece	7	38d033e6-3c15-3322-99ac-5a3566720ab8	7	Freakum Dress	2c111a06-cba3-401c-901c-60cfdbd5afe4	3:21	201000
+83	https://musicbrainz.org/release/698f4979-df26-4ab3-88e2-251278817ece	8	2ad0bdce-b8a6-35ff-919e-fd83af4534ce	8	Green Light	ab1fe470-bf85-42fe-9813-cb5cc23ad55e	3:30	210000
+83	https://musicbrainz.org/release/698f4979-df26-4ab3-88e2-251278817ece	9	c5941427-3cbb-3ab8-ae17-9b55a99619bb	9	Irreplaceable	0a65e058-83c4-4982-9a5e-d2495fc4565c	3:48	228000
+83	https://musicbrainz.org/release/698f4979-df26-4ab3-88e2-251278817ece	10	597cff03-339e-3ce8-bfa5-a1845a9ea612	10	Resentment	52876a69-9d4f-4e8f-a5e4-0e31cdebc08b	4:41	281000
+83	https://musicbrainz.org/release/698f4979-df26-4ab3-88e2-251278817ece	11	c433bcc0-16e1-3135-ad61-ad3750386a87	11	Creole	9f03fa8b-1ef8-4761-b94e-224340f399c6	3:52	232000
+83	https://musicbrainz.org/release/698f4979-df26-4ab3-88e2-251278817ece	12	90eba8e4-0f8a-3008-b607-b20e5978c7c5	12	Check on It	9cfbb5db-62aa-4981-9129-834e48703e49	14:18	858000
+84	https://musicbrainz.org/release/8b85a562-71ce-486e-8536-34c5dca0f54e	1	055deaf0-e3cf-4d85-b3a0-c29b9019c386	1	Sherane a.k.a Master Splinter’s Daughter	0eb9cab9-0e38-43d3-aeb6-68384e209a0c	4:33	273000
+84	https://musicbrainz.org/release/8b85a562-71ce-486e-8536-34c5dca0f54e	2	ab2ac880-fd1f-419a-941b-f820d552279b	2	Bitch, Don’t Kill My Vibe	54494123-9670-4b2d-83ad-85c46c8f5200	5:10	310000
+84	https://musicbrainz.org/release/8b85a562-71ce-486e-8536-34c5dca0f54e	3	66c1b0c4-61cf-4cd0-b034-b46cd090787b	3	Backseat Freestyle	a3c6af59-af56-4d61-beac-032df8fc4015	3:32	212000
+84	https://musicbrainz.org/release/8b85a562-71ce-486e-8536-34c5dca0f54e	4	fba49431-e897-40c8-8515-4d8ffd5117ce	4	The Art of Peer Pressure	fd83178d-c064-4689-9c09-bef8f1c4cad9	5:24	324000
+84	https://musicbrainz.org/release/8b85a562-71ce-486e-8536-34c5dca0f54e	5	8c6e6b0a-75cb-4d6f-8379-5afec1909b04	5	Money Trees	c294757b-0430-4eb4-ae7a-6abcffb87405	6:26	386000
+84	https://musicbrainz.org/release/8b85a562-71ce-486e-8536-34c5dca0f54e	6	103d152e-4a20-43eb-bc1b-c4f4631fec6b	6	Poetic Justice	21842c0b-b4ac-4418-878c-4f377032f0fe	5:00	300000
+84	https://musicbrainz.org/release/8b85a562-71ce-486e-8536-34c5dca0f54e	7	e9127ade-9199-48e8-9c2b-a83f65fa3608	7	good kid	421d5f93-107c-46b3-953e-cad600e1e25c	3:34	214000
+84	https://musicbrainz.org/release/8b85a562-71ce-486e-8536-34c5dca0f54e	8	42609322-d2e5-40a9-9791-1a14c7290a78	8	m.A.A.d city	d142987d-69a5-426c-8d41-20ce2cc1534b	5:50	350000
+84	https://musicbrainz.org/release/8b85a562-71ce-486e-8536-34c5dca0f54e	9	f63cc2e1-2e35-41e2-8b16-dace031c0247	9	Swimming Pools (Drank) (extended version)	7dee4afc-5931-4295-955a-7ae44f403e70	5:13	313000
+84	https://musicbrainz.org/release/8b85a562-71ce-486e-8536-34c5dca0f54e	10	8bed6778-76d3-4f76-b3cc-425a15d26cce	10	Sing About Me, I’m Dying of Thirst	f0fc2708-edfa-431c-80bd-305796cc5a48	12:03	723000
+84	https://musicbrainz.org/release/8b85a562-71ce-486e-8536-34c5dca0f54e	11	a56ebb21-54e0-467a-bc4a-1c04796370af	11	Real	02fac8cb-82c0-4129-803e-f675e8468a93	7:23	443000
+84	https://musicbrainz.org/release/8b85a562-71ce-486e-8536-34c5dca0f54e	12	96165c8f-096f-4ade-a487-3f55300487f7	12	Compton	115be1e6-3937-41ef-96dd-11b768c3a56e	4:08	248000
+84	https://musicbrainz.org/release/8b85a562-71ce-486e-8536-34c5dca0f54e	13	505a9977-0890-4bf8-a232-63b402811b4a	1	The Recipe	7655d366-57d4-4bd3-9030-8de9b1efa5e1	5:52	352000
+84	https://musicbrainz.org/release/8b85a562-71ce-486e-8536-34c5dca0f54e	14	2b0353ac-cd0f-4460-a97e-d68130f4bf33	2	Black Boy Fly	e4a39ca5-f429-498a-add5-97c2d4e56820	4:39	279000
+84	https://musicbrainz.org/release/8b85a562-71ce-486e-8536-34c5dca0f54e	15	25d0f52f-17d3-4e68-8484-484b6f69eab4	3	Now or Never	f0ffd14d-f858-44a4-888a-f245b91b789f	4:16	256000

@@ -1,0 +1,736 @@
+page_id	source_url	sequence	track_mbid	position	name	recording_mbid	duration	duration_ms
+3	https://musicbrainz.org/release/1834eae1-741b-3c03-9ca5-0df3decb43ea	1	ff7733a6-6903-3e2e-b683-6dbbb0f59ec6	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+3	https://musicbrainz.org/release/1834eae1-741b-3c03-9ca5-0df3decb43ea	2	6a7cd9af-f665-3652-9aba-1e89a4236e9f	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+3	https://musicbrainz.org/release/1834eae1-741b-3c03-9ca5-0df3decb43ea	3	692f228b-b908-3cc9-85e6-17ab3e518d39	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+3	https://musicbrainz.org/release/1834eae1-741b-3c03-9ca5-0df3decb43ea	4	81124608-f45a-316c-9f5c-e35b5e658dad	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+3	https://musicbrainz.org/release/1834eae1-741b-3c03-9ca5-0df3decb43ea	5	fa2bf733-4a61-3d69-bed1-1d24b3c69c48	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+3	https://musicbrainz.org/release/1834eae1-741b-3c03-9ca5-0df3decb43ea	6	e504cf20-dfe9-36de-b7df-592688d557e9	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+3	https://musicbrainz.org/release/1834eae1-741b-3c03-9ca5-0df3decb43ea	7	bfa15b56-a26f-323a-abcd-2901649054c2	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+3	https://musicbrainz.org/release/1834eae1-741b-3c03-9ca5-0df3decb43ea	8	98492099-8ff1-37b2-871c-aca45c834991	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+3	https://musicbrainz.org/release/1834eae1-741b-3c03-9ca5-0df3decb43ea	9	129c706e-e8f6-3f6b-88a9-fc191aae241d	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+3	https://musicbrainz.org/release/1834eae1-741b-3c03-9ca5-0df3decb43ea	10	cdc678c0-663b-3f77-8923-2b752315886c	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+3	https://musicbrainz.org/release/1834eae1-741b-3c03-9ca5-0df3decb43ea	11	265441f9-3430-33c4-ab4f-3a65ea04a232	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+3	https://musicbrainz.org/release/1834eae1-741b-3c03-9ca5-0df3decb43ea	12	d005bc36-49ce-3566-8121-2abc587ee789	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+4	https://musicbrainz.org/release/425d8db9-88a3-31e2-bd23-b1a967626dd5	1	86863720-40fc-3cff-b33b-b308122b3b41	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+4	https://musicbrainz.org/release/425d8db9-88a3-31e2-bd23-b1a967626dd5	2	785bc614-ce53-36b4-b9b7-edea49487063	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+4	https://musicbrainz.org/release/425d8db9-88a3-31e2-bd23-b1a967626dd5	3	6a15b3f7-0376-32c9-8375-ac46e2a38bbc	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+4	https://musicbrainz.org/release/425d8db9-88a3-31e2-bd23-b1a967626dd5	4	dec48370-c2c3-3ca6-a81e-7c113137cf56	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+4	https://musicbrainz.org/release/425d8db9-88a3-31e2-bd23-b1a967626dd5	5	0376bf39-fad9-342b-8daa-81c09092f53b	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+4	https://musicbrainz.org/release/425d8db9-88a3-31e2-bd23-b1a967626dd5	6	0c2226c5-9703-3871-a5c8-ee889753da3e	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+4	https://musicbrainz.org/release/425d8db9-88a3-31e2-bd23-b1a967626dd5	7	76327bec-b2fb-3af3-9e78-0290c3b6dbdd	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+4	https://musicbrainz.org/release/425d8db9-88a3-31e2-bd23-b1a967626dd5	8	2d636def-5f06-3736-853d-912d265c7737	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+4	https://musicbrainz.org/release/425d8db9-88a3-31e2-bd23-b1a967626dd5	9	a6504ac9-d347-3617-b45f-0a2ffbd92d55	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+4	https://musicbrainz.org/release/425d8db9-88a3-31e2-bd23-b1a967626dd5	10	3ce73884-4efb-307d-8d5f-482920ce7ed1	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+4	https://musicbrainz.org/release/425d8db9-88a3-31e2-bd23-b1a967626dd5	11	65062a26-04de-3f72-8261-5c5405479049	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+4	https://musicbrainz.org/release/425d8db9-88a3-31e2-bd23-b1a967626dd5	12	0ac5d1e3-91ee-3131-b1c0-593694e810d6	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+5	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf	1	e2a9a170-5f14-3167-9873-22cb314b45a0	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+5	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf	2	3744d724-821e-3b0a-97c8-c156af4ca2cf	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+5	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf	3	16e15ac9-345b-3156-92bd-dc59fcef169e	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+5	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf	4	0abf8291-9d30-3e39-bb2f-08b8020dd432	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+5	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf	5	cdc141fc-25f1-3961-aed5-30cda2846f37	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+5	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf	6	4ad41fae-6907-3a0d-b815-a8dfc75aa055	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+5	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf	7	b3432445-6de9-397d-833a-0ed780821676	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+5	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf	8	165fa016-616d-3319-b04a-6c5cc3dfd675	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+5	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf	9	a4e6b84a-f49f-373f-9406-67b99a9b8dce	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+5	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf	10	e5471775-3f7a-3c4b-a0d6-75c2e2a45192	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+5	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf	11	812d349d-e19b-325f-983f-5052b22ad075	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+5	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf	12	bedeb0d5-ff40-367a-bbe2-7ec446759bee	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+6	https://musicbrainz.org/release/c7569949-0f67-4682-a0d8-75c4290c52dc	1	787f889f-83cd-4ca4-be19-2cb0a61c879a	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+6	https://musicbrainz.org/release/c7569949-0f67-4682-a0d8-75c4290c52dc	2	4159df2d-918d-4e71-bc39-7570d32ee389	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+6	https://musicbrainz.org/release/c7569949-0f67-4682-a0d8-75c4290c52dc	3	1b20f182-34b1-49f6-95c4-e5364e6e8a40	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+6	https://musicbrainz.org/release/c7569949-0f67-4682-a0d8-75c4290c52dc	4	f5032194-e2ad-4d46-b9e5-67d9bf898b95	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+6	https://musicbrainz.org/release/c7569949-0f67-4682-a0d8-75c4290c52dc	5	e37553b7-8ee5-43c0-8829-1f9675a55799	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+6	https://musicbrainz.org/release/c7569949-0f67-4682-a0d8-75c4290c52dc	6	6ceeb0c5-6b80-4aa9-80b7-3c0b4d4897eb	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+6	https://musicbrainz.org/release/c7569949-0f67-4682-a0d8-75c4290c52dc	7	ba4cc7dc-7a21-457c-8c31-2b704655def3	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+6	https://musicbrainz.org/release/c7569949-0f67-4682-a0d8-75c4290c52dc	8	5c2ec57d-8a18-4275-a37d-1bab77e3de23	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+6	https://musicbrainz.org/release/c7569949-0f67-4682-a0d8-75c4290c52dc	9	f4338607-43ce-480a-9f16-89e63a1bf0ba	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+6	https://musicbrainz.org/release/c7569949-0f67-4682-a0d8-75c4290c52dc	10	8faad13e-7efd-4607-bade-b4579a722d75	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+6	https://musicbrainz.org/release/c7569949-0f67-4682-a0d8-75c4290c52dc	11	a2ca226f-c38e-4925-8711-eed6a831c5ce	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+6	https://musicbrainz.org/release/c7569949-0f67-4682-a0d8-75c4290c52dc	12	8b78638c-0d00-4495-a26c-e506bfcbf91c	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+7	https://musicbrainz.org/release/ad0e6676-3e55-4bd6-a9ed-7f6424fd46f6	1	40e0cf37-a677-4bdb-9f98-98166b1bbf6d	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+7	https://musicbrainz.org/release/ad0e6676-3e55-4bd6-a9ed-7f6424fd46f6	2	b2546533-d61c-4302-b102-b413a41fa46d	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+7	https://musicbrainz.org/release/ad0e6676-3e55-4bd6-a9ed-7f6424fd46f6	3	70d4832d-c8a7-4cd8-bb61-a102262d8e33	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+7	https://musicbrainz.org/release/ad0e6676-3e55-4bd6-a9ed-7f6424fd46f6	4	283af8e5-2668-476a-962c-de14f9729fea	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+7	https://musicbrainz.org/release/ad0e6676-3e55-4bd6-a9ed-7f6424fd46f6	5	42ce9df5-ea76-47cb-a6bb-cdf404f5b597	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+7	https://musicbrainz.org/release/ad0e6676-3e55-4bd6-a9ed-7f6424fd46f6	6	152d1661-c6d5-4dda-8824-03b7096e6f90	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+7	https://musicbrainz.org/release/ad0e6676-3e55-4bd6-a9ed-7f6424fd46f6	7	a386e851-74c4-44bf-ab71-19124683a72a	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+7	https://musicbrainz.org/release/ad0e6676-3e55-4bd6-a9ed-7f6424fd46f6	8	bcaf58b5-0f27-4851-a7fe-a0d198659bb2	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+7	https://musicbrainz.org/release/ad0e6676-3e55-4bd6-a9ed-7f6424fd46f6	9	5221e5aa-5913-4f9b-a78c-a7f0a47c9e16	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+7	https://musicbrainz.org/release/ad0e6676-3e55-4bd6-a9ed-7f6424fd46f6	10	c11c9477-ba01-47d2-b2a4-e180c7ab08cf	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+7	https://musicbrainz.org/release/ad0e6676-3e55-4bd6-a9ed-7f6424fd46f6	11	ff4a232d-6c81-44ab-ae8e-06dca534d94a	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+7	https://musicbrainz.org/release/ad0e6676-3e55-4bd6-a9ed-7f6424fd46f6	12	2f338b46-c9fd-421f-a83e-5b6203cc396b	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+8	https://musicbrainz.org/release/541a0976-ca45-3c0f-89e5-26bc376f58d1	1	5eb84a52-3528-3189-8145-e31b1f1baacf	A1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+8	https://musicbrainz.org/release/541a0976-ca45-3c0f-89e5-26bc376f58d1	2	9c572b02-0874-3fdb-873e-a778ec4f88ff	A2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+8	https://musicbrainz.org/release/541a0976-ca45-3c0f-89e5-26bc376f58d1	3	101e7c6f-ab4d-373b-81fc-bbce54af64f3	A3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+8	https://musicbrainz.org/release/541a0976-ca45-3c0f-89e5-26bc376f58d1	4	c03aed3f-078e-361b-8b42-c6f1a114b47a	B1	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+8	https://musicbrainz.org/release/541a0976-ca45-3c0f-89e5-26bc376f58d1	5	d3db46ad-1b82-3d42-893b-add84735c9af	B2	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+8	https://musicbrainz.org/release/541a0976-ca45-3c0f-89e5-26bc376f58d1	6	48070c36-c3b7-3101-bd0d-5354af9fdc80	B3	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+8	https://musicbrainz.org/release/541a0976-ca45-3c0f-89e5-26bc376f58d1	7	7c61de96-2e1d-371f-8f04-4f8420511383	C1	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+8	https://musicbrainz.org/release/541a0976-ca45-3c0f-89e5-26bc376f58d1	8	117a24dc-89f9-3228-878d-ea1185d93afb	C2	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+8	https://musicbrainz.org/release/541a0976-ca45-3c0f-89e5-26bc376f58d1	9	55ea6f64-3d47-3de9-854e-4dd5320b22aa	C3	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+8	https://musicbrainz.org/release/541a0976-ca45-3c0f-89e5-26bc376f58d1	10	7cafd311-e5f9-399d-8355-8447dd6ec355	C4	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+8	https://musicbrainz.org/release/541a0976-ca45-3c0f-89e5-26bc376f58d1	11	ba930284-a947-3f14-96f5-72907cc91975	D1	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+8	https://musicbrainz.org/release/541a0976-ca45-3c0f-89e5-26bc376f58d1	12	7b3a9aac-8602-31c3-8abc-f2c2354df710	D2	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+9	https://musicbrainz.org/release/fba5f8fe-c6c8-4511-8562-c9febf482674	1	a31f27a1-dfd8-38cc-958a-07f3af52fc25	A1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+9	https://musicbrainz.org/release/fba5f8fe-c6c8-4511-8562-c9febf482674	2	26ca3f84-46d8-3627-b894-b1eb8599a110	A2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+9	https://musicbrainz.org/release/fba5f8fe-c6c8-4511-8562-c9febf482674	3	66ee1e73-a67c-3988-9ab5-e74721be5258	A3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+9	https://musicbrainz.org/release/fba5f8fe-c6c8-4511-8562-c9febf482674	4	db7b6f2d-18b8-39b2-826d-eb9e82f35f3a	A4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+9	https://musicbrainz.org/release/fba5f8fe-c6c8-4511-8562-c9febf482674	5	5fe3d1b0-2f09-327e-b7e7-9fcff3158a8a	A5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+9	https://musicbrainz.org/release/fba5f8fe-c6c8-4511-8562-c9febf482674	6	944a6d7d-a244-3295-ad6c-1440a52998e8	A6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+9	https://musicbrainz.org/release/fba5f8fe-c6c8-4511-8562-c9febf482674	7	7feb7034-4809-39c0-8576-2ea7a83d118e	B1	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+9	https://musicbrainz.org/release/fba5f8fe-c6c8-4511-8562-c9febf482674	8	0481f01e-b351-3c42-b851-748fa741ca74	B2	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+9	https://musicbrainz.org/release/fba5f8fe-c6c8-4511-8562-c9febf482674	9	52ac1a5e-a231-37b4-a82d-7dbc0c74bd72	B3	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+9	https://musicbrainz.org/release/fba5f8fe-c6c8-4511-8562-c9febf482674	10	94cede1d-3eb0-3978-8235-3747bb616cc0	B4	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+9	https://musicbrainz.org/release/fba5f8fe-c6c8-4511-8562-c9febf482674	11	34a59962-7e37-3fd9-8a74-f80528ffa1a0	B5	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+9	https://musicbrainz.org/release/fba5f8fe-c6c8-4511-8562-c9febf482674	12	9f537c38-29dc-3114-9ce3-8c99d37e743f	B6	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+10	https://musicbrainz.org/release/a64e09a7-2f26-4d7a-8505-f2561ad3299b	1	e905a25b-2541-45d1-bd28-da5d93dac7e3	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+10	https://musicbrainz.org/release/a64e09a7-2f26-4d7a-8505-f2561ad3299b	2	d760ff0f-e8b6-413d-a598-aaaf3b568801	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+10	https://musicbrainz.org/release/a64e09a7-2f26-4d7a-8505-f2561ad3299b	3	6c55750e-057b-4b76-a9a3-a5331fc7b489	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+10	https://musicbrainz.org/release/a64e09a7-2f26-4d7a-8505-f2561ad3299b	4	7283548e-fdab-4421-ab10-95d452e7b5e2	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+10	https://musicbrainz.org/release/a64e09a7-2f26-4d7a-8505-f2561ad3299b	5	e9f53425-14c4-448b-94d1-db1c0e8990c7	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+10	https://musicbrainz.org/release/a64e09a7-2f26-4d7a-8505-f2561ad3299b	6	94d629a3-01e2-403e-b55d-86436f9ed5be	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+10	https://musicbrainz.org/release/a64e09a7-2f26-4d7a-8505-f2561ad3299b	7	7c2aa41e-ca90-456d-b9bc-98b56965e5af	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+10	https://musicbrainz.org/release/a64e09a7-2f26-4d7a-8505-f2561ad3299b	8	72036efa-d34b-4283-93bb-8de20f678b7e	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+10	https://musicbrainz.org/release/a64e09a7-2f26-4d7a-8505-f2561ad3299b	9	aae5e218-9194-4631-9993-5d79b76804a3	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+10	https://musicbrainz.org/release/a64e09a7-2f26-4d7a-8505-f2561ad3299b	10	074a0fe7-ffec-4a38-be9d-ff073e7aa2d2	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+10	https://musicbrainz.org/release/a64e09a7-2f26-4d7a-8505-f2561ad3299b	11	052ec0b5-32f3-4700-bae8-904f05a2c2ec	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+10	https://musicbrainz.org/release/a64e09a7-2f26-4d7a-8505-f2561ad3299b	12	52dd8c30-9ef6-47de-b75b-fb5eb01e6b57	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+11	https://musicbrainz.org/release/4b3d18cc-8937-36f4-8de0-481088be58e6	1	98dca2c9-dedc-3a62-890a-a87adac8cb4c	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+11	https://musicbrainz.org/release/4b3d18cc-8937-36f4-8de0-481088be58e6	2	eaa3c03e-541e-3cfd-a580-569b723e9f66	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+11	https://musicbrainz.org/release/4b3d18cc-8937-36f4-8de0-481088be58e6	3	1e4b3b2d-f405-3a40-bfc3-0f1fe091dfe9	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+11	https://musicbrainz.org/release/4b3d18cc-8937-36f4-8de0-481088be58e6	4	ce86797c-bad5-3711-a40a-6a1434bc3a7b	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+11	https://musicbrainz.org/release/4b3d18cc-8937-36f4-8de0-481088be58e6	5	94947e31-4aca-3fa9-96f0-9e2e94777b33	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+11	https://musicbrainz.org/release/4b3d18cc-8937-36f4-8de0-481088be58e6	6	f4a9b427-c616-3b61-932f-7787c7ad80fd	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+11	https://musicbrainz.org/release/4b3d18cc-8937-36f4-8de0-481088be58e6	7	2d2d51d0-c472-3661-9469-24e85a07ead6	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+11	https://musicbrainz.org/release/4b3d18cc-8937-36f4-8de0-481088be58e6	8	96b1f206-cdae-37b3-ac4f-f0ab80c0412e	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+11	https://musicbrainz.org/release/4b3d18cc-8937-36f4-8de0-481088be58e6	9	d68c2790-0554-3504-9589-f7097dc8d737	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+11	https://musicbrainz.org/release/4b3d18cc-8937-36f4-8de0-481088be58e6	10	ffca18a5-bd0b-3972-853d-67c6cd18972f	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+11	https://musicbrainz.org/release/4b3d18cc-8937-36f4-8de0-481088be58e6	11	c1001660-a505-3892-b52c-5a8be98169b7	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+11	https://musicbrainz.org/release/4b3d18cc-8937-36f4-8de0-481088be58e6	12	0aeaf092-a6e2-3700-b3a7-e1c41413a735	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+12	https://musicbrainz.org/release/6a09041b-0f79-3278-88d9-0552dd28d37f	1	08380814-cbf6-3f77-b9b4-1a731f417940	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+12	https://musicbrainz.org/release/6a09041b-0f79-3278-88d9-0552dd28d37f	2	ccadc32f-698e-302e-bc5c-a5b8e5ba223e	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+12	https://musicbrainz.org/release/6a09041b-0f79-3278-88d9-0552dd28d37f	3	10c973d8-3adf-3338-afc9-ebba924e77d4	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+12	https://musicbrainz.org/release/6a09041b-0f79-3278-88d9-0552dd28d37f	4	445f7341-e13b-3e79-9505-8797dfd44462	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+12	https://musicbrainz.org/release/6a09041b-0f79-3278-88d9-0552dd28d37f	5	00e537bf-28ac-316a-ad69-c46d2aa0ab94	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+12	https://musicbrainz.org/release/6a09041b-0f79-3278-88d9-0552dd28d37f	6	81c1fb14-b2be-33a3-a23c-54d3013a9d55	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+12	https://musicbrainz.org/release/6a09041b-0f79-3278-88d9-0552dd28d37f	7	8887bf30-aba8-33b1-b737-08239501d4d6	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+12	https://musicbrainz.org/release/6a09041b-0f79-3278-88d9-0552dd28d37f	8	406c1681-9f45-3b86-bc77-4d7c737a08c3	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+12	https://musicbrainz.org/release/6a09041b-0f79-3278-88d9-0552dd28d37f	9	9d4c6d3e-9c79-371e-a64f-0ef7d4a9f453	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+12	https://musicbrainz.org/release/6a09041b-0f79-3278-88d9-0552dd28d37f	10	bf6918b7-5504-3de9-96ee-aabaa041e86b	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+12	https://musicbrainz.org/release/6a09041b-0f79-3278-88d9-0552dd28d37f	11	a359a340-d11b-35e7-9d21-f6ce3460bba0	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+12	https://musicbrainz.org/release/6a09041b-0f79-3278-88d9-0552dd28d37f	12	51d2a02a-a2c1-3be4-bc5d-e47c937d28d5	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+13	https://musicbrainz.org/release/0b6b4ba0-d36f-47bd-b4ea-6a5b91842d29	1	2b9f435b-6bbb-3ba3-9482-50a9e71de499	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+13	https://musicbrainz.org/release/0b6b4ba0-d36f-47bd-b4ea-6a5b91842d29	2	5a5cfc4d-0475-3980-868c-152e0cef4b0a	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+13	https://musicbrainz.org/release/0b6b4ba0-d36f-47bd-b4ea-6a5b91842d29	3	fd0dbcd6-1118-3e0a-98a5-4a9cbaaf94a6	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+13	https://musicbrainz.org/release/0b6b4ba0-d36f-47bd-b4ea-6a5b91842d29	4	bf431f20-b7d7-363b-811e-3c7b6e5896fc	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+13	https://musicbrainz.org/release/0b6b4ba0-d36f-47bd-b4ea-6a5b91842d29	5	061bed40-a4f4-3b0f-b00c-bdfeb3f09b48	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+13	https://musicbrainz.org/release/0b6b4ba0-d36f-47bd-b4ea-6a5b91842d29	6	ee5d7007-b742-3a47-9705-50a3132e4b39	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+13	https://musicbrainz.org/release/0b6b4ba0-d36f-47bd-b4ea-6a5b91842d29	7	95ce66d2-7c9a-39ab-ab31-fad9ef49f6c8	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+13	https://musicbrainz.org/release/0b6b4ba0-d36f-47bd-b4ea-6a5b91842d29	8	815c8324-e20d-34ad-bed3-b2dfe8588cd3	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+13	https://musicbrainz.org/release/0b6b4ba0-d36f-47bd-b4ea-6a5b91842d29	9	34ab20da-f78f-3a69-9364-980b29b03f43	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+13	https://musicbrainz.org/release/0b6b4ba0-d36f-47bd-b4ea-6a5b91842d29	10	bd8b2cda-0664-3140-ac65-3375cc45b52a	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+13	https://musicbrainz.org/release/0b6b4ba0-d36f-47bd-b4ea-6a5b91842d29	11	a0f93c26-6b66-31d9-b030-a749e72ba61e	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+13	https://musicbrainz.org/release/0b6b4ba0-d36f-47bd-b4ea-6a5b91842d29	12	b825cd11-36ac-3ad5-9536-8834e1db0c8b	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+14	https://musicbrainz.org/release/3c8cbdc8-555f-3987-8f03-6baf9488d1b0	1	614ce02d-ae40-3162-9ac6-234d7ca79e4d	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+14	https://musicbrainz.org/release/3c8cbdc8-555f-3987-8f03-6baf9488d1b0	2	61e2e7bc-8c8b-3dfd-8133-3287c737f750	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+14	https://musicbrainz.org/release/3c8cbdc8-555f-3987-8f03-6baf9488d1b0	3	10e455d5-9ae0-329a-95b9-05f598e6ad9f	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+14	https://musicbrainz.org/release/3c8cbdc8-555f-3987-8f03-6baf9488d1b0	4	77753074-1002-3eb9-a9c9-1e0648a11584	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+14	https://musicbrainz.org/release/3c8cbdc8-555f-3987-8f03-6baf9488d1b0	5	dc28d507-1e18-3f24-8005-df3c46ece548	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+14	https://musicbrainz.org/release/3c8cbdc8-555f-3987-8f03-6baf9488d1b0	6	03bbdcf9-01b0-3d63-93e8-aad920188582	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+14	https://musicbrainz.org/release/3c8cbdc8-555f-3987-8f03-6baf9488d1b0	7	1511b72a-ca83-3b46-8f40-87c71b498075	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+14	https://musicbrainz.org/release/3c8cbdc8-555f-3987-8f03-6baf9488d1b0	8	4ee3c7fb-9465-3177-83d0-2c1f0644658a	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+14	https://musicbrainz.org/release/3c8cbdc8-555f-3987-8f03-6baf9488d1b0	9	ec8663b5-62e6-3342-aff4-d2037a4f0bdd	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+14	https://musicbrainz.org/release/3c8cbdc8-555f-3987-8f03-6baf9488d1b0	10	f13cb0f4-7e9b-3818-bb65-9c6e66d0aa15	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+14	https://musicbrainz.org/release/3c8cbdc8-555f-3987-8f03-6baf9488d1b0	11	8cbcee57-ae3d-3ef2-ba09-827dbce42f31	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+14	https://musicbrainz.org/release/3c8cbdc8-555f-3987-8f03-6baf9488d1b0	12	4b6a4678-6efd-3d5d-9c75-9dd797a32535	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+15	https://musicbrainz.org/release/e16cda60-6e6d-4a32-8d7c-e12d9aeb72de	1	34e4d5e2-88d2-3c50-886a-0d6f77f0e2c7	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+15	https://musicbrainz.org/release/e16cda60-6e6d-4a32-8d7c-e12d9aeb72de	2	4b0c0e38-a6d3-3e20-b017-fb24caa0c9fc	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+15	https://musicbrainz.org/release/e16cda60-6e6d-4a32-8d7c-e12d9aeb72de	3	4915cf96-6a2b-36e3-a1c7-c78926a28fb3	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+15	https://musicbrainz.org/release/e16cda60-6e6d-4a32-8d7c-e12d9aeb72de	4	42a3c9ce-6398-38ea-a7d9-682f40f2f50d	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+15	https://musicbrainz.org/release/e16cda60-6e6d-4a32-8d7c-e12d9aeb72de	5	3b726475-9c99-3265-8b2a-87992e02a668	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+15	https://musicbrainz.org/release/e16cda60-6e6d-4a32-8d7c-e12d9aeb72de	6	2c795111-c577-30ce-b148-e511de919e92	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+15	https://musicbrainz.org/release/e16cda60-6e6d-4a32-8d7c-e12d9aeb72de	7	e0dfa981-65e5-347f-8606-8e5dee257d15	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+15	https://musicbrainz.org/release/e16cda60-6e6d-4a32-8d7c-e12d9aeb72de	8	8da782be-5cca-39d5-8ddd-845d698433ff	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+15	https://musicbrainz.org/release/e16cda60-6e6d-4a32-8d7c-e12d9aeb72de	9	0aa2ecdb-e345-34bc-8ba7-21acd7e5f449	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+15	https://musicbrainz.org/release/e16cda60-6e6d-4a32-8d7c-e12d9aeb72de	10	34aa59cc-2cf4-3ef0-b175-543d64f073fe	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+15	https://musicbrainz.org/release/e16cda60-6e6d-4a32-8d7c-e12d9aeb72de	11	9c9321a0-af71-354d-87fb-f2f82d4c4e62	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+15	https://musicbrainz.org/release/e16cda60-6e6d-4a32-8d7c-e12d9aeb72de	12	20ee7ad3-22c3-377d-a7da-fd5c17a41c6d	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+16	https://musicbrainz.org/release/ab2c2726-a2c4-4f4d-a207-c1985c3f9a1b	1	0f5452d7-cc42-430c-82d2-fc95796e9358	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+16	https://musicbrainz.org/release/ab2c2726-a2c4-4f4d-a207-c1985c3f9a1b	2	11e02acf-0319-474d-95ec-b39e2140ce5f	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+16	https://musicbrainz.org/release/ab2c2726-a2c4-4f4d-a207-c1985c3f9a1b	3	cc5fa54c-b7e1-4932-a6fe-f747fc776251	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+16	https://musicbrainz.org/release/ab2c2726-a2c4-4f4d-a207-c1985c3f9a1b	4	a40538df-631a-45eb-8071-140c7806d4d8	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+16	https://musicbrainz.org/release/ab2c2726-a2c4-4f4d-a207-c1985c3f9a1b	5	e42c8307-9b94-4ece-a1bc-a1c56d2e5b95	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+16	https://musicbrainz.org/release/ab2c2726-a2c4-4f4d-a207-c1985c3f9a1b	6	5fb160a0-249e-4c9d-b45b-0272f78a47ef	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+16	https://musicbrainz.org/release/ab2c2726-a2c4-4f4d-a207-c1985c3f9a1b	7	0aa7ef03-1a7e-4376-92f8-7f9c4ac0cf22	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+16	https://musicbrainz.org/release/ab2c2726-a2c4-4f4d-a207-c1985c3f9a1b	8	8f0544f1-1135-4e94-b287-fc00c3eaa6fb	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+16	https://musicbrainz.org/release/ab2c2726-a2c4-4f4d-a207-c1985c3f9a1b	9	afae6cbb-d7f8-40b1-9747-36d4732ed7f6	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+16	https://musicbrainz.org/release/ab2c2726-a2c4-4f4d-a207-c1985c3f9a1b	10	4cc93387-2641-44a9-b3ba-8b92104c57f8	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+16	https://musicbrainz.org/release/ab2c2726-a2c4-4f4d-a207-c1985c3f9a1b	11	cf08d207-1eaf-4748-84a5-b25a91ef06df	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+16	https://musicbrainz.org/release/ab2c2726-a2c4-4f4d-a207-c1985c3f9a1b	12	b262d799-3356-4682-8810-2a313c9306c2	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+17	https://musicbrainz.org/release/52e7fc61-fcf3-4b46-ac72-38e9644bf982	1	f661cd0b-f635-43d5-80fd-cec342bcc13a	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+17	https://musicbrainz.org/release/52e7fc61-fcf3-4b46-ac72-38e9644bf982	2	4d01768c-412b-4a57-b136-f73dc6f559b9	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+17	https://musicbrainz.org/release/52e7fc61-fcf3-4b46-ac72-38e9644bf982	3	48abb717-2aa2-4ddb-ae17-478e8b5c80e8	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+17	https://musicbrainz.org/release/52e7fc61-fcf3-4b46-ac72-38e9644bf982	4	1ea51f8c-fc48-4dfb-8f65-9732f9bbb03f	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+17	https://musicbrainz.org/release/52e7fc61-fcf3-4b46-ac72-38e9644bf982	5	91143e12-89fd-4367-8d55-4144956d0724	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+17	https://musicbrainz.org/release/52e7fc61-fcf3-4b46-ac72-38e9644bf982	6	4f390c39-ed6c-45ee-887f-d45e14e19f2a	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+17	https://musicbrainz.org/release/52e7fc61-fcf3-4b46-ac72-38e9644bf982	7	75dcf64a-ba88-4f23-a872-da8399fe91a3	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+17	https://musicbrainz.org/release/52e7fc61-fcf3-4b46-ac72-38e9644bf982	8	f31fd561-2ac6-4249-bea9-6fd14263e28d	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+17	https://musicbrainz.org/release/52e7fc61-fcf3-4b46-ac72-38e9644bf982	9	fdf15fa8-6f70-4015-84bf-bab5b5f0020d	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+17	https://musicbrainz.org/release/52e7fc61-fcf3-4b46-ac72-38e9644bf982	10	6c9ddefd-ea48-42d4-9f4b-3a38e95b4604	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+17	https://musicbrainz.org/release/52e7fc61-fcf3-4b46-ac72-38e9644bf982	11	9bfdc7bc-5c6b-4d8e-9ca5-a3195d8e6f46	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+17	https://musicbrainz.org/release/52e7fc61-fcf3-4b46-ac72-38e9644bf982	12	2b9021cc-329f-4e4a-97b2-f89fd7125ff0	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+17	https://musicbrainz.org/release/52e7fc61-fcf3-4b46-ac72-38e9644bf982	13	5208e955-9313-459f-9d3d-475b33a8a9e8	1	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:20	260000
+17	https://musicbrainz.org/release/52e7fc61-fcf3-4b46-ac72-38e9644bf982	14	e710d841-af39-41b5-8a65-7797c0b1f4da	2	A Reminder	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	3:52	232000
+17	https://musicbrainz.org/release/52e7fc61-fcf3-4b46-ac72-38e9644bf982	15	a6151d11-9b4b-4d8b-b776-dc0f899c059e	3	Melatonin	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	2:08	128000
+18	https://musicbrainz.org/release/9c1e5e9e-9f40-4cd8-94a4-785fa5d0b613	1	366c732b-0b60-4291-9434-a98124608cad	A1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+18	https://musicbrainz.org/release/9c1e5e9e-9f40-4cd8-94a4-785fa5d0b613	2	45cf077f-b3e1-4978-b176-2c5ed1e84217	A2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+18	https://musicbrainz.org/release/9c1e5e9e-9f40-4cd8-94a4-785fa5d0b613	3	4a8faf28-0917-4102-9303-91ea0f224292	A3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+18	https://musicbrainz.org/release/9c1e5e9e-9f40-4cd8-94a4-785fa5d0b613	4	aa8e6dce-0da2-4a33-8130-94d685c25785	A4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+18	https://musicbrainz.org/release/9c1e5e9e-9f40-4cd8-94a4-785fa5d0b613	5	af933244-e7bd-4e94-989b-1aed998c8a64	A5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+18	https://musicbrainz.org/release/9c1e5e9e-9f40-4cd8-94a4-785fa5d0b613	6	1671f33c-f297-414c-8547-fd0de119b0d9	A6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+18	https://musicbrainz.org/release/9c1e5e9e-9f40-4cd8-94a4-785fa5d0b613	7	d3ff7fc4-781f-4131-9f36-519e398f4e62	B1	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+18	https://musicbrainz.org/release/9c1e5e9e-9f40-4cd8-94a4-785fa5d0b613	8	e41538ac-d2b3-45b8-8d59-66fdfb55c120	B2	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+18	https://musicbrainz.org/release/9c1e5e9e-9f40-4cd8-94a4-785fa5d0b613	9	2e4d10a1-3878-45e2-86a0-2419496682f7	B3	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+18	https://musicbrainz.org/release/9c1e5e9e-9f40-4cd8-94a4-785fa5d0b613	10	ac8c319f-972e-44d6-987a-695b39a920e9	B4	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+18	https://musicbrainz.org/release/9c1e5e9e-9f40-4cd8-94a4-785fa5d0b613	11	1a403151-2687-4c5f-bd3f-4dc339301c4b	B5	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+18	https://musicbrainz.org/release/9c1e5e9e-9f40-4cd8-94a4-785fa5d0b613	12	69de7d24-140d-49f6-93b0-9b900b330603	B6	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+19	https://musicbrainz.org/release/16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8	1	1b7b30f5-a5dc-4956-9708-e4a7aa364b71	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+19	https://musicbrainz.org/release/16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8	2	5d2317c8-4734-40a0-9fea-24cb401e9dd1	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+19	https://musicbrainz.org/release/16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8	3	b040a83c-3c67-430b-86ba-dece72ea768e	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+19	https://musicbrainz.org/release/16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8	4	57348d5a-8fb3-409f-b43c-e3066c509bcf	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+19	https://musicbrainz.org/release/16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8	5	60cfce51-46c6-49bc-bcab-26220dcab20f	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+19	https://musicbrainz.org/release/16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8	6	cdc2cfe5-6e07-43ff-8d34-e9a7188b4e00	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+19	https://musicbrainz.org/release/16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8	7	a253da6f-8893-477f-83b8-131c46ff0ea3	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+19	https://musicbrainz.org/release/16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8	8	7233a2e7-508f-457c-a874-a491ccb0c030	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+19	https://musicbrainz.org/release/16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8	9	7ab3b12b-8587-4c95-9994-3352be3a7796	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+19	https://musicbrainz.org/release/16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8	10	0dd1e8c0-07b3-4f05-ba7f-c8505f332d0a	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+19	https://musicbrainz.org/release/16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8	11	91952185-7f12-45f6-80ff-1926dcf08e75	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+19	https://musicbrainz.org/release/16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8	12	4b86e78d-4d59-4c61-8a69-4277ec7f6d63	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+20	https://musicbrainz.org/release/1c16cd42-472f-47cc-9848-d081d0737a7c	1	0b7a458c-b340-40ec-8a94-734fe5584f58	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+20	https://musicbrainz.org/release/1c16cd42-472f-47cc-9848-d081d0737a7c	2	7dd1f892-a3f0-4e3a-9747-0440b30efa07	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+20	https://musicbrainz.org/release/1c16cd42-472f-47cc-9848-d081d0737a7c	3	3948c476-da02-4676-af5d-cdc5f3740e6c	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+20	https://musicbrainz.org/release/1c16cd42-472f-47cc-9848-d081d0737a7c	4	4cb0f961-1709-49c2-a73d-8816abd97566	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+20	https://musicbrainz.org/release/1c16cd42-472f-47cc-9848-d081d0737a7c	5	8e75e9f8-3cdf-459d-b157-adeb65c9b4ec	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+20	https://musicbrainz.org/release/1c16cd42-472f-47cc-9848-d081d0737a7c	6	52eaae56-c452-43c0-9c3c-878b8f1aad10	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+20	https://musicbrainz.org/release/1c16cd42-472f-47cc-9848-d081d0737a7c	7	14340d59-91a1-4d7e-805f-d9dad00fc3b2	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+20	https://musicbrainz.org/release/1c16cd42-472f-47cc-9848-d081d0737a7c	8	a52a3cdf-ccc0-4441-8c10-8aec8100d418	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+20	https://musicbrainz.org/release/1c16cd42-472f-47cc-9848-d081d0737a7c	9	ec48bc59-4438-471f-9426-686a48696b4f	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+20	https://musicbrainz.org/release/1c16cd42-472f-47cc-9848-d081d0737a7c	10	c41a206e-11cf-4dd8-a8c3-cc2aded6a3ea	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+20	https://musicbrainz.org/release/1c16cd42-472f-47cc-9848-d081d0737a7c	11	1e341abe-8eba-43df-ae57-e90af56b16ff	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+20	https://musicbrainz.org/release/1c16cd42-472f-47cc-9848-d081d0737a7c	12	9c2f1fa8-c2dd-4d12-adab-9ec084b55e8b	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+21	https://musicbrainz.org/release/175d6ac9-7185-357c-af04-5887dc3ea788	1	44f12fa6-6830-3a91-92c7-c0152f0ab004	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+21	https://musicbrainz.org/release/175d6ac9-7185-357c-af04-5887dc3ea788	2	b3c7be60-8f73-3f33-b170-ad853005a0ef	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+21	https://musicbrainz.org/release/175d6ac9-7185-357c-af04-5887dc3ea788	3	3d527292-ec8c-37da-9c23-208fb2ce0bdf	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+21	https://musicbrainz.org/release/175d6ac9-7185-357c-af04-5887dc3ea788	4	c67fa77e-edd7-35c1-a5e2-16a020b184e8	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+21	https://musicbrainz.org/release/175d6ac9-7185-357c-af04-5887dc3ea788	5	5688b219-e87a-3a00-9f02-175f182502c7	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+21	https://musicbrainz.org/release/175d6ac9-7185-357c-af04-5887dc3ea788	6	aa280b13-2e4e-33f3-b9e9-32b7ead60690	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+21	https://musicbrainz.org/release/175d6ac9-7185-357c-af04-5887dc3ea788	7	07626f55-bf66-3bdd-b168-1911833ef855	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+21	https://musicbrainz.org/release/175d6ac9-7185-357c-af04-5887dc3ea788	8	8369c16b-d878-335d-9f7a-17be6883b11c	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+21	https://musicbrainz.org/release/175d6ac9-7185-357c-af04-5887dc3ea788	9	bc44afce-6a42-31dc-a825-ecd61a4d3f3c	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+21	https://musicbrainz.org/release/175d6ac9-7185-357c-af04-5887dc3ea788	10	bcfa99b7-eaf5-3e8e-97bc-b587e8eeb43d	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+21	https://musicbrainz.org/release/175d6ac9-7185-357c-af04-5887dc3ea788	11	eef6898d-763e-3e91-b6d8-968203760e7b	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+21	https://musicbrainz.org/release/175d6ac9-7185-357c-af04-5887dc3ea788	12	37629c4e-844e-349e-96d3-5133fbb883f7	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+22	https://musicbrainz.org/release/51df2038-5682-303e-9d87-7aeb99660433	1	33efa6f4-12bc-3536-8178-c1319accbadf	A1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+22	https://musicbrainz.org/release/51df2038-5682-303e-9d87-7aeb99660433	2	ff0e2256-0ed8-3c20-97db-df457a731678	A2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+22	https://musicbrainz.org/release/51df2038-5682-303e-9d87-7aeb99660433	3	c52e7be1-817a-3a8b-bc1d-ebb07e9b3762	A3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+22	https://musicbrainz.org/release/51df2038-5682-303e-9d87-7aeb99660433	4	2250f88d-97d1-3e6e-bdd7-1b87ba81c653	B1	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+22	https://musicbrainz.org/release/51df2038-5682-303e-9d87-7aeb99660433	5	0aa0aa34-2469-3a0e-a555-3869568e1573	B2	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+22	https://musicbrainz.org/release/51df2038-5682-303e-9d87-7aeb99660433	6	f4b90d73-6d57-3616-99ca-920cc04e3636	B3	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+22	https://musicbrainz.org/release/51df2038-5682-303e-9d87-7aeb99660433	7	c65b761a-55c1-3991-876e-ad2b4708c389	C1	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+22	https://musicbrainz.org/release/51df2038-5682-303e-9d87-7aeb99660433	8	7e787bac-e4bf-3055-ab73-3b9bdc96b5c1	C2	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+22	https://musicbrainz.org/release/51df2038-5682-303e-9d87-7aeb99660433	9	766f09ea-8871-3e61-992d-a8b7a7c42695	C3	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+22	https://musicbrainz.org/release/51df2038-5682-303e-9d87-7aeb99660433	10	a1fae6ee-002c-3625-bdf4-31e461c31940	C4	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+22	https://musicbrainz.org/release/51df2038-5682-303e-9d87-7aeb99660433	11	0a01fed4-6c9d-3e74-8707-b033560a0b1a	D1	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+22	https://musicbrainz.org/release/51df2038-5682-303e-9d87-7aeb99660433	12	db97ca54-6787-3845-b1cd-adaf3b3313db	D2	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	1	d008a78f-c830-3a71-b5f4-b45f7ae959bf	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	2	105889c9-b852-343a-b6d4-5bb74fef1b3e	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:24	384000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	3	f517071b-2c3a-3c27-b0fd-519da899489d	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	4	243e5996-f19d-378f-a57b-90129586b5cc	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	5	6637b742-2d77-3f50-8cff-265504612dc2	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	6	90e2932b-ff38-3c31-bad1-ea1e17178b6a	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	7	765e9547-5650-3a9c-89c7-6ea51cddd3ac	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	8	61df2c8e-b297-3bf3-a80b-82d1a1265bd2	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	9	cf1b12f7-af0c-3446-853d-7d4c28c4e0a8	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	10	321323b7-a7ae-3530-98c7-301c1d2be8a8	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	11	00779049-7fde-3ebb-960d-34f4b21c5939	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	12	592a7ddb-91c5-3db1-b3cc-f88cdc7b6cf5	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:27	327000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	13	5295dd8e-7112-395a-a012-e73ce18372e8	1	Polyethylene, Parts 1 & 2	785c6db0-ad42-492c-b786-6c60c85049ea	4:24	264000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	14	c2ed0e91-f45b-3a82-8a09-04df5fd0e00a	2	Pearly*	d7d0da31-0eb9-4d19-9b82-efbab8089bb3	3:37	217000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	15	a147319b-53da-3765-bd37-574af4392918	3	A Reminder	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	3:54	234000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	16	4fd2af10-eda3-3b0b-9e3a-56eb805ca3bb	4	Melatonin	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	2:10	130000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	17	a770fa3e-371b-3b3d-af24-f42494241943	5	Meeting in the Aisle	27369abc-a525-47ac-9461-a4ab7598229a	3:10	190000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	18	b4ebf653-739d-308b-9fad-55328a09a8a3	6	Lull	07d6c937-9bf1-4ff6-866d-99b3a23b5854	2:29	149000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	19	8727eb63-b273-3c3e-9203-81f2fd8c8e5c	7	Climbing Up the Walls (Zero 7 mix)	54e3665c-63c0-494a-ac43-8664469e1b2e	5:19	319000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	20	0bd2ba4a-9e70-3e60-81c6-e351e141e83d	8	Climbing Up the Walls (Fila Brazillia mix)	d6692dae-2fc7-4277-883e-29d3fd742d48	6:26	386000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	21	1a2411d8-dd24-38f7-9bd3-9a0d37796fb3	9	Palo Alto	5b558519-0719-4e02-a753-0aef518b39f8	3:44	224000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	22	6ed9730f-c346-3803-b1dc-e91b30c66cc5	10	How I Made My Millions	59c1ca98-8a33-466b-9a64-a20f1fee3167	3:09	189000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	23	5d7eb228-20cd-3a04-a52f-b4399910b008	11	Airbag (live in Berlin)	5eff1315-5add-4e63-a293-ff6ceb03bf38	4:49	289000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	24	f8b84330-50dd-340d-a40e-c5c714aad160	12	Lucky (live in Florence)	23bb0277-a7ec-45df-b1be-e00ccdb89ef4	4:37	277000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	25	90b378df-e261-3c2f-b2fe-b86c29deb386	13	Climbing Up the Walls (BBC Radio 1 Evening session 28/5/97)	fe4bacf2-7a54-4145-bff7-5c6ab7b4a78e	4:21	261000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	26	980827f8-c88d-3c1a-b0ba-d3538e249fa7	14	Exit Music (for a Film) (BBC Radio 1 Evening session 28/5/97)	e9cbc241-4aa5-4d38-bbdb-f18b764ebc8a	4:35	275000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	27	1a0ce19f-c2a1-3613-be3e-fa1715d83ff4	15	No Surprises (BBC Radio 1 Evening session 28/5/97)	ddfa32a0-876b-46dd-845b-d54661a19d34	3:58	238000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	28	6250c4ab-253b-4f3c-8ee9-db59952525c1	1	Paranoid Android (video)	2b3dae6c-a7f3-407a-a0a9-7325aeacfc75	6:34	394000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	29	d4822322-c401-4638-b5ad-9c34d3c4d063	2	Karma Police (video)	9e5f0044-d235-40d4-8799-e369e4160da3	4:23	263000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	30	62b9d207-f2dd-428d-ac5d-38dfa8d15cdc	3	No Surprises (video)	e2c8da03-c417-4082-9834-85be96fb4b53	3:52	232000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	31	e9bc6fd7-0584-4bb5-86cc-2f9a78b7f986	4	Paranoid Android (Later… With Jools Holland, 31/05/97)	07c79187-8a53-4d9a-a4f4-d551b24dd5f6	6:23	383000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	32	383b0ec2-a2ee-421b-a4f8-7c0e5adf62db	5	No Surprises (Later… With Jools Holland, 31/05/97)	726beb0a-db7e-43e4-990b-bdd548083706	3:52	232000
+23	https://musicbrainz.org/release/9eff0482-170f-3e93-8c65-73ce18e10ee7	33	fd8902a4-ae58-4d76-957f-18f9c9335aff	6	Airbag (Later… With Jools Holland, 31/05/97)	264c4c05-b3e3-4a7b-8418-dc0c864f7451	4:42	282000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	1	2cf82551-3084-3a0a-856b-b7a966abf2ff	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	2	cf2b3db5-afd2-3eba-89f9-962de3585e3d	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	3	120d671d-bbd2-3f4f-a889-37517262b48e	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	4	86e1f924-477c-3025-b128-5938d3ed8df5	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	5	047056ff-06e5-338f-819e-8648175db504	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	6	e448f3d3-5bff-3030-834f-c4268dad0342	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	7	3c1bef26-d0d8-3f26-95ea-767792391c09	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	8	8a847f11-764a-334f-a3fd-2aaa059a29a4	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	9	3efd41f5-a2c5-3469-8daf-7c72b42bb70a	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	10	49b8849f-384c-31f7-84e0-8b86b795d6e7	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	11	ff875444-1d9f-3264-a9f8-5359e22406a8	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	12	2b132b90-dea7-3661-92d3-70144f6b89dd	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	13	c0478797-0113-3622-a869-2ac2530656ff	1	Polyethylene, Parts 1 & 2	785c6db0-ad42-492c-b786-6c60c85049ea	4:24	264000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	14	dda7a3c2-7572-358a-a28b-195d81e0a435	2	Pearly*	d7d0da31-0eb9-4d19-9b82-efbab8089bb3	3:37	217000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	15	7cc6d163-947e-3753-a3f4-37565416aacd	3	A Reminder	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	3:54	234000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	16	039bb008-1f53-3ff4-953b-bd9db1f0f34a	4	Melatonin	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	2:10	130000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	17	29a2aa44-37c1-3b24-8e14-ec6af50b7051	5	Meeting in the Aisle	27369abc-a525-47ac-9461-a4ab7598229a	3:10	190000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	18	49bd895e-f5fa-37cb-93e3-16f93adcdcdf	6	Lull	07d6c937-9bf1-4ff6-866d-99b3a23b5854	2:29	149000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	19	2f2eb886-055a-35c6-ba9c-1f97f5230ea0	7	Climbing Up the Walls (Zero 7 mix)	54e3665c-63c0-494a-ac43-8664469e1b2e	5:19	319000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	20	5b5bc3c2-7c84-3036-b731-2e90208a266c	8	Climbing Up the Walls (Fila Brazillia mix)	d6692dae-2fc7-4277-883e-29d3fd742d48	6:26	386000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	21	dd6b110d-2c91-3bc7-82c3-0db6e7f8800f	9	Palo Alto	5b558519-0719-4e02-a753-0aef518b39f8	3:44	224000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	22	66adf028-5caa-3918-a4be-09c6206c7598	10	How I Made My Millions	59c1ca98-8a33-466b-9a64-a20f1fee3167	3:09	189000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	23	70d843e8-c21f-3fb5-8c1b-6e740bca7ee6	11	Airbag (live in Berlin)	5eff1315-5add-4e63-a293-ff6ceb03bf38	4:49	289000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	24	63e23506-27ef-34ac-aed6-20b3333b02fc	12	Lucky (live in Florence)	23bb0277-a7ec-45df-b1be-e00ccdb89ef4	4:37	277000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	25	1aba20bc-702e-34b3-b564-f44c8e03c471	13	Climbing Up the Walls (BBC Radio 1 Evening session 28/5/97)	fe4bacf2-7a54-4145-bff7-5c6ab7b4a78e	4:21	261000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	26	4f07b1e3-3272-3a69-a38d-ffc1d8707656	14	Exit Music (for a Film) (BBC Radio 1 Evening session 28/5/97)	e9cbc241-4aa5-4d38-bbdb-f18b764ebc8a	4:35	275000
+24	https://musicbrainz.org/release/bdf93ecb-85e8-3505-98f7-e2e8c5052723	27	2abcc9e7-18be-3979-9d96-0cd7982d32a0	15	No Surprises (BBC Radio 1 Evening session 28/5/97)	ddfa32a0-876b-46dd-845b-d54661a19d34	3:58	238000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	1	150a58b2-ee90-4d09-a3ff-c663585062ae	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	2	91b4bc17-e815-406b-a3c5-0f7291adfb29	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	3	2d63e7b5-e6a1-41af-969f-d98a4524baf2	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	4	b58b68da-929b-475f-8227-f3f0a9430d52	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	5	33919370-89b2-463a-84af-bcc474843c53	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	6	38505739-2c57-4855-9c5f-2ef31b7ea5eb	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	7	117b31cb-7edb-472f-9ca5-d9daae578617	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	8	279aa9ed-8707-4b8c-9684-1ee12492e6d6	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	9	3b9cc94f-0b0e-446a-aa49-e7076a578694	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	10	5473693e-278e-41f3-b28e-6c63acbb2d8f	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	11	97774b8d-c768-4158-a7cb-6af386fd94cf	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	12	a302fec1-7dd7-40a6-8a4b-da7ce8e5de65	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	13	9fcb36a1-6bbe-425a-88a4-693d79a18838	1	Polyethylene, Parts 1 & 2	785c6db0-ad42-492c-b786-6c60c85049ea	4:24	264000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	14	3c7359da-04a3-4088-94a8-cdc5f5a67491	2	Pearly*	d7d0da31-0eb9-4d19-9b82-efbab8089bb3	3:37	217000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	15	eec4499a-5ab9-40af-b968-c27eb615be16	3	A Reminder	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	3:54	234000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	16	edbf5764-64ab-4de9-9f13-e2ca50aa82d8	4	Melatonin	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	2:10	130000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	17	174848c7-aea6-411c-ba27-239a0a0863e2	5	Meeting in the Aisle	27369abc-a525-47ac-9461-a4ab7598229a	3:10	190000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	18	f6acf0fa-4d7e-4711-974b-e986bbe3d699	6	Lull	07d6c937-9bf1-4ff6-866d-99b3a23b5854	2:29	149000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	19	3be01049-c606-450b-b88c-efca13d4f23e	7	Climbing Up the Walls (Zero 7 mix)	54e3665c-63c0-494a-ac43-8664469e1b2e	5:19	319000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	20	49186901-c1a6-4bfb-98f4-120acbdcbc4f	8	Climbing Up the Walls (Fila Brazillia mix)	d6692dae-2fc7-4277-883e-29d3fd742d48	6:26	386000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	21	441842cc-686c-488c-8150-9d110334897c	9	Palo Alto	5b558519-0719-4e02-a753-0aef518b39f8	3:44	224000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	22	e05cb012-ea76-455c-897d-f83fa6d95311	10	How I Made My Millions	59c1ca98-8a33-466b-9a64-a20f1fee3167	3:09	189000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	23	0a6b484d-b192-4d3e-ad10-e46a352c6c94	11	Airbag (live in Berlin)	5eff1315-5add-4e63-a293-ff6ceb03bf38	4:49	289000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	24	59f67f8a-cd34-4126-b553-27808e68da8d	12	Lucky (live in Florence)	23bb0277-a7ec-45df-b1be-e00ccdb89ef4	4:37	277000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	25	268cd821-5a64-4e9f-bf0b-6b14a09abe87	13	Climbing Up the Walls (BBC Radio One Evening Session_05.28.97)	fe4bacf2-7a54-4145-bff7-5c6ab7b4a78e	4:21	261000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	26	ac49b56b-2fa9-4470-b2e1-a6c13934b51b	14	Exit Music (for a Film) (BBC Radio One Evening Session_05.28.97)	e9cbc241-4aa5-4d38-bbdb-f18b764ebc8a	4:35	275000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	27	cd0a6710-2b92-4958-b1fc-a40e0c63951d	15	No Surprises (BBC Radio One Evening Session_05.28.97)	ddfa32a0-876b-46dd-845b-d54661a19d34	3:58	238000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	28	3b34cb01-cd44-485d-9b5a-d8827754d088	1	Paranoid Android	2b3dae6c-a7f3-407a-a0a9-7325aeacfc75	6:34	394000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	29	6594f208-ea8d-4ac6-991e-7704a05c1a8a	2	Karma Police	9e5f0044-d235-40d4-8799-e369e4160da3	4:23	263000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	30	57d7905f-af8b-4a79-999d-2291a1e6451d	3	No Surprises	e2c8da03-c417-4082-9834-85be96fb4b53	3:52	232000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	31	24c478fc-86d0-4fb4-bb02-edb07f2cf7ca	4	Paranoid Android	07c79187-8a53-4d9a-a4f4-d551b24dd5f6	6:23	383000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	32	a5626445-fd03-42c3-a043-e18126b48919	5	No Surprises	726beb0a-db7e-43e4-990b-bdd548083706	3:52	232000
+25	https://musicbrainz.org/release/7169a92a-4dc1-42bb-9a21-c1c9223b68a8	33	b7aa7d92-7ff9-4eac-8563-2c56d0680924	6	Airbag	264c4c05-b3e3-4a7b-8418-dc0c864f7451	4:42	282000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	1	401a4d9b-7902-30d1-a21b-7eb8fb9ac1e6	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	2	4f3f9731-3c0d-33b3-bb76-a72c30c5674e	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	3	cbb53860-1a3a-31c7-853d-9399d662204e	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	4	6d42ebc1-5e25-3262-b7a8-d764d22524fb	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	5	27ba272c-3ae0-31cf-b7b0-cff1e0a23196	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	6	cf889a5c-2a26-300b-94b5-c9d5e22d5c4a	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	7	fb6b1c5c-717a-382c-a80b-4ace325a363d	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	8	7540b73f-8a7e-355f-910b-bc195ea0277d	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	9	310fce40-456b-3666-a834-7c760fb662c1	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	10	829a00df-700e-3a9a-9255-60ef434ba69f	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	11	15c5070a-5063-32cb-b0f4-dc87a9d4ca77	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	12	28bd6796-65c0-3688-a122-985cbc7cc97d	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	13	0cb41a14-f2c5-31ec-86d6-107f10328e39	1	Polyethylene (Parts 1 & 2)	785c6db0-ad42-492c-b786-6c60c85049ea	4:24	264000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	14	fc63c4f5-ad1b-3cc2-a4d0-7b7ed629ab9a	2	Pearly*	d7d0da31-0eb9-4d19-9b82-efbab8089bb3	3:37	217000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	15	987db863-807f-3e39-9a96-8a5946983b1d	3	A Reminder	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	3:54	234000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	16	2bee6d2d-060d-3707-be70-02b128438584	4	Melatonin	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	2:10	130000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	17	e56ea1dd-eaed-3fd2-9bb7-a5790fe3aaef	5	Meeting in the Aisle	27369abc-a525-47ac-9461-a4ab7598229a	3:10	190000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	18	77db2a83-c0dc-33ea-8f19-0fe006898c8f	6	Lull	07d6c937-9bf1-4ff6-866d-99b3a23b5854	2:29	149000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	19	3d173a4a-f6e4-3599-bc61-d96cf89bbfab	7	Climbing Up the Walls (Zero 7 mix)	54e3665c-63c0-494a-ac43-8664469e1b2e	5:19	319000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	20	44ac68a2-f99b-3c0e-a92e-76d1e26a3979	8	Climbing Up the Walls (Fila Brazillia mix)	d6692dae-2fc7-4277-883e-29d3fd742d48	6:26	386000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	21	239a5f10-e323-3f02-a72a-0cf70f0759ca	9	Palo Alto	5b558519-0719-4e02-a753-0aef518b39f8	3:44	224000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	22	eee1d525-cc52-36fa-89f7-f776f82a691e	10	How I Made My Millions	59c1ca98-8a33-466b-9a64-a20f1fee3167	3:09	189000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	23	8ebaaf85-62d8-303f-86b0-24ca6c3b826e	11	Airbag (live in Berlin)	5eff1315-5add-4e63-a293-ff6ceb03bf38	4:49	289000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	24	fabaf61b-3912-3a84-857b-9f354d59043e	12	Lucky (live in Florence)	23bb0277-a7ec-45df-b1be-e00ccdb89ef4	4:37	277000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	25	b3a03356-562b-35d8-8aea-224f8c76c58d	13	Climbing Up the Walls (BBC Radio One Evening Session_05.28.97)	fe4bacf2-7a54-4145-bff7-5c6ab7b4a78e	4:21	261000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	26	f5fff30d-4836-3623-a1e4-47923d4ab2ee	14	Exit Music (for a Film) (BBC Radio One Evening Session_05.28.97)	e9cbc241-4aa5-4d38-bbdb-f18b764ebc8a	4:35	275000
+26	https://musicbrainz.org/release/d4635a34-caf5-3b35-9a5b-d805f1126633	27	bf0d025f-8282-3ebe-997e-bfe46df9a4d7	15	No Surprises (BBC Radio One Evening Session_05.28.97)	ddfa32a0-876b-46dd-845b-d54661a19d34	3:58	238000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	1	d090cb55-5877-3d32-9699-10fe407fbcd9	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	2	295f0863-727f-3836-9f57-bfd6b6cf63af	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	3	f196ac0a-9421-3162-b71e-d999f6ff70c0	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	4	4ba05e9e-751f-3fc9-9f27-bdaa0ed9e2c8	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	5	9b2cbc80-d134-3c89-be61-fa442ab0f9e2	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	6	21e95d88-2ffd-3b27-822c-8bb0492b2a8a	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	7	553b8993-8a65-3aeb-8059-495c845c3dfe	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	8	6a082906-38c5-392e-baa1-e42df3c3003f	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	9	2e6a8c66-d24c-3edb-9c86-70c1466027ff	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	10	ba799e59-88f4-3052-9ff1-2d61e64faf8c	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	11	d03a9c0b-9dc7-3c53-ada2-28b815b46e84	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	12	6f438571-f41f-3043-9b11-e7eed6e8bee5	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	13	0b1bf220-dd33-38ed-ba7d-b28faadba3e6	1	Polyethylene, Parts 1 & 2	785c6db0-ad42-492c-b786-6c60c85049ea	4:24	264000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	14	d808e832-0348-3a44-9017-275f7f1fa82d	2	Pearly*	d7d0da31-0eb9-4d19-9b82-efbab8089bb3	3:37	217000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	15	862cbeaf-1deb-36c4-863c-60fa850f0e4b	3	A Reminder	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	3:54	234000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	16	78d7c8f3-0f54-3fb2-abbd-8ebd5696601d	4	Melatonin	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	2:10	130000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	17	f48796ec-761b-31fa-b250-bffad5d43160	5	Meeting in the Aisle	27369abc-a525-47ac-9461-a4ab7598229a	3:10	190000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	18	9ab25ce2-cc1d-3246-a69b-038e814c2c2a	6	Lull	07d6c937-9bf1-4ff6-866d-99b3a23b5854	2:29	149000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	19	aecd4036-47f3-31b0-98e6-50ff9a104ee4	7	Climbing Up the Walls (Zero 7 mix)	54e3665c-63c0-494a-ac43-8664469e1b2e	5:19	319000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	20	aec4014f-1975-3cfe-aa5a-11508ab119be	8	Climbing Up the Walls (Fila Brazillia mix)	d6692dae-2fc7-4277-883e-29d3fd742d48	6:26	386000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	21	b48a09e7-33b4-3549-a1e8-ebaeaf051b7c	9	Palo Alto	5b558519-0719-4e02-a753-0aef518b39f8	3:44	224000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	22	3399c21e-2cd1-3274-ba76-7af100b28f51	10	How I Made My Millions	59c1ca98-8a33-466b-9a64-a20f1fee3167	3:09	189000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	23	68f54781-fd46-3ec0-912d-dfc9e29a8390	11	Airbag (live in Berlin)	5eff1315-5add-4e63-a293-ff6ceb03bf38	4:49	289000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	24	e439a9ff-f423-30f7-89aa-9fb5e01fbaed	12	Lucky (live in Florence)	23bb0277-a7ec-45df-b1be-e00ccdb89ef4	4:37	277000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	25	530797a9-4e43-3b0d-9ee3-d424f6495679	13	Climbing Up the Walls (BBC Radio 1 Evening session 28/5/97)	fe4bacf2-7a54-4145-bff7-5c6ab7b4a78e	4:21	261000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	26	639ca0e3-4078-3a48-8482-40939a106f0d	14	Exit Music (for a Film) (BBC Radio 1 Evening session 28/5/97)	e9cbc241-4aa5-4d38-bbdb-f18b764ebc8a	4:35	275000
+27	https://musicbrainz.org/release/e8c3ff98-75f0-383f-a7d1-35db67661d89	27	2b80f77f-3014-355c-973a-01456e62ec75	15	No Surprises (BBC Radio 1 Evening session 28/5/97)	ddfa32a0-876b-46dd-845b-d54661a19d34	3:58	238000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	1	442b9cdb-5616-3fc0-8eef-5f5911d69897	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	2	93b46164-22d0-3879-ba6a-e8c46e213590	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	3	bd6f1fde-6297-3b7d-997d-6628abed96db	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	4	79058f9f-8037-3770-8a52-f94a912f7c47	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	5	2ffa38cf-d743-3d8b-ad7a-2fd03e488b78	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	6	625b6c90-57b3-3e99-8679-8ebb7e4a8a4f	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	7	e338ca86-a6ce-311c-b460-0d428329c5e5	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	8	bddef16f-e007-3f6d-9b86-47144d9a6e94	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	9	576af67b-d04f-3d57-a1c4-9ff7211d9fc8	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	10	6616a82c-6750-380d-b390-37003a394a77	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	11	b01ef1b5-92d7-3e12-b5d1-a0a47abd06ba	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	12	b41c25f9-4efd-311d-912f-42e67d56933c	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	13	582e464a-8cfe-3581-b455-395d110b7a79	1	Polyethylene, Parts 1 & 2	785c6db0-ad42-492c-b786-6c60c85049ea	4:24	264000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	14	83a61183-174b-324c-a114-13ca39ea9dfd	2	Pearly*	d7d0da31-0eb9-4d19-9b82-efbab8089bb3	3:37	217000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	15	b291fe53-4cce-3ee3-928f-6dcfe9552509	3	A Reminder	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	3:54	234000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	16	93975db9-18c4-327b-81ee-3ac9f1f34d0d	4	Melatonin	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	2:10	130000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	17	69e5afd7-3d56-3264-ad24-5436d69aca26	5	Meeting in the Aisle	27369abc-a525-47ac-9461-a4ab7598229a	3:10	190000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	18	065dcd30-ceeb-3aa9-9193-76e9886ac633	6	Lull	07d6c937-9bf1-4ff6-866d-99b3a23b5854	2:29	149000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	19	aee244eb-dc0a-3841-8975-933527859710	7	Climbing Up the Walls (Zero 7 mix)	54e3665c-63c0-494a-ac43-8664469e1b2e	5:19	319000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	20	17a3d1a3-aa0a-3669-bae9-1a0d6112e3d0	8	Climbing Up the Walls (Fila Brazillia mix)	d6692dae-2fc7-4277-883e-29d3fd742d48	6:26	386000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	21	aec772be-50ce-373c-a57e-c26f57a20db8	9	Palo Alto	5b558519-0719-4e02-a753-0aef518b39f8	3:44	224000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	22	9ede949a-1b51-3268-a518-bb21992a7a42	10	How I Made My Millions	59c1ca98-8a33-466b-9a64-a20f1fee3167	3:09	189000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	23	220a4bf4-db82-3f9b-97b4-e76f8a8c6e3b	11	Airbag (live in Berlin)	5eff1315-5add-4e63-a293-ff6ceb03bf38	4:49	289000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	24	d60c7624-f4c5-329c-9641-5dc4126b955a	12	Lucky (live in Florence)	23bb0277-a7ec-45df-b1be-e00ccdb89ef4	4:37	277000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	25	f3782f6f-5b33-3b38-ad9d-74ad2d734a62	13	Climbing Up the Walls	fe4bacf2-7a54-4145-bff7-5c6ab7b4a78e	4:21	261000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	26	97387078-808a-3227-8395-e3099775f221	14	Exit Music (for a Film)	e9cbc241-4aa5-4d38-bbdb-f18b764ebc8a	4:35	275000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	27	d42149ba-bd5c-3d99-9e12-6890b7cb30cb	15	No Surprises	ddfa32a0-876b-46dd-845b-d54661a19d34	3:58	238000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	28	e00955f9-2504-422d-a535-4baf26699c93	1	Paranoid Android (video)	2b3dae6c-a7f3-407a-a0a9-7325aeacfc75	6:34	394000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	29	63150013-a674-450f-b66e-06905467a519	2	Karma Police (video)	9e5f0044-d235-40d4-8799-e369e4160da3	4:23	263000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	30	9fe2c7ea-ad81-42a7-9a19-9c2e29998ba3	3	No Surprises (video)	e2c8da03-c417-4082-9834-85be96fb4b53	3:52	232000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	31	f94c3d48-2b55-4ae6-99e2-acff5497af30	4	Paranoid Android (Later… with Jools Holland, 31/05/97)	07c79187-8a53-4d9a-a4f4-d551b24dd5f6	6:23	383000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	32	53b3a60c-9b56-4f9c-862a-ee7c71fc2e1a	5	No Surprises (Later… with Jools Holland, 31/05/97)	726beb0a-db7e-43e4-990b-bdd548083706	3:52	232000
+28	https://musicbrainz.org/release/a736eb98-ba6b-3e42-ad80-a65f648910a3	33	5edb5c14-ee92-4aef-ac9d-dfa20facb4cd	6	Airbag (Later… with Jools Holland, 31/05/97)	264c4c05-b3e3-4a7b-8418-dc0c864f7451	4:42	282000
+29	https://musicbrainz.org/release/30702389-5c67-4438-9ea0-2351c8de0f1d	1	64701220-0bc6-4e30-a6d8-6ad1f3950c3f	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:47	287000
+29	https://musicbrainz.org/release/30702389-5c67-4438-9ea0-2351c8de0f1d	2	fabff0ae-e56c-4b68-bf4b-714b81b2bd9d	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:27	387000
+29	https://musicbrainz.org/release/30702389-5c67-4438-9ea0-2351c8de0f1d	3	ead7e688-55a4-47d0-ae1f-655a8d74446d	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:27	267000
+29	https://musicbrainz.org/release/30702389-5c67-4438-9ea0-2351c8de0f1d	4	889e88f8-11b6-403c-b2bc-5aa5316c7527	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:27	267000
+29	https://musicbrainz.org/release/30702389-5c67-4438-9ea0-2351c8de0f1d	5	65ca686d-78ae-4ed0-9b48-935f367fb6ae	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+29	https://musicbrainz.org/release/30702389-5c67-4438-9ea0-2351c8de0f1d	6	5025ed7f-2dcc-4490-bfd9-5e0e78f521e9	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:24	264000
+29	https://musicbrainz.org/release/30702389-5c67-4438-9ea0-2351c8de0f1d	7	b6aaefa4-0810-4ae0-9991-3de41c58489a	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+29	https://musicbrainz.org/release/30702389-5c67-4438-9ea0-2351c8de0f1d	8	8b863e45-3ced-4566-a667-9b0ca36d5c36	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:50	230000
+29	https://musicbrainz.org/release/30702389-5c67-4438-9ea0-2351c8de0f1d	9	b0ce765f-774d-4de4-9952-942e4a0644d2	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+29	https://musicbrainz.org/release/30702389-5c67-4438-9ea0-2351c8de0f1d	10	2d3ca9ec-e8dc-43da-bd77-2f5fa66a4132	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+29	https://musicbrainz.org/release/30702389-5c67-4438-9ea0-2351c8de0f1d	11	cc4b6b98-1661-48a0-be00-60809acc9298	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:18	258000
+29	https://musicbrainz.org/release/30702389-5c67-4438-9ea0-2351c8de0f1d	12	55c1b4c7-d4ad-4d56-ae62-38cd2f0c9765	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:26	326000
+30	https://musicbrainz.org/release/d339ba4d-0e44-4d2d-bc7a-b8078c072da9	1	5f50c77d-1635-490e-addd-bd86ad13b13c	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+30	https://musicbrainz.org/release/d339ba4d-0e44-4d2d-bc7a-b8078c072da9	2	6b21d898-f07b-41bb-bfb1-134b41069347	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+30	https://musicbrainz.org/release/d339ba4d-0e44-4d2d-bc7a-b8078c072da9	3	04388955-5157-416b-9ccc-9b5e4d932368	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+30	https://musicbrainz.org/release/d339ba4d-0e44-4d2d-bc7a-b8078c072da9	4	72687a3b-2f45-40e2-bad0-7275233955dd	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+30	https://musicbrainz.org/release/d339ba4d-0e44-4d2d-bc7a-b8078c072da9	5	1cffdd40-5f60-4a4b-b401-eba742f0b6bd	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+30	https://musicbrainz.org/release/d339ba4d-0e44-4d2d-bc7a-b8078c072da9	6	102082ca-b427-4c66-8125-c427e9f69b19	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+30	https://musicbrainz.org/release/d339ba4d-0e44-4d2d-bc7a-b8078c072da9	7	557b1603-aeb1-42e1-8da3-54f9ad2450e7	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+30	https://musicbrainz.org/release/d339ba4d-0e44-4d2d-bc7a-b8078c072da9	8	23b19059-8d31-4692-9f5a-38bf006fb838	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+30	https://musicbrainz.org/release/d339ba4d-0e44-4d2d-bc7a-b8078c072da9	9	c0b43efe-9b3b-4bbd-8fe7-7c459e3066fb	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+30	https://musicbrainz.org/release/d339ba4d-0e44-4d2d-bc7a-b8078c072da9	10	ea3865f2-178f-43bd-8a02-b21b6e30e6ee	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+30	https://musicbrainz.org/release/d339ba4d-0e44-4d2d-bc7a-b8078c072da9	11	6e28eec6-a097-4aa1-b5c3-ad746ea841d0	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+30	https://musicbrainz.org/release/d339ba4d-0e44-4d2d-bc7a-b8078c072da9	12	973625b9-7011-4ba3-b9fe-c3e1a28aeb61	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+31	https://musicbrainz.org/release/83becfd2-0a58-4d5b-9214-55ecc17c928d	1	d61d282a-07a6-4ed1-b1c4-f59f26e4e1c5	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+31	https://musicbrainz.org/release/83becfd2-0a58-4d5b-9214-55ecc17c928d	2	dd8728b6-1d03-43e2-98da-169b67036c88	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+31	https://musicbrainz.org/release/83becfd2-0a58-4d5b-9214-55ecc17c928d	3	44ecf532-a779-482a-aab2-257113b7c165	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+31	https://musicbrainz.org/release/83becfd2-0a58-4d5b-9214-55ecc17c928d	4	0e5f8f61-da6c-4dcf-9be2-7cb439152640	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+31	https://musicbrainz.org/release/83becfd2-0a58-4d5b-9214-55ecc17c928d	5	909fe135-a954-4c8c-88f9-124f1f4f1484	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+31	https://musicbrainz.org/release/83becfd2-0a58-4d5b-9214-55ecc17c928d	6	5196e4df-c7fb-49e9-87a7-96b941d66235	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+31	https://musicbrainz.org/release/83becfd2-0a58-4d5b-9214-55ecc17c928d	7	217b2614-2669-4eff-a27e-d9593bd2be91	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+31	https://musicbrainz.org/release/83becfd2-0a58-4d5b-9214-55ecc17c928d	8	722484a9-53e1-41e7-87eb-1218cc1a760b	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+31	https://musicbrainz.org/release/83becfd2-0a58-4d5b-9214-55ecc17c928d	9	654453c9-9439-4b9b-b5e7-03dada3b56de	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+31	https://musicbrainz.org/release/83becfd2-0a58-4d5b-9214-55ecc17c928d	10	79cebbc5-bee7-49e1-b4e4-f8ce620fe21a	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+31	https://musicbrainz.org/release/83becfd2-0a58-4d5b-9214-55ecc17c928d	11	76cda335-7d3b-438b-9a45-ad9551fd856f	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+31	https://musicbrainz.org/release/83becfd2-0a58-4d5b-9214-55ecc17c928d	12	fe85361b-76b1-479c-a8cb-b0e10be33864	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:25	325000
+32	https://musicbrainz.org/release/0c324f3a-dcbb-4f09-b33a-c03c676b4044	1	c51ba126-d9b7-4ddd-a90e-cdb81400008c	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+32	https://musicbrainz.org/release/0c324f3a-dcbb-4f09-b33a-c03c676b4044	2	b2048465-3f3a-47dd-a37c-c73d16f0a1dc	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:24	384000
+32	https://musicbrainz.org/release/0c324f3a-dcbb-4f09-b33a-c03c676b4044	3	0f872878-01c0-4f69-99ae-eafef76e6c95	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:28	268000
+32	https://musicbrainz.org/release/0c324f3a-dcbb-4f09-b33a-c03c676b4044	4	53ef1ea5-ac2d-4cc5-8c56-6ba3240db73b	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+32	https://musicbrainz.org/release/0c324f3a-dcbb-4f09-b33a-c03c676b4044	5	46ec7ac8-8b6c-4113-a4d5-e90a5f41609a	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+32	https://musicbrainz.org/release/0c324f3a-dcbb-4f09-b33a-c03c676b4044	6	90988ee7-fdb5-46b6-b106-42e0edac74fe	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:22	262000
+32	https://musicbrainz.org/release/0c324f3a-dcbb-4f09-b33a-c03c676b4044	7	df82e2e5-9c6a-449d-8b9f-0bb64899c2cf	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+32	https://musicbrainz.org/release/0c324f3a-dcbb-4f09-b33a-c03c676b4044	8	84ed3b0c-f245-4e57-b1fb-00426d4dd801	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+32	https://musicbrainz.org/release/0c324f3a-dcbb-4f09-b33a-c03c676b4044	9	f404f3b9-ee86-4c5e-b721-ebfc8ec0c248	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+32	https://musicbrainz.org/release/0c324f3a-dcbb-4f09-b33a-c03c676b4044	10	db540441-a9f9-4ac6-9a06-d6be1352ad01	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:49	229000
+32	https://musicbrainz.org/release/0c324f3a-dcbb-4f09-b33a-c03c676b4044	11	5bc75a67-f12c-49a4-9349-7d23940cae54	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+32	https://musicbrainz.org/release/0c324f3a-dcbb-4f09-b33a-c03c676b4044	12	d65ac149-14a2-4ba6-bced-2324c3a1dae8	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:27	327000
+33	https://musicbrainz.org/release/943aa9da-7dc7-4a4a-a95e-2ffa707b6858	1	2a068490-3982-4557-8518-5619bb397d62	A1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+33	https://musicbrainz.org/release/943aa9da-7dc7-4a4a-a95e-2ffa707b6858	2	ecf44234-e544-4720-94b6-7a5995f6a4eb	A2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+33	https://musicbrainz.org/release/943aa9da-7dc7-4a4a-a95e-2ffa707b6858	3	5cf7d9d9-b0a1-4f27-b8ba-1a2aa038923f	A3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:27	267000
+33	https://musicbrainz.org/release/943aa9da-7dc7-4a4a-a95e-2ffa707b6858	4	3586192e-571d-46f5-8c41-815867378c01	B1	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:24	264000
+33	https://musicbrainz.org/release/943aa9da-7dc7-4a4a-a95e-2ffa707b6858	5	44e2b935-09fc-4c38-869b-888ddf9725d3	B2	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+33	https://musicbrainz.org/release/943aa9da-7dc7-4a4a-a95e-2ffa707b6858	6	a5c4407a-19c7-419d-a567-c30f89e0d4e8	B3	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:21	261000
+33	https://musicbrainz.org/release/943aa9da-7dc7-4a4a-a95e-2ffa707b6858	7	12e98232-c4b5-453c-8b5e-eb818e250d64	C1	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+33	https://musicbrainz.org/release/943aa9da-7dc7-4a4a-a95e-2ffa707b6858	8	d60e3f2e-11ac-4c33-b7e0-60ded2c59f95	C2	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:50	230000
+33	https://musicbrainz.org/release/943aa9da-7dc7-4a4a-a95e-2ffa707b6858	9	e4d46c5e-dafe-40b3-9e52-7cd7da36ba62	C3	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+33	https://musicbrainz.org/release/943aa9da-7dc7-4a4a-a95e-2ffa707b6858	10	ec917048-d813-426d-8a47-f1953c908eb2	C4	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:48	228000
+33	https://musicbrainz.org/release/943aa9da-7dc7-4a4a-a95e-2ffa707b6858	11	2d0bc917-1ba1-409b-84fd-91fff3077e81	D1	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:19	259000
+33	https://musicbrainz.org/release/943aa9da-7dc7-4a4a-a95e-2ffa707b6858	12	8b6a3100-00ec-4ede-a3a6-c87350d6f9c4	D2	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:24	324000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	1	b6b0c1e9-1524-4b78-ab3f-79e4b49b497d	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	2	7f8c6ad6-0f5e-4e7b-9abb-62f9dfbc3c84	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:24	384000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	3	1e7b19fe-0655-4242-9a53-8fc236234833	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:29	269000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	4	2c53d34f-bd24-449f-a435-6b4c1fa195c9	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	5	bb4feb25-3510-4ce1-bb03-f954171dd14c	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	6	fcfdc26d-7ee4-4874-9ef6-22629493551d	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:21	261000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	7	e3b2ca82-4c60-4ba3-ac7c-c1ab582fff17	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	8	017617cc-0184-40d8-b0b4-17606cbdf2cc	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	9	9f07db60-10eb-4d06-a46b-e160f4dcab81	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	10	c3b2aaf5-acb6-48e1-9f03-83f4512c8a0f	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:48	228000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	11	e7eb1b46-1812-4daf-8043-56c8622fce74	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	12	70d01c00-37fd-40f5-ba34-01db7c49703d	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:24	324000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	13	3944c549-11b2-4474-9990-9a9045d066f3	13	I Promise	384d9061-ca6a-4e74-a66a-f788ea0049a7	3:59	239000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	14	a51551db-6a09-4b07-bb65-f33a885f1c7d	14	Man of War	e7bf5ae0-dc12-46d2-8f17-39e3545c74a9	4:29	269000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	15	4177f2db-0c73-4c67-bd1d-d6b0e7a7e2bd	15	Lift	d48778df-68a1-43ed-a4e0-b82f09bccf86	4:07	247000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	16	0d58ba55-d873-433b-ab4b-97d231c3b962	16	Lull	07d6c937-9bf1-4ff6-866d-99b3a23b5854	2:26	146000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	17	9bef97bd-37ff-4b59-b166-8e03f261fb68	17	Meeting in the Aisle	27369abc-a525-47ac-9461-a4ab7598229a	3:08	188000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	18	599235f2-026c-45fe-a7a9-c41e89ead554	18	Melatonin	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	2:09	129000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	19	2957ab5c-fc61-4385-a578-1c5805e3f295	19	A Reminder	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	3:52	232000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	20	93b8c33f-c5c1-480f-8a29-7ae4bbb1e963	20	Polyethylene, Parts 1 & 2	785c6db0-ad42-492c-b786-6c60c85049ea	4:22	262000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	21	7e4b8be4-3b0b-4f5c-acdb-4ffa7d4b3b7b	21	Pearly*	d7d0da31-0eb9-4d19-9b82-efbab8089bb3	3:39	219000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	22	7c4baeeb-b8c9-47ec-9744-42c1e9fd49f5	22	Palo Alto	5b558519-0719-4e02-a753-0aef518b39f8	3:52	232000
+34	https://musicbrainz.org/release/8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4	23	e1ae8d1c-917a-47a5-a8ad-5bd04923de1a	23	How I Made My Millions	59c1ca98-8a33-466b-9a64-a20f1fee3167	3:07	187000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	1	f51f5ea5-8c3b-439c-a8f5-211ee79a12da	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:45	285000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	2	da6e8303-d396-4393-aba0-fb7fedd06026	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:24	384000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	3	ebcb07fe-649b-49e3-bb75-8b2a5e266929	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:29	269000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	4	ca356478-23ae-4b06-9d7c-09e9251b94e7	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	5	d2b47508-f264-4bfe-b6c5-b0369cedcd23	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	6	8d5fa62a-6e5c-440b-bd88-6b2931b9c00c	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:21	261000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	7	ff46a9f6-e676-4d27-aa81-997400a53b4e	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	8	9168c920-34b0-4daf-a684-0f8d2d49568e	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	9	51ab58ee-17e5-4596-a834-54fe41585c21	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	10	ed3394d6-3f63-4928-9dbf-e1f467d333a9	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:48	228000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	11	92e534f0-2f78-4535-b956-e208626fcd4d	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	12	4179ebe9-5d1b-4f73-a09f-4f10dd4a3975	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:26	326000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	13	a0910e09-df7c-4581-9a3a-275caec6d6e9	1	I Promise	384d9061-ca6a-4e74-a66a-f788ea0049a7	4:00	240000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	14	8114e01b-6bea-4a0b-9251-9b4823dba975	2	Man of War	e7bf5ae0-dc12-46d2-8f17-39e3545c74a9	4:29	269000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	15	bb5e61c5-0e98-4a3a-996a-516a237e0121	3	Lift	d48778df-68a1-43ed-a4e0-b82f09bccf86	4:07	247000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	16	e939ec78-117e-47a7-a7b1-e9f317e02cf5	4	Lull	07d6c937-9bf1-4ff6-866d-99b3a23b5854	2:26	146000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	17	f30cc2ca-5c1d-4eb6-9abd-a91fd608f08c	5	Meeting in the Aisle	27369abc-a525-47ac-9461-a4ab7598229a	3:08	188000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	18	c9a20185-e287-4a6a-a1f9-3dd09e73434a	6	Melatonin	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	2:09	129000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	19	c39e3bb9-ac22-4d6e-be7f-a057a35bb39c	7	A Reminder	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	3:52	232000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	20	36515f77-3c4d-45de-8ece-f6df278bd300	8	Polyethylene (Parts 1 & 2)	785c6db0-ad42-492c-b786-6c60c85049ea	4:22	262000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	21	f6d4eaa4-7af0-426e-8823-033abdff790c	9	Pearly*	d7d0da31-0eb9-4d19-9b82-efbab8089bb3	3:39	219000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	22	efad7674-acb9-4bf5-b9e4-9b635876e2d6	10	Palo Alto	5b558519-0719-4e02-a753-0aef518b39f8	3:52	232000
+35	https://musicbrainz.org/release/d6dc018d-5caa-4e6f-8e9d-d889fcd585f4	23	08412833-e821-4de7-9c24-65e2ff624bf7	11	How I Made My Millions	59c1ca98-8a33-466b-9a64-a20f1fee3167	3:09	189000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	1	96f1755d-f3c2-4a86-9577-bb1004d208f3	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	2	e10b1abe-2524-4573-ab53-5c48f44daf52	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	3	fc63c5ec-d0b1-4fb4-9cae-5c684aa83762	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:27	267000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	4	5be991c8-8e77-49b5-924e-cbd4000a63d8	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:24	264000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	5	6ec16c99-4370-485b-a1ef-14fef42eff02	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	6	bc5a594c-3d3c-4fcb-a9d4-910fc5e5b14b	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:21	261000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	7	925687f7-7012-4278-b4fd-6d02cf8682cb	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	8	eaad07a3-fa65-4dc5-a66a-fa977748e557	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:50	230000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	9	90c082de-dba9-4a2c-81a0-032f7b2fd465	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	10	ac311732-a2f5-4b2a-a809-57a1d439eae8	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:48	228000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	11	d8e840d8-130d-4d14-9c78-cf187542f522	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:19	259000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	12	74d0e1a4-e191-4a7f-888a-a72ae2d7bbe7	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:24	324000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	13	011735fa-7cf7-45f4-bc26-242abf36aa91	1	I Promise	384d9061-ca6a-4e74-a66a-f788ea0049a7	4:00	240000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	14	4c80bd50-c041-4c54-9f9e-605eef3cd1e2	2	Man of War	e7bf5ae0-dc12-46d2-8f17-39e3545c74a9	4:29	269000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	15	23d1aaff-2436-47d8-a5f9-ec6821151da1	3	Lift	d48778df-68a1-43ed-a4e0-b82f09bccf86	4:07	247000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	16	d356b92a-1679-4795-9288-aecccb8e0aa6	4	Lull	07d6c937-9bf1-4ff6-866d-99b3a23b5854	2:29	149000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	17	d52181fa-5cfa-4999-83a2-c87129bbe31b	5	Meeting in the Aisle	27369abc-a525-47ac-9461-a4ab7598229a	3:09	189000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	18	49286535-0f44-4619-a498-bed626646b44	6	Melatonin	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	2:09	129000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	19	a5b56ac3-5ce6-43b6-8997-f5388c74b808	7	A Reminder	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	3:53	233000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	20	9a542c67-c2eb-40e5-8701-74ed5778d8bf	8	Polyethylene, Parts 1 & 2	785c6db0-ad42-492c-b786-6c60c85049ea	4:23	263000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	21	5d150834-d060-4036-be69-f8fc9386f3de	9	Pearly*	d7d0da31-0eb9-4d19-9b82-efbab8089bb3	3:37	217000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	22	e64f2754-a6e2-4a79-96b7-93071f7d317f	10	Palo Alto	5b558519-0719-4e02-a753-0aef518b39f8	3:44	224000
+36	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8	23	3456e98e-db17-4bda-a565-c0b630953ec5	11	How I Made My Millions	59c1ca98-8a33-466b-9a64-a20f1fee3167	3:09	189000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	1	53dfe44d-1e9d-41a9-90b3-085cd8b2099c	A1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	2	99e61392-9b73-45b7-a2c4-4cf3aab152aa	A2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	3	63356d99-9d7a-436c-be9a-e9e61ca530b3	A3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:27	267000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	4	20eef1de-8183-452c-9c6e-2ce7a3543f94	B1	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:24	264000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	5	29811b0e-360d-45cd-8255-45647001dec8	B2	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	6	83cbd8c8-37e9-43de-8311-5304aa871a35	B3	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:21	261000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	7	08918fa6-7ec7-4d87-8187-a94c23a2a2a1	C1	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	8	6a26db07-0e56-41f3-848b-ceebfb4f6953	C2	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:50	230000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	9	65203830-5dbf-4fea-b6c7-daf10d584656	C3	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	10	305eb039-a33c-4b1d-829a-2f73fb3bea17	C4	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:48	228000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	11	155d2ab6-0d9f-4ed7-9a82-fa42c3422125	D1	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:19	259000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	12	81d625aa-e2be-4108-b13b-b70e15529c88	D2	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:24	324000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	13	a54fe39c-ba34-4265-b81f-30596e838538	E1	I Promise	384d9061-ca6a-4e74-a66a-f788ea0049a7	4:00	240000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	14	db8b1310-b524-4b5f-9d9a-7453238723a2	E2	Man of War	e7bf5ae0-dc12-46d2-8f17-39e3545c74a9	4:29	269000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	15	5cf12f09-1931-48c2-9ebf-258a44173590	E3	Lift	d48778df-68a1-43ed-a4e0-b82f09bccf86	4:07	247000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	16	e1cb88c6-7764-48ba-a307-631a4f834a1f	E4	Lull	07d6c937-9bf1-4ff6-866d-99b3a23b5854	2:26	146000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	17	001acd0a-f868-4b70-91c5-4cfc9d249354	E5	Meeting in the Aisle	27369abc-a525-47ac-9461-a4ab7598229a	3:08	188000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	18	477de4c4-b7ad-492a-adfe-bd8d1ed2e2d8	E6	Melatonin	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	2:09	129000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	19	8f17cd37-e8a0-4c3a-9de8-85e2e400fb90	F1	A Reminder	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	3:52	232000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	20	405b92a6-be7f-4c71-abaa-ade7272650e5	F2	Polyethylene, Parts 1 & 2	785c6db0-ad42-492c-b786-6c60c85049ea	4:22	262000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	21	518121ae-3258-4615-94f5-b0234e737642	F3	Pearly*	d7d0da31-0eb9-4d19-9b82-efbab8089bb3	3:39	219000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	22	072e4a43-aae0-40a7-84c2-2d07046a8c71	F4	Palo Alto	5b558519-0719-4e02-a753-0aef518b39f8	3:52	232000
+37	https://musicbrainz.org/release/5048852c-1b89-4acf-989e-2df6598c4e1e	23	34ea8c32-1cf7-40a2-8c6e-1917d6e93c16	F5	How I Made My Millions	59c1ca98-8a33-466b-9a64-a20f1fee3167	3:09	189000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	1	b0e9a29f-0a90-4f12-9632-2f652c533551	A1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	2	25624701-99db-4c26-abcb-7e3ee0f9876d	A2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:23	383000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	3	b11ee339-3ac3-4921-af4b-5c1a040f6596	A3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:27	267000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	4	c953b143-d6a9-4b94-afb6-a296ed11082f	B1	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:24	264000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	5	67c844d3-12d1-441e-90f9-46c677b38f9a	B2	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	6	69d09a3f-28c9-4ff7-8459-17d6efb12fa6	B3	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:21	261000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	7	59e82f21-92f4-4266-9331-e45c52c82d3c	C1	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	8	6faa6f5a-a484-4577-8ab9-342bd9895881	C2	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:50	230000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	9	e6e55afa-85d7-4983-888b-87e844ca1ada	C3	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	10	472e83d0-a2af-49c0-9a10-3dc90d40f4f0	C4	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:48	228000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	11	50ba20f3-7376-41ca-b9ff-2c6bec2d7c6e	D1	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:19	259000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	12	9b1533ec-f7df-4115-8b30-1cf5920629f9	D2	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:24	324000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	13	682bf328-7898-4f94-9517-90ac96709ec1	E1	I Promise	384d9061-ca6a-4e74-a66a-f788ea0049a7	4:00	240000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	14	d374a8af-b209-40cb-ac20-a06a24b0b161	E2	Man of War	e7bf5ae0-dc12-46d2-8f17-39e3545c74a9	4:29	269000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	15	e4e9d4ab-cf4d-429f-9a22-e7c53485d036	E3	Lift	d48778df-68a1-43ed-a4e0-b82f09bccf86	4:07	247000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	16	ae93eb75-fd3e-41c1-9aab-df7144997abd	E4	Lull	07d6c937-9bf1-4ff6-866d-99b3a23b5854	2:26	146000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	17	25d97261-08f6-413f-b4ed-33c738bf1b2c	E5	Meeting in the Aisle	27369abc-a525-47ac-9461-a4ab7598229a	3:08	188000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	18	4cc0bd14-c078-489c-877d-dadc2ab4a645	E6	Melatonin	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	2:09	129000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	19	17e55047-1d7a-43bf-8593-d828c94c2455	F1	A Reminder	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	3:52	232000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	20	b33bec96-5768-4518-9f80-6be94dda2fa0	F2	Polyethylene, Parts 1 & 2	785c6db0-ad42-492c-b786-6c60c85049ea	4:22	262000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	21	dc0bac6b-a1c4-400c-9748-d3b46ff8f481	F3	Pearly*	d7d0da31-0eb9-4d19-9b82-efbab8089bb3	3:39	219000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	22	0f6449ef-b56b-4e2a-9c2e-b1ae1c5388fc	F4	Palo Alto	5b558519-0719-4e02-a753-0aef518b39f8	3:52	232000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	23	dce7359a-079c-46d2-a7b7-d3b4dbbe7a36	F5	How I Made My Millions	59c1ca98-8a33-466b-9a64-a20f1fee3167	3:09	189000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	24	f199b258-ee71-4e20-b904-0aea183dcc52	A1	ZX Spectrum Symphony	3acc1c05-c8c1-43d4-aaac-fc9c03432c58	1:12	72000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	25	ebb942d0-5a37-4388-b0dc-b85fc608d016	A2	A.M.S. Hello	a1e4f7e7-109a-40e0-8ff6-050d95f1e713	0:19	19000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	26	20a4d937-1f70-4e4f-9fe5-cc9c73fe9686	A3	True Love Tape Loop	bb223a71-1ef1-4a0a-8d9e-7fbe5b86eac1	5:03	303000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	27	1b25c66f-04e7-4503-aaee-7dca83cac60e	A4	Let Down (Thom 4track)	360c9ddb-0a5e-4b6e-8c7d-347a4f6f3ff8	2:56	176000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	28	4b9d84d6-f1e8-4d47-802d-3c8f206f008d	A5	I may be paranoid but not an android	0f4e0ecd-53f5-4705-b220-b307dcbcddf3	0:16	16000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	29	9b04198f-6b09-4ead-a264-ca3f8b4b1fba	A6	Attention (Thom 4track)	de6e76bb-a11e-41ed-90f6-f40f36e57182	2:41	161000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	30	3c960a7b-2336-4ddb-841a-fedc9ee8b883	A7	Noise sketch by Nigel	4bbfcc2e-240e-4c41-82c7-7dbf148625e0	1:16	76000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	31	439dae1b-2556-4942-98a6-47b4d1e75fed	A8	Climbing Up the Walls (Abbey Road strings)	8b42a95b-ecda-4416-825d-8a120d36dc67	1:15	75000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	32	7d46ca4d-7339-40d4-88be-1c0f10153fbb	A9	Someone help this guy..	04e69f15-3228-4dc5-8804-3312129884af	0:30	30000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	33	31647299-5a26-4b19-a4fd-dacc92c7ffec	A10	Motion Picture Soundtrack (solo piano)	a44c523a-6328-4de1-ae47-aedf896e232d	5:13	313000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	34	6d59c614-a67f-4953-a118-9ad2a716cdb8	A11	Was that recording?	26f013b7-9278-4441-baf2-eeeceb96f112	0:15	15000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	35	3de1a931-cad4-4cbf-babb-2995bc9e15b0	A12	The jumbled words of Climbing Up the Walls read by Little Dan Clements	d91d476d-b277-4297-a857-ba2b34ee96e9	1:21	81000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	36	7ec0dbdf-7c6f-4810-966a-a3ff4fb52407	A13	Lull (Ed guitar infinite reverb)	2ea05405-e97f-452a-a2dc-a22eaba1c0a4	1:31	91000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	37	3d05efd8-9a08-4758-9755-c23ce7111fd1	A14	Airbag drums through Moog	86ad4cf6-b5f6-4ff6-a5a6-58f600440b03	1:06	66000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	38	bff1e700-64bf-4173-b90c-d9fd2c7547e7	A15	Karma Police in Space Echo	5724df00-ba18-4381-9798-e2d0d84930f8	1:56	116000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	39	e419471f-f655-44cf-b199-23b60187ef5b	A16	Karma Police voice through telephone	b0c1805d-eac6-40ae-8694-4e0646dc2b27	0:28	28000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	40	696d1d89-75f7-4b48-a22d-3b32735df34c	A17	(Talking)	512a254e-6f21-44af-b00f-15d476e31456	0:07	7000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	41	3a10e5ed-75f9-4b09-9326-e647d6c406e3	A18	Piano sketch by Jonny	ada5f473-3a5b-44dd-bb1c-e126e998e3d7	0:40	40000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	42	dd10a0b7-93cd-4cfb-b297-affce65f3e36	A19	Big Bird Story by Stanley Donwood	fccc506c-d876-4fbb-a47c-7ff111eb024a	2:04	124000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	43	9c24c311-a5de-42f1-8388-087417816eb0	A20	No Surprises (first idea from a soundcheck somewhere)	dc5b53c3-90d0-4d70-9f26-c8e3a92e4701	2:59	179000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	44	724a25d3-809c-4692-8af6-520ccb966386	A21	Radio chaser noise	16f9366a-972d-4ee9-92d0-535e2e9dec9f	0:24	24000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	45	84a63e10-9190-4b26-ab3b-1348809df8df	A22	Fridge buzz	ab44676f-842b-461b-88e2-cb7a26032797	0:14	14000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	46	f570009d-bde6-4475-94bb-156d9e56625f	A23	True Love Space Loop	e4c7c96d-fbff-4134-a744-9f3e8e0df6fc	0:57	57000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	47	61a25798-7bdb-4767-8dfb-4c6b05a22cbf	A24	(Talking)	bf774d46-7af4-4627-b05d-9b27b2216d37	0:28	28000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	48	13938009-7d96-4048-97d8-e2848aeecf41	A25	Are you someone?	398600de-1bbe-4ccc-a30c-70e8e7439afe	3:46	226000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	49	a21592e3-85cb-42c1-bb1c-7cf04cf1cca1	B1	Nigel A.M.S. delay	4c8f1ced-3867-4935-a938-6e47b5a6c849	0:58	58000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	50	524e9757-4e57-4ef7-b253-90865c2abf79	B2	Jonny’s Radio from Climbing Up the Walls	97cb9e86-063e-4c67-a191-6856bf725179	1:15	75000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	51	d3535983-35c9-4d9b-9faf-6a116e62c82b	B3	Climbing Up the Walls (Thom 4track)	aecb7fee-faaf-4000-adc9-2f9a82e0a28b	3:58	238000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	52	1f9a6bec-80cb-47d9-9d19-b3327d301bd4	B4	A piano lies down in the middle of the road	630be137-fe37-42fc-96e4-48fef67afa8c	2:35	155000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	53	49c0f48e-c147-404b-b359-55f6b92091ba	B5	Transposing Noise Sketch by Nigel	19d8ce4b-d7fb-4b6a-9f78-8984edb2c5f5	2:08	128000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	54	d1a42778-51f2-484f-98c0-3b1ff84544aa	B6	Early Paranoid Android version Jonny & Thom	bb1e4dbc-0101-4b08-ae78-1f27a7b4bb9e	1:22	82000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	55	196ce62f-8651-4b39-aff3-62f337c75ebc	B7	Alternative Paranoid Android Ending Live in Pittsburg	466bffa8-0ca2-41e9-8314-5e5b8aff9471	2:28	148000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	56	1811e29e-7d17-4aaf-9850-47ae9117d092	B8	Airbag early acoustic version	c03cea36-f832-4af7-923f-7f75c5e91db7	4:11	251000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	57	9e0f9178-f984-47fd-82f6-fdd629d1dd85	B9	(Talking)	f5d962c7-7d4e-478b-b32a-49bbd8a82372	0:22	22000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	58	9a568097-39ec-4c3c-b8a7-61c7e9102e6e	B10	Paranoid Android Loud Room at St Catherine’s	c5e4dbae-c293-4e4a-b7be-505f66eda8b9	0:57	57000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	59	f1733357-fd2d-4e18-a40a-9de8c8108a2e	B11	Nigel A.M.S. paranoid guitar sample	1c7552cf-43ae-4901-95c6-c09c9b0851d3	1:43	103000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	60	09662801-2022-4d94-a976-9dd48dea1516	B12	Nude early band version	35736ba8-b947-4000-ba2a-50b063931d32	5:38	338000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	61	115f66eb-bd52-4427-ba90-7cecde82cbad	B13	The National Anthem (Thom 4track)	29473455-d63c-4729-9a1e-af4f433c5d05	3:14	194000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	62	a019d431-f073-4b3a-8407-9a7a4bb578c1	B14	Ambient Loops	f328341e-e981-4402-80fc-761667aed30e	0:45	45000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	63	8fd78392-9b5b-4c25-8adc-841c43a6a596	B15	Man of War live in Montpellier	92ce48d7-982f-4ec2-9791-eecf40e66b24	4:28	268000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	64	35fa1d05-be86-4285-be4d-ad1af5fd3d79	B16	Nigel A.M.S. delay again	033b8a50-4b3a-4532-9e52-4b0ab7962e04	0:16	16000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	65	57529381-6d19-4efa-b0d0-309b705be58e	B17	Thom’s acoustic as microphone in Climbing Up the Walls	4089cf9f-d109-43fc-9c85-7c4bbdcc3c9d	2:48	168000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	66	3a5f7cea-0501-4ccf-8dde-81c3018511b9	B18	OK Computer Program	2e85aa1d-36ed-439f-b288-d46bc08e7c5f	2:10	130000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	67	697ea3c0-adfe-47d8-82a3-e8432ead7749	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	68	9ab6418f-2516-4159-af90-c34f78a25cdd	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:24	384000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	69	3aa9ab7f-b210-4b19-aada-d9027519464f	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:29	269000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	70	f4371213-b16a-445c-8641-1442d375f14d	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	71	e31a8fa8-41d0-443c-946d-30a5ed72cae8	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	72	c4a7dd21-612c-41a2-a7e3-119dbbedd8c9	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:21	261000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	73	6c1bc7d1-8713-4f4a-93a5-2c5b89ea9618	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	74	2dfb699b-165d-4306-aeed-2f4b4cfcbdcb	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	75	2938103e-f250-498c-87b4-86a21c65b3d8	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	76	dc795f13-857e-41fc-b26f-4d00db40c360	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:48	228000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	77	227994cf-80f6-4368-8b2c-4bb120ec0d4d	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	78	9839e3b9-4741-4c02-8f69-6badedf75b4f	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:24	324000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	79	9c198f71-c4c2-4385-9fb0-6a51ba44f0f7	13	I Promise	384d9061-ca6a-4e74-a66a-f788ea0049a7	3:59	239000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	80	9641bdfa-0f7d-467b-a917-cda3a934d214	14	Man of War	e7bf5ae0-dc12-46d2-8f17-39e3545c74a9	4:29	269000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	81	b809782b-6f4d-424d-b33d-de5eb585f178	15	Lift	d48778df-68a1-43ed-a4e0-b82f09bccf86	4:07	247000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	82	7dd733bb-785b-4071-a017-1a03258f2319	16	Lull	07d6c937-9bf1-4ff6-866d-99b3a23b5854	2:26	146000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	83	021bc637-720c-46ce-94b0-e6976f800a3c	17	Meeting in the Aisle	27369abc-a525-47ac-9461-a4ab7598229a	3:08	188000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	84	c45a8dcc-d451-448d-9cf5-738eedc46d0f	18	Melatonin	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	2:09	129000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	85	1e7404a4-e7aa-4de2-ae4a-854b086bfb44	19	A Reminder	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	3:52	232000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	86	0b32f076-41b0-40ef-9e7f-785f3990b3aa	20	Polyethylene, Parts 1 & 2	785c6db0-ad42-492c-b786-6c60c85049ea	4:22	262000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	87	da9254a6-0c60-4280-bcae-f3b5767cba96	21	Pearly*	d7d0da31-0eb9-4d19-9b82-efbab8089bb3	3:39	219000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	88	337749ef-714a-4fbd-be80-c0f299eee56f	22	Palo Alto	5b558519-0719-4e02-a753-0aef518b39f8	3:52	232000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	89	03d1cfaf-7025-402d-914e-df239c0bcb6e	23	How I Made My Millions	59c1ca98-8a33-466b-9a64-a20f1fee3167	3:07	187000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	90	5eadfc4c-2ccc-449b-8d76-d9a93b09a01c	1	Side A	88e15050-cc66-4589-8390-2cc57d2a4785	38:49	2329000
+38	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5	91	ba2ecd91-0041-4cf2-a149-2b1ff3566ee2	2	Side B	c4528e25-9ac3-41db-819b-586542e1a913	40:52	2452000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	1	17cdc921-f524-4a99-bfbe-8df1544dc9ea	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	2	29b3703d-c879-4649-b802-da25519d350a	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:24	384000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	3	5bf99355-6ac5-45ff-97d7-1d7136d2e46e	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:29	269000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	4	f7438b98-c5df-4320-9acd-f52ffd5d87a8	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	5	ba59cdcd-53d9-4b6e-a1f2-8bea9a431a0c	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	6	1293070e-3fda-4498-98b4-148888030c29	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:21	261000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	7	c758d7fa-4f65-4f28-bc7d-f136040ae2ba	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	8	18d06300-4eec-48ff-938e-3107902a3688	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	9	bafb68ff-64fe-4c4e-b2cb-8a744be3e76b	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	10	f4c47d02-585b-4faa-aba7-d0c673abeebd	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:48	228000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	11	a325a4fb-5b3a-46a4-9884-4952be9ea683	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	12	f057dcbc-f724-41ab-9621-1f0678111def	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:24	324000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	13	f251aa1a-ffc0-4264-af65-ff07c65b110b	1	I Promise	384d9061-ca6a-4e74-a66a-f788ea0049a7	3:59	239000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	14	17478bdd-65ce-467a-b97b-68cd7265bbb6	2	Man of War	e7bf5ae0-dc12-46d2-8f17-39e3545c74a9	4:29	269000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	15	7fd2d9ee-74e7-4e4f-ae52-8adfe6b5526e	3	Lift	d48778df-68a1-43ed-a4e0-b82f09bccf86	4:07	247000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	16	6acea6af-c415-4f20-8c0f-df5120cc07d9	4	Lull	07d6c937-9bf1-4ff6-866d-99b3a23b5854	2:26	146000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	17	7a886f38-c3cd-402e-910d-2bd658e30b7d	5	Meeting in the Aisle	27369abc-a525-47ac-9461-a4ab7598229a	3:08	188000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	18	610947be-087f-4aff-88a1-8f0adc231d02	6	Melatonin	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	2:09	129000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	19	edf618d5-879a-407b-a704-d3af8209d7ec	7	A Reminder	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	3:52	232000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	20	206a9368-a2e6-4a67-889e-9cd4bf8a797e	8	Polyethylene (Parts 1 & 2)	785c6db0-ad42-492c-b786-6c60c85049ea	4:22	262000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	21	5b06ba18-7c01-4238-9be7-18c50fcfb43b	9	Pearly*	d7d0da31-0eb9-4d19-9b82-efbab8089bb3	3:39	219000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	22	667f07d9-72d9-47b4-8965-4ff53d1f0275	10	Palo Alto	5b558519-0719-4e02-a753-0aef518b39f8	3:52	232000
+39	https://musicbrainz.org/release/d7881c68-914a-4da3-8a7d-be89f0201307	23	bde567a4-e45f-4a0d-9cd7-36c720d6ff0b	11	How I Made My Millions	59c1ca98-8a33-466b-9a64-a20f1fee3167	3:07	187000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	1	632dc2cc-3376-4389-aff4-a20ffa52c874	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:44	284000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	2	5abc8df9-fb67-4321-8927-6baab5b37f20	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:24	384000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	3	cfd8a48a-b3aa-45b9-857d-98cff667c492	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:29	269000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	4	b74bf40a-2128-45c0-8635-91a61046119d	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	5	9fc85997-59ca-4f72-9fba-bcb4660c47d7	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	6	e8d521c4-97c9-4e70-8e4c-220dc3d6f66f	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:21	261000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	7	a178c5a0-1eb1-4f2c-905a-98710cc9ee6d	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	8	ddcd2e09-ba79-4cde-bd2f-4183042e99c8	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	9	32011a6e-56ca-4fd5-8ac0-597d82cdec89	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	10	382de548-cad5-4a2d-bbb3-bc666ca621cf	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:48	228000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	11	645281bf-fa38-4d29-9de8-aea4bc868a86	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	12	23693993-57c9-47d8-9980-1eef86b89d09	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:24	324000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	13	ac28a021-db9a-48ca-b353-12589602c0a4	1	I Promise	384d9061-ca6a-4e74-a66a-f788ea0049a7	3:59	239000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	14	7c5782d6-9a69-47ca-b823-bb85ca0d929c	2	Man of War	e7bf5ae0-dc12-46d2-8f17-39e3545c74a9	4:29	269000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	15	23866e4c-5e2c-4765-93da-a0fdd56df87e	3	Lift	d48778df-68a1-43ed-a4e0-b82f09bccf86	4:07	247000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	16	d8674cbb-60db-4ee6-9ca7-0c3283e3c519	4	Lull	07d6c937-9bf1-4ff6-866d-99b3a23b5854	2:26	146000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	17	6f7fc2f6-7ff4-46d1-8d7c-df39d857d114	5	Meeting in the Aisle	27369abc-a525-47ac-9461-a4ab7598229a	3:08	188000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	18	3b2c7c79-ffeb-418a-97fb-48af91f74613	6	Melatonin	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	2:09	129000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	19	9f1ba46c-04bd-4dc0-86e9-3c84ae9190c7	7	A Reminder	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	3:52	232000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	20	63ebedcd-3e25-4d3e-a5e9-e2434acbda4d	8	Polyethylene, Pt. 1 & 2	785c6db0-ad42-492c-b786-6c60c85049ea	4:22	262000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	21	33a7512e-ed79-4388-b419-b7e83af57728	9	Pearly*	d7d0da31-0eb9-4d19-9b82-efbab8089bb3	3:39	219000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	22	3699121a-4df3-40af-a789-fb7d110557ed	10	Palo Alto	5b558519-0719-4e02-a753-0aef518b39f8	3:52	232000
+40	https://musicbrainz.org/release/a1ed87aa-2079-4e42-bbeb-6309b3b68674	23	a264e06b-602b-451a-af52-d813ca4c944e	11	How I Made My Millions	59c1ca98-8a33-466b-9a64-a20f1fee3167	3:07	187000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	1	683543c8-023d-4d95-b1af-8b3b7366040c	1	Airbag	4a7fea2e-545b-4c63-bc9a-9943cc3a29d7	4:45	285000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	2	6c70ec62-3614-4984-a391-397657d1dcee	2	Paranoid Android	9f9cf187-d6f9-437f-9d98-d59cdbd52757	6:24	384000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	3	697fd6b1-b4fa-4b5d-8e6a-4df8c5071f85	3	Subterranean Homesick Alien	bd82738d-163c-4b1a-bfaf-7acffe30e68a	4:29	269000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	4	a4ec6b3a-0be0-4e85-a7ce-7de3531c8c21	4	Exit Music (for a Film)	23c3c36b-9449-4484-9040-6ef2125999aa	4:25	265000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	5	fef5947c-42d5-44ee-b8a0-c1fca8976e4a	5	Let Down	47b02a82-c3bf-4647-b894-dd1c8f608e7f	4:59	299000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	6	46b81d9d-6e88-4cbd-95dc-d873b970d6bc	6	Karma Police	9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3	4:21	261000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	7	023e98c6-4026-4088-aca4-e3fd5b216068	7	Fitter Happier	5838f978-0822-4e28-874f-e1511324ec3a	1:57	117000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	8	1152b22a-3af6-4860-82e7-f440fe3f1d52	8	Electioneering	ba0a796c-bd1f-4d4b-85a8-918f217a204a	3:51	231000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	9	208cacbc-1684-47b0-8c00-9c2fb50e7289	9	Climbing Up the Walls	c7225576-001e-423c-adc1-58f0985dcb27	4:45	285000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	10	87ec4fff-d980-482e-adf6-3b429c1f1d1a	10	No Surprises	980a426e-623e-4ea5-98c7-008d037a0508	3:48	228000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	11	446801b6-e1b9-4f1a-8ef0-356f948ce9b9	11	Lucky	79047824-f821-4b1a-9893-e0cea1c947dd	4:20	260000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	12	57cceeea-4cf0-48e7-8393-ed83ac2792fe	12	The Tourist	610c0012-6eb4-42a0-b759-3a2532ce0f15	5:26	326000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	13	dc3baa81-c28d-47d9-b266-06d2f90413e2	1	I Promise	384d9061-ca6a-4e74-a66a-f788ea0049a7	4:00	240000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	14	f3eb4771-63cf-424e-8c8e-c2cac450ee8c	2	Man of War	e7bf5ae0-dc12-46d2-8f17-39e3545c74a9	4:29	269000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	15	a68a19c3-f4f3-42a8-9973-6f1ce1c50770	3	Lift	d48778df-68a1-43ed-a4e0-b82f09bccf86	4:07	247000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	16	5ea8a775-6d2b-4f58-94dc-e5d74219218d	4	Lull	07d6c937-9bf1-4ff6-866d-99b3a23b5854	2:26	146000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	17	b5b372d6-150a-4645-a661-0f3e62f7776b	5	Meeting in the Aisle	27369abc-a525-47ac-9461-a4ab7598229a	3:08	188000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	18	8fb861e4-f1c7-47fb-ab02-96de534d7e51	6	Melatonin	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	2:09	129000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	19	cace05c9-b648-414a-87e5-d34983638e80	7	A Reminder	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	3:52	232000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	20	40636204-e4ca-4000-b873-48bd43ff83e0	8	Polyethylene (Parts 1 & 2)	785c6db0-ad42-492c-b786-6c60c85049ea	4:22	262000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	21	6da678b0-ac91-4a89-8e00-003c4ecde841	9	Pearly*	d7d0da31-0eb9-4d19-9b82-efbab8089bb3	3:39	219000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	22	e9cbfd19-2db0-4820-838c-63a5513e0de4	10	Palo Alto	5b558519-0719-4e02-a753-0aef518b39f8	3:52	232000
+41	https://musicbrainz.org/release/2629071c-1d8f-43f1-be99-712d931e3bf1	23	0932b2b6-38e2-4b8f-aee3-37a6f5542e1e	11	How I Made My Millions	59c1ca98-8a33-466b-9a64-a20f1fee3167	3:09	189000

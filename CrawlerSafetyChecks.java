@@ -53,13 +53,14 @@ public class CrawlerSafetyChecks {
             return response.newInstance(200, "text/html", html.getBytes(StandardCharsets.UTF_8));
         });
         try {
-            for (String name : new String[]{"frontier", "depth", "budget", "blocked", "refresh", "disk", "complete-crash"}) {
+            for (String name : new String[]{"artist-limit", "frontier", "depth", "budget", "blocked", "refresh", "disk", "complete-crash"}) {
                 scenario[0] = name; pages[0] = 0; loads[0] = 0;
                 Path root = Files.createDirectories(work.resolve(name));
                 set("OUTPUT_ROOT", root); set("transport", fake); set("requestCount", 0);
                 set("activeRobots", null); set("checkpointDirectory", null); set("lastRequestStartedAtMs", 0L);
                 set("MIN_FREE_BYTES", 512L * 1048576); set("frontierDeferred", 0L);
                 String[] options = switch (name) {
+                    case "artist-limit" -> new String[]{"--fresh", "--breadth", "--artist-links", "1", "--pages", "10", "--depth", "100"};
                     case "frontier" -> new String[]{"--fresh", "--pages", "30", "--depth", "100", "--max-frontier", "1"};
                     case "depth" -> new String[]{"--fresh", "--pages", "10", "--depth", "0"};
                     case "budget" -> new String[]{"--fresh", "--pages", "10", "--depth", "100", "--max-requests", "10"};
@@ -76,6 +77,14 @@ public class CrawlerSafetyChecks {
                 Path run = root.resolve(Files.readString(root.resolve("latest_checkpoint.tsv")).strip());
                 String manifest = Files.readString(run.resolve("checkpoint.tsv"));
                 switch (name) {
+                    case "artist-limit" -> {
+                        var admissions = new java.util.HashMap<String,Integer>();
+                        for (String line : Files.readAllLines(run.resolve("internal_links.tsv")).subList(1, Files.readAllLines(run.resolve("internal_links.tsv")).size())) {
+                            var row = line.split("\t");
+                            if (row[2].equals("true")) admissions.merge(MusicBrainzUrls.canonical(row[0]),1,Integer::sum);
+                        }
+                        check(pages[0]==10 && admissions.values().stream().allMatch(n -> n==1),"Artist discovery must obey per-entity cap");
+                    }
                     case "frontier" -> check(pages[0] == 30 && (long) get("frontierDeferred") > 0
                         && manifest.contains("STATE\tCOMPLETE"), "Bounded frontier must keep progressing");
                     case "depth" -> check(pages[0] == 1 && manifest.contains("STATE\tEXHAUSTED"), "Depth exhaustion is not target completion");

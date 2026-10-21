@@ -1,0 +1,27 @@
+query_id	query	method	rank	score	page_id	name	artist_credit	entity_type	format	source_url
+track_label	Radiohead Airbag Parlophone	classic	1	0.257210472	5	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf
+track_label	Radiohead Airbag Parlophone	classic	2	0.250479100	19	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8
+track_label	Radiohead Airbag Parlophone	classic	3	0.246629167	14	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/3c8cbdc8-555f-3987-8f03-6baf9488d1b0
+track_label	Radiohead Airbag Parlophone	classic	4	0.246629167	15	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/e16cda60-6e6d-4a32-8d7c-e12d9aeb72de
+track_label	Radiohead Airbag Parlophone	classic	5	0.231421469	20	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/1c16cd42-472f-47cc-9848-d081d0737a7c
+track_label	Radiohead Airbag Parlophone	smooth	1	0.257585984	19	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8
+track_label	Radiohead Airbag Parlophone	smooth	2	0.256864258	5	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf
+track_label	Radiohead Airbag Parlophone	smooth	3	0.249725226	14	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/3c8cbdc8-555f-3987-8f03-6baf9488d1b0
+track_label	Radiohead Airbag Parlophone	smooth	4	0.249725226	15	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/e16cda60-6e6d-4a32-8d7c-e12d9aeb72de
+track_label	Radiohead Airbag Parlophone	smooth	5	0.233437363	20	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/1c16cd42-472f-47cc-9848-d081d0737a7c
+track	Paranoid Android	classic	1	0.382480887	51	Paranoid Android	Radiohead	release-group		https://musicbrainz.org/release-group/1f4d4fe7-ddb0-36b8-8fd9-283d40190c3b
+track	Paranoid Android	classic	2	0.190104072	5	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf
+track	Paranoid Android	classic	3	0.185128920	19	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8
+track	Paranoid Android	classic	4	0.182283438	14	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/3c8cbdc8-555f-3987-8f03-6baf9488d1b0
+track	Paranoid Android	classic	5	0.182283438	15	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/e16cda60-6e6d-4a32-8d7c-e12d9aeb72de
+track	Paranoid Android	smooth	1	0.385567763	51	Paranoid Android	Radiohead	release-group		https://musicbrainz.org/release-group/1f4d4fe7-ddb0-36b8-8fd9-283d40190c3b
+track	Paranoid Android	smooth	2	0.191600907	19	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8
+track	Paranoid Android	smooth	3	0.191064064	5	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf
+track	Paranoid Android	smooth	4	0.185753818	14	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/3c8cbdc8-555f-3987-8f03-6baf9488d1b0
+track	Paranoid Android	smooth	5	0.185753818	15	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/e16cda60-6e6d-4a32-8d7c-e12d9aeb72de
+catalog	TCNODATA 02	classic	1	0.418815201	9	OK Computer	Radiohead	release	Cassette	https://musicbrainz.org/release/fba5f8fe-c6c8-4511-8562-c9febf482674
+catalog	TCNODATA 02	smooth	1	0.393250787	9	OK Computer	Radiohead	release	Cassette	https://musicbrainz.org/release/fba5f8fe-c6c8-4511-8562-c9febf482674
+tag	atmospheric	classic	1	0.328865161	1	OK Computer	Radiohead	release-group		https://musicbrainz.org/release-group/b1392450-e666-3926-a536-22c65f834433
+tag	atmospheric	classic	2	0.291865534	72	Kid A	Radiohead	release-group		https://musicbrainz.org/release-group/e75c0549-ad55-39e3-8025-c72c5d4a3c5d
+tag	atmospheric	smooth	1	0.325991598	1	OK Computer	Radiohead	release-group		https://musicbrainz.org/release-group/b1392450-e666-3926-a536-22c65f834433
+tag	atmospheric	smooth	2	0.294923657	72	Kid A	Radiohead	release-group		https://musicbrainz.org/release-group/e75c0549-ad55-39e3-8025-c72c5d4a3c5d

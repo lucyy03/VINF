@@ -1,0 +1,101 @@
+id	url	html_file	entity_type	bytes	result	title
+1	https://musicbrainz.org/artist/a74b1b7f-71a5-4011-9441-d0b5e4122711	html/0001.html	artist	167483	OK	Radiohead - MusicBrainz
+2	https://musicbrainz.org/artist/859d0860-d480-4efd-970c-c05d5f1776b8	html/0002.html	artist	173814	OK	Beyoncé - MusicBrainz
+3	https://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56	html/0003.html	artist	133616	OK	Daft Punk - MusicBrainz
+4	https://musicbrainz.org/artist/2944824d-4c26-476f-a981-be849081942f	html/0004.html	artist	157942	OK	Nina Simone - MusicBrainz
+5	https://musicbrainz.org/artist/381086ea-f511-4aba-bdf9-71c753dc5077	html/0005.html	artist	188981	OK	Kendrick Lamar - MusicBrainz
+6	https://musicbrainz.org/artist/65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab	html/0006.html	artist	174868	OK	Metallica - MusicBrainz
+7	https://musicbrainz.org/artist/a74b1b7f-71a5-4011-9441-d0b5e4122711?page=2	html/0007.html	artist	43329	OK	Radiohead - MusicBrainz
+8	https://musicbrainz.org/artist/859d0860-d480-4efd-970c-c05d5f1776b8?page=2	html/0008.html	artist	152372	OK	Beyoncé - MusicBrainz
+9	https://musicbrainz.org/artist/2944824d-4c26-476f-a981-be849081942f?page=2	html/0009.html	artist	155737	OK	Nina Simone - MusicBrainz
+10	https://musicbrainz.org/artist/381086ea-f511-4aba-bdf9-71c753dc5077?page=2	html/0010.html	artist	64471	OK	Kendrick Lamar - MusicBrainz
+11	https://musicbrainz.org/artist/65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab?page=2	html/0011.html	artist	171169	OK	Metallica - MusicBrainz
+12	https://musicbrainz.org/release-group/00054665-89fa-33d5-a8f0-1728ea8c32c3	html/0012.html	release-group	65614	OK	Release group “Homework” by Daft Punk - MusicBrainz
+13	https://musicbrainz.org/artist/c74f4726-2671-4011-81b6-f70da905c05a	html/0013.html	artist	32454	OK	On a Friday - MusicBrainz
+14	https://musicbrainz.org/release-group/f639ba46-b371-3262-b494-5f2dbee36f5c	html/0014.html	release-group	58463	OK	Release group “Dangerously in Love” by Beyoncé - MusicBrainz
+15	https://musicbrainz.org/release-group/48117b90-a16e-34ca-a514-19c702df1158	html/0015.html	release-group	73958	OK	Release group “Discovery” by Daft Punk - MusicBrainz
+16	https://musicbrainz.org/release-group/19ca48c1-af98-3000-bc9a-97ef5fa3e3be	html/0016.html	release-group	79894	OK	Release group “Little Girl Blue” by Nina Simone - MusicBrainz
+17	https://musicbrainz.org/release-group/ceccd668-a928-4041-a3c3-99a5ce880de9	html/0017.html	release-group	30339	OK	Release group “Section.80” by Kendrick Lamar - MusicBrainz
+18	https://musicbrainz.org/release-group/f44f4f73-a714-31a1-a4b8-bfcaaf311f50	html/0018.html	release-group	143320	OK	Release group “Kill ’Em All” by Metallica - MusicBrainz
+19	https://musicbrainz.org/release-group/cd76f76b-ff15-3784-a71d-4da3078a6851	html/0019.html	release-group	83079	OK	Release group “Pablo Honey” by Radiohead - MusicBrainz
+20	https://musicbrainz.org/release-group/9fdbccb2-9b51-36b7-b643-c7ae586b797d	html/0020.html	release-group	136389	OK	Release group “B’Day” by Beyoncé - MusicBrainz
+21	https://musicbrainz.org/release-group/f9e8042a-674e-3f01-80ec-7f0ab1c537df	html/0021.html	release-group	134529	OK	Release group “Human After All” by Daft Punk - MusicBrainz
+22	https://musicbrainz.org/release-group/d06e8f13-c57f-3b4a-a417-e28f75cc9440	html/0022.html	release-group	121178	OK	Release group “The Amazing Nina Simone” by Nina Simone - MusicBrainz
+23	https://musicbrainz.org/release-group/499c19c8-0dab-4824-884b-6191d145e95b	html/0023.html	release-group	181607	OK	Release group “good kid, m.A.A.d city” by Kendrick Lamar - MusicBrainz
+24	https://musicbrainz.org/release-group/0da580f2-6768-498f-af9d-2becaddf15e0	html/0024.html	release-group	130794	OK	Release group “Ride the Lightning” by Metallica - MusicBrainz
+25	https://musicbrainz.org/release-group/b8048f24-c026-3398-b23a-b5e50716cbc7	html/0025.html	release-group	87952	OK	Release group “The Bends” by Radiohead - MusicBrainz
+26	https://musicbrainz.org/release-group/6f8e8119-de1b-39f0-85ca-b5252cb9211d	html/0026.html	release-group	175421	OK	Release group “I Am… Sasha Fierce” by Beyoncé - MusicBrainz
+27	https://musicbrainz.org/artist/149f91ef-1287-46da-9a8e-87fee02f1471	html/0027.html	artist	194596	OK	Pharrell Williams - MusicBrainz
+28	https://musicbrainz.org/release-group/49d04c21-e3f6-399a-a4df-79a876259e8a	html/0028.html	release-group	30618	OK	Release group “Forbidden Fruit” by Nina Simone - MusicBrainz
+29	https://musicbrainz.org/release-group/d9103c72-3807-4378-9ce7-b6f3e8fdd547	html/0029.html	release-group	74299	OK	Release group “To Pimp a Butterfly” by Kendrick Lamar - MusicBrainz
+30	https://musicbrainz.org/release-group/3d00fb45-f8ab-3436-a8e1-b4bfc4d66913	html/0030.html	release-group	156198	OK	Release group “Master of Puppets” by Metallica - MusicBrainz
+31	https://musicbrainz.org/release-group/b1392450-e666-3926-a536-22c65f834433	html/0031.html	release-group	108777	OK	Release group “OK Computer” by Radiohead - MusicBrainz
+32	https://musicbrainz.org/artist/f82bcf78-5b69-4622-a5ef-73800768d9ac	html/0032.html	artist	194846	OK	JAŸ-Z - MusicBrainz
+33	https://musicbrainz.org/artist/25d69cb5-c788-4c8a-aaea-1741ea93fccc	html/0033.html	artist	37346	OK	George Wallington - MusicBrainz
+34	https://musicbrainz.org/artist/9880800a-f6f8-4f8f-a00e-b4b664776c0c	html/0034.html	artist	65416	OK	Jay Rock - MusicBrainz
+35	https://musicbrainz.org/artist/9d1ebcfe-4c15-4d18-95d3-d919898638a1	html/0035.html	artist	161564	OK	Lou Reed - MusicBrainz
+36	https://musicbrainz.org/artist/149f91ef-1287-46da-9a8e-87fee02f1471?page=2	html/0036.html	artist	49930	OK	Pharrell Williams - MusicBrainz
+37	https://musicbrainz.org/artist/f82bcf78-5b69-4622-a5ef-73800768d9ac?page=2	html/0037.html	artist	120013	OK	JAŸ-Z - MusicBrainz
+38	https://musicbrainz.org/artist/9d1ebcfe-4c15-4d18-95d3-d919898638a1?page=2	html/0038.html	artist	65127	OK	Lou Reed - MusicBrainz
+39	https://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305	html/0039.html	release	1140440	OK	Release “Homework” by Daft Punk - MusicBrainz
+40	https://musicbrainz.org/release-group/9cc7c37f-b65a-493a-879b-ef3fec13e2b8	html/0040.html	release-group	20332	OK	Release group “Medicinal Sounds” by On a Friday - MusicBrainz
+41	https://musicbrainz.org/release/8f663ff6-b63f-4501-86ae-40b3cc41448b	html/0041.html	release	657359	OK	Release “Little Girl Blue” by Nina Simone - MusicBrainz
+42	https://musicbrainz.org/release/d0b24c41-8562-47fb-bfe7-5f03397c41c7	html/0042.html	release	450640	OK	Release “Section.80” by Kendrick Lamar - MusicBrainz
+43	https://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec	html/0043.html	release	1172342	OK	Release “Homework” by Daft Punk - MusicBrainz
+44	https://musicbrainz.org/release-group/70c68ca0-dd5b-45fb-8f19-b21d2ed088c1	html/0044.html	release-group	21116	OK	Release group “On a Friday” by On a Friday - MusicBrainz
+45	https://musicbrainz.org/release/3ace029c-dd68-4133-9eec-1377aa4bc908	html/0045.html	release	1121576	OK	Release “Dangerously in Love” by Beyoncé - MusicBrainz
+46	https://musicbrainz.org/release/84ff6198-11d6-499d-a8ec-27f8943aa897	html/0046.html	release	654875	OK	Release “Little Girl Blue” by Nina Simone - MusicBrainz
+47	https://musicbrainz.org/release/17696ce7-ba44-4e66-8ca3-8b1d2ec47d31	html/0047.html	release	454321	OK	Release “Section.80” by Kendrick Lamar - MusicBrainz
+48	https://musicbrainz.org/release/a89e1d92-5381-4dab-ba51-733137d0e431	html/0048.html	release	633230	OK	Release “Kill ’Em All” by Metallica - MusicBrainz
+49	https://musicbrainz.org/release-group/b7a7b524-e29a-4d8e-a7f5-ffbcea5a38e4	html/0049.html	release-group	26583	OK	Release group “Homework (Remixes)” by Daft Punk - MusicBrainz
+50	https://musicbrainz.org/release-group/67629803-b51e-3d2e-bca3-18f4aa5a2678	html/0050.html	release-group	44728	OK	Release group “The Greatest Shindig” by Shindig - MusicBrainz
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1	html/0051.html	release	1179866	OK	Release “Dangerously in Love” by Beyoncé - MusicBrainz
+52	https://musicbrainz.org/release-group/7acf1746-a14a-4e13-aea7-86f8bf518331	html/0052.html	release-group	19274	OK	Release group “3 Originals” by Nina Simone - MusicBrainz
+53	https://musicbrainz.org/release-group/020d45f4-be06-4d48-aaa1-7edd4163c81e	html/0053.html	release-group	20184	OK	Release group “Section.80 (Chopped Not Slopped)” by Slim K - MusicBrainz
+54	https://musicbrainz.org/release/834a7aa9-c7f5-3571-a812-46c6d134a98d	html/0054.html	release	614669	OK	Release “Kill ’Em All” by Metallica - MusicBrainz
+55	https://musicbrainz.org/release-group/5b1c02ac-8608-3857-a9b6-62e056177d96	html/0055.html	release-group	50134	OK	Release group “Around the World” by Daft Punk - MusicBrainz
+56	https://musicbrainz.org/release-group/9a8be91b-e0c6-3be1-b968-514126ba68f8	html/0056.html	release-group	29490	OK	Release group “Baby Boy” by Beyoncé feat. Sean Paul - MusicBrainz
+57	https://musicbrainz.org/release-group/094b927c-b82d-4597-97cf-f7b12aae9aa4	html/0057.html	release-group	21120	OK	Release group “Essential Original Albums” by Nina Simone - MusicBrainz
+58	https://musicbrainz.org/artist/3cd00c13-2605-402c-81cb-12a977f73bb0	html/0058.html	artist	26539	OK	Slim K - MusicBrainz
+59	https://musicbrainz.org/release-group/297372db-7e22-4cf9-91f6-14e54c11378d	html/0059.html	release-group	28738	OK	Release group “Jump in the Fire” by Metallica - MusicBrainz
+60	https://musicbrainz.org/release/286912b9-24d1-4073-9f0d-b03cffad61f8	html/0060.html	release	845125	OK	Release “Pablo Honey” by Radiohead - MusicBrainz
+61	https://musicbrainz.org/release-group/8dfbd2f1-be5d-3b42-9d7a-8ab3a6d66cb6	html/0061.html	release-group	30112	OK	Release group “Burnin’” by Daft Punk - MusicBrainz
+62	https://musicbrainz.org/artist/c3da3346-2643-48a7-93cd-011f6834b3d7	html/0062.html	artist	185371	OK	Sean Paul - MusicBrainz
+63	https://musicbrainz.org/release-group/d28967f4-7f34-4855-8feb-2b4998c4a074	html/0063.html	release-group	21515	OK	Release group “Five Classic Albums Plus Bonus Tracks” by Nina Simone - MusicBrainz
+64	https://musicbrainz.org/release-group/7a9b9bbc-19e0-4af2-8a56-e2cb51d769ae	html/0064.html	release-group	20711	OK	Release group “HiiiPoWeR” by Kendrick Lamar - MusicBrainz
+65	https://musicbrainz.org/release-group/9ca93f9b-0d8c-4b2d-9d54-ba3364abb1ea	html/0065.html	release-group	26831	OK	Release group “Whiplash” by Metallica - MusicBrainz
+66	https://musicbrainz.org/release/8125fd6f-addc-45a8-ba34-4b023aeae962	html/0066.html	release	845470	OK	Release “Pablo Honey” by Radiohead - MusicBrainz
+67	https://musicbrainz.org/release-group/d86198a6-29e6-3748-93a8-1a4a0fadef57	html/0067.html	release-group	39617	OK	Release group “Da Funk” by Daft Punk - MusicBrainz
+68	https://musicbrainz.org/release-group/689d5a05-bbe7-335f-b3e0-1adb557c2393	html/0068.html	release-group	61179	OK	Release group “Crazy in Love” by Beyoncé - MusicBrainz
+69	https://musicbrainz.org/release-group/6716cf59-b4f1-49ab-8c9b-052cb155e602	html/0069.html	release-group	25763	OK	Release group “My Baby Just Cares for Me” by Nina Simone - MusicBrainz
+70	https://musicbrainz.org/release-group/84c5124c-8bda-4645-9b1d-aeaed301a6d7	html/0070.html	release-group	20362	OK	Release group “Hol’ Up” by Kendrick Lamar - MusicBrainz
+71	https://musicbrainz.org/release-group/8c1a6884-628d-43db-8bce-bddd13ae0945	html/0071.html	release-group	21015	OK	Release group “A Tribute to Kill ’Em All” by Various Artists - MusicBrainz
+72	https://musicbrainz.org/release-group/f8c54de0-d93b-39bb-b820-47d19471e56e	html/0072.html	release-group	27940	OK	Release group “Anyone Can Play Guitar” by Radiohead - MusicBrainz
+73	https://musicbrainz.org/release-group/af768bc7-cd05-342a-8e9f-c53b3881278f	html/0073.html	release-group	22311	OK	Release group “Indo Silver Club” by Daft Punk - MusicBrainz
+74	https://musicbrainz.org/release-group/9f9ced11-613b-4033-969e-4524ce20c46b	html/0074.html	release-group	25113	OK	Release group “My Baby Just Cares for Me” by Nina Simone - MusicBrainz
+75	https://musicbrainz.org/artist/89ad4ac3-39f7-470e-963a-56509c546377	html/0075.html	artist	170690	OK	Various Artists - MusicBrainz
+76	https://musicbrainz.org/release-group/c5bc370b-95c2-3634-bb89-51bb2dce97c3	html/0076.html	release-group	42591	OK	Release group “Creep” by Radiohead - MusicBrainz
+77	https://musicbrainz.org/release/869ba1e5-b110-3d87-9da3-9d024a8c2687	html/0077.html	release	994610	OK	Release “B’Day” by Beyoncé - MusicBrainz
+78	https://musicbrainz.org/release/2de6d2c1-349b-4f89-9b84-9653624293a4	html/0078.html	release	1059522	OK	Release “good kid, m.A.A.d city” by Kendrick Lamar - MusicBrainz
+79	https://musicbrainz.org/release-group/4a25766d-f1ab-30de-9599-e0e0920df0a4	html/0079.html	release-group	30963	OK	Release group “Revolution 909” by Daft Punk - MusicBrainz
+80	https://musicbrainz.org/release-group/dd6aa5da-d99f-454c-8a63-a7241d3a9620	html/0080.html	release-group	22074	OK	Release group “Nina’s Blues 1959–1962” by Nina Simone - MusicBrainz
+81	https://musicbrainz.org/release-group/58a89271-3aca-4aca-b23b-0421bda25c6c	html/0081.html	release-group	25841	OK	Release group “No Life ’Til Leather: A Tribute to Metallica’s Kill ’Em All” by Various Artists - MusicBrainz
+82	https://musicbrainz.org/release-group/45c42d7a-9d39-3da9-a196-31bef84b6887	html/0082.html	release-group	28343	OK	Release group “Pop Is Dead” by Radiohead - MusicBrainz
+83	https://musicbrainz.org/release/698f4979-df26-4ab3-88e2-251278817ece	html/0083.html	release	1143993	OK	Release “B’Day” by Beyoncé - MusicBrainz
+84	https://musicbrainz.org/release/8b85a562-71ce-486e-8536-34c5dca0f54e	html/0084.html	release	1225282	OK	Release “good kid, m.A.A.d city” by Kendrick Lamar - MusicBrainz
+85	https://musicbrainz.org/release-group/c7e4df00-31fa-4325-ad2d-593cd8a9d1ef	html/0085.html	release-group	21472	OK	Release group “Homework Dub” by Mato - MusicBrainz
+86	https://musicbrainz.org/release-group/9e4b2434-7630-45d2-927c-1c3ca465c2f8	html/0086.html	release-group	20892	OK	Release group “The Complete 1955–1959” by Nina Simone - MusicBrainz
+87	https://musicbrainz.org/release-group/0a74ca69-c4d7-4a04-83c0-eadbb9ae9c7e	html/0087.html	release-group	21815	OK	Release group “2013-06-08: Orion Music + More, Detroit, MI, USA” by Metallica - MusicBrainz
+88	https://musicbrainz.org/release-group/bd3aaea6-145a-41bb-a909-91f264c24a8f	html/0088.html	release-group	24098	OK	Release group “Stop Whispering” by Radiohead - MusicBrainz
+89	https://musicbrainz.org/release-group/008f61c8-0e7f-3aa3-8675-5c4f20637d43	html/0089.html	release-group	37251	OK	Release group “Beautiful Liar” by Beyoncé &amp; Shakira - MusicBrainz
+90	https://musicbrainz.org/release-group/a9ce57bb-63f7-48d4-a067-b7a669d31dbf	html/0090.html	release-group	26463	OK	Release group “Bitch, Don’t Kill My Vibe” by Kendrick Lamar - MusicBrainz
+91	https://musicbrainz.org/artist/7960bdc8-054e-4d5d-b18c-74c3eca76793	html/0091.html	artist	39197	OK	Mato - MusicBrainz
+92	https://musicbrainz.org/release-group/13719053-ce81-4a8a-a4ca-af0d24d00514	html/0092.html	release-group	21027	OK	Release group “Trilogy” by Nina Simone - MusicBrainz
+93	https://musicbrainz.org/release-group/e9632698-addd-4d34-b949-fb23f128db64	html/0093.html	release-group	22615	OK	Release group “Limited‐Edition Vinyl Box Set” by Metallica - MusicBrainz
+94	https://musicbrainz.org/release-group/30f765ef-d7f0-4cce-8a3b-d6e1069f1dda	html/0094.html	release-group	23519	OK	Release group “5 Album Set” by Radiohead - MusicBrainz
+95	https://musicbrainz.org/artist/bf24ca37-25f4-4e34-9aec-460b94364cfc	html/0095.html	artist	177828	OK	Shakira - MusicBrainz
+96	https://musicbrainz.org/release-group/10c252c6-b694-47ad-b60b-556115ec9205	html/0096.html	release-group	21725	OK	Release group “Bitch, Don’t Kill My Vibe (remix)” by Kendrick Lamar ft. Jay‐Z - MusicBrainz
+97	https://musicbrainz.org/release-group/1ed45c8c-9abd-4ec3-9ff6-43d264f0e6b7	html/0097.html	release-group	25500	OK	Release group “Homework / Discovery” by Daft Punk - MusicBrainz
+98	https://musicbrainz.org/release-group/5b2a6048-030a-4e04-b2f5-eaf02000725f	html/0098.html	release-group	22762	OK	Release group “The Metallica Collection” by Metallica - MusicBrainz
+99	https://musicbrainz.org/release-group/b7db08f4-835a-4a69-970b-5321e6305032	html/0099.html	release-group	24543	OK	Release group “Album Box Set” by Radiohead - MusicBrainz
+100	https://musicbrainz.org/release-group/bc9be3b6-9ab4-4ecb-abe1-be3493725448	html/0100.html	release-group	20762	OK	Release group “Creole” by Beyoncé - MusicBrainz

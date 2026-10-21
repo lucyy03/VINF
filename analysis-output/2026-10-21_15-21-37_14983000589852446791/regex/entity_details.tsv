@@ -1,0 +1,93 @@
+page_id	source_url	other_tags	rating	rating_scope	earliest_listed_release_date	artist_end_date	gender	artist_sort_name
+1	https://musicbrainz.org/artist/a74b1b7f-71a5-4011-9441-d0b5e4122711	british;alternative;alternative rock music;progressive rock music;britrock	4.5	artist				
+2	https://musicbrainz.org/artist/859d0860-d480-4efd-970c-c05d5f1776b8	2000s;2010s;2020s;grammy winner;vocalist	4.35	artist			Female	
+3	https://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56	french;dance music;film score;house music;left-field house	4.65	artist		2021-02-22		
+4	https://musicbrainz.org/artist/2944824d-4c26-476f-a981-be849081942f	african american singers;african american women civil rights workers;civil rights;composers;pianists	5	artist		2003-04-21	Female	Simone, Nina
+5	https://musicbrainz.org/artist/381086ea-f511-4aba-bdf9-71c753dc5077	rap;2010s;2020s;contemporary rap;progressive rap	4.25	artist			Male	Lamar, Kendrick
+6	https://musicbrainz.org/artist/65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab	american;rockgruppe	4.15	artist				
+12	https://musicbrainz.org/release-group/00054665-89fa-33d5-a8f0-1728ea8c32c3		4.05	release-group	1997			
+13	https://musicbrainz.org/artist/c74f4726-2671-4011-81b6-f70da905c05a	oxford;uk;united kingdom				1991		
+14	https://musicbrainz.org/release-group/f639ba46-b371-3262-b494-5f2dbee36f5c	hip-hop;rnb swing;urban	3.9	release-group	2003			
+15	https://musicbrainz.org/release-group/48117b90-a16e-34ca-a514-19c702df1158	club/dance;left-field house;leftfield house;nu-disco;offizielle charts	4.25	release-group	2001			
+16	https://musicbrainz.org/release-group/19ca48c1-af98-3000-bc9a-97ef5fa3e3be	standards	4.2	release-group	1958-06-24			
+17	https://musicbrainz.org/release-group/ceccd668-a928-4041-a3c3-99a5ce880de9	conscious;political;rhythmic;urban;concept album	3.85	release-group	2011			
+18	https://musicbrainz.org/release-group/f44f4f73-a714-31a1-a4b8-bfcaaf311f50	aggressive;energetic;raw;rebellious;heavy	4.2	release-group	1983			
+19	https://musicbrainz.org/release-group/cd76f76b-ff15-3784-a71d-4da3078a6851	anxious;lonely;melancholic;alienation;anthemic	3.25	release-group	1993			
+20	https://musicbrainz.org/release-group/9fdbccb2-9b51-36b7-b643-c7ae586b797d	r b;contemporary r b;urban crossover;rnb;rnb/swing	3.8	release-group	2006			
+21	https://musicbrainz.org/release-group/f9e8042a-674e-3f01-80ec-7f0ab1c537df	abstract;club/dance;bass;dance music;house music	3.35	release-group	2005			
+22	https://musicbrainz.org/release-group/d06e8f13-c57f-3b4a-a417-e28f75cc9440		4.5	release-group	1959			
+23	https://musicbrainz.org/release-group/499c19c8-0dab-4824-884b-6191d145e95b	conscious;ageing;alcohol;bittersweet;boastful	4.3	release-group	2012			
+24	https://musicbrainz.org/release-group/0da580f2-6768-498f-af9d-2becaddf15e0	aggressive;angry;apocalyptic;chugging;cold	4.65	release-group	1984			
+25	https://musicbrainz.org/release-group/b8048f24-c026-3398-b23a-b5e50716cbc7	alternative and punk;poetic;self-hatred;sombre;1995	4.15	release-group	1994-11-29			
+26	https://musicbrainz.org/release-group/6f8e8119-de1b-39f0-85ca-b5252cb9211d	adult contemporary;r b;good;hip-hop r b;pop general	4.1	release-group	2008			
+27	https://musicbrainz.org/artist/149f91ef-1287-46da-9a8e-87fee02f1471	contemporary rap;producer tag - pharrell	3.5	artist			Male	Williams, Pharrell
+28	https://musicbrainz.org/release-group/49d04c21-e3f6-399a-a4df-79a876259e8a		4.5	release-group	1961			
+29	https://musicbrainz.org/release-group/d9103c72-3807-4378-9ce7-b6f3e8fdd547	altruistic;antidiscrimination;antiracism;boastful;christian	4.4	release-group	2015-03-15			
+30	https://musicbrainz.org/release-group/3d00fb45-f8ab-3436-a8e1-b4bfc4d66913	aggressive;angry;energetic;heavy;political	4.6	release-group	1986			
+31	https://musicbrainz.org/release-group/b1392450-e666-3926-a536-22c65f834433	atmospheric;cold;existential;futuristic;lonely	4.55	release-group	1997			
+32	https://musicbrainz.org/artist/f82bcf78-5b69-4622-a5ef-73800768d9ac	grammy winner	3.5	artist			Male	Jay-Z
+33	https://musicbrainz.org/artist/25d69cb5-c788-4c8a-aaea-1741ea93fccc		5	artist		1993-02-15	Male	Wallington, George
+34	https://musicbrainz.org/artist/9880800a-f6f8-4f8f-a00e-b4b664776c0c						Male	
+35	https://musicbrainz.org/artist/9d1ebcfe-4c15-4d18-95d3-d919898638a1		3.8	artist		2013-10-27	Male	Reed, Lou
+39	https://musicbrainz.org/release/770b9b80-10e1-4297-b1fd-46ad0dbb0305		4.05	release-group				
+40	https://musicbrainz.org/release-group/9cc7c37f-b65a-493a-879b-ef3fec13e2b8				1987-09-03			
+41	https://musicbrainz.org/release/8f663ff6-b63f-4501-86ae-40b3cc41448b		4.2	release-group				
+42	https://musicbrainz.org/release/d0b24c41-8562-47fb-bfe7-5f03397c41c7	rap	3.85	release-group				
+43	https://musicbrainz.org/release/647d7016-2683-42c6-b027-83114a7c3eec		4.05	release-group				
+44	https://musicbrainz.org/release-group/70c68ca0-dd5b-45fb-8f19-b21d2ed088c1				1986			
+45	https://musicbrainz.org/release/3ace029c-dd68-4133-9eec-1377aa4bc908		3.9	release-group				
+46	https://musicbrainz.org/release/84ff6198-11d6-499d-a8ec-27f8943aa897		4.2	release-group				
+47	https://musicbrainz.org/release/17696ce7-ba44-4e66-8ca3-8b1d2ec47d31		3.85	release-group				
+48	https://musicbrainz.org/release/a89e1d92-5381-4dab-ba51-733137d0e431		4.2	release-group				
+49	https://musicbrainz.org/release-group/b7a7b524-e29a-4d8e-a7f5-ffbcea5a38e4		4	release-group	2022-02-02			
+50	https://musicbrainz.org/release-group/67629803-b51e-3d2e-bca3-18f4aa5a2678				1990			
+51	https://musicbrainz.org/release/fd80b54c-a247-4550-92f6-816f0d74e7c1		3.9	release-group				
+52	https://musicbrainz.org/release-group/7acf1746-a14a-4e13-aea7-86f8bf518331				2010			
+53	https://musicbrainz.org/release-group/020d45f4-be06-4d48-aaa1-7edd4163c81e				2012			
+54	https://musicbrainz.org/release/834a7aa9-c7f5-3571-a812-46c6d134a98d		4.2	release-group				
+55	https://musicbrainz.org/release-group/5b1c02ac-8608-3857-a9b6-62e056177d96	left-field house	4.5	release-group	1996			
+56	https://musicbrainz.org/release-group/9a8be91b-e0c6-3be1-b968-514126ba68f8	mixtape	5	release-group	2003			
+57	https://musicbrainz.org/release-group/094b927c-b82d-4597-97cf-f7b12aae9aa4				2016			
+58	https://musicbrainz.org/artist/3cd00c13-2605-402c-81cb-12a977f73bb0						Male	
+59	https://musicbrainz.org/release-group/297372db-7e22-4cf9-91f6-14e54c11378d	speed/thrash metal	2.5	release-group	1984			
+60	https://musicbrainz.org/release/286912b9-24d1-4073-9f0d-b03cffad61f8		3.25	release-group				
+61	https://musicbrainz.org/release-group/8dfbd2f1-be5d-3b42-9d7a-8ab3a6d66cb6				1997			
+62	https://musicbrainz.org/artist/c3da3346-2643-48a7-93cd-011f6834b3d7	caribbean	4.2	artist			Male	
+63	https://musicbrainz.org/release-group/d28967f4-7f34-4855-8feb-2b4998c4a074				2012-10-22			
+64	https://musicbrainz.org/release-group/7a9b9bbc-19e0-4af2-8a56-e2cb51d769ae				2011-04-12			
+65	https://musicbrainz.org/release-group/9ca93f9b-0d8c-4b2d-9d54-ba3364abb1ea	pop/rock	3.5	release-group	1983-08-08			
+66	https://musicbrainz.org/release/8125fd6f-addc-45a8-ba34-4b023aeae962		3.25	release-group				
+67	https://musicbrainz.org/release-group/d86198a6-29e6-3748-93a8-1a4a0fadef57	electronic_house	3.5	release-group	1995-12-07			
+68	https://musicbrainz.org/release-group/689d5a05-bbe7-335f-b3e0-1adb557c2393	r b	5	release-group	2003			
+69	https://musicbrainz.org/release-group/6716cf59-b4f1-49ab-8c9b-052cb155e602				2008			
+70	https://musicbrainz.org/release-group/84c5124c-8bda-4645-9b1d-aeaed301a6d7				2011-06-24			
+71	https://musicbrainz.org/release-group/8c1a6884-628d-43db-8bce-bddd13ae0945				2013-01-14			
+72	https://musicbrainz.org/release-group/f8c54de0-d93b-39bb-b820-47d19471e56e	britpop grunge	3.75	release-group	1993			
+73	https://musicbrainz.org/release-group/af768bc7-cd05-342a-8e9f-c53b3881278f				1996-02-26			
+74	https://musicbrainz.org/release-group/9f9ced11-613b-4033-969e-4524ce20c46b				2009			
+75	https://musicbrainz.org/artist/89ad4ac3-39f7-470e-963a-56509c546377	special purpose artist;special purpose;compilation;9818784;absolute	4.05	artist				
+76	https://musicbrainz.org/release-group/c5bc370b-95c2-3634-bb89-51bb2dce97c3	alternative/indie rock	4	release-group	1992			
+77	https://musicbrainz.org/release/869ba1e5-b110-3d87-9da3-9d024a8c2687		3.8	release-group				
+78	https://musicbrainz.org/release/2de6d2c1-349b-4f89-9b84-9653624293a4		4.3	release-group				
+79	https://musicbrainz.org/release-group/4a25766d-f1ab-30de-9599-e0e0920df0a4		5	release-group	1996			
+80	https://musicbrainz.org/release-group/dd6aa5da-d99f-454c-8a63-a7241d3a9620				2021			
+81	https://musicbrainz.org/release-group/58a89271-3aca-4aca-b23b-0421bda25c6c	english;ph_temp_checken;plattentests.de			2025-11-14			
+82	https://musicbrainz.org/release-group/45c42d7a-9d39-3da9-a196-31bef84b6887		3	release-group	1993			
+83	https://musicbrainz.org/release/698f4979-df26-4ab3-88e2-251278817ece		3.8	release-group				
+84	https://musicbrainz.org/release/8b85a562-71ce-486e-8536-34c5dca0f54e		4.3	release-group				
+85	https://musicbrainz.org/release-group/c7e4df00-31fa-4325-ad2d-593cd8a9d1ef				2014-07-04			
+86	https://musicbrainz.org/release-group/9e4b2434-7630-45d2-927c-1c3ca465c2f8				2011-08			
+87	https://musicbrainz.org/release-group/0a74ca69-c4d7-4a04-83c0-eadbb9ae9c7e				2013-06-17			
+88	https://musicbrainz.org/release-group/bd3aaea6-145a-41bb-a909-91f264c24a8f		3.65	release-group	1993-10-01			
+89	https://musicbrainz.org/release-group/008f61c8-0e7f-3aa3-8675-5c4f20637d43	other pop;r b;urban crossover	5	release-group	2007			
+90	https://musicbrainz.org/release-group/a9ce57bb-63f7-48d4-a067-b7a669d31dbf				2013-05-13			
+91	https://musicbrainz.org/artist/7960bdc8-054e-4d5d-b18c-74c3eca76793						Male	
+92	https://musicbrainz.org/release-group/13719053-ce81-4a8a-a4ca-af0d24d00514				2005-01-01			
+93	https://musicbrainz.org/release-group/e9632698-addd-4d34-b949-fb23f128db64		5	release-group	2004-11-23			
+94	https://musicbrainz.org/release-group/30f765ef-d7f0-4cce-8a3b-d6e1069f1dda		5	release-group	2012-10-12			
+95	https://musicbrainz.org/artist/bf24ca37-25f4-4e34-9aec-460b94364cfc		4.85	artist			Female	
+96	https://musicbrainz.org/release-group/10c252c6-b694-47ad-b60b-556115ec9205				2013-03-18			
+97	https://musicbrainz.org/release-group/1ed45c8c-9abd-4ec3-9ff6-43d264f0e6b7				2001-10-15			
+98	https://musicbrainz.org/release-group/5b2a6048-030a-4e04-b2f5-eaf02000725f		5	release-group	2009-04-25			
+99	https://musicbrainz.org/release-group/b7db08f4-835a-4a69-970b-5321e6305032	alternative and punk	5	release-group	2007-12-10			
+100	https://musicbrainz.org/release-group/bc9be3b6-9ab4-4ecb-abe1-be3493725448		5	release-group	2006			

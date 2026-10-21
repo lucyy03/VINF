@@ -35,6 +35,14 @@ public class MusicBrainzCrawler {
     private static final String USER_AGENT =
         "SchoolAlbumCrawler/2.0 (STUBA educational HTML crawl)";
 
+    private static boolean BREADTH;
+    private static int RELEASES_PER_GROUP = 3;
+    private static int ALBUMS_PER_ARTIST = 20;
+    private static int MAX_LIST_PAGES = 20;
+    private static int ARTIST_LINKS = 3;
+    private static List<String> SEEDS = new ArrayList<>(List.of(START_URL));
+    private static final java.util.Map<String, int[]> ADMISSIONS = new java.util.HashMap<>();
+    private static final java.util.Map<String, String> ORIGINS = new java.util.HashMap<>();
     private static int MAX_PAGES = 1000;
     private static int MAX_DEPTH = 10;
     // Includes robots.txt, verification POSTs, redirects and unsuccessful requests.
@@ -186,7 +194,7 @@ public class MusicBrainzCrawler {
             );
         }
 
-        if (!robotsRules.isAllowed(startUrl)) {
+        if (recovered == null && SEEDS.stream().anyMatch(seed -> !activeRobots.isAllowed(seed))) {
             throw new IllegalStateException(
                 "START_URL is blocked by robots.txt."
             );
@@ -197,7 +205,14 @@ public class MusicBrainzCrawler {
         Set<String> visited = recovered == null ? new HashSet<>() : recovered.visited;
         Set<String> savedInternalEdges = recovered == null ? new HashSet<>() : recovered.internalEdges;
         Set<String> savedExternalEdges = recovered == null ? new HashSet<>() : recovered.externalEdges;
-        if (recovered == null) { queue.add(new CrawlItem(startUrl, 0)); queued.add(startUrl); }
+        if (recovered == null) {
+            for (String seed : SEEDS) { queue.add(new CrawlItem(seed, 0)); queued.add(seed); ORIGINS.put(seed, seed); }
+            atomicText(outputDirectory.resolve("seed_sources.tsv"), "url\n" + String.join("\n", SEEDS) + "\n");
+        } else {
+            ORIGINS.clear(); ORIGINS.putAll(recovered.origins);
+            for (String url : visited) ORIGINS.putIfAbsent(url, START_URL);
+            for (CrawlItem item : queue) ORIGINS.putIfAbsent(item.url(), START_URL);
+        }
         int successfulPages = recovered == null ? 0 : recovered.pages;
         // Each source is processed once and extractLinks already deduplicates targets.
         // Historical edge sets need not live in memory or grow the recovery state.
@@ -205,6 +220,7 @@ public class MusicBrainzCrawler {
         Checkpoint checkpoint = recovered != null ? recovered : new Checkpoint(outputDirectory, queue, queued, visited,
             savedInternalEdges, savedExternalEdges, successfulPages);
         checkpoint.save("ACTIVE");
+        loadAdmissions(outputDirectory);
         boolean stoppedBySite = false;
 
         while (
@@ -223,7 +239,7 @@ public class MusicBrainzCrawler {
                 catch (StopCrawlException e) { markCheckpointStopped(outputDirectory); throw e; }
             }
             robotsRules = activeRobots;
-            CrawlItem item = queue.poll();
+            CrawlItem item = pollNext(queue, visited);
 
             String currentUrl = item.url();
 
@@ -374,24 +390,34 @@ public class MusicBrainzCrawler {
             int internalCount = 0;
             int externalCount = 0;
             int queuedCount = 0;
+            int[] admitted = ADMISSIONS.computeIfAbsent(MusicBrainzUrls.canonical(currentUrl), k -> new int[3]);
+            int queuedEditions = admitted[1];
+            int queuedAlbums = admitted[0];
 
             for (String link : links) {
                 if (isInternal(link)) {
                     internalCount++;
 
+                    boolean sameListing = link != null && !MusicBrainzUrls.canonical(link).isEmpty()
+                        && MusicBrainzUrls.canonical(link).equals(MusicBrainzUrls.canonical(currentUrl));
                     boolean shouldQueue =
-                        item.depth()
-                            < MAX_DEPTH
+                        (item.depth() < MAX_DEPTH || sameListing)
                             && isRelevantEntityUrl(
                                 link
                             )
+                            && (MusicBrainzUrls.page(link) == 1 || sameListing)
                             && robotsRules
                                 .isAllowed(link)
                             && !visited
                                 .contains(link)
                             && !queued
                                 .contains(link)
-                            && queue.size() < MAX_FRONTIER;
+                            && queue.size() < MAX_FRONTIER
+                            && !(BREADTH && entityType(currentUrl).equals("release-group")
+                                && entityType(link).equals("release") && queuedEditions >= RELEASES_PER_GROUP)
+                            && !(BREADTH && entityType(currentUrl).equals("artist")
+                                && entityType(link).equals("release-group") && queuedAlbums >= ALBUMS_PER_ARTIST)
+                            && !(BREADTH && !sameListing && entityType(link).equals("artist") && admitted[2] >= ARTIST_LINKS);
                     if (item.depth() < MAX_DEPTH && isRelevantEntityUrl(link)
                         && !visited.contains(link) && !queued.contains(link) && queue.size() >= MAX_FRONTIER)
                         frontierDeferred++;
@@ -419,12 +445,15 @@ public class MusicBrainzCrawler {
                         queue.add(
                             new CrawlItem(
                                 link,
-                                item.depth()
-                                    + 1
+                                item.depth() + (sameListing ? 0 : 1)
                             )
                         );
 
                         queued.add(link);
+                        ORIGINS.putIfAbsent(link, ORIGINS.getOrDefault(currentUrl, START_URL));
+                        if (entityType(currentUrl).equals("release-group") && entityType(link).equals("release")) admitted[1] = ++queuedEditions;
+                        if (entityType(currentUrl).equals("artist") && entityType(link).equals("release-group")) admitted[0] = ++queuedAlbums;
+                        if (!sameListing && entityType(link).equals("artist")) admitted[2]++;
                         queuedCount++;
                     }
                 } else {
@@ -499,6 +528,7 @@ public class MusicBrainzCrawler {
             + (stoppedBySite ? "INTERRUPTED_OR_STOPPED" : finalState) + "\npages\t" + successfulPages
             + "\nrequests\t" + requestCount + "\nfrontier_remaining\t" + queue.size()
             + "\nfrontier_deferred_this_process\t" + frontierDeferred + "\n");
+        writeCoverage(outputDirectory, visited);
         System.out.println(
             "Crawler finished."
         );
@@ -524,12 +554,14 @@ public class MusicBrainzCrawler {
     private static void printUsage() {
         System.out.println("MusicBrainzCrawler [--fresh|--recover] [--pages N] [--depth N] "
             + "[--max-requests N] [--max-frontier N] [--min-free-mib N] [--start-url URL]");
+        System.out.println("Breadth: --seeds crawl-seeds.tsv [--releases-per-group 3] [--albums-per-artist 20] [--list-pages 20] [--artist-links 3]; default depth 6.");
         System.out.println("Example: --fresh --pages 10000 --depth 10");
         System.out.println("Recovery automatically uses saved settings; it cannot reset the request budget.");
     }
 
     private static void configure(String[] args) throws IOException {
         requestedMode = null; explicitOptions.clear();
+        BREADTH = false; RELEASES_PER_GROUP = 3; ALBUMS_PER_ARTIST = 20; MAX_LIST_PAGES = 20; ARTIST_LINKS = 3; SEEDS = new ArrayList<>(); ORIGINS.clear();
         for (int i = 0; i < args.length; i++) {
             String key = args[i];
             if (key.equals("--help")) { requestedMode = "help"; continue; }
@@ -537,24 +569,47 @@ public class MusicBrainzCrawler {
                 if (requestedMode != null) throw new IOException("Choose one mode only.");
                 requestedMode = key.substring(2); continue;
             }
+            if (key.equals("--breadth")) { BREADTH = true; explicitOptions.add(key); continue; }
+            if (key.equals("--seeds")) {
+                if (!explicitOptions.add(key) || ++i >= args.length) throw new IOException("Missing/duplicate --seeds file");
+                List<String> rows = Files.readAllLines(Path.of(args[i]), StandardCharsets.UTF_8);
+                if (rows.isEmpty() || !rows.get(0).replace("\uFEFF", "").equals("name\turl")) throw new IOException("Seed TSV requires name and url columns");
+                for (String row : rows.subList(1, rows.size())) {
+                    if (row.isBlank()) continue;
+                    String[] columns = row.split("\t", -1);
+                    if (columns.length != 2 || !isRelevantEntityUrl(columns[1]) || MusicBrainzUrls.page(columns[1]) > 1) throw new IOException("Invalid seed: " + row);
+                    String normalized = normalizeUrl(columns[1], columns[1]);
+                    if (!SEEDS.contains(normalized)) SEEDS.add(normalized);
+                }
+                if (SEEDS.isEmpty() || SEEDS.size() > 1000) throw new IOException("Provide 1..1000 distinct seeds");
+                BREADTH = true; continue;
+            }
             if (key.equals("--start-url")) {
-                if (!explicitOptions.add(key) || ++i >= args.length || !isRelevantEntityUrl(args[i]))
+                if (!explicitOptions.add(key) || ++i >= args.length || !isRelevantEntityUrl(args[i]) || MusicBrainzUrls.page(args[i]) > 1)
                     throw new IOException("--start-url must be a MusicBrainz entity HTTPS URL");
                 START_URL = normalizeUrl(args[i], args[i]); continue;
             }
-            if (!Set.of("--pages", "--depth", "--max-requests", "--max-frontier", "--min-free-mib").contains(key)
+            if (!Set.of("--pages", "--depth", "--max-requests", "--max-frontier", "--min-free-mib", "--releases-per-group", "--albums-per-artist", "--list-pages", "--artist-links").contains(key)
                 || !explicitOptions.add(key) || ++i >= args.length) throw new IOException("Invalid option: " + key);
             try {
                 int value = Integer.parseInt(args[i]);
                 switch (key) {
                     case "--pages" -> MAX_PAGES = value;
                     case "--depth" -> MAX_DEPTH = value;
+                    case "--releases-per-group" -> RELEASES_PER_GROUP = value;
+                    case "--albums-per-artist" -> ALBUMS_PER_ARTIST = value;
+                    case "--list-pages" -> MAX_LIST_PAGES = value;
+                    case "--artist-links" -> ARTIST_LINKS = value;
                     case "--max-requests" -> MAX_REQUESTS = value;
                     case "--max-frontier" -> MAX_FRONTIER = value;
                     case "--min-free-mib" -> MIN_FREE_BYTES = Math.multiplyExact((long) value, 1048576L);
                 }
             } catch (RuntimeException e) { throw new IOException("Invalid numeric option: " + key, e); }
         }
+        if (explicitOptions.contains("--seeds") && explicitOptions.contains("--start-url"))
+            throw new IOException("Choose --seeds or --start-url, not both");
+        if (SEEDS.isEmpty()) SEEDS.add(START_URL); else START_URL = SEEDS.get(0);
+        if (BREADTH && !explicitOptions.contains("--depth")) MAX_DEPTH = 6;
         if (!explicitOptions.contains("--max-requests")) {
             long budget = 4L * MAX_PAGES + 100;
             if (budget > Integer.MAX_VALUE) throw new IOException("Page target is too large.");
@@ -564,6 +619,7 @@ public class MusicBrainzCrawler {
     }
 
     private static void adoptSavedConfiguration(Path directory) throws IOException {
+        List<String> savedSeeds = new ArrayList<>(); boolean savedBreadth = false; int savedLimit = 3; int savedAlbums = Integer.MAX_VALUE; int savedListPages = 0; int savedArtistLinks = Integer.MAX_VALUE;
         for (String line : Files.readAllLines(directory.resolve("checkpoint.tsv"))) {
             String[] fields = line.split("\t");
             try {
@@ -577,6 +633,19 @@ public class MusicBrainzCrawler {
                     requireSavedOption("--pages", MAX_PAGES, pages); requireSavedOption("--depth", MAX_DEPTH, depth);
                     requireSavedOption("--max-requests", MAX_REQUESTS, requests);
                     MAX_PAGES = pages; MAX_DEPTH = depth; MAX_REQUESTS = requests;
+                } else if (fields[0].equals("SEED")) {
+                    String seed = decoded(fields[1]);
+                    if (!isRelevantEntityUrl(seed) || savedSeeds.contains(seed) || savedSeeds.size() >= 1000)
+                        throw new IOException("Invalid saved seeds");
+                    savedSeeds.add(seed);
+                } else if (fields[0].equals("BREADTH")) {
+                    if (!Set.of("true", "false").contains(fields[1])) throw new IOException("Invalid breadth mode");
+                    savedBreadth = Boolean.parseBoolean(fields[1]); savedLimit = Integer.parseInt(fields[2]);
+                    if (fields.length > 3) savedAlbums = Integer.parseInt(fields[3]);
+                } else if (fields[0].equals("ARTIST_LINKS")) {
+                    savedArtistLinks = Integer.parseInt(fields[1]);
+                } else if (fields[0].equals("PAGINATION")) {
+                    savedListPages = Integer.parseInt(fields[1]);
                 } else if (fields[0].equals("SETTINGS")) {
                     int frontier = Integer.parseInt(fields[1]); long free = Long.parseLong(fields[2]);
                     requireSavedOption("--max-frontier", MAX_FRONTIER, frontier);
@@ -585,6 +654,14 @@ public class MusicBrainzCrawler {
                 }
             } catch (RuntimeException e) { throw new IOException("Invalid saved configuration", e); }
         }
+        if (savedSeeds.isEmpty()) savedSeeds.add(START_URL);
+        if (explicitOptions.contains("--seeds") && !savedSeeds.equals(SEEDS)) throw new IOException("Recovery must keep saved seeds");
+        if (explicitOptions.contains("--breadth") && !savedBreadth) throw new IOException("Cannot change strategy during recovery");
+        requireSavedOption("--releases-per-group", RELEASES_PER_GROUP, savedLimit);
+        requireSavedOption("--albums-per-artist", ALBUMS_PER_ARTIST, savedAlbums);
+        requireSavedOption("--list-pages", MAX_LIST_PAGES, savedListPages); MAX_LIST_PAGES = savedListPages;
+        requireSavedOption("--artist-links", ARTIST_LINKS, savedArtistLinks); ARTIST_LINKS = savedArtistLinks;
+        SEEDS = savedSeeds; BREADTH = savedBreadth; RELEASES_PER_GROUP = savedLimit; ALBUMS_PER_ARTIST = savedAlbums;
         validateConfiguration();
     }
 
@@ -745,6 +822,60 @@ public class MusicBrainzCrawler {
         return checkpoint;
     }
 
+    private static void loadAdmissions(Path output) throws IOException {
+        ADMISSIONS.clear();
+        try (var rows = Files.lines(output.resolve("internal_links.tsv"), StandardCharsets.UTF_8)) {
+            var iterator = rows.skip(1).iterator();
+            while (iterator.hasNext()) {
+                String[] row = iterator.next().split("\t", -1);
+                if (row.length != 3 || !row[2].equals("true")) continue;
+                String source = MusicBrainzUrls.canonical(row[0]), target = MusicBrainzUrls.canonical(row[1]);
+                if (source.isEmpty() || target.isEmpty()) continue;
+                int[] counts = ADMISSIONS.computeIfAbsent(source, k -> new int[3]);
+                if (!source.equals(target) && entityType(target).equals("artist")) counts[2]++;
+                if (entityType(source).equals("artist") && entityType(target).equals("release-group")) counts[0]++;
+                if (entityType(source).equals("release-group") && entityType(target).equals("release")) counts[1]++;
+            }
+        }
+    }
+
+    private static String entityType(String url) { return java.net.URI.create(url).getPath().split("/")[1]; }
+
+    // Keep breadth-first depth ordering, balancing attempts between seed branches.
+    private static CrawlItem pollNext(Queue<CrawlItem> queue, Set<String> visited) {
+        if (!BREADTH) return queue.poll();
+        java.util.Map<String, Integer> counts = new java.util.HashMap<>();
+        for (String url : visited) counts.merge(ORIGINS.getOrDefault(url, START_URL), 1, Integer::sum);
+        CrawlItem best = null;
+        for (CrawlItem item : queue) {
+            if (best == null || item.depth() < best.depth()
+                || (item.depth() == best.depth() && counts.getOrDefault(ORIGINS.getOrDefault(item.url(), START_URL), 0)
+                    < counts.getOrDefault(ORIGINS.getOrDefault(best.url(), START_URL), 0))) best = item;
+        }
+        if (best != null) queue.remove(best);
+        return best;
+    }
+
+    private static void writeCoverage(Path directory, Set<String> visited) throws IOException {
+        java.util.Map<String, int[]> counts = new java.util.LinkedHashMap<>();
+        for (String seed : SEEDS) counts.put(seed, new int[5]);
+        for (String url : visited) counts.computeIfAbsent(ORIGINS.getOrDefault(url, START_URL), k -> new int[5])[0]++;
+        Set<String> countedEntities = new HashSet<>();
+        try (var lines = Files.lines(directory.resolve("pages.tsv"), StandardCharsets.UTF_8)) {
+            for (String row : lines.skip(1).toList()) {
+                String[] fields = row.split("\t", -1);
+                String url = fields[1];
+                int[] values = counts.computeIfAbsent(ORIGINS.getOrDefault(url, START_URL), k -> new int[5]);
+                if (MusicBrainzUrls.page(url) > 1) values[4]++;
+                if (!countedEntities.add(MusicBrainzUrls.canonical(url))) continue;
+                switch (entityType(url)) { case "artist" -> values[1]++; case "release-group" -> values[2]++; case "release" -> values[3]++; }
+            }
+        }
+        StringBuilder report = new StringBuilder("seed_url\tattempted\tartists\trelease_groups\treleases\tlisting_pages\n");
+        for (var entry : counts.entrySet()) { report.append(entry.getKey()); for (int value : entry.getValue()) report.append('\t').append(value); report.append('\n'); }
+        atomicText(directory.resolve("breadth_coverage.tsv"), report.toString());
+    }
+
     private static final class Checkpoint {
         final Path directory;
         final Queue<CrawlItem> queue;
@@ -763,23 +894,27 @@ public class MusicBrainzCrawler {
         private boolean journalInitialized;
         private List<CrawlItem> previousQueue = List.of();
         private Set<String> previousVisited = Set.of();
+        final java.util.Map<String, String> origins = new java.util.HashMap<>();
+        private Set<String> previousOrigins = Set.of();
 
         void save(String state) throws IOException {
+            origins.putAll(ORIGINS);
             String snapshot = snapshot(state);
             if (!journalInitialized) {
                 atomicText(directory.resolve("checkpoint-base.tsv"), snapshot);
                 sequence = 0;
             } else {
                 List<CrawlItem> now = new ArrayList<>(queue);
-                int removed = previousQueue.size();
-                if (!now.isEmpty()) {
-                    int first = previousQueue.indexOf(now.get(0));
-                    if (first >= 0) removed = first;
-                }
-                int retained = previousQueue.size() - removed;
-                if (now.size() < retained || !previousQueue.subList(removed, previousQueue.size()).equals(now.subList(0, retained)))
-                    throw new IOException("Checkpoint queue must preserve BFS order");
-                StringBuilder delta = new StringBuilder("REMOVE\t" + removed + "\n");
+                Set<CrawlItem> current = new HashSet<>(now);
+                List<CrawlItem> kept = previousQueue.stream().filter(current::contains).toList();
+                int retained = kept.size();
+                if (now.size() < retained || !kept.equals(now.subList(0, retained)))
+                    throw new IOException("Checkpoint queue must preserve survivor order");
+                StringBuilder delta = new StringBuilder("REMOVE\t0\n");
+                for (CrawlItem old : previousQueue) if (!current.contains(old))
+                    delta.append("REMOVE_URL\t").append(encoded(old.url())).append('\n');
+                for (var entry : origins.entrySet()) if (!previousOrigins.contains(entry.getKey()))
+                    delta.append("ORIGIN\t").append(encoded(entry.getKey())).append('\t').append(encoded(entry.getValue())).append('\n');
                 for (int i = retained; i < now.size(); i++) delta.append("QUEUE\t").append(encoded(now.get(i).url()))
                     .append('\t').append(now.get(i).depth()).append('\n');
                 for (String url : visited) if (!previousVisited.contains(url))
@@ -792,13 +927,18 @@ public class MusicBrainzCrawler {
             // Small manifest is the commit point. Orphan deltas beyond its sequence are ignored.
             String manifest = snapshot.lines().filter(line -> !line.startsWith("QUEUE\t")
                 && !line.startsWith("QUEUED\t") && !line.startsWith("VISITED\t")
-                && !line.startsWith("INTERNAL\t") && !line.startsWith("EXTERNAL\t"))
+                && !line.startsWith("INTERNAL\t") && !line.startsWith("EXTERNAL\t") && !line.startsWith("ORIGIN\t"))
                 .collect(java.util.stream.Collectors.joining("\n", "", "\n"))
-                .replaceFirst("VERSION\\t1", "VERSION\t2")
+                .replaceFirst("VERSION\\t1", "VERSION\t6")
                 + "SEQUENCE\t" + sequence + "\nSETTINGS\t" + MAX_FRONTIER + "\t" + MIN_FREE_BYTES + "\n";
+            manifest += "BREADTH\t" + BREADTH + "\t" + RELEASES_PER_GROUP + "\t" + ALBUMS_PER_ARTIST + "\n";
+            manifest += "ARTIST_LINKS\t" + ARTIST_LINKS + "\n";
+            manifest += "PAGINATION\t" + MAX_LIST_PAGES + "\n";
+            for (String seed : SEEDS) manifest += "SEED\t" + encoded(seed) + "\n";
             atomicText(directory.resolve("checkpoint.tsv"), manifest);
             if (!journalInitialized) atomicText(directory.getParent().resolve("latest_checkpoint.tsv"), directory.getFileName() + "\n");
             previousQueue = new ArrayList<>(queue); previousVisited = new HashSet<>(visited);
+            previousOrigins = new HashSet<>(origins.keySet());
             journalInitialized = true; this.state = state;
         }
 
@@ -825,6 +965,7 @@ public class MusicBrainzCrawler {
             if (!journalInitialized) for (CrawlItem item : queue) text.append("QUEUE\t").append(encoded(item.url()))
                 .append('\t').append(item.depth()).append('\n');
             if (!journalInitialized) {
+                for (var entry : origins.entrySet()) text.append("ORIGIN\t").append(encoded(entry.getKey())).append('\t').append(encoded(entry.getValue())).append('\n');
                 appendSet(text, "QUEUED", queued); appendSet(text, "VISITED", visited);
                 appendSet(text, "INTERNAL", internalEdges); appendSet(text, "EXTERNAL", externalEdges);
             }
@@ -838,14 +979,14 @@ public class MusicBrainzCrawler {
         static Checkpoint read(Path directory) throws IOException {
             List<String> manifest = Files.readAllLines(directory.resolve("checkpoint.tsv"), StandardCharsets.UTF_8);
             if (!manifest.isEmpty() && manifest.get(0).equals("VERSION\t1")) return readSnapshot(directory, manifest);
-            if (manifest.isEmpty() || !manifest.get(0).equals("VERSION\t2")) throw new IOException("Unknown checkpoint version");
+            if (manifest.isEmpty() || !(manifest.get(0).equals("VERSION\t2") || manifest.get(0).equals("VERSION\t3") || manifest.get(0).equals("VERSION\t4") || manifest.get(0).equals("VERSION\t5") || manifest.get(0).equals("VERSION\t6"))) throw new IOException("Unknown checkpoint version");
             int committed = -1;
             List<String> metadata = new ArrayList<>();
             for (String line : manifest) {
                 if (line.startsWith("SEQUENCE\t")) {
                     try { committed = Integer.parseInt(line.substring(9)); }
                     catch (RuntimeException e) { throw new IOException("Invalid journal sequence", e); }
-                } else if (!line.startsWith("SETTINGS\t")) metadata.add(line.replaceFirst("^VERSION\\t2$", "VERSION\t1"));
+                } else if (!line.startsWith("ARTIST_LINKS\t") && !line.startsWith("PAGINATION\t") && !line.startsWith("SETTINGS\t") && !line.startsWith("SEED\t") && !line.startsWith("BREADTH\t")) metadata.add(line.replaceFirst("^VERSION\\t[23456]$", "VERSION\t1"));
             }
             if (committed < 0 || committed > (long) MAX_REQUESTS + MAX_FRONTIER + MAX_PAGES + 100)
                 throw new IOException("Invalid journal sequence");
@@ -867,6 +1008,8 @@ public class MusicBrainzCrawler {
                                 if (!isRelevantEntityUrl(url) || depth < 0 || depth > MAX_DEPTH) throw new IOException("Invalid journal URL");
                                 result.queue.add(new CrawlItem(url, depth));
                             }
+                            case "REMOVE_URL" -> { String url = decoded(f[1]); if (!result.queue.removeIf(item -> item.url().equals(url))) throw new IOException("Missing removed URL"); }
+                            case "ORIGIN" -> result.origins.put(decoded(f[1]), decoded(f[2]));
                             case "VISITED" -> result.visited.add(decoded(f[1]));
                             case "INTERNAL" -> result.internalEdges.add(decoded(f[1]));
                             case "EXTERNAL" -> result.externalEdges.add(decoded(f[1]));
@@ -882,6 +1025,7 @@ public class MusicBrainzCrawler {
             result.pages = meta.pages; result.state = meta.state;
             result.sizes.clear(); result.sizes.putAll(meta.sizes);
             result.sequence = committed; result.journalInitialized = true;
+            result.previousOrigins = new HashSet<>(result.origins.keySet());
             result.previousQueue = new ArrayList<>(result.queue); result.previousVisited = new HashSet<>(result.visited);
             return result;
         }
@@ -912,6 +1056,7 @@ public class MusicBrainzCrawler {
                                 throw new IllegalArgumentException("Invalid queued URL/depth");
                             result.queue.add(new CrawlItem(url, depth));
                         }
+                        case "ORIGIN" -> result.origins.put(decoded(f[1]), decoded(f[2]));
                         case "QUEUED" -> result.queued.add(decoded(f[1]));
                         case "VISITED" -> result.visited.add(decoded(f[1]));
                         case "INTERNAL" -> result.internalEdges.add(decoded(f[1]));
@@ -953,6 +1098,7 @@ public class MusicBrainzCrawler {
         if (
             MAX_PAGES < 1
                 || MAX_DEPTH < 0
+                || ARTIST_LINKS < 0 || MAX_LIST_PAGES < 0 || MAX_LIST_PAGES > 999999 || RELEASES_PER_GROUP < 1 || ALBUMS_PER_ARTIST < 1 || SEEDS.isEmpty() || SEEDS.size() > MAX_FRONTIER
                 || MAX_REQUESTS < MAX_PAGES || MAX_FRONTIER < 1 || MIN_FREE_BYTES < 128L * 1048576
                 || MIN_DELAY_MS < 3000
         ) {
@@ -1348,9 +1494,11 @@ public class MusicBrainzCrawler {
                 path = resolved.getPath().toLowerCase(java.util.Locale.ROOT).replaceFirst("/$", "");
             String authority = host.toLowerCase(java.util.Locale.ROOT);
             if (authority.contains(":")) authority = "[" + authority + "]";
-            return URI.create(scheme.toLowerCase(java.util.Locale.ROOT) + "://" + authority
+            String normalized = URI.create(scheme.toLowerCase(java.util.Locale.ROOT) + "://" + authority
                 + (port == -1 ? "" : ":" + port) + path
                 + (resolved.getRawQuery() == null ? "" : "?" + resolved.getRawQuery())).toASCIIString();
+            String scoped = MusicBrainzUrls.normalize(normalized);
+            return scoped.isEmpty() ? normalized : scoped;
         } catch (Exception e) {
             return null;
         }
@@ -1388,28 +1536,8 @@ public class MusicBrainzCrawler {
     private static boolean isRelevantEntityUrl(
         String url
     ) {
-        try {
-            URI uri =
-                URI.create(url);
-
-            if (
-                !isInternal(url)
-                    || uri.getQuery()
-                        != null
-            ) {
-                return false;
-            }
-
-            String path =
-                uri.getPath();
-
-            return path != null
-                && ENTITY_PATH_PATTERN
-                    .matcher(path)
-                    .matches();
-        } catch (Exception e) {
-            return false;
-        }
+        return !MusicBrainzUrls.canonical(url).isEmpty()
+            && (java.net.URI.create(url).getRawQuery() == null || MusicBrainzUrls.page(url) <= MAX_LIST_PAGES);
     }
 
     private static String getHost(

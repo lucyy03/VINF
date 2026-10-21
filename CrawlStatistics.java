@@ -46,7 +46,8 @@ public class CrawlStatistics {
         for (String key : List.of("page_records", "malformed_records", "duplicate_url_records", "duplicate_html_records",
                 "missing_html_records", "challenge_records", "invalid_document_records", "valid_entity_documents",
                 "artist_documents", "release_documents", "release_group_documents", "html_files_on_disk",
-                "unreferenced_html_files", "html_bytes", "all_files_bytes")) metrics.put(key, 0L);
+                "unreferenced_html_files", "html_bytes", "all_files_bytes", "pagination_documents", "unique_entities")) metrics.put(key, 0L);
+        Set<String> entityUrls = new HashSet<>();
         Set<String> urls = new HashSet<>();
         Set<Path> references = new HashSet<>();
         StringBuilder audit = new StringBuilder("id\turl\thtml_file\tentity_type\tbytes\tresult\ttitle\n");
@@ -94,6 +95,8 @@ public class CrawlStatistics {
             }
             if (issues.isEmpty()) {
                 increment(metrics, "valid_entity_documents", 1);
+                if (MusicBrainzUrls.page(row[1]) > 1) increment(metrics, "pagination_documents", 1);
+                if (entityUrls.add(MusicBrainzUrls.canonical(row[1]))) increment(metrics, "unique_entities", 1);
                 increment(metrics, type.replace('-', '_') + "_documents", 1);
             } else increment(metrics, "invalid_document_records", 1);
             audit.append(clean(row[0])).append('\t').append(clean(row[1])).append('\t').append(clean(row[5]))
@@ -130,7 +133,7 @@ public class CrawlStatistics {
             URI uri = URI.create(url);
             if (!"https".equalsIgnoreCase(uri.getScheme()) || !"musicbrainz.org".equalsIgnoreCase(uri.getHost())
                 || uri.getRawUserInfo() != null || (uri.getPort() != -1 && uri.getPort() != 443)
-                || uri.getQuery() != null || uri.getFragment() != null) return "";
+                || MusicBrainzUrls.canonical(url).isEmpty() || uri.getFragment() != null) return "";
             var matcher = ENTITY.matcher(uri.getPath());
             return matcher.matches() ? matcher.group(1) : "";
         } catch (RuntimeException e) { return ""; }

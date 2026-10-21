@@ -1,0 +1,11 @@
+query_id	method	k	retrieved	relevant_total	relevant_retrieved	precision_at_k	recall_at_k	rr_at_k
+track_label	classic	5	1	1	1	0.2	1.0	1.0
+track_label	smooth	5	1	1	1	0.2	1.0	1.0
+catalog	classic	5	1	1	1	0.2	1.0	1.0
+catalog	smooth	5	1	1	1	0.2	1.0	1.0
+artist	classic	5	1	1	1	0.2	1.0	1.0
+artist	smooth	5	1	1	1	0.2	1.0	1.0
+tag	classic	5	2	2	2	0.4	1.0	1.0
+tag	smooth	5	2	2	2	0.4	1.0	1.0
+negative	classic	5	0	0	0			
+negative	smooth	5	0	0	0			

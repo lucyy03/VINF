@@ -1,0 +1,87 @@
+page_id	source_url	other_tags	rating	rating_scope	earliest_listed_release_date	artist_end_date	gender	artist_sort_name
+1	https://musicbrainz.org/artist/a74b1b7f-71a5-4011-9441-d0b5e4122711	british;alternative;alternative rock music;progressive rock music;britrock	4.5	artist				
+2	https://musicbrainz.org/artist/859d0860-d480-4efd-970c-c05d5f1776b8	2000s;2010s;2020s;grammy winner;vocalist	4.35	artist			Female	
+3	https://musicbrainz.org/artist/056e4f3e-d505-4dad-8ec1-d04f521cbb56	french;dance music;film score;house music;left-field house	4.65	artist		2021-02-22		
+4	https://musicbrainz.org/artist/2944824d-4c26-476f-a981-be849081942f	african american singers;african american women civil rights workers;civil rights;composers;pianists	5	artist		2003-04-21	Female	Simone, Nina
+5	https://musicbrainz.org/artist/381086ea-f511-4aba-bdf9-71c753dc5077	rap;2010s;2020s;contemporary rap;progressive rap	4.25	artist			Male	Lamar, Kendrick
+6	https://musicbrainz.org/artist/65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab	american;rockgruppe	4.15	artist				
+12	https://musicbrainz.org/release-group/00054665-89fa-33d5-a8f0-1728ea8c32c3		4.05	release-group	1997			
+13	https://musicbrainz.org/artist/c74f4726-2671-4011-81b6-f70da905c05a	oxford;uk;united kingdom				1991		
+14	https://musicbrainz.org/release-group/f639ba46-b371-3262-b494-5f2dbee36f5c	hip-hop;rnb swing;urban	3.9	release-group	2003			
+15	https://musicbrainz.org/release-group/48117b90-a16e-34ca-a514-19c702df1158	club/dance;left-field house;leftfield house;nu-disco;offizielle charts	4.25	release-group	2001			
+16	https://musicbrainz.org/release-group/19ca48c1-af98-3000-bc9a-97ef5fa3e3be	standards	4.2	release-group	1958-06-24			
+17	https://musicbrainz.org/release-group/ceccd668-a928-4041-a3c3-99a5ce880de9	conscious;political;rhythmic;urban;concept album	3.85	release-group	2011			
+18	https://musicbrainz.org/release-group/f44f4f73-a714-31a1-a4b8-bfcaaf311f50	aggressive;energetic;raw;rebellious;heavy	4.2	release-group	1983			
+19	https://musicbrainz.org/release-group/cd76f76b-ff15-3784-a71d-4da3078a6851	anxious;lonely;melancholic;alienation;anthemic	3.25	release-group	1993			
+20	https://musicbrainz.org/release-group/9fdbccb2-9b51-36b7-b643-c7ae586b797d	r b;contemporary r b;urban crossover;rnb;rnb/swing	3.8	release-group	2006			
+21	https://musicbrainz.org/release-group/f9e8042a-674e-3f01-80ec-7f0ab1c537df	abstract;club/dance;bass;dance music;house music	3.35	release-group	2005			
+22	https://musicbrainz.org/release-group/d06e8f13-c57f-3b4a-a417-e28f75cc9440		4.5	release-group	1959			
+23	https://musicbrainz.org/release-group/499c19c8-0dab-4824-884b-6191d145e95b	conscious;ageing;alcohol;bittersweet;boastful	4.3	release-group	2012			
+24	https://musicbrainz.org/release-group/0da580f2-6768-498f-af9d-2becaddf15e0	aggressive;angry;apocalyptic;chugging;cold	4.65	release-group	1984			
+25	https://musicbrainz.org/release-group/b8048f24-c026-3398-b23a-b5e50716cbc7	alternative and punk;poetic;self-hatred;sombre;1995	4.15	release-group	1994-11-29			
+26	https://musicbrainz.org/release-group/6f8e8119-de1b-39f0-85ca-b5252cb9211d	adult contemporary;r b;good;hip-hop r b;pop general	4.1	release-group	2008			
+27	https://musicbrainz.org/artist/149f91ef-1287-46da-9a8e-87fee02f1471	contemporary rap;producer tag - pharrell	3.5	artist			Male	Williams, Pharrell
+28	https://musicbrainz.org/release-group/49d04c21-e3f6-399a-a4df-79a876259e8a		4.5	release-group	1961			
+29	https://musicbrainz.org/release-group/d9103c72-3807-4378-9ce7-b6f3e8fdd547	altruistic;antidiscrimination;antiracism;boastful;christian	4.4	release-group	2015-03-15			
+30	https://musicbrainz.org/release-group/3d00fb45-f8ab-3436-a8e1-b4bfc4d66913	aggressive;angry;energetic;heavy;political	4.6	release-group	1986			
+31	https://musicbrainz.org/release-group/b1392450-e666-3926-a536-22c65f834433	atmospheric;cold;existential;futuristic;lonely	4.55	release-group	1997			
+32	https://musicbrainz.org/artist/f82bcf78-5b69-4622-a5ef-73800768d9ac	grammy winner	3.5	artist			Male	Jay-Z
+33	https://musicbrainz.org/artist/c8b03190-306c-4120-bb0b-6f2ebfc06ea9	2010s;2020s	4.65	artist			Male	Weeknd, The
+34	https://musicbrainz.org/artist/25d69cb5-c788-4c8a-aaea-1741ea93fccc		5	artist		1993-02-15	Male	Wallington, George
+35	https://musicbrainz.org/artist/9880800a-f6f8-4f8f-a00e-b4b664776c0c						Male	
+36	https://musicbrainz.org/artist/9d1ebcfe-4c15-4d18-95d3-d919898638a1		3.8	artist		2013-10-27	Male	Reed, Lou
+37	https://musicbrainz.org/artist/bec9c3ab-7428-4d65-909d-2e024fbcb924							
+38	https://musicbrainz.org/artist/c3da3346-2643-48a7-93cd-011f6834b3d7	caribbean	4.2	artist			Male	
+39	https://musicbrainz.org/artist/fa0e2024-95ff-44b6-9a86-f0ab120b6a72	garage;_wip_;dj tools / acapellas;jazz-house					Male	Edwards, Todd
+40	https://musicbrainz.org/artist/54799c0e-eb45-4eea-996d-c4d71a63c499	2008 universal fire victim;aln-sh;live;sunshine	4.85	artist		1996-06-15	Female	Fitzgerald, Ella
+41	https://musicbrainz.org/artist/bce6d667-cde8-485e-b078-c0a05adea36d						Male	
+42	https://musicbrainz.org/artist/adcc6c98-0bf1-4d54-84aa-2249cf5e46bf	american;film composer;songwriter;soundtrack				2003-11-18	Male	Kamen, Michael
+43	https://musicbrainz.org/artist/8f985a30-7eb1-4d40-8969-ac31e2c98a4e	cellist;russian cellist					Female	Kobekina, Anastasia
+44	https://musicbrainz.org/artist/bf24ca37-25f4-4e34-9aec-460b94364cfc		4.85	artist			Female	
+45	https://musicbrainz.org/artist/f28cabfc-3cf5-4886-b832-36ab708fbb0a	rnb					Female	Cantrell, Blu
+46	https://musicbrainz.org/artist/d59c4cda-11d9-48db-8bfe-b557ee602aed	2008 universal fire victim;cotm candidate;eddie rubin;legends;standards	4	artist		1959-07-17	Female	Holiday, Billie
+47	https://musicbrainz.org/artist/36494952-f434-45d8-a958-8b4acdbcf8a8		4	artist			Male	
+48	https://musicbrainz.org/artist/deebc49a-6e06-418e-860f-8c7f770a8bac	american orchestra;symphony orchestra	5	artist				
+49	https://musicbrainz.org/artist/c1a1088a-6906-49fd-b924-049f88298bcb	composer					Male	Abdelmoula, Jean-Sélim
+50	https://musicbrainz.org/artist/650e7db6-b795-4eb5-a702-5ea2fc46c848	female vocals;synthpop;2010s;film soundtrack;industrial pop	4.3	artist			Female	
+51	https://musicbrainz.org/artist/c6d571dd-c0ae-4ac8-9500-780b1b9b25e5		3	artist			Male	Rodgers, Nile
+52	https://musicbrainz.org/artist/acc12019-10e3-40aa-b4bf-66fbb4a692af	rap					Male	
+53	https://musicbrainz.org/artist/351d8bdf-33a1-45e2-8c04-c85fad20da55	bop;cool;standards;torch song;vocal music	4.5	artist		1990-04-03	Female	Vaughan, Sarah
+55	https://musicbrainz.org/artist/efa2c11a-1a35-4b60-bc1b-66d37de88511	ambient breakbeat;bay area rap;left-field rap	4.35	artist			Male	Shadow, DJ
+56	https://musicbrainz.org/artist/fac0f203-eb89-4d34-a3c5-8e353356d756	ccm	5	artist			Female	Williams, Michelle
+57	https://musicbrainz.org/artist/7032cf8a-ca2e-48c4-bffe-a9a77e223bbb					1998-01-17	Male	Kimbrough, Junior
+58	https://musicbrainz.org/artist/29c28ac3-27c5-4822-8eb6-0af89a3a7240		5	artist			Male	
+61	https://musicbrainz.org/artist/8ed2e0b3-aa4c-4e13-bec3-dc7393ed4d6b	british;english;film score;uk;film soundtrack	3.5	artist			Male	Yorke, Thom
+62	https://musicbrainz.org/artist/31bea673-d23a-4889-8da1-7cb040863268	austin city limits;best female artist;best female emcee;best female singer;dilemma	5	artist			Female	Rowland, Kelly
+63	https://musicbrainz.org/artist/38790f2f-43e9-4e06-b818-38ada1f5afd3						Male	Moustache, Mr.
+64	https://musicbrainz.org/artist/9b46bd1f-2f9e-46bb-9a68-4e24c644a137						Male	
+66	https://musicbrainz.org/artist/1e4460c9-4d4a-4eb7-b2a6-3718e6e1020b						Male	
+67	https://musicbrainz.org/artist/6a93cb2b-d33a-42fc-a41a-542e3a887ba6							Voidz, The
+68	https://musicbrainz.org/artist/5f6ab597-f57a-40da-be9e-adad48708203		4.5	artist			Male	Dre, Dr.
+69	https://musicbrainz.org/artist/dfeba5ea-c967-4ad2-9cdd-3cffb4320143	orchestra;uk						
+71	https://musicbrainz.org/artist/95eefd18-8b94-4e14-9283-d31892ca6624						Male	
+72	https://musicbrainz.org/artist/dcf5807c-ef1f-4291-b452-6824080ecac4	rap;baby;big tymers;birdman;criminal	5	artist			Male	
+73	https://musicbrainz.org/artist/e6de1f3b-6484-491c-88dd-6d619f142abc	soundtrack;film composer;composer;german;film score	4.25	artist			Male	Zimmer, Hans
+75	https://musicbrainz.org/artist/83b9cbe7-9857-49e2-ab8e-b57b01038103	seattle;usa;rock and indie;bridge;christmas singles	4.6	artist				
+76	https://musicbrainz.org/artist/f5e17326-eb32-457f-a986-1e0532507f32						Male	Maine, Mack
+79	https://musicbrainz.org/artist/1a60d6dd-9d3e-40fc-a66d-3184f9ee0d61	film soundtrack	5	artist			Male	Vedder, Eddie
+80	https://musicbrainz.org/artist/986ee464-cf8a-4e59-a71f-74756102067f		5	artist			Male	
+82	https://musicbrainz.org/artist/081a2d60-9791-4e05-a075-f1890355eeee	trap rap;another one;congratulations you played yourself;english;we the best music	5	artist			Male	Khaled, DJ
+83	https://musicbrainz.org/artist/bb3cbea2-5ad4-4917-bc84-8a1975d40315		4.5	artist			Male	
+84	https://musicbrainz.org/artist/0d8b8f49-c91d-4862-ad5a-3ed89edc0c41						Male	
+85	https://musicbrainz.org/artist/4ce1c576-305a-4b82-82fa-5e5359056219		5	artist			Male	Currensy
+86	https://musicbrainz.org/artist/b95ce3ff-3d05-4e87-9e01-c97b66af13d4	rap;detroit;detroit hip hop;midwest hip hop;hip-hop	4.25	artist			Male	
+87	https://musicbrainz.org/artist/dcad99e7-3c3e-4c78-bf8a-68203e17da48	hustle;trap rap;god;rap;self made millionaire	5	artist			Male	
+88	https://musicbrainz.org/artist/48262e82-db9f-4a92-b650-dfef979b73ec	trap rap;2010s;2020s;english					Male	
+89	https://musicbrainz.org/artist/039a300c-8d50-438d-b46c-0b7004e90539						Male	
+90	https://musicbrainz.org/artist/410e7fd3-b865-4fa0-bb18-1b7fd53382ca		5	artist			Female	
+91	https://musicbrainz.org/artist/9fff2f8a-21e6-47de-a2b8-7f449929d43f	hip-hop;top 5;top 100;trap rap;contemporary rap	4.4	artist			Male	
+92	https://musicbrainz.org/artist/ad8585b3-655e-4e6f-82a8-e10f89ec65f3						Male	Isley, Ronald
+93	https://musicbrainz.org/artist/25b7b584-d952-4662-a8b9-dd8cdfbfeb64		3.65	artist			Male	ASAP Rocky
+94	https://musicbrainz.org/artist/4a76400d-283f-492e-9754-18ef41755f81	rhythm & blues	5	artist				Isley Brothers, The
+95	https://musicbrainz.org/artist/dff0d392-4cd5-4052-9fbb-f485df3891e5	2010s;atlanta hip-hop;contemporary rap;criminal;southern hip-hop					Male	
+96	https://musicbrainz.org/artist/e4a51f17-a57b-47b1-b37b-f552d0f8e9e6	rap;english	5	artist			Male	Scott, Travis
+97	https://musicbrainz.org/artist/d1353a0c-26fb-4318-a116-defde9c7c9ad	singer;uk;thank you	4.4	artist			Female	
+98	https://musicbrainz.org/artist/7e9bd05a-117f-4cce-87bc-e011527a8b18	2010s;queer;english;female vocals;miley-cyrus	3.8	artist			Non-binary	
+99	https://musicbrainz.org/artist/028e1863-cab4-4a3d-9dd9-91c682c91005	comedy rap	4.35	artist				Lonely Island, The
+100	https://musicbrainz.org/artist/a0b8cb9e-7532-45fe-a74c-30e7c4009a39	best female artist;best female rapper;best female singer;god;rap	4.75	artist			Female	Elliott, Missy

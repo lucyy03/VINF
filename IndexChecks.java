@@ -68,6 +68,21 @@ public class IndexChecks {
         check(loaded.search("Japan 1997", MusicBrainzIndex.Method.CLASSIC, true, 10).get(0).document().id() == 1, "Event join by entity");
         var rebuilt = MusicBrainzIndexer.build(input, work.resolve("second-index"));
         check(rebuilt.postings.equals(built.postings), "Rebuilding does not accumulate duplicate documents");
+        String trackRows = "page_id\tsource_url\tname\n1\t" + first + "\tParanoid Android\n";
+        Files.writeString(input.resolve("tracks.tsv"), trackRows + trackRows.substring(trackRows.indexOf('\n') + 1));
+        Files.writeString(input.resolve("labels.tsv"), "page_id\tsource_url\tname\tcatalog_numbers\n1\t" + first + "\tParlophone\tTCNODATA 02\n");
+        Files.writeString(input.resolve("entity_details.tsv"), "page_id\tsource_url\tother_tags\tartist_end_date\tgender\tartist_sort_name\n1\t" + first + "\tatmospheric\t\t\t\n");
+        var expanded = MusicBrainzIndexer.build(input, work.resolve("expanded"));
+        for (var method : MusicBrainzIndex.Method.values())
+            check(expanded.search("Paranoid Parlophone atmospheric", method, true, 10).get(0).document().id() == 1,
+                "Track names, labels and tags join the correct edition for both methods");
+        check(expanded.postings.get("paranoid").get(1) == 1, "Duplicate supplemental rows must not inflate TF");
+        check(MusicBrainzIndex.load(work.resolve("expanded")).postings.equals(expanded.postings), "Supplemental index round trip");
+        check(Files.readString(work.resolve("expanded/manifest.tsv")).contains("input_sha256_tracks.tsv"), "Supplemental input hashes");
+        Files.writeString(input.resolve("tracks.tsv"), trackRows.replace("1\t", "99\t"));
+        try { MusicBrainzIndexer.build(input, work.resolve("orphan")); throw new AssertionError("Wrong parent page accepted"); }
+        catch (java.io.IOException expected) { }
+        Files.writeString(input.resolve("tracks.tsv"), trackRows);
         try { MusicBrainzIndexer.build(input, output); throw new AssertionError("Existing generation overwritten"); }
         catch (java.io.IOException expected) { }
         String terms = Files.readString(output.resolve("terms.tsv"));

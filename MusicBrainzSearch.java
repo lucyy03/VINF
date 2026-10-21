@@ -36,7 +36,14 @@ public class MusicBrainzSearch {
             if (!root.equals(directory.getParent())) throw new IOException("Invalid latest-index pointer");
         }
         MusicBrainzIndex index = MusicBrainzIndex.load(directory);
-        StringBuilder result = new StringBuilder("query_id\tquery\tmethod\trank\tscore\tpage_id\tname\tartist_credit\tentity_type\tformat\tsource_url\n");
+        java.util.Map<String,String> firstDates = new java.util.HashMap<>();
+        java.util.Map<String,java.util.List<String>> editions = new java.util.HashMap<>();
+        if (Files.exists(directory.resolve("albums.tsv")))
+            for (var row : MusicBrainzIndex.readTsv(directory.resolve("albums.tsv"), "album_url", "first_release_date")) firstDates.put(row.get("album_url"),row.get("first_release_date"));
+        if (Files.exists(directory.resolve("editions.tsv")))
+            for (var row : MusicBrainzIndex.readTsv(directory.resolve("editions.tsv"), "album_url", "release_url"))
+                editions.computeIfAbsent(row.get("album_url"),key -> new java.util.ArrayList<>()).add(row.get("release_url"));
+        StringBuilder result = new StringBuilder("query_id\tquery\tmethod\trank\tscore\tpage_id\tname\tartist_credit\tentity_type\tformat\tsource_url\tfirst_release_date\teditions_count\trelease_urls\n");
         var requests = queries == null ? List.of(java.util.Map.of("query_id", "1", "query", query))
             : MusicBrainzIndex.readTsv(queries, "query_id", "query");
         java.util.Set<String> queryIds = new java.util.HashSet<>();
@@ -54,7 +61,9 @@ public class MusicBrainzSearch {
                         .append('\t').append(++rank).append('\t').append(String.format(Locale.ROOT, "%.9f", hit.score()))
                         .append('\t').append(doc.pageId()).append('\t').append(MusicBrainzIndex.cell(doc.name()))
                         .append('\t').append(MusicBrainzIndex.cell(doc.artist())).append('\t').append(doc.type())
-                        .append('\t').append(MusicBrainzIndex.cell(doc.format())).append('\t').append(doc.url()).append('\n');
+                        .append('\t').append(MusicBrainzIndex.cell(doc.format())).append('\t').append(doc.url()).append('\t')
+                        .append(firstDates.getOrDefault(doc.url(), "")).append('\t').append(editions.getOrDefault(doc.url(), List.of()).size()).append('\t')
+                        .append(String.join(";",editions.getOrDefault(doc.url(), List.of()))).append('\n');
                 }
                 if (hits.isEmpty()) System.err.println("No matches: " + request.get("query") + " [" + selected + "]");
             }

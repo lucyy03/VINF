@@ -20,14 +20,14 @@ public class MusicBrainzIndexer {
         "status", "language", "script", "area", "artist_begin_date", "genres");
 
     public static void main(String[] args) throws Exception {
-        if (args.length != 1) throw new IllegalArgumentException("Usage: MusicBrainzIndexer <regex-output-directory>");
+        if (args.length < 1 || args.length > 2 || (args.length == 2 && !args[1].equals("--pages"))) throw new IllegalArgumentException("Usage: MusicBrainzIndexer <regex-output-directory> [--pages]");
         Path input = Path.of(args[0]).toRealPath(), root = Path.of("index-output").toAbsolutePath();
         Files.createDirectories(root);
         try (FileChannel channel = FileChannel.open(root.resolve("indexer.lock"), StandardOpenOption.CREATE, StandardOpenOption.WRITE);
              FileLock lock = channel.tryLock()) {
             if (lock == null) throw new IOException("Another index build is running");
             Path output = Files.createTempDirectory(root, input.getParent().getFileName() + "_");
-            MusicBrainzIndex index = build(input, output);
+            MusicBrainzIndex index = args.length == 2 ? build(input, output) : buildAlbums(input, output);
             // Publish only after a complete generation has been independently loaded/validated.
             MusicBrainzIndex.load(output);
             atomicText(root.resolve("latest-index.tsv"), output.getFileName() + "\n");
@@ -50,6 +50,10 @@ public class MusicBrainzIndexer {
         var audit = MusicBrainzIndex.readTsv(input.resolve("extraction_audit.tsv"), "page_id", "source_url", "result", "detail");
         Map<String, Map<String, String>> audited = new HashMap<>(); int warnings = 0;
         for (var row : audit) {
+            if (row.get("result").equals("PAGINATION")) {
+                if (MusicBrainzUrls.page(row.get("source_url")) <= 1) throw new IOException("Invalid pagination audit");
+                continue;
+            }
             if (!Set.of("OK", "WARNING").contains(row.get("result"))) throw new IOException("Input extraction audit contains errors");
             if (audited.put(row.get("source_url"), row) != null) throw new IOException("Duplicate audit URL");
             if (row.get("result").equals("WARNING")) warnings++;
@@ -61,6 +65,12 @@ public class MusicBrainzIndexer {
             countries.computeIfAbsent(row.get("source_url"), ignored -> new LinkedHashSet<>()).add(row.get("country"));
             dates.computeIfAbsent(row.get("source_url"), ignored -> new LinkedHashSet<>()).add(row.get("date"));
         }
+        Map<String, Map<String, String>> parents = new HashMap<>();
+        for (var row : entities) if (parents.put(row.get("source_url"), row) != null) throw new IOException("Duplicate entity URL");
+        Map<String, Set<String>> additional = new HashMap<>();
+        readAdditional(input, "entity_details.tsv", List.of("other_tags", "artist_end_date", "gender", "artist_sort_name"), false, parents, hashes, additional);
+        readAdditional(input, "tracks.tsv", List.of("name"), true, parents, hashes, additional);
+        readAdditional(input, "labels.tsv", List.of("name", "catalog_numbers"), true, parents, hashes, additional);
         MusicBrainzIndex index = new MusicBrainzIndex();
         Set<String> seen = new HashSet<>(), pageIds = new HashSet<>();
         for (var row : entities) {
@@ -76,10 +86,15 @@ public class MusicBrainzIndexer {
             List<String> parts = new ArrayList<>();
             for (String field : TEXT_FIELDS) parts.add(row.get(field));
             parts.addAll(countries.getOrDefault(url, Set.of())); parts.addAll(dates.getOrDefault(url, Set.of()));
+            parts.addAll(additional.getOrDefault(url, Set.of()));
             index.add(row.get("page_id"), url, row.get("entity_type"), row.get("name"), row.get("artist_credit"), row.get("format"),
                 String.join(" ", parts).strip());
         }
         if (index.documents.isEmpty() || seen.size() != audited.size()) throw new IOException("Empty or incomplete extraction dataset");
+        persist(index, input, output, hashes, warnings);
+        return index;
+    }
+    static void persist(MusicBrainzIndex index, Path input, Path output, Map<String, String> hashes, int warnings) throws IOException {
         try (var writer = Files.newBufferedWriter(output.resolve("documents.tsv"), StandardCharsets.UTF_8)) {
             writer.write("doc_id\tpage_id\tsource_url\tentity_type\tname\tartist_credit\tformat\tindexed_text\ttoken_count\n");
             for (var doc : index.documents) writer.write(doc.id() + "\t" + MusicBrainzIndex.cell(doc.pageId()) + "\t"
@@ -110,9 +125,36 @@ public class MusicBrainzIndexer {
             + "\ndocuments\t" + index.documents.size() + "\ncreated_utc\t" + Instant.now() + "\ninput\t" + MusicBrainzIndex.cell(input.toString()) + "\n");
         for (var hash : hashes.entrySet()) manifest.append("input_sha256_").append(hash.getKey()).append('\t').append(hash.getValue()).append('\n');
         atomicText(output.resolve("manifest.tsv"), manifest.toString());
-        return index;
     }
-    private static String sha256(Path file) throws IOException {
+    static MusicBrainzIndex buildAlbums(Path input, Path output) throws IOException {
+        Files.createDirectories(Path.of("target"));
+        Path pageOutput = Files.createTempDirectory(Path.of("target").toAbsolutePath(), "album-pages-");
+        build(input, pageOutput);
+        return MusicBrainzAlbumIndexer.build(input, pageOutput, output);
+    }
+
+    // Optional tables keep old extractor outputs usable. Join strictly by source URL + page ID.
+    private static void readAdditional(Path input, String file, List<String> textFields, boolean releaseOnly,
+            Map<String, Map<String, String>> parents, Map<String, String> hashes,
+            Map<String, Set<String>> additional) throws IOException {
+        Path path = input.resolve(file);
+        if (!Files.exists(path)) return;
+        hashes.put(file, sha256(path));
+        List<String> required = new ArrayList<>(List.of("page_id", "source_url")); required.addAll(textFields);
+        for (var row : MusicBrainzIndex.readTsv(path, required.toArray(String[]::new))) {
+            String url = row.get("source_url"); var parent = parents.get(url);
+            if (parent == null || !parent.get("page_id").equals(row.get("page_id")))
+                throw new IOException("Orphan/mismatched supplemental row in " + file);
+            if (releaseOnly && !parent.get("entity_type").equals("release"))
+                throw new IOException("Edition data attached to another entity type in " + file);
+            for (String field : textFields) {
+                String value = row.get(field).strip();
+                if (!value.isEmpty()) additional.computeIfAbsent(url, ignored -> new LinkedHashSet<>()).add(value);
+            }
+        }
+    }
+
+    static String sha256(Path file) throws IOException {
         try {
             var digest = java.security.MessageDigest.getInstance("SHA-256");
             try (var stream = Files.newInputStream(file)) {

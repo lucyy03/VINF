@@ -40,9 +40,12 @@ public class MusicBrainzRegexExtractor {
 
     public record Event(String country, String date) { }
     public record Link(String relation, String url) { }
-    public record Extraction(Map<String, String> fields, List<Event> events, List<Link> links, List<String> warnings) { }
+    public record Extraction(Map<String, String> fields, List<Event> events, List<Link> links, List<String> warnings, MusicBrainzDetailsExtractor.Details details) { }
 
     public static Extraction extract(String url, String rawHtml) throws IOException {
+        String canonical = MusicBrainzUrls.canonical(url);
+        if (canonical.isEmpty()) throw new IOException("Unsupported entity/listing URL");
+        url = canonical;
         URI source;
         try { source = URI.create(url); } catch (RuntimeException e) { throw new IOException("Invalid source URL", e); }
         var entity = ENTITY.matcher(source.getPath() == null ? "" : source.getPath());
@@ -137,20 +140,20 @@ public class MusicBrainzRegexExtractor {
             }
             if (events.isEmpty()) warnings.add("NO_RELEASE_EVENTS");
         }
-        return new Extraction(fields, events, List.copyOf(links), warnings);
+        return new Extraction(fields, events, List.copyOf(links), warnings, MusicBrainzDetailsExtractor.extract(type, html));
     }
 
-    private static Pattern blockPattern(String tag, String cssClass) {
+    static Pattern blockPattern(String tag, String cssClass) {
         String token = Pattern.quote(cssClass);
         return Pattern.compile("(?is)<" + tag + "\\b(?=[^>]*\\bclass\\s*=\\s*(?:\"(?:[^\"]*\\s)?" + token
             + "(?:\\s[^\"]*)?\"|'(?:[^']*\\s)?" + token + "(?:\\s[^']*)?'))([^>]*)>(.*?)</" + tag + "\\s*>");
     }
-    private static String firstBody(Pattern pattern, String html, int group) {
+    static String firstBody(Pattern pattern, String html, int group) {
         var matcher = pattern.matcher(html); return matcher.find() ? matcher.group(group) : "";
     }
     private static String firstText(Pattern pattern, String html) { return firstText(pattern, html, 1); }
     private static String firstText(Pattern pattern, String html, int group) { return text(firstBody(pattern, html, group)); }
-    private static String attribute(String attributes, String name) {
+    static String attribute(String attributes, String name) {
         var matcher = Pattern.compile("(?is)(?:^|\\s)" + Pattern.quote(name)
             + "\\s*=\\s*(?:\"([^\"]*)\"|'([^']*)'|([^\\s\"'=<>`]+))").matcher(attributes);
         if (!matcher.find()) return "";
@@ -205,11 +208,19 @@ public class MusicBrainzRegexExtractor {
         try (var entities = Files.newBufferedWriter(report.resolve("entities.tsv"), StandardCharsets.UTF_8);
              var events = Files.newBufferedWriter(report.resolve("release_events.tsv"), StandardCharsets.UTF_8);
              var links = Files.newBufferedWriter(report.resolve("entity_links.tsv"), StandardCharsets.UTF_8);
-             var audit = Files.newBufferedWriter(report.resolve("extraction_audit.tsv"), StandardCharsets.UTF_8)) {
+             var audit = Files.newBufferedWriter(report.resolve("extraction_audit.tsv"), StandardCharsets.UTF_8);
+             var details = Files.newBufferedWriter(report.resolve("entity_details.tsv"), StandardCharsets.UTF_8);
+             var tracks = Files.newBufferedWriter(report.resolve("tracks.tsv"), StandardCharsets.UTF_8);
+             var labels = Files.newBufferedWriter(report.resolve("labels.tsv"), StandardCharsets.UTF_8);
+             var catalogue = Files.newBufferedWriter(report.resolve("catalogue.tsv"), StandardCharsets.UTF_8)) {
             entities.write("page_id\tsource_url\tentity_type\tmbid\tname\tartist_credit\tartist_mbids\tmusicbrainz_type\tbarcode\tformat\tlength\tstatus\tlanguage\tscript\tarea\tartist_begin_date\tgenres\n");
             events.write("page_id\tsource_url\tcountry\tdate\n");
             links.write("page_id\tsource_url\trelation\ttarget_url\n");
             audit.write("page_id\tsource_url\tresult\tdetail\n");
+            details.write("page_id\tsource_url\tother_tags\trating\trating_scope\tearliest_listed_release_date\tartist_end_date\tgender\tartist_sort_name\n");
+            tracks.write("page_id\tsource_url\tsequence\ttrack_mbid\tposition\tname\trecording_mbid\tduration\tduration_ms\n");
+            labels.write("page_id\tsource_url\tlabel_mbid\tname\tcatalog_numbers\n");
+            catalogue.write("page_id\tsource_url\trelation\ttarget_url\tname\tfirst_release_date\n");
             Set<String> seen = new LinkedHashSet<>(); int ok = 0, failed = 0;
             for (int i = 1; i < rows.size(); i++) {
                 String[] row = rows.get(i).split("\t", -1);
@@ -221,10 +232,20 @@ public class MusicBrainzRegexExtractor {
                     Path file = run.resolve(row[5]).normalize();
                     if (!file.startsWith(run.resolve("html")) || !Files.isRegularFile(file, LinkOption.NOFOLLOW_LINKS)
                         || !file.toRealPath().startsWith(run.resolve("html").toRealPath())) throw new IOException("Missing/unsafe HTML path");
-                    Extraction value = extract(url, Files.readString(file, StandardCharsets.UTF_8));
+                    String html = Files.readString(file, StandardCharsets.UTF_8);
+                    Extraction value = extract(url, html);
+                    for (var entry : MusicBrainzCatalogue.extract(url, NOISE.matcher(html).replaceAll("")))
+                        catalogue.write(tsv(id) + "\t" + tsv(url) + "\t" + entry.relation() + "\t" + tsv(entry.target()) + "\t" + tsv(entry.name()) + "\t" + tsv(entry.firstDate()) + "\n");
+                    if (MusicBrainzUrls.page(url) > 1) {
+                        audit.write(tsv(id) + "\t" + tsv(url) + "\tPAGINATION\tCatalogue page; same entity\n"); ok++; continue;
+                    }
                     entities.write(tsv(id) + "\t" + String.join("\t", value.fields().values().stream().map(MusicBrainzRegexExtractor::tsv).toList()) + "\n");
                     for (Event event : value.events()) events.write(tsv(id) + "\t" + tsv(url) + "\t" + tsv(event.country()) + "\t" + tsv(event.date()) + "\n");
                     for (Link link : value.links()) links.write(tsv(id) + "\t" + tsv(url) + "\t" + tsv(link.relation()) + "\t" + tsv(link.url()) + "\n");
+                    var extra = value.details();
+                    details.write(tsv(id) + "\t" + tsv(url) + "\t" + String.join("\t", extra.fields().values().stream().map(MusicBrainzRegexExtractor::tsv).toList()) + "\n");
+                    for (var track : extra.tracks()) tracks.write(tsv(id) + "\t" + tsv(url) + "\t" + track.sequence() + "\t" + track.mbid() + "\t" + tsv(track.position()) + "\t" + tsv(track.name()) + "\t" + track.recordingMbid() + "\t" + tsv(track.duration()) + "\t" + track.durationMs() + "\n");
+                    for (var label : extra.labels()) labels.write(tsv(id) + "\t" + tsv(url) + "\t" + label.mbid() + "\t" + tsv(label.name()) + "\t" + tsv(label.catalogNumbers()) + "\n");
                     audit.write(tsv(id) + "\t" + tsv(url) + "\t" + (value.warnings().isEmpty() ? "OK" : "WARNING")
                         + "\t" + tsv(String.join(";", value.warnings())) + "\n"); ok++;
                 } catch (IOException | IllegalArgumentException e) {
