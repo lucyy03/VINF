@@ -2,5 +2,6 @@ target/
 .maven-repository/
 .playwright-browsers/
 crawler-output/
+index-output/
 *.class
 /CONSULTATION-28-10.md

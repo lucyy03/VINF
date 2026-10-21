@@ -1,0 +1,35 @@
+query_id	query	method	rank	score	page_id	name	artist_credit	entity_type	format	source_url
+q1	OK Computer Radiohead	classic	1	0.426753166	19	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8
+q1	OK Computer Radiohead	classic	2	0.328406293	20	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/1c16cd42-472f-47cc-9848-d081d0737a7c
+q1	OK Computer Radiohead	classic	3	0.323972377	5	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf
+q1	OK Computer Radiohead	classic	4	0.323972377	7	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/ad0e6676-3e55-4bd6-a9ed-7f6424fd46f6
+q1	OK Computer Radiohead	classic	5	0.323155354	14	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/3c8cbdc8-555f-3987-8f03-6baf9488d1b0
+q1	OK Computer Radiohead	smooth	1	0.429844705	19	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8
+q1	OK Computer Radiohead	smooth	2	0.341041317	14	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/3c8cbdc8-555f-3987-8f03-6baf9488d1b0
+q1	OK Computer Radiohead	smooth	3	0.341041317	15	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/e16cda60-6e6d-4a32-8d7c-e12d9aeb72de
+q1	OK Computer Radiohead	smooth	4	0.339077539	20	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/1c16cd42-472f-47cc-9848-d081d0737a7c
+q1	OK Computer Radiohead	smooth	5	0.328224947	5	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/52709206-8816-3c12-9ff6-f957f2f1eecf
+q2	alternative rock	classic	1	0.492023279	73	Amnesiac	Radiohead	release-group		https://musicbrainz.org/release-group/bca9280e-28b4-327f-8fe0-fd918579e486
+q2	alternative rock	classic	2	0.476753733	95	Drill	Radiohead	release-group		https://musicbrainz.org/release-group/b2246643-115e-3b53-9a96-6d2df930f970
+q2	alternative rock	classic	3	0.476753733	96	Creep	Radiohead	release-group		https://musicbrainz.org/release-group/471b4ff5-004f-4a7b-b0ba-a0837c41da14
+q2	alternative rock	classic	4	0.476753733	97	Itch	Radiohead	release-group		https://musicbrainz.org/release-group/63b2aeb3-146b-343e-bbb5-0317c8a1e328
+q2	alternative rock	classic	5	0.450422193	75	In Rainbows	Radiohead	release-group		https://musicbrainz.org/release-group/6e335887-60ba-38f0-95af-fae7774336bf
+q2	alternative rock	smooth	1	0.514900615	73	Amnesiac	Radiohead	release-group		https://musicbrainz.org/release-group/bca9280e-28b4-327f-8fe0-fd918579e486
+q2	alternative rock	smooth	2	0.508859766	95	Drill	Radiohead	release-group		https://musicbrainz.org/release-group/b2246643-115e-3b53-9a96-6d2df930f970
+q2	alternative rock	smooth	3	0.508859766	96	Creep	Radiohead	release-group		https://musicbrainz.org/release-group/471b4ff5-004f-4a7b-b0ba-a0837c41da14
+q2	alternative rock	smooth	4	0.508859766	97	Itch	Radiohead	release-group		https://musicbrainz.org/release-group/63b2aeb3-146b-343e-bbb5-0317c8a1e328
+q2	alternative rock	smooth	5	0.467786845	75	In Rainbows	Radiohead	release-group		https://musicbrainz.org/release-group/6e335887-60ba-38f0-95af-fae7774336bf
+q3	Quinton Sung	classic	1	0.544406262	56	Quinton Sung		artist		https://musicbrainz.org/artist/318d1a3b-7323-4b59-8e7f-e16ddf8acacc
+q3	Quinton Sung	classic	2	0.531551558	55	OK Computer (8-bit)	Quinton Sung	release-group		https://musicbrainz.org/release-group/3b55129d-276c-4c42-8327-e47ba94f2ddf
+q3	Quinton Sung	smooth	1	0.557300365	56	Quinton Sung		artist		https://musicbrainz.org/artist/318d1a3b-7323-4b59-8e7f-e16ddf8acacc
+q3	Quinton Sung	smooth	2	0.541301034	55	OK Computer (8-bit)	Quinton Sung	release-group		https://musicbrainz.org/release-group/3b55129d-276c-4c42-8327-e47ba94f2ddf
+q4	Cassette	classic	1	0.446551072	18	OK Computer	Radiohead	release	Cassette	https://musicbrainz.org/release/9c1e5e9e-9f40-4cd8-94a4-785fa5d0b613
+q4	Cassette	classic	2	0.434052478	9	OK Computer	Radiohead	release	Cassette	https://musicbrainz.org/release/fba5f8fe-c6c8-4511-8562-c9febf482674
+q4	Cassette	classic	3	0.236467883	38	OK Computer: OKNOTOK 1997 2017	Radiohead	release	3×12" Vinyl + Cassette + 2×Download Card	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5
+q4	Cassette	smooth	1	0.450525296	18	OK Computer	Radiohead	release	Cassette	https://musicbrainz.org/release/9c1e5e9e-9f40-4cd8-94a4-785fa5d0b613
+q4	Cassette	smooth	2	0.424029723	9	OK Computer	Radiohead	release	Cassette	https://musicbrainz.org/release/fba5f8fe-c6c8-4511-8562-c9febf482674
+q4	Cassette	smooth	3	0.234789437	38	OK Computer: OKNOTOK 1997 2017	Radiohead	release	3×12" Vinyl + Cassette + 2×Download Card	https://musicbrainz.org/release/839966ab-7612-447c-b805-2a36b3e18aa5
+q5	Japan 1997	classic	1	0.405282331	3	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/1834eae1-741b-3c03-9ca5-0df3decb43ea
+q5	Japan 1997	classic	2	0.374431868	36	OK Computer: OKNOTOK 1997 2017	Radiohead	release	2×CD	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8
+q5	Japan 1997	smooth	1	0.420734107	3	OK Computer	Radiohead	release	CD	https://musicbrainz.org/release/1834eae1-741b-3c03-9ca5-0df3decb43ea
+q5	Japan 1997	smooth	2	0.377662740	36	OK Computer: OKNOTOK 1997 2017	Radiohead	release	2×CD	https://musicbrainz.org/release/a95ea77a-e7b1-4116-b647-8210f472b3e8

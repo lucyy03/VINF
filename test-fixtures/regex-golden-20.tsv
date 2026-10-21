@@ -1,0 +1,21 @@
+html_file	entity_type	name	artist_credit	musicbrainz_type	barcode	format	length	dates	countries
+0001.html	release-group	OK Computer	Radiohead	Album					
+0002.html	artist	Radiohead		Group					
+0003.html	release	OK Computer	Radiohead	Album	4988006729254	CD	53:27	1997-05-21	Japan
+0004.html	release	OK Computer	Radiohead	Album	724385522925	CD	53:27	1997-06-16;1997-06-16;1997-06-16	Europe;France;United Kingdom
+0005.html	release	OK Computer	Radiohead	Album	724385522925	CD	53:27	1997-06-16	Europe
+0006.html	release	OK Computer	Radiohead	Album	724385522925	CD	53:27	1997-06-16;1997-06-16	Europe;United Kingdom
+0007.html	release	OK Computer	Radiohead	Album	724385522925	CD	53:27	1997-06-16	Europe
+0008.html	release	OK Computer	Radiohead	Album	724385522918	2×12" Vinyl	53:28	1997-06-16	United Kingdom
+0009.html	release	OK Computer	Radiohead	Album	724385522949	Cassette	53:27	1997-06-16	United Kingdom
+0010.html	release	OK Computer	Radiohead	Album	724385522987	MiniDisc	53:27	1997-06-16	United Kingdom
+0011.html	release	OK Computer	Radiohead	Album	724385522925	CD	53:27	1997-06-17	Canada
+0012.html	release	OK Computer	Radiohead	Album	724385522925	CD	53:27	1997-07-01	United States
+0013.html	release	OK Computer	Radiohead	Album		CD	53:27	1997-07-01	United States
+0014.html	release	OK Computer	Radiohead	Album	724385522925	CD	53:27	1997	Argentina
+0015.html	release	OK Computer	Radiohead	Album	724385522925	CD	53:27	1997	Australia
+0016.html	release	OK Computer	Radiohead	Album	[none]	CD	53:27	1997	Canada
+0017.html	release	OK Computer	Radiohead	Album	724382133827	2×CD	1:03:47	1997	Europe
+0018.html	release	OK Computer	Radiohead	Album	724385522949	Cassette	53:27	1997	Poland
+0019.html	release	OK Computer	Radiohead	Album	724385522925	CD	53:27	1997	
+0020.html	release	OK Computer	Radiohead	Album	724385522925	CD	53:27	1999	Europe
