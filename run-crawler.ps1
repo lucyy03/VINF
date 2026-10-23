@@ -1,5 +1,5 @@
 param(
-    [ValidateSet('fresh', 'recover')][string]$Mode,
+    [ValidateSet('fresh', 'recover', 'extend', 'plan')][string]$Mode,
     [ValidateRange(1, 1000000)][int]$Pages,
     [ValidateRange(0, 1000)][int]$Depth,
     [ValidateRange(1, 2147483647)][int]$MaxRequests,

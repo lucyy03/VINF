@@ -109,13 +109,24 @@ public class MusicBrainzCrawler {
     private static void runCrawler(String[] args) throws Exception {
         Checkpoint recovered = selectCheckpoint(args);
         validateConfiguration();
+        if ("plan".equals(requestedMode)) {
+            loadRequestState(recovered.directory);
+            ExtensionPlan plan = planExtension(recovered, RobotsRules.parse(Files.readString(recovered.directory.resolve("robots.txt"))));
+            System.out.println("Extension preview only; no requests or changes to crawl files.");
+            System.out.println("Saved pages: " + recovered.pages + "; total target: " + MAX_PAGES + "; remaining target: " + (MAX_PAGES-recovered.pages));
+            System.out.println("Eligible new frontier: " + plan.queue.size() + "; existing pending: " + recovered.queue.size());
+            System.out.println("Planned types: " + plan.queue.stream().collect(java.util.stream.Collectors.groupingBy(i -> entityType(i.url()), java.util.TreeMap::new, java.util.stream.Collectors.counting())));
+            System.out.println("Depth limit: " + MAX_DEPTH + "; used requests: " + requestCount + "/" + MAX_REQUESTS);
+            return;
+        }
         Path outputDirectory = recovered == null ? createOutputDirectory() : recovered.directory;
         checkpointDirectory = outputDirectory;
         if (recovered != null) {
             loadRequestState(outputDirectory);
             recovered.restoreOutputs();
-            System.out.println("Recovering " + outputDirectory + "; completed pages: " + recovered.pages);
-            if (recovered.pages >= MAX_PAGES || recovered.queue.isEmpty()) {
+            System.out.println(("extend".equals(requestedMode) ? "Opening completed crawl " : "Recovering ")
+                + outputDirectory + "; completed pages: " + recovered.pages);
+            if (!"extend".equals(requestedMode) && (recovered.pages >= MAX_PAGES || recovered.queue.isEmpty())) {
                 // The process may have died after the last page commit but before
                 // publishing its terminal state. Finalize locally, without HTTP.
                 String state = recovered.pages >= MAX_PAGES ? "COMPLETE" : "EXHAUSTED";
@@ -219,6 +230,27 @@ public class MusicBrainzCrawler {
         savedInternalEdges.clear(); savedExternalEdges.clear();
         Checkpoint checkpoint = recovered != null ? recovered : new Checkpoint(outputDirectory, queue, queued, visited,
             savedInternalEdges, savedExternalEdges, successfulPages);
+        if ("extend".equals(requestedMode)) {
+            ExtensionPlan plan = planExtension(recovered, activeRobots);
+            if (plan.queue.isEmpty()) throw new IOException("No eligible new URLs under these limits; completed crawl preserved.");
+            checkDiskSpace(outputDirectory);
+            Checkpoint expanded = new Checkpoint(outputDirectory, plan.queue, new HashSet<>(visited), visited,
+                new HashSet<>(), new HashSet<>(), successfulPages);
+            expanded.storageId = java.util.UUID.randomUUID().toString().replace("-", "");
+            for (CrawlItem next : plan.queue) expanded.queued.add(next.url());
+            ORIGINS.putAll(plan.origins);
+            // Appended admissions are committed with the new base; an interrupted preparation
+            // is rolled back using the old manifest's OUTPUT offsets on the next attempt.
+            for (String edge : plan.admissions) writeLine(internalLinksFile, edge + "\ttrue");
+            atomicText(outputDirectory.resolve("extension-" + expanded.storageId + ".tsv"),
+                "metric\tvalue\nprevious_state\t" + recovered.state + "\nprevious_pages\t" + recovered.pages
+                + "\nnew_depth\t" + MAX_DEPTH + "\nnew_target\t" + MAX_PAGES + "\nfrontier\t" + plan.queue.size()
+                + "\nrequests_already_used\t" + requestCount + "\n");
+            queue = expanded.queue; queued = expanded.queued;
+            savedInternalEdges = expanded.internalEdges; savedExternalEdges = expanded.externalEdges;
+            checkpoint = expanded;
+            System.out.println("Extending existing crawl; retained pages: " + successfulPages + "; initial frontier: " + queue.size());
+        }
         checkpoint.save("ACTIVE");
         loadAdmissions(outputDirectory);
         boolean stoppedBySite = false;
@@ -541,7 +573,7 @@ public class MusicBrainzCrawler {
         if (!stoppedBySite && requestCount >= MAX_REQUESTS && successfulPages < MAX_PAGES) {
             System.out.println("Stopped at the request budget; page target was not reached.");
         } else if (!stoppedBySite && queue.isEmpty() && successfulPages < MAX_PAGES) {
-            System.out.println("No more eligible pages within the configured depth.");
+            System.out.println("No more eligible pages within the configured depth and discovery limits.");
         }
 
         System.out.println(
@@ -552,10 +584,11 @@ public class MusicBrainzCrawler {
     }
 
     private static void printUsage() {
-        System.out.println("MusicBrainzCrawler [--fresh|--recover] [--pages N] [--depth N] "
+        System.out.println("MusicBrainzCrawler [--fresh|--recover|--extend|--plan] [--pages N] [--depth N] "
             + "[--max-requests N] [--max-frontier N] [--min-free-mib N] [--start-url URL]");
         System.out.println("Breadth: --seeds crawl-seeds.tsv [--releases-per-group 3] [--albums-per-artist 20] [--list-pages 20] [--artist-links 3]; default depth 6.");
         System.out.println("Example: --fresh --pages 10000 --depth 10");
+        System.out.println("Preview broader scope: --plan --depth 10; extend it: --extend --depth 10. Saved pages and requests are retained.");
         System.out.println("Recovery automatically uses saved settings; it cannot reset the request budget.");
     }
 
@@ -565,7 +598,7 @@ public class MusicBrainzCrawler {
         for (int i = 0; i < args.length; i++) {
             String key = args[i];
             if (key.equals("--help")) { requestedMode = "help"; continue; }
-            if (key.equals("--fresh") || key.equals("--recover")) {
+            if (key.equals("--fresh") || key.equals("--recover") || key.equals("--extend") || key.equals("--plan")) {
                 if (requestedMode != null) throw new IOException("Choose one mode only.");
                 requestedMode = key.substring(2); continue;
             }
@@ -666,6 +699,7 @@ public class MusicBrainzCrawler {
     }
 
     private static void requireSavedOption(String name, long requested, long saved) throws IOException {
+        if (isExtensionMode() && EXTEND_OPTIONS.contains(name)) return;
         if (explicitOptions.contains(name) && requested != saved)
             throw new IOException("Recovery must use saved " + name + "=" + saved + "; omit that option.");
     }
@@ -801,7 +835,7 @@ public class MusicBrainzCrawler {
         }
         if ("fresh".equals(requestedMode)) return null;
         if (directory == null) {
-            if ("recover".equals(requestedMode)) throw new IOException("No checkpoint exists yet.");
+            if ("recover".equals(requestedMode) || isExtensionMode()) throw new IOException("No checkpoint exists yet.");
             return null;
         }
         String choice = requestedMode;
@@ -812,14 +846,103 @@ public class MusicBrainzCrawler {
                 StandardCharsets.UTF_8)).readLine();
         }
         if (choice != null && choice.trim().equalsIgnoreCase("fresh")) return null;
-        if (choice == null || !choice.trim().equalsIgnoreCase("recover"))
+        if (choice == null || (!choice.trim().equalsIgnoreCase("recover") && !isExtensionMode()))
             throw new IOException("No choice made. Run with --fresh or --recover.");
+        java.util.Map<String,Integer> desired = new java.util.LinkedHashMap<>();
+        if (isExtensionMode()) for (String key : EXTEND_OPTIONS) if (explicitOptions.contains(key)) desired.put(key, extensionValue(key));
         adoptSavedConfiguration(directory);
         Checkpoint checkpoint = Checkpoint.read(directory);
+        if (isExtensionMode()) {
+            if (!Set.of("EXHAUSTED", "COMPLETE").contains(checkpoint.state))
+                throw new IOException("Extension requires EXHAUSTED or COMPLETE, not " + checkpoint.state + ". Use recover for interruptions; blocked runs cannot be extended.");
+            for (var option : desired.entrySet()) {
+                if (option.getValue() < extensionValue(option.getKey())) throw new IOException("Extension cannot decrease " + option.getKey());
+                setExtensionValue(option.getKey(), option.getValue());
+            }
+            if (MAX_PAGES <= checkpoint.pages) throw new IOException("Set a total page target above the " + checkpoint.pages + " saved pages.");
+            validateConfiguration();
+            return checkpoint;
+        }
         if (!checkpoint.state.equals("ACTIVE")) throw new IOException(
-            "This run is " + checkpoint.state + ". Recovery is only for an interrupted run, "
-            + "not a completed run or site blocking. Choose fresh for an intentional new run.");
+            "This run is " + checkpoint.state + ". Recovery is only for an interrupted ACTIVE run. "
+            + (Set.of("EXHAUSTED", "COMPLETE").contains(checkpoint.state)
+                ? "The crawl finished normally; use --plan or --extend with wider limits to collect more."
+                : "Safety-stopped or budget-exhausted runs cannot be resumed this way."));
         return checkpoint;
+    }
+
+    private static final Set<String> EXTEND_OPTIONS = Set.of("--pages", "--depth", "--albums-per-artist",
+        "--releases-per-group", "--artist-links", "--list-pages", "--max-frontier", "--max-requests");
+
+    private static boolean isExtensionMode() { return "extend".equals(requestedMode) || "plan".equals(requestedMode); }
+
+    private static int extensionValue(String key) {
+        return switch (key) {
+            case "--pages" -> MAX_PAGES; case "--depth" -> MAX_DEPTH;
+            case "--albums-per-artist" -> ALBUMS_PER_ARTIST; case "--releases-per-group" -> RELEASES_PER_GROUP;
+            case "--artist-links" -> ARTIST_LINKS; case "--list-pages" -> MAX_LIST_PAGES;
+            case "--max-frontier" -> MAX_FRONTIER; case "--max-requests" -> MAX_REQUESTS;
+            default -> throw new IllegalArgumentException("Unsupported extension option");
+        };
+    }
+
+    private static void setExtensionValue(String key, int value) {
+        switch (key) {
+            case "--pages" -> MAX_PAGES = value; case "--depth" -> MAX_DEPTH = value;
+            case "--albums-per-artist" -> ALBUMS_PER_ARTIST = value; case "--releases-per-group" -> RELEASES_PER_GROUP = value;
+            case "--artist-links" -> ARTIST_LINKS = value; case "--list-pages" -> MAX_LIST_PAGES = value;
+            case "--max-frontier" -> MAX_FRONTIER = value; case "--max-requests" -> MAX_REQUESTS = value;
+            default -> throw new IllegalArgumentException("Unsupported extension option");
+        }
+    }
+
+    private record ExtensionPlan(Queue<CrawlItem> queue, List<String> admissions, java.util.Map<String,String> origins) { }
+
+    private static ExtensionPlan planExtension(Checkpoint previous, RobotsRules rules) throws IOException {
+        if ("plan".equals(requestedMode)) for (String name : OUTPUT_FILES)
+            if (Files.size(previous.directory.resolve(name)) != previous.sizes.get(name))
+                throw new IOException("Uncommitted output bytes found; extend can restore the last checkpoint before planning.");
+        java.util.Map<String,Integer> depths = new java.util.HashMap<>();
+        try (var lines = Files.lines(previous.directory.resolve("pages.tsv"), StandardCharsets.UTF_8)) {
+            for (String line : lines.skip(1).toList()) {
+                String[] row = line.split("\t", -1);
+                if (row.length != 6) throw new IOException("Invalid saved page metadata");
+                try { depths.put(row[1], Integer.parseInt(row[2])); }
+                catch (NumberFormatException e) { throw new IOException("Invalid saved depth", e); }
+            }
+        }
+        loadAdmissions(previous.directory);
+        Queue<CrawlItem> pending = new ArrayDeque<>(previous.queue);
+        Set<String> known = new HashSet<>(previous.visited);
+        for (CrawlItem item : pending) known.add(item.url());
+        List<String> admissions = new ArrayList<>();
+        java.util.Map<String,String> origins = new java.util.HashMap<>(previous.origins);
+        try (var rows = Files.lines(previous.directory.resolve("internal_links.tsv"), StandardCharsets.UTF_8)) {
+            var iterator = rows.skip(1).iterator();
+            while (iterator.hasNext()) {
+                String[] row = iterator.next().split("\t", -1);
+                if (row.length != 3) throw new IOException("Invalid saved internal link");
+                String source = row[0], target = row[1];
+                Integer sourceDepth = depths.get(source);
+                if (sourceDepth == null || known.contains(target) || !isRelevantEntityUrl(target) || !rules.isAllowed(target)) continue;
+                String base = MusicBrainzUrls.canonical(source);
+                boolean sameListing = base.equals(MusicBrainzUrls.canonical(target));
+                if (MusicBrainzUrls.page(target) > 1 && !sameListing) continue;
+                int depth = sourceDepth + (sameListing ? 0 : 1);
+                if (depth > MAX_DEPTH || pending.size() >= MAX_FRONTIER) continue;
+                int[] counts = ADMISSIONS.computeIfAbsent(base, k -> new int[3]);
+                String sourceType = entityType(source), targetType = entityType(target);
+                if (BREADTH && ((sourceType.equals("artist") && targetType.equals("release-group") && counts[0] >= ALBUMS_PER_ARTIST)
+                    || (sourceType.equals("release-group") && targetType.equals("release") && counts[1] >= RELEASES_PER_GROUP)
+                    || (!sameListing && targetType.equals("artist") && counts[2] >= ARTIST_LINKS))) continue;
+                known.add(target); pending.add(new CrawlItem(target, depth)); admissions.add(source + "\t" + target);
+                origins.put(target, origins.getOrDefault(source, START_URL));
+                if (sourceType.equals("artist") && targetType.equals("release-group")) counts[0]++;
+                if (sourceType.equals("release-group") && targetType.equals("release")) counts[1]++;
+                if (!sameListing && targetType.equals("artist")) counts[2]++;
+            }
+        }
+        return new ExtensionPlan(pending, admissions, origins);
     }
 
     private static void loadAdmissions(Path output) throws IOException {
@@ -890,6 +1013,7 @@ public class MusicBrainzCrawler {
             this.internalEdges = internalEdges; this.externalEdges = externalEdges; this.pages = pages;
         }
 
+        private String storageId = "";
         private int sequence;
         private boolean journalInitialized;
         private List<CrawlItem> previousQueue = List.of();
@@ -901,7 +1025,7 @@ public class MusicBrainzCrawler {
             origins.putAll(ORIGINS);
             String snapshot = snapshot(state);
             if (!journalInitialized) {
-                atomicText(directory.resolve("checkpoint-base.tsv"), snapshot);
+                atomicText(baseFile(), snapshot);
                 sequence = 0;
             } else {
                 List<CrawlItem> now = new ArrayList<>(queue);
@@ -920,7 +1044,7 @@ public class MusicBrainzCrawler {
                 for (String url : visited) if (!previousVisited.contains(url))
                     delta.append("VISITED\t").append(encoded(url)).append('\n');
                 appendSet(delta, "INTERNAL", internalEdges); appendSet(delta, "EXTERNAL", externalEdges);
-                Files.createDirectories(directory.resolve("checkpoint-journal"));
+                Files.createDirectories(journalDirectory());
                 atomicText(journalFile(sequence + 1), delta.toString());
                 sequence++;
             }
@@ -929,11 +1053,12 @@ public class MusicBrainzCrawler {
                 && !line.startsWith("QUEUED\t") && !line.startsWith("VISITED\t")
                 && !line.startsWith("INTERNAL\t") && !line.startsWith("EXTERNAL\t") && !line.startsWith("ORIGIN\t"))
                 .collect(java.util.stream.Collectors.joining("\n", "", "\n"))
-                .replaceFirst("VERSION\\t1", "VERSION\t6")
+                .replaceFirst("VERSION\\t1", "VERSION\t7")
                 + "SEQUENCE\t" + sequence + "\nSETTINGS\t" + MAX_FRONTIER + "\t" + MIN_FREE_BYTES + "\n";
             manifest += "BREADTH\t" + BREADTH + "\t" + RELEASES_PER_GROUP + "\t" + ALBUMS_PER_ARTIST + "\n";
             manifest += "ARTIST_LINKS\t" + ARTIST_LINKS + "\n";
             manifest += "PAGINATION\t" + MAX_LIST_PAGES + "\n";
+            if (!storageId.isEmpty()) manifest += "STORAGE\t" + storageId + "\n";
             for (String seed : SEEDS) manifest += "SEED\t" + encoded(seed) + "\n";
             atomicText(directory.resolve("checkpoint.tsv"), manifest);
             if (!journalInitialized) atomicText(directory.getParent().resolve("latest_checkpoint.tsv"), directory.getFileName() + "\n");
@@ -942,8 +1067,10 @@ public class MusicBrainzCrawler {
             journalInitialized = true; this.state = state;
         }
 
+        private Path baseFile() { return directory.resolve("checkpoint-base" + (storageId.isEmpty() ? "" : "-" + storageId) + ".tsv"); }
+        private Path journalDirectory() { return directory.resolve("checkpoint-journal" + (storageId.isEmpty() ? "" : "-" + storageId)); }
         private Path journalFile(int index) {
-            return directory.resolve("checkpoint-journal").resolve(String.format("%08d.tsv", index));
+            return journalDirectory().resolve(String.format("%08d.tsv", index));
         }
 
         private String snapshot(String state) throws IOException {
@@ -979,19 +1106,24 @@ public class MusicBrainzCrawler {
         static Checkpoint read(Path directory) throws IOException {
             List<String> manifest = Files.readAllLines(directory.resolve("checkpoint.tsv"), StandardCharsets.UTF_8);
             if (!manifest.isEmpty() && manifest.get(0).equals("VERSION\t1")) return readSnapshot(directory, manifest);
-            if (manifest.isEmpty() || !(manifest.get(0).equals("VERSION\t2") || manifest.get(0).equals("VERSION\t3") || manifest.get(0).equals("VERSION\t4") || manifest.get(0).equals("VERSION\t5") || manifest.get(0).equals("VERSION\t6"))) throw new IOException("Unknown checkpoint version");
-            int committed = -1;
+            if (manifest.isEmpty() || !(manifest.get(0).equals("VERSION\t2") || manifest.get(0).equals("VERSION\t3") || manifest.get(0).equals("VERSION\t4") || manifest.get(0).equals("VERSION\t5") || manifest.get(0).equals("VERSION\t6") || manifest.get(0).equals("VERSION\t7"))) throw new IOException("Unknown checkpoint version");
+            int committed = -1; String storage = "";
             List<String> metadata = new ArrayList<>();
             for (String line : manifest) {
-                if (line.startsWith("SEQUENCE\t")) {
+                if (line.startsWith("STORAGE\t")) {
+                    storage = line.substring(8);
+                    if (!storage.matches("[0-9a-f]{32}")) throw new IOException("Invalid checkpoint storage ID");
+                } else if (line.startsWith("SEQUENCE\t")) {
                     try { committed = Integer.parseInt(line.substring(9)); }
                     catch (RuntimeException e) { throw new IOException("Invalid journal sequence", e); }
-                } else if (!line.startsWith("ARTIST_LINKS\t") && !line.startsWith("PAGINATION\t") && !line.startsWith("SETTINGS\t") && !line.startsWith("SEED\t") && !line.startsWith("BREADTH\t")) metadata.add(line.replaceFirst("^VERSION\\t[23456]$", "VERSION\t1"));
+                } else if (!line.startsWith("ARTIST_LINKS\t") && !line.startsWith("PAGINATION\t") && !line.startsWith("SETTINGS\t") && !line.startsWith("SEED\t") && !line.startsWith("BREADTH\t")) metadata.add(line.replaceFirst("^VERSION\\t[234567]$", "VERSION\t1"));
             }
             if (committed < 0 || committed > (long) MAX_REQUESTS + MAX_FRONTIER + MAX_PAGES + 100)
                 throw new IOException("Invalid journal sequence");
             Checkpoint meta = readSnapshot(directory, metadata);
-            Checkpoint result = readSnapshot(directory, Files.readAllLines(directory.resolve("checkpoint-base.tsv"), StandardCharsets.UTF_8));
+            meta.storageId = storage;
+            Checkpoint result = readSnapshot(directory, Files.readAllLines(meta.baseFile(), StandardCharsets.UTF_8));
+            result.storageId = storage;
             try {
                 for (int i = 1; i <= committed; i++) {
                     List<String> lines = Files.readAllLines(result.journalFile(i), StandardCharsets.UTF_8);
