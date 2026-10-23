@@ -1,0 +1,2 @@
+# Preserve exact HTML fixture bytes for SHA-256 checks on every platform.
+test-fixtures/final-sample/html/*.html -text

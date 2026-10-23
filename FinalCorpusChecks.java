@@ -12,7 +12,7 @@ public class FinalCorpusChecks {
     private static void indexed(Map<String,String> output,String prefix,int index,Map<String,String> values) {
         values.forEach((k,v)->output.put(prefix+"."+index+"."+k,v));
     }
-    private static Map<String,String> fresh(MusicBrainzRegexExtractor.Extraction e) {
+    static Map<String,String> fresh(MusicBrainzRegexExtractor.Extraction e) {
         Map<String,String> result=new LinkedHashMap<>(e.fields());
         e.details().fields().forEach((k,v)->result.put("detail."+k,v));
         result.put("track_count",""+e.details().tracks().size());result.put("label_count",""+e.details().labels().size());result.put("event_count",""+e.events().size());
