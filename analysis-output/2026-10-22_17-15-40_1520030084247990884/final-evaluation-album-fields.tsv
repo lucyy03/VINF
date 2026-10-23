@@ -1,0 +1,17 @@
+query_id	method	k	retrieved	relevant_total	relevant_retrieved	precision_at_k	recall_at_k	rr_at_k	ranking
+homework	classic	5	3	1	1	0.2	1.0	1.0	album_fields
+homework	smooth	5	3	1	1	0.2	1.0	1.0	album_fields
+discovery	classic	5	5	1	1	0.2	1.0	1.0	album_fields
+discovery	smooth	5	5	1	1	0.2	1.0	1.0	album_fields
+nina	classic	5	5	1	1	0.2	1.0	1.0	album_fields
+nina	smooth	5	5	1	1	0.2	1.0	1.0	album_fields
+metallica	classic	5	5	2	2	0.4	1.0	1.0	album_fields
+metallica	smooth	5	5	2	2	0.4	1.0	1.0	album_fields
+radiohead	classic	5	2	1	1	0.2	1.0	1.0	album_fields
+radiohead	smooth	5	2	1	1	0.2	1.0	1.0	album_fields
+lemonade	classic	5	1	1	1	0.2	1.0	1.0	album_fields
+lemonade	smooth	5	1	1	1	0.2	1.0	1.0	album_fields
+damn	classic	5	1	1	1	0.2	1.0	1.0	album_fields
+damn	smooth	5	1	1	1	0.2	1.0	1.0	album_fields
+negative	classic	5	0	0	0				album_fields
+negative	smooth	5	0	0	0				album_fields

@@ -1,0 +1,9 @@
+query_id	source_url	page_id	expected_title	expected_artist	basis
+homework	https://musicbrainz.org/release-group/00054665-89fa-33d5-a8f0-1728ea8c32c3	12	Homework	Daft Punk	Exact album title and artist in saved HTML extraction; all matching fetched release groups included.
+discovery	https://musicbrainz.org/release-group/48117b90-a16e-34ca-a514-19c702df1158	15	Discovery	Daft Punk	Exact album title and artist in saved HTML extraction; all matching fetched release groups included.
+nina	https://musicbrainz.org/release-group/19ca48c1-af98-3000-bc9a-97ef5fa3e3be	16	Little Girl Blue	Nina Simone	Exact album title and artist in saved HTML extraction; all matching fetched release groups included.
+metallica	https://musicbrainz.org/release-group/3d00fb45-f8ab-3436-a8e1-b4bfc4d66913	30	Master of Puppets	Metallica	Exact album title and artist in saved HTML extraction; all matching fetched release groups included.
+metallica	https://musicbrainz.org/release-group/cd526fb3-27a6-465e-810b-ab9653cbe84e	161	Master of Puppets	Metallica	Exact album title and artist in saved HTML extraction; all matching fetched release groups included.
+radiohead	https://musicbrainz.org/release-group/b1392450-e666-3926-a536-22c65f834433	31	OK Computer	Radiohead	Exact album title and artist in saved HTML extraction; all matching fetched release groups included.
+lemonade	https://musicbrainz.org/release-group/c1f22e07-7bdf-4a4f-8b50-7747c1091ef6	4865	Lemonade	Beyoncé	Exact album title and artist in saved HTML extraction; all matching fetched release groups included.
+damn	https://musicbrainz.org/release-group/b88655ba-7469-48b8-a296-b9011ab73ef3	4872	DAMN.	Kendrick Lamar	Exact album title and artist in saved HTML extraction; all matching fetched release groups included.

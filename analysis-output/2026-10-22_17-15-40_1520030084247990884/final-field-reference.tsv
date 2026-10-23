@@ -1,0 +1,6 @@
+query_id	query	relevance_rule	relevant_albums
+track	Radiohead Paranoid Android	Exact credited artist Radiohead and fetched track named Paranoid Android	6
+label	Radiohead Parlophone	Exact credited artist Radiohead and fetched edition label Parlophone	31
+format	Radiohead Cassette	Exact credited artist Radiohead and fetched edition format containing Cassette	5
+year	Daft Punk 1997	Exact credited artist Daft Punk and catalogue first release year 1997	2
+genre	Metallica thrash metal	Exact credited artist Metallica with thrash metal on album or credited artist; not an album-only genre filter	82

@@ -10,6 +10,7 @@ public class MusicBrainzSearch {
         Path directory = null, queries = null, save = null;
         String query = null, match = "all";
         MusicBrainzIndex.Method method = MusicBrainzIndex.Method.CLASSIC;
+        MusicBrainzIndex.Ranking ranking = MusicBrainzIndex.Ranking.ALBUM_FIELDS;
         boolean compare = false; int top = 10;
         for (int i = 0; i < args.length; i++) {
             String key = args[i];
@@ -19,6 +20,7 @@ public class MusicBrainzSearch {
             switch (key) {
                 case "--index" -> directory = Path.of(args[i]);
                 case "--method" -> method = MusicBrainzIndex.Method.valueOf(args[i].toUpperCase(Locale.ROOT));
+                case "--ranking" -> ranking = MusicBrainzIndex.Ranking.valueOf(args[i].toUpperCase(Locale.ROOT));
                 case "--match" -> match = args[i];
                 case "--top" -> top = Integer.parseInt(args[i]);
                 case "--queries" -> queries = Path.of(args[i]);
@@ -29,7 +31,7 @@ public class MusicBrainzSearch {
         if (top < 1 || !List.of("all", "any").contains(match) || (query == null) == (queries == null)
             || (query != null && MusicBrainzIndex.tokenize(query).isEmpty())) throw new IllegalArgumentException(
                 "Use [--index DIR] [--method classic|smooth|--compare] [--match all|any] [--top N] "
-                + "[--save FILE] --query words... OR --queries queries.tsv");
+                + "[--ranking cosine|album_fields] [--save FILE] --query words... OR --queries queries.tsv");
         if (directory == null) {
             Path root = Path.of("index-output").toAbsolutePath().normalize();
             directory = root.resolve(Files.readString(root.resolve("latest-index.tsv")).strip()).normalize();
@@ -52,7 +54,7 @@ public class MusicBrainzSearch {
                 || MusicBrainzIndex.tokenize(request.get("query")).isEmpty())
                 throw new IllegalArgumentException("Queries require distinct IDs and nonempty words");
             for (var selected : compare ? MusicBrainzIndex.Method.values() : new MusicBrainzIndex.Method[]{method}) {
-                var hits = index.search(request.get("query"), selected, match.equals("all"), top);
+                var hits = index.search(request.get("query"), selected, match.equals("all"), top, ranking);
                 int rank = 0;
                 for (var hit : hits) {
                     var doc = hit.document();

@@ -1,0 +1,11 @@
+query_id	method	k	retrieved	relevant_total	relevant_retrieved	precision_at_k	recall_at_k	rr_at_k	ranking
+track	classic	5	5	6	5	1.0	0.8333333333333334	1.0	album_fields
+track	smooth	5	5	6	5	1.0	0.8333333333333334	1.0	album_fields
+label	classic	5	5	31	5	1.0	0.16129032258064516	1.0	album_fields
+label	smooth	5	5	31	5	1.0	0.16129032258064516	1.0	album_fields
+format	classic	5	5	5	5	1.0	1.0	1.0	album_fields
+format	smooth	5	5	5	5	1.0	1.0	1.0	album_fields
+year	classic	5	4	2	2	0.4	1.0	1.0	album_fields
+year	smooth	5	4	2	2	0.4	1.0	1.0	album_fields
+genre	classic	5	5	82	5	1.0	0.06097560975609756	1.0	album_fields
+genre	smooth	5	5	82	5	1.0	0.06097560975609756	1.0	album_fields

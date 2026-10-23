@@ -37,8 +37,26 @@ public class IndexChecks {
         ties.add("1", "a", "artist", "A", "", "", "same"); ties.add("2", "b", "artist", "B", "", "", "same");
         var tied = ties.search("same", MusicBrainzIndex.Method.CLASSIC, true, 10);
         check(tied.size() == 2 && tied.get(0).document().id() == 1, "Deterministic tie order and nonzero common-term IDF");
+        albumRankingChecks();
         diskChecks();
         System.out.println("Offline index checks passed: TF, DF, both IDFs, cosine scores, AND/OR, Unicode, rebuild/load and invalid inputs.");
+    }
+    private static void albumRankingChecks() {
+        MusicBrainzIndex index = new MusicBrainzIndex();
+        index.add("1", "original", "release-group", "Ocean", "Example Band", "", "ocean example band track label bonus extra information");
+        index.add("2", "tribute", "release-group", "Example Band Ocean Tribute", "Other Artist", "", "example band ocean tribute other artist");
+        index.add("3", "track", "release-group", "Other Album", "Someone Else", "", "other album someone else unique song");
+        for (var method : MusicBrainzIndex.Method.values()) {
+            var baseline = index.search("Example Band Ocean", method, true, 10);
+            check(baseline.get(0).document().url().equals("tribute"), "Baseline exposes full-text length bias");
+            var improved = index.search("Example Band Ocean", method, true, 10, MusicBrainzIndex.Ranking.ALBUM_FIELDS);
+            check(improved.get(0).document().url().equals("original"), "Album and artist identity wins over tribute title");
+            close(0.35 * baseline.stream().filter(h -> h.document().url().equals("original")).findFirst().orElseThrow().score() + 0.65,
+                improved.get(0).score(), "Hand-calculated blend with identical identity vector");
+            check(index.search("unique song", method, true, 10, MusicBrainzIndex.Ranking.ALBUM_FIELDS).get(0).document().url().equals("track"), "Track-only retrieval retained");
+            check(index.search("Ocean missing", method, true, 10, MusicBrainzIndex.Ranking.ALBUM_FIELDS).isEmpty(), "Boost never bypasses AND matching");
+            check(index.search("missing", method, false, 10, MusicBrainzIndex.Ranking.ALBUM_FIELDS).isEmpty(), "Boost never invents candidates");
+        }
     }
     private static void diskChecks() throws Exception {
         Files.createDirectories(Path.of("target"));

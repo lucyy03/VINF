@@ -17,6 +17,7 @@ public final class MusicBrainzIndex {
     static final String TOKENIZER = "nfkc-lower-unicode-v1";
     private static final Pattern TOKEN = Pattern.compile("[\\p{L}\\p{N}]+");
     public enum Method { CLASSIC, SMOOTH }
+    public enum Ranking { COSINE, ALBUM_FIELDS }
     public record Document(int id, String pageId, String url, String type, String name, String artist,
                            String format, String text, int tokenCount) { }
     public record Hit(Document document, double score) { }
@@ -69,6 +70,11 @@ public final class MusicBrainzIndex {
         });
     }
     public List<Hit> search(String query, Method method, boolean allWords, int top) {
+        return search(query, method, allWords, top, Ranking.COSINE);
+    }
+    /** Album ranking blends full text (35%) with title/credited artist (65%).
+     * Candidate matching and IDF stay identical; other entity types retain cosine. */
+    public List<Hit> search(String query, Method method, boolean allWords, int top, Ranking ranking) {
         if (top < 1) throw new IllegalArgumentException("top must be positive");
         Map<String, Integer> queryTerms = frequencies(query);
         if (queryTerms.isEmpty() || documents.isEmpty()) return List.of();
@@ -92,7 +98,23 @@ public final class MusicBrainzIndex {
         List<Hit> hits = new ArrayList<>();
         for (var entry : scores.entrySet()) if (!allWords || matches.get(entry.getKey()) == queryTerms.size()) {
             int id = entry.getKey();
-            hits.add(new Hit(documents.get(id - 1), entry.getValue() / (lengths[id] * queryNorm)));
+            Document document = documents.get(id - 1);
+            double score = entry.getValue() / (lengths[id] * queryNorm);
+            if (ranking == Ranking.ALBUM_FIELDS && document.type().equals("release-group")) {
+                double dot = 0, squared = 0;
+                for (var field : frequencies(document.name() + " " + document.artist()).entrySet()) {
+                    var posting = postings.get(field.getKey());
+                    if (posting == null) continue;
+                    double inverse = idf(method, documents.size(), posting.size());
+                    double weight = tf(field.getValue()) * inverse;
+                    squared += weight * weight;
+                    Integer frequency = queryTerms.get(field.getKey());
+                    if (frequency != null) dot += weight * tf(frequency) * inverse;
+                }
+                // Missing metadata falls back to full text rather than penalising the document.
+                if (squared > 0) score = 0.35 * score + 0.65 * dot / (Math.sqrt(squared) * queryNorm);
+            }
+            hits.add(new Hit(document, score));
         }
         hits.sort(java.util.Comparator.comparingDouble(Hit::score).reversed().thenComparingInt(hit -> hit.document().id()));
         return List.copyOf(hits.subList(0, Math.min(top, hits.size())));

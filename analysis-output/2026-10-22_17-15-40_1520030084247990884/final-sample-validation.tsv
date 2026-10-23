@@ -1,0 +1,997 @@
+page_id	source_url	field	expected	regex_value	stored_value	result
+1	https://musicbrainz.org/artist/a74b1b7f-71a5-4011-9441-d0b5e4122711	name	Radiohead	Radiohead	Radiohead	OK
+1	https://musicbrainz.org/artist/a74b1b7f-71a5-4011-9441-d0b5e4122711	mbid	a74b1b7f-71a5-4011-9441-d0b5e4122711	a74b1b7f-71a5-4011-9441-d0b5e4122711	a74b1b7f-71a5-4011-9441-d0b5e4122711	OK
+1	https://musicbrainz.org/artist/a74b1b7f-71a5-4011-9441-d0b5e4122711	musicbrainz_type	Group	Group	Group	OK
+1	https://musicbrainz.org/artist/a74b1b7f-71a5-4011-9441-d0b5e4122711	format				OK
+1	https://musicbrainz.org/artist/a74b1b7f-71a5-4011-9441-d0b5e4122711	area	United Kingdom	United Kingdom	United Kingdom	OK
+1	https://musicbrainz.org/artist/a74b1b7f-71a5-4011-9441-d0b5e4122711	genres	alternative rock;art rock;rock;electronic;experimental rock	alternative rock;art rock;rock;electronic;experimental rock	alternative rock;art rock;rock;electronic;experimental rock	OK
+1	https://musicbrainz.org/artist/a74b1b7f-71a5-4011-9441-d0b5e4122711	detail.rating	4.5	4.5	4.5	OK
+2622	https://musicbrainz.org/artist/4771b7f6-f4e8-4d5d-81c4-4fd3c6accc7c	name	Chris Webby	Chris Webby	Chris Webby	OK
+2622	https://musicbrainz.org/artist/4771b7f6-f4e8-4d5d-81c4-4fd3c6accc7c	mbid	4771b7f6-f4e8-4d5d-81c4-4fd3c6accc7c	4771b7f6-f4e8-4d5d-81c4-4fd3c6accc7c	4771b7f6-f4e8-4d5d-81c4-4fd3c6accc7c	OK
+2622	https://musicbrainz.org/artist/4771b7f6-f4e8-4d5d-81c4-4fd3c6accc7c	musicbrainz_type	Person	Person	Person	OK
+2622	https://musicbrainz.org/artist/4771b7f6-f4e8-4d5d-81c4-4fd3c6accc7c	format				OK
+2622	https://musicbrainz.org/artist/4771b7f6-f4e8-4d5d-81c4-4fd3c6accc7c	area	United States	United States	United States	OK
+2622	https://musicbrainz.org/artist/4771b7f6-f4e8-4d5d-81c4-4fd3c6accc7c	genres	east coast hip hop;hip hop	east coast hip hop;hip hop	east coast hip hop;hip hop	OK
+2622	https://musicbrainz.org/artist/4771b7f6-f4e8-4d5d-81c4-4fd3c6accc7c	detail.rating				OK
+5779	https://musicbrainz.org/artist/1b805ea5-9d4e-4460-bff3-57828205a809	name	Mike Zoot	Mike Zoot	Mike Zoot	OK
+5779	https://musicbrainz.org/artist/1b805ea5-9d4e-4460-bff3-57828205a809	mbid	1b805ea5-9d4e-4460-bff3-57828205a809	1b805ea5-9d4e-4460-bff3-57828205a809	1b805ea5-9d4e-4460-bff3-57828205a809	OK
+5779	https://musicbrainz.org/artist/1b805ea5-9d4e-4460-bff3-57828205a809	musicbrainz_type	Person	Person	Person	OK
+5779	https://musicbrainz.org/artist/1b805ea5-9d4e-4460-bff3-57828205a809	format				OK
+5779	https://musicbrainz.org/artist/1b805ea5-9d4e-4460-bff3-57828205a809	area	United States	United States	United States	OK
+5779	https://musicbrainz.org/artist/1b805ea5-9d4e-4460-bff3-57828205a809	genres	hip hop	hip hop	hip hop	OK
+5779	https://musicbrainz.org/artist/1b805ea5-9d4e-4460-bff3-57828205a809	detail.rating				OK
+9992	https://musicbrainz.org/artist/9debb4c3-dc10-440f-9c96-b777d51ea998	name	Anton Bruckner	Anton Bruckner	Anton Bruckner	OK
+9992	https://musicbrainz.org/artist/9debb4c3-dc10-440f-9c96-b777d51ea998	mbid	9debb4c3-dc10-440f-9c96-b777d51ea998	9debb4c3-dc10-440f-9c96-b777d51ea998	9debb4c3-dc10-440f-9c96-b777d51ea998	OK
+9992	https://musicbrainz.org/artist/9debb4c3-dc10-440f-9c96-b777d51ea998	musicbrainz_type	Person	Person	Person	OK
+9992	https://musicbrainz.org/artist/9debb4c3-dc10-440f-9c96-b777d51ea998	format				OK
+9992	https://musicbrainz.org/artist/9debb4c3-dc10-440f-9c96-b777d51ea998	area	Austria	Austria	Austria	OK
+9992	https://musicbrainz.org/artist/9debb4c3-dc10-440f-9c96-b777d51ea998	genres	classical;romantic classical	classical;romantic classical	classical;romantic classical	OK
+9992	https://musicbrainz.org/artist/9debb4c3-dc10-440f-9c96-b777d51ea998	detail.rating	5	5	5	OK
+12	https://musicbrainz.org/release-group/00054665-89fa-33d5-a8f0-1728ea8c32c3	name	Homework	Homework	Homework	OK
+12	https://musicbrainz.org/release-group/00054665-89fa-33d5-a8f0-1728ea8c32c3	mbid	00054665-89fa-33d5-a8f0-1728ea8c32c3	00054665-89fa-33d5-a8f0-1728ea8c32c3	00054665-89fa-33d5-a8f0-1728ea8c32c3	OK
+12	https://musicbrainz.org/release-group/00054665-89fa-33d5-a8f0-1728ea8c32c3	musicbrainz_type	Album	Album	Album	OK
+12	https://musicbrainz.org/release-group/00054665-89fa-33d5-a8f0-1728ea8c32c3	format				OK
+12	https://musicbrainz.org/release-group/00054665-89fa-33d5-a8f0-1728ea8c32c3	area				OK
+12	https://musicbrainz.org/release-group/00054665-89fa-33d5-a8f0-1728ea8c32c3	genres	electronic;house;french house;club;deep house	electronic;house;french house;club;deep house	electronic;house;french house;club;deep house	OK
+12	https://musicbrainz.org/release-group/00054665-89fa-33d5-a8f0-1728ea8c32c3	detail.rating	4.05	4.05	4.05	OK
+3833	https://musicbrainz.org/release-group/5f016148-f522-3832-8da6-f694bd3cb751	name	Plays Metallica by Four Cellos	Plays Metallica by Four Cellos	Plays Metallica by Four Cellos	OK
+3833	https://musicbrainz.org/release-group/5f016148-f522-3832-8da6-f694bd3cb751	mbid	5f016148-f522-3832-8da6-f694bd3cb751	5f016148-f522-3832-8da6-f694bd3cb751	5f016148-f522-3832-8da6-f694bd3cb751	OK
+3833	https://musicbrainz.org/release-group/5f016148-f522-3832-8da6-f694bd3cb751	musicbrainz_type	Album	Album	Album	OK
+3833	https://musicbrainz.org/release-group/5f016148-f522-3832-8da6-f694bd3cb751	format				OK
+3833	https://musicbrainz.org/release-group/5f016148-f522-3832-8da6-f694bd3cb751	area				OK
+3833	https://musicbrainz.org/release-group/5f016148-f522-3832-8da6-f694bd3cb751	genres	heavy metal;classical crossover;alternative rock;rock;classical	heavy metal;classical crossover;alternative rock;rock;classical	heavy metal;classical crossover;alternative rock;rock;classical	OK
+3833	https://musicbrainz.org/release-group/5f016148-f522-3832-8da6-f694bd3cb751	detail.rating	3.75	3.75	3.75	OK
+6906	https://musicbrainz.org/release-group/062bda9f-db85-40b0-8013-9f7907684103	name	Captain Noah and His Floating Zoo / Holy Moses	Captain Noah and His Floating Zoo / Holy Moses	Captain Noah and His Floating Zoo / Holy Moses	OK
+6906	https://musicbrainz.org/release-group/062bda9f-db85-40b0-8013-9f7907684103	mbid	062bda9f-db85-40b0-8013-9f7907684103	062bda9f-db85-40b0-8013-9f7907684103	062bda9f-db85-40b0-8013-9f7907684103	OK
+6906	https://musicbrainz.org/release-group/062bda9f-db85-40b0-8013-9f7907684103	musicbrainz_type	Album	Album	Album	OK
+6906	https://musicbrainz.org/release-group/062bda9f-db85-40b0-8013-9f7907684103	format				OK
+6906	https://musicbrainz.org/release-group/062bda9f-db85-40b0-8013-9f7907684103	area				OK
+6906	https://musicbrainz.org/release-group/062bda9f-db85-40b0-8013-9f7907684103	genres				OK
+6906	https://musicbrainz.org/release-group/062bda9f-db85-40b0-8013-9f7907684103	detail.rating				OK
+10000	https://musicbrainz.org/release-group/449cc075-baff-411f-9a87-83bd125ff5f4	name	Complete Symphonies, Tragic Overture & Academic Festival Overture	Complete Symphonies, Tragic Overture & Academic Festival Overture	Complete Symphonies, Tragic Overture & Academic Festival Overture	OK
+10000	https://musicbrainz.org/release-group/449cc075-baff-411f-9a87-83bd125ff5f4	mbid	449cc075-baff-411f-9a87-83bd125ff5f4	449cc075-baff-411f-9a87-83bd125ff5f4	449cc075-baff-411f-9a87-83bd125ff5f4	OK
+10000	https://musicbrainz.org/release-group/449cc075-baff-411f-9a87-83bd125ff5f4	musicbrainz_type				OK
+10000	https://musicbrainz.org/release-group/449cc075-baff-411f-9a87-83bd125ff5f4	format				OK
+10000	https://musicbrainz.org/release-group/449cc075-baff-411f-9a87-83bd125ff5f4	area				OK
+10000	https://musicbrainz.org/release-group/449cc075-baff-411f-9a87-83bd125ff5f4	genres				OK
+10000	https://musicbrainz.org/release-group/449cc075-baff-411f-9a87-83bd125ff5f4	detail.rating				OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	name	ノー・サプライゼス 〜ランニング・フロム・ディーモンズ〜	ノー・サプライゼス 〜ランニング・フロム・ディーモンズ〜	ノー・サプライゼス 〜ランニング・フロム・ディーモンズ〜	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	mbid	cbde5694-a761-4adf-8803-0cea6c63d98b	cbde5694-a761-4adf-8803-0cea6c63d98b	cbde5694-a761-4adf-8803-0cea6c63d98b	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	musicbrainz_type	EP	EP	EP	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	format	CD	CD	CD	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	area				OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	genres				OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	detail.rating	2.8	2.8	2.8	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track_count	6	6	6	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.0.mbid	c7ff9b2a-03c0-3e07-933c-64fb01305b6a	c7ff9b2a-03c0-3e07-933c-64fb01305b6a	c7ff9b2a-03c0-3e07-933c-64fb01305b6a	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.0.position	1	1	1	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.0.name	ノー・サプライゼス	ノー・サプライゼス	ノー・サプライゼス	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.0.recording_mbid	980a426e-623e-4ea5-98c7-008d037a0508	980a426e-623e-4ea5-98c7-008d037a0508	980a426e-623e-4ea5-98c7-008d037a0508	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.0.duration	3:49	3:49	3:49	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.0.duration_ms	229000	229000	229000	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.1.mbid	c80e68a9-a6b7-3c34-b298-4fd653808e38	c80e68a9-a6b7-3c34-b298-4fd653808e38	c80e68a9-a6b7-3c34-b298-4fd653808e38	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.1.position	2	2	2	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.1.name	パーリー	パーリー	パーリー	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.1.recording_mbid	d7d0da31-0eb9-4d19-9b82-efbab8089bb3	d7d0da31-0eb9-4d19-9b82-efbab8089bb3	d7d0da31-0eb9-4d19-9b82-efbab8089bb3	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.1.duration	3:38	3:38	3:38	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.1.duration_ms	218000	218000	218000	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.2.mbid	b295835a-b6a8-3226-818a-fe214fb80c60	b295835a-b6a8-3226-818a-fe214fb80c60	b295835a-b6a8-3226-818a-fe214fb80c60	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.2.position	3	3	3	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.2.name	メラトニン	メラトニン	メラトニン	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.2.recording_mbid	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	08dcb5f9-a716-4a36-ac5e-b3740cf85cbb	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.2.duration	2:09	2:09	2:09	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.2.duration_ms	129000	129000	129000	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.3.mbid	4d0f3ef3-05d0-3e89-b1c8-bbf2307683c1	4d0f3ef3-05d0-3e89-b1c8-bbf2307683c1	4d0f3ef3-05d0-3e89-b1c8-bbf2307683c1	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.3.position	4	4	4	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.3.name	ミーティング・イン・ジ・アイル	ミーティング・イン・ジ・アイル	ミーティング・イン・ジ・アイル	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.3.recording_mbid	27369abc-a525-47ac-9461-a4ab7598229a	27369abc-a525-47ac-9461-a4ab7598229a	27369abc-a525-47ac-9461-a4ab7598229a	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.3.duration	3:07	3:07	3:07	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.3.duration_ms	187000	187000	187000	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.4.mbid	454c7a64-de79-35ee-b0b0-bd422aef6292	454c7a64-de79-35ee-b0b0-bd422aef6292	454c7a64-de79-35ee-b0b0-bd422aef6292	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.4.position	5	5	5	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.4.name	ビショップス・ローブス	ビショップス・ローブス	ビショップス・ローブス	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.4.recording_mbid	f90dfc10-68c1-418a-bffe-a71549c88f3b	f90dfc10-68c1-418a-bffe-a71549c88f3b	f90dfc10-68c1-418a-bffe-a71549c88f3b	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.4.duration	3:24	3:24	3:24	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.4.duration_ms	204000	204000	204000	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.5.mbid	1b482725-5107-3e92-8157-fadb8a52702a	1b482725-5107-3e92-8157-fadb8a52702a	1b482725-5107-3e92-8157-fadb8a52702a	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.5.position	6	6	6	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.5.name	ア・リマインダー	ア・リマインダー	ア・リマインダー	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.5.recording_mbid	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	72f541ac-0d82-44e1-9f12-e50a7d23cfcf	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.5.duration	3:51	3:51	3:51	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	track.5.duration_ms	231000	231000	231000	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	label_count	0	0	0	OK
+577	https://musicbrainz.org/release/cbde5694-a761-4adf-8803-0cea6c63d98b	event_count	0	0	0	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	name	N95	N95	N95	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	mbid	d6f0c02d-5570-42b9-91ec-cebeac1c6fac	d6f0c02d-5570-42b9-91ec-cebeac1c6fac	d6f0c02d-5570-42b9-91ec-cebeac1c6fac	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	musicbrainz_type	Single	Single	Single	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	format	Digital Media	Digital Media	Digital Media	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	area				OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	genres				OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	detail.rating				OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	track_count	1	1	1	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	track.0.mbid	6e4cb5f8-5759-4f07-a4fa-873c6b6bd605	6e4cb5f8-5759-4f07-a4fa-873c6b6bd605	6e4cb5f8-5759-4f07-a4fa-873c6b6bd605	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	track.0.position	1	1	1	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	track.0.name	N95	N95	N95	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	track.0.recording_mbid	68c3c7a2-2ad0-44cf-b2b7-15cb98c57048	68c3c7a2-2ad0-44cf-b2b7-15cb98c57048	68c3c7a2-2ad0-44cf-b2b7-15cb98c57048	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	track.0.duration	3:27	3:27	3:27	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	track.0.duration_ms	207000	207000	207000	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	label_count	4	4	4	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	label.0.mbid	c0629488-2aa2-4b46-9de8-decb27147444	c0629488-2aa2-4b46-9de8-decb27147444	c0629488-2aa2-4b46-9de8-decb27147444	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	label.0.name	Aftermath Entertainment	Aftermath Entertainment	Aftermath Entertainment	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	label.0.catalog_numbers				OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	label.1.mbid	2182a316-c4bd-4605-936a-5e2fac52bdd2	2182a316-c4bd-4605-936a-5e2fac52bdd2	2182a316-c4bd-4605-936a-5e2fac52bdd2	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	label.1.name	Interscope Records	Interscope Records	Interscope Records	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	label.1.catalog_numbers				OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	label.2.mbid	df31a9a8-4583-4a49-a4f7-9a3cee1c45eb	df31a9a8-4583-4a49-a4f7-9a3cee1c45eb	df31a9a8-4583-4a49-a4f7-9a3cee1c45eb	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	label.2.name	pgLang	pgLang	pgLang	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	label.2.catalog_numbers				OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	label.3.mbid	56d2501f-12b7-4cfd-b8f8-e95189ea27f5	56d2501f-12b7-4cfd-b8f8-e95189ea27f5	56d2501f-12b7-4cfd-b8f8-e95189ea27f5	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	label.3.name	Top Dawg Entertainment	Top Dawg Entertainment	Top Dawg Entertainment	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	label.3.catalog_numbers				OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	event_count	1	1	1	OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	event.0.country				OK
+5111	https://musicbrainz.org/release/d6f0c02d-5570-42b9-91ec-cebeac1c6fac	event.0.date	2022-05-14	2022-05-14	2022-05-14	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	name	Terminal Velocity	Terminal Velocity	Terminal Velocity	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	mbid	e9425812-3acb-4a95-a804-d091cdd6ca19	e9425812-3acb-4a95-a804-d091cdd6ca19	e9425812-3acb-4a95-a804-d091cdd6ca19	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	musicbrainz_type	Album	Album	Album	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	format	CD	CD	CD	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	area				OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	genres				OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	detail.rating				OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track_count	9	9	9	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.0.mbid	30c0f044-bbf4-41ab-bba8-2e7b61f5eaec	30c0f044-bbf4-41ab-bba8-2e7b61f5eaec	30c0f044-bbf4-41ab-bba8-2e7b61f5eaec	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.0.position	1	1	1	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.0.name	Terminal Velocity	Terminal Velocity	Terminal Velocity	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.0.recording_mbid	3662a558-80c5-4f46-a93e-f534636ababb	3662a558-80c5-4f46-a93e-f534636ababb	3662a558-80c5-4f46-a93e-f534636ababb	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.0.duration	6:07	6:07	6:07	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.0.duration_ms	367000	367000	367000	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.1.mbid	e74578df-b86b-4f3b-b055-a4b9d5a3ae4e	e74578df-b86b-4f3b-b055-a4b9d5a3ae4e	e74578df-b86b-4f3b-b055-a4b9d5a3ae4e	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.1.position	2	2	2	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.1.name	The Oddfather	The Oddfather	The Oddfather	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.1.recording_mbid	92f46ea3-f37c-4204-8eca-85e871f591cb	92f46ea3-f37c-4204-8eca-85e871f591cb	92f46ea3-f37c-4204-8eca-85e871f591cb	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.1.duration	6:25	6:25	6:25	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.1.duration_ms	385000	385000	385000	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.2.mbid	57632f19-95e4-4b81-b222-505e82c5692e	57632f19-95e4-4b81-b222-505e82c5692e	57632f19-95e4-4b81-b222-505e82c5692e	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.2.position	3	3	3	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.2.name	Happy Song	Happy Song	Happy Song	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.2.recording_mbid	ea7e89a8-c6c2-45c6-8888-ec55886fa06f	ea7e89a8-c6c2-45c6-8888-ec55886fa06f	ea7e89a8-c6c2-45c6-8888-ec55886fa06f	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.2.duration	6:01	6:01	6:01	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.2.duration_ms	361000	361000	361000	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.3.mbid	f0ab34cf-3d25-488a-830c-c718f8dd8713	f0ab34cf-3d25-488a-830c-c718f8dd8713	f0ab34cf-3d25-488a-830c-c718f8dd8713	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.3.position	4	4	4	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.3.name	Gemini	Gemini	Gemini	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.3.recording_mbid	f33a38e9-8f2e-4f0e-9e79-5f2383abccfb	f33a38e9-8f2e-4f0e-9e79-5f2383abccfb	f33a38e9-8f2e-4f0e-9e79-5f2383abccfb	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.3.duration	6:05	6:05	6:05	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.3.duration_ms	365000	365000	365000	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.4.mbid	e71d59d1-2f60-4c77-9fab-e4397d7d88cf	e71d59d1-2f60-4c77-9fab-e4397d7d88cf	e71d59d1-2f60-4c77-9fab-e4397d7d88cf	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.4.position	5	5	5	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.4.name	Out of the Blue	Out of the Blue	Out of the Blue	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.4.recording_mbid	cd695d0a-d970-404c-bc0a-e33dfdbd725f	cd695d0a-d970-404c-bc0a-e33dfdbd725f	cd695d0a-d970-404c-bc0a-e33dfdbd725f	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.4.duration	5:46	5:46	5:46	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.4.duration_ms	346000	346000	346000	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.5.mbid	ca72f313-5a22-4178-acbd-b309e3bc7c1b	ca72f313-5a22-4178-acbd-b309e3bc7c1b	ca72f313-5a22-4178-acbd-b309e3bc7c1b	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.5.position	6	6	6	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.5.name	Glassy-Eyed Zombies	Glassy-Eyed Zombies	Glassy-Eyed Zombies	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.5.recording_mbid	51c983c6-2240-4ba1-9c2a-0fe5a172bc9f	51c983c6-2240-4ba1-9c2a-0fe5a172bc9f	51c983c6-2240-4ba1-9c2a-0fe5a172bc9f	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.5.duration	5:55	5:55	5:55	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.5.duration_ms	355000	355000	355000	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.6.mbid	02525c0b-fdd5-4e7e-a384-e8e0419f5a1e	02525c0b-fdd5-4e7e-a384-e8e0419f5a1e	02525c0b-fdd5-4e7e-a384-e8e0419f5a1e	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.6.position	7	7	7	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.6.name	The Way Things Fall	The Way Things Fall	The Way Things Fall	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.6.recording_mbid	eb2fa55e-2331-44bd-8b18-a221608716ab	eb2fa55e-2331-44bd-8b18-a221608716ab	eb2fa55e-2331-44bd-8b18-a221608716ab	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.6.duration	7:33	7:33	7:33	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.6.duration_ms	453000	453000	453000	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.7.mbid	688684db-9151-4274-a515-4bb2cae642fa	688684db-9151-4274-a515-4bb2cae642fa	688684db-9151-4274-a515-4bb2cae642fa	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.7.position	8	8	8	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.7.name	Snake in My Boot	Snake in My Boot	Snake in My Boot	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.7.recording_mbid	33ceed99-d7ba-4848-996d-ac73e3b4cea4	33ceed99-d7ba-4848-996d-ac73e3b4cea4	33ceed99-d7ba-4848-996d-ac73e3b4cea4	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.7.duration	4:04	4:04	4:04	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.7.duration_ms	244000	244000	244000	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.8.mbid	b02fd97e-ed9e-4d91-8fe5-672003149fd8	b02fd97e-ed9e-4d91-8fe5-672003149fd8	b02fd97e-ed9e-4d91-8fe5-672003149fd8	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.8.position	9	9	9	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.8.name	Temple of Circadia	Temple of Circadia	Temple of Circadia	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.8.recording_mbid	70fcedc1-8de2-4413-9041-bfe9340238d2	70fcedc1-8de2-4413-9041-bfe9340238d2	70fcedc1-8de2-4413-9041-bfe9340238d2	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.8.duration	7:10	7:10	7:10	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	track.8.duration_ms	430000	430000	430000	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	label_count	2	2	2	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	label.0.mbid	8929009e-198f-4915-9873-b0785bd4ad74	8929009e-198f-4915-9873-b0785bd4ad74	8929009e-198f-4915-9873-b0785bd4ad74	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	label.0.name	RenSam Songs	RenSam Songs	RenSam Songs	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	label.0.catalog_numbers				OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	label.1.mbid	46589b81-11fa-4188-a0ff-d531d3894f07	46589b81-11fa-4188-a0ff-d531d3894f07	46589b81-11fa-4188-a0ff-d531d3894f07	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	label.1.name	Sound Mind Music	Sound Mind Music	Sound Mind Music	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	label.1.catalog_numbers				OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	event_count	1	1	1	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	event.0.country	[Worldwide]	[Worldwide]	[Worldwide]	OK
+4648	https://musicbrainz.org/release/e9425812-3acb-4a95-a804-d091cdd6ca19	event.0.date	2020-10-30	2020-10-30	2020-10-30	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	name	Man of Words/Man of Music	Man of Words/Man of Music	Man of Words/Man of Music	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	mbid	63027a5d-8b94-4a6b-a3bb-cd5d55134214	63027a5d-8b94-4a6b-a3bb-cd5d55134214	63027a5d-8b94-4a6b-a3bb-cd5d55134214	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	musicbrainz_type	Album	Album	Album	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	format	12" Vinyl	12" Vinyl	12" Vinyl	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	area				OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	genres				OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	detail.rating	3.65	3.65	3.65	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track_count	10	10	10	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.0.mbid	109f5bdd-0495-33e4-95ea-a2c252f02c06	109f5bdd-0495-33e4-95ea-a2c252f02c06	109f5bdd-0495-33e4-95ea-a2c252f02c06	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.0.position	1	1	1	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.0.name	Space Oddity	Space Oddity	Space Oddity	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.0.recording_mbid	84649f3b-6da6-4da6-8e33-a7a990b69516	84649f3b-6da6-4da6-8e33-a7a990b69516	84649f3b-6da6-4da6-8e33-a7a990b69516	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.0.duration	5:16	5:16	5:16	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.0.duration_ms	316000	316000	316000	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.1.mbid	8725e0f5-d47e-33d8-9609-021d3d7f4f41	8725e0f5-d47e-33d8-9609-021d3d7f4f41	8725e0f5-d47e-33d8-9609-021d3d7f4f41	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.1.position	2	2	2	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.1.name	Unwashed and Somewhat Slightly Dazed	Unwashed and Somewhat Slightly Dazed	Unwashed and Somewhat Slightly Dazed	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.1.recording_mbid	b9b9090d-23c0-46aa-9811-8fb5a9ccafc3	b9b9090d-23c0-46aa-9811-8fb5a9ccafc3	b9b9090d-23c0-46aa-9811-8fb5a9ccafc3	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.1.duration	6:12	6:12	6:12	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.1.duration_ms	372000	372000	372000	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.2.mbid	919c42e3-647d-386a-bbb3-33eab40d806a	919c42e3-647d-386a-bbb3-33eab40d806a	919c42e3-647d-386a-bbb3-33eab40d806a	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.2.position	3	3	3	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.2.name	(Don’t Sit Down)	(Don’t Sit Down)	(Don’t Sit Down)	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.2.recording_mbid	e0cccb31-0a9c-4846-98c0-e4af412228ce	e0cccb31-0a9c-4846-98c0-e4af412228ce	e0cccb31-0a9c-4846-98c0-e4af412228ce	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.2.duration	0:44	0:44	0:44	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.2.duration_ms	44000	44000	44000	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.3.mbid	eb8baa27-8ec4-3c14-bb99-a1ceef29b0e4	eb8baa27-8ec4-3c14-bb99-a1ceef29b0e4	eb8baa27-8ec4-3c14-bb99-a1ceef29b0e4	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.3.position	4	4	4	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.3.name	Letter to Hermione	Letter to Hermione	Letter to Hermione	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.3.recording_mbid	88f20741-0c96-4514-80d2-ea9c50e7cb4d	88f20741-0c96-4514-80d2-ea9c50e7cb4d	88f20741-0c96-4514-80d2-ea9c50e7cb4d	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.3.duration	2:37	2:37	2:37	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.3.duration_ms	157000	157000	157000	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.4.mbid	43964ca7-e166-3660-a357-2932ae59b1d4	43964ca7-e166-3660-a357-2932ae59b1d4	43964ca7-e166-3660-a357-2932ae59b1d4	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.4.position	5	5	5	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.4.name	Cygnet Committee	Cygnet Committee	Cygnet Committee	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.4.recording_mbid	7b05462d-aedb-4933-a846-af8a4fcfdccc	7b05462d-aedb-4933-a846-af8a4fcfdccc	7b05462d-aedb-4933-a846-af8a4fcfdccc	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.4.duration	9:36	9:36	9:36	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.4.duration_ms	576000	576000	576000	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.5.mbid	c998ec01-86bf-361b-9bc4-194de2bfd60b	c998ec01-86bf-361b-9bc4-194de2bfd60b	c998ec01-86bf-361b-9bc4-194de2bfd60b	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.5.position	6	6	6	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.5.name	Janine	Janine	Janine	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.5.recording_mbid	6218e182-1ba8-4a18-980b-afecb2ce0b60	6218e182-1ba8-4a18-980b-afecb2ce0b60	6218e182-1ba8-4a18-980b-afecb2ce0b60	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.5.duration	3:25	3:25	3:25	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.5.duration_ms	205000	205000	205000	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.6.mbid	edf703a9-8ed0-3621-bf98-09f6cfb4c1c5	edf703a9-8ed0-3621-bf98-09f6cfb4c1c5	edf703a9-8ed0-3621-bf98-09f6cfb4c1c5	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.6.position	7	7	7	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.6.name	An Occasional Dream	An Occasional Dream	An Occasional Dream	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.6.recording_mbid	3917014a-46fd-4419-8528-8a457a4682ac	3917014a-46fd-4419-8528-8a457a4682ac	3917014a-46fd-4419-8528-8a457a4682ac	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.6.duration	3:01	3:01	3:01	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.6.duration_ms	181000	181000	181000	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.7.mbid	006cba0a-e99c-3b9a-8bc0-ef7993d92b56	006cba0a-e99c-3b9a-8bc0-ef7993d92b56	006cba0a-e99c-3b9a-8bc0-ef7993d92b56	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.7.position	8	8	8	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.7.name	Wild Eyed Boy From Freecloud	Wild Eyed Boy From Freecloud	Wild Eyed Boy From Freecloud	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.7.recording_mbid	20ba9cb7-768e-4ff0-8656-9d3c74b8df17	20ba9cb7-768e-4ff0-8656-9d3c74b8df17	20ba9cb7-768e-4ff0-8656-9d3c74b8df17	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.7.duration	4:52	4:52	4:52	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.7.duration_ms	292000	292000	292000	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.8.mbid	fdcea8fb-acb8-38c8-a77a-9e025860b1db	fdcea8fb-acb8-38c8-a77a-9e025860b1db	fdcea8fb-acb8-38c8-a77a-9e025860b1db	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.8.position	9	9	9	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.8.name	God Knows I’m Good	God Knows I’m Good	God Knows I’m Good	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.8.recording_mbid	138bd73d-7e15-4950-9ef8-16ae32888051	138bd73d-7e15-4950-9ef8-16ae32888051	138bd73d-7e15-4950-9ef8-16ae32888051	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.8.duration	3:22	3:22	3:22	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.8.duration_ms	202000	202000	202000	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.9.mbid	60b62c1a-741a-3fb5-b39a-695259604f40	60b62c1a-741a-3fb5-b39a-695259604f40	60b62c1a-741a-3fb5-b39a-695259604f40	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.9.position	10	10	10	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.9.name	Memory of a Free Festival	Memory of a Free Festival	Memory of a Free Festival	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.9.recording_mbid	f239a701-9798-4abb-afd2-67bd6b404b5e	f239a701-9798-4abb-afd2-67bd6b404b5e	f239a701-9798-4abb-afd2-67bd6b404b5e	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.9.duration	7:11	7:11	7:11	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	track.9.duration_ms	431000	431000	431000	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	label_count	1	1	1	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	label.0.mbid	995428e7-81b6-41dd-bd38-5a7a0ece8ad6	995428e7-81b6-41dd-bd38-5a7a0ece8ad6	995428e7-81b6-41dd-bd38-5a7a0ece8ad6	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	label.0.name	Mercury Records	Mercury Records	Mercury Records	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	label.0.catalog_numbers	SR 61246	SR 61246	SR 61246	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	event_count	1	1	1	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	event.0.country	United States	United States	United States	OK
+4717	https://musicbrainz.org/release/63027a5d-8b94-4a6b-a3bb-cd5d55134214	event.0.date	1969	1969	1969	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	name	Barry Manilow II	Barry Manilow II	Barry Manilow II	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	mbid	cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	musicbrainz_type	Album	Album	Album	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	format	Cassette	Cassette	Cassette	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	area				OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	genres				OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	detail.rating	4	4	4	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track_count	10	10	10	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.0.mbid	d48e6b70-967a-45de-a7af-d3a2d69b421b	d48e6b70-967a-45de-a7af-d3a2d69b421b	d48e6b70-967a-45de-a7af-d3a2d69b421b	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.0.position	A1	A1	A1	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.0.name	I Want to Be Somebody’s Baby	I Want to Be Somebody’s Baby	I Want to Be Somebody’s Baby	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.0.recording_mbid	54443b59-270d-4060-be68-c28fe8ff0c81	54443b59-270d-4060-be68-c28fe8ff0c81	54443b59-270d-4060-be68-c28fe8ff0c81	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.0.duration	4:18	4:18	4:18	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.0.duration_ms	258000	258000	258000	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.1.mbid	7e009949-906f-4c8b-a4ce-1bc6dd54e77c	7e009949-906f-4c8b-a4ce-1bc6dd54e77c	7e009949-906f-4c8b-a4ce-1bc6dd54e77c	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.1.position	A2	A2	A2	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.1.name	Early Morning Strangers	Early Morning Strangers	Early Morning Strangers	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.1.recording_mbid	291bc9ad-6c91-4abd-9c45-eaeb371d7237	291bc9ad-6c91-4abd-9c45-eaeb371d7237	291bc9ad-6c91-4abd-9c45-eaeb371d7237	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.1.duration	3:24	3:24	3:24	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.1.duration_ms	204000	204000	204000	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.2.mbid	9a5a5b3c-8e67-4d32-917f-0b0cf8cf4468	9a5a5b3c-8e67-4d32-917f-0b0cf8cf4468	9a5a5b3c-8e67-4d32-917f-0b0cf8cf4468	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.2.position	A3	A3	A3	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.2.name	Mandy	Mandy	Mandy	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.2.recording_mbid	d7c3e239-bc80-48c7-b410-b4e7955fc531	d7c3e239-bc80-48c7-b410-b4e7955fc531	d7c3e239-bc80-48c7-b410-b4e7955fc531	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.2.duration	3:32	3:32	3:32	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.2.duration_ms	212000	212000	212000	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.3.mbid	2d2659e0-207e-41b1-9905-44062394fef7	2d2659e0-207e-41b1-9905-44062394fef7	2d2659e0-207e-41b1-9905-44062394fef7	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.3.position	B4	B4	B4	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.3.name	The Two of Us	The Two of Us	The Two of Us	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.3.recording_mbid	e06caae2-95e0-4259-a72e-52257e4403b7	e06caae2-95e0-4259-a72e-52257e4403b7	e06caae2-95e0-4259-a72e-52257e4403b7	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.3.duration	3:05	3:05	3:05	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.3.duration_ms	185000	185000	185000	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.4.mbid	3b75271e-f67c-4921-a308-9ce10385ab0e	3b75271e-f67c-4921-a308-9ce10385ab0e	3b75271e-f67c-4921-a308-9ce10385ab0e	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.4.position	A5	A5	A5	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.4.name	Something’s Comin’ Up	Something’s Comin’ Up	Something’s Comin’ Up	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.4.recording_mbid	d2fd13bc-2c9d-4f26-bd8d-7c21c07eb66c	d2fd13bc-2c9d-4f26-bd8d-7c21c07eb66c	d2fd13bc-2c9d-4f26-bd8d-7c21c07eb66c	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.4.duration	2:51	2:51	2:51	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.4.duration_ms	171000	171000	171000	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.5.mbid	e4db38f8-84b0-41a5-b00d-fb69d8cade1c	e4db38f8-84b0-41a5-b00d-fb69d8cade1c	e4db38f8-84b0-41a5-b00d-fb69d8cade1c	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.5.position	B1	B1	B1	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.5.name	It’s a Miracle	It’s a Miracle	It’s a Miracle	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.5.recording_mbid	65be853b-65d3-41ed-bdb2-6b8d61688fc8	65be853b-65d3-41ed-bdb2-6b8d61688fc8	65be853b-65d3-41ed-bdb2-6b8d61688fc8	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.5.duration	3:58	3:58	3:58	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.5.duration_ms	238000	238000	238000	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.6.mbid	e47af749-a152-41bc-91fd-78f089bc0f20	e47af749-a152-41bc-91fd-78f089bc0f20	e47af749-a152-41bc-91fd-78f089bc0f20	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.6.position	B2	B2	B2	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.6.name	Avenue C	Avenue C	Avenue C	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.6.recording_mbid	85f91709-6e1c-40cd-8ff6-c53f6859973d	85f91709-6e1c-40cd-8ff6-c53f6859973d	85f91709-6e1c-40cd-8ff6-c53f6859973d	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.6.duration	2:37	2:37	2:37	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.6.duration_ms	157000	157000	157000	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.7.mbid	461f7080-c814-40f1-a057-bd687a714e32	461f7080-c814-40f1-a057-bd687a714e32	461f7080-c814-40f1-a057-bd687a714e32	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.7.position	B3	B3	B3	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.7.name	My Baby Loves Me	My Baby Loves Me	My Baby Loves Me	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.7.recording_mbid	a0688d88-3a98-4bf2-9c44-b2b4bf885fd9	a0688d88-3a98-4bf2-9c44-b2b4bf885fd9	a0688d88-3a98-4bf2-9c44-b2b4bf885fd9	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.7.duration	3:18	3:18	3:18	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.7.duration_ms	198000	198000	198000	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.8.mbid	f3da72d2-3781-4ac6-9a36-6b19abb5a58c	f3da72d2-3781-4ac6-9a36-6b19abb5a58c	f3da72d2-3781-4ac6-9a36-6b19abb5a58c	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.8.position	A4	A4	A4	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.8.name	Sandra	Sandra	Sandra	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.8.recording_mbid	cb0526be-3863-443b-a24a-bfd4583740ac	cb0526be-3863-443b-a24a-bfd4583740ac	cb0526be-3863-443b-a24a-bfd4583740ac	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.8.duration	4:35	4:35	4:35	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.8.duration_ms	275000	275000	275000	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.9.mbid	568baea0-f0df-43a6-8c9e-3013dad87a95	568baea0-f0df-43a6-8c9e-3013dad87a95	568baea0-f0df-43a6-8c9e-3013dad87a95	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.9.position	B5	B5	B5	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.9.name	Home Again	Home Again	Home Again	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.9.recording_mbid	f5be1f73-f27b-446c-ba83-fb58f6f5ad1f	f5be1f73-f27b-446c-ba83-fb58f6f5ad1f	f5be1f73-f27b-446c-ba83-fb58f6f5ad1f	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.9.duration	5:34	5:34	5:34	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	track.9.duration_ms	334000	334000	334000	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	label_count	1	1	1	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	label.0.mbid	ac7027ca-f02d-4eea-9de4-8ed6be275fd5	ac7027ca-f02d-4eea-9de4-8ed6be275fd5	ac7027ca-f02d-4eea-9de4-8ed6be275fd5	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	label.0.name	Bell Records	Bell Records	Bell Records	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	label.0.catalog_numbers	C-123765	C-123765	C-123765	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	event_count	1	1	1	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	event.0.country	United States	United States	United States	OK
+3509	https://musicbrainz.org/release/cf0bbcab-20d5-4bf8-a1e4-6cc449d7977a	event.0.date	1974-10-01	1974-10-01	1974-10-01	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	name	Zoot Sims avec Henri Renaud et Son Orchestre & Jon Eardley (with Henri Renaud et Son Orchestre & Jon Eardley)	Zoot Sims avec Henri Renaud et Son Orchestre & Jon Eardley (with Henri Renaud et Son Orchestre & Jon Eardley)	Zoot Sims avec Henri Renaud et Son Orchestre & Jon Eardley (with Henri Renaud et Son Orchestre & Jon Eardley)	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	mbid	b0bfa082-0767-4664-912e-aec438955b86	b0bfa082-0767-4664-912e-aec438955b86	b0bfa082-0767-4664-912e-aec438955b86	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	musicbrainz_type	Album	Album	Album	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	format	Vinyl	Vinyl	Vinyl	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	area				OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	genres				OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	detail.rating				OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track_count	7	7	7	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.0.mbid	2e0ae407-f740-4266-9320-bacf851feecc	2e0ae407-f740-4266-9320-bacf851feecc	2e0ae407-f740-4266-9320-bacf851feecc	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.0.position	1	1	1	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.0.name	Captain Jetter	Captain Jetter	Captain Jetter	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.0.recording_mbid	12712a7d-384a-4bd4-a40d-045909ababe2	12712a7d-384a-4bd4-a40d-045909ababe2	12712a7d-384a-4bd4-a40d-045909ababe2	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.0.duration	5:02	5:02	5:02	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.0.duration_ms	302000	302000	302000	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.1.mbid	14ce56c2-845f-4933-911b-0ced4ee39925	14ce56c2-845f-4933-911b-0ced4ee39925	14ce56c2-845f-4933-911b-0ced4ee39925	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.1.position	2	2	2	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.1.name	Nuzzolese Blues	Nuzzolese Blues	Nuzzolese Blues	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.1.recording_mbid	cf00d9dc-f799-47db-869c-75370c431af3	cf00d9dc-f799-47db-869c-75370c431af3	cf00d9dc-f799-47db-869c-75370c431af3	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.1.duration	7:22	7:22	7:22	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.1.duration_ms	442000	442000	442000	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.2.mbid	9a7f6606-8ee9-45ac-90e6-f1e492a07319	9a7f6606-8ee9-45ac-90e6-f1e492a07319	9a7f6606-8ee9-45ac-90e6-f1e492a07319	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.2.position	3	3	3	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.2.name	Everything I Love	Everything I Love	Everything I Love	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.2.recording_mbid	0d54518e-c9d4-4676-9fd1-7a19c6686386	0d54518e-c9d4-4676-9fd1-7a19c6686386	0d54518e-c9d4-4676-9fd1-7a19c6686386	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.2.duration	4:18	4:18	4:18	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.2.duration_ms	258000	258000	258000	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.3.mbid	64354814-e635-4a5f-a7d7-6bcf197b004a	64354814-e635-4a5f-a7d7-6bcf197b004a	64354814-e635-4a5f-a7d7-6bcf197b004a	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.3.position	4	4	4	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.3.name	Evening In Paris	Evening In Paris	Evening In Paris	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.3.recording_mbid	bfb79bcb-6b84-4ecc-a457-1a3e19fcb429	bfb79bcb-6b84-4ecc-a457-1a3e19fcb429	bfb79bcb-6b84-4ecc-a457-1a3e19fcb429	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.3.duration	3:22	3:22	3:22	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.3.duration_ms	202000	202000	202000	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.4.mbid	e1e03e32-c81d-4677-932b-aa5557f2a2be	e1e03e32-c81d-4677-932b-aa5557f2a2be	e1e03e32-c81d-4677-932b-aa5557f2a2be	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.4.position	5	5	5	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.4.name	On the Alamo	On the Alamo	On the Alamo	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.4.recording_mbid	eddbebfe-71ec-4108-b083-c30115eada71	eddbebfe-71ec-4108-b083-c30115eada71	eddbebfe-71ec-4108-b083-c30115eada71	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.4.duration	5:35	5:35	5:35	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.4.duration_ms	335000	335000	335000	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.5.mbid	0f8459ec-0980-4a7e-b274-d43ba89d43a2	0f8459ec-0980-4a7e-b274-d43ba89d43a2	0f8459ec-0980-4a7e-b274-d43ba89d43a2	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.5.position	6	6	6	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.5.name	My Old Flame	My Old Flame	My Old Flame	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.5.recording_mbid	2114b2d8-53dc-4576-893f-5661420d86f7	2114b2d8-53dc-4576-893f-5661420d86f7	2114b2d8-53dc-4576-893f-5661420d86f7	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.5.duration	3:24	3:24	3:24	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.5.duration_ms	204000	204000	204000	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.6.mbid	74bd6e82-ef00-4a4a-a34a-c2fe1699abf8	74bd6e82-ef00-4a4a-a34a-c2fe1699abf8	74bd6e82-ef00-4a4a-a34a-c2fe1699abf8	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.6.position	7	7	7	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.6.name	Little Jon Special	Little Jon Special	Little Jon Special	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.6.recording_mbid	613dff76-8792-4c56-bd35-9521ffc095f7	613dff76-8792-4c56-bd35-9521ffc095f7	613dff76-8792-4c56-bd35-9521ffc095f7	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.6.duration	4:54	4:54	4:54	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	track.6.duration_ms	294000	294000	294000	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	label_count	1	1	1	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	label.0.mbid	b9706739-1cb8-4ab7-8404-de948eca268c	b9706739-1cb8-4ab7-8404-de948eca268c	b9706739-1cb8-4ab7-8404-de948eca268c	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	label.0.name	Ducretet-Thomson	Ducretet-Thomson	Ducretet-Thomson	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	label.0.catalog_numbers	250 V 023	250 V 023	250 V 023	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	event_count	1	1	1	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	event.0.country	Uruguay	Uruguay	Uruguay	OK
+3166	https://musicbrainz.org/release/b0bfa082-0767-4664-912e-aec438955b86	event.0.date	1956	1956	1956	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	name	We Got It 4 Cheap Vol. 1	We Got It 4 Cheap Vol. 1	We Got It 4 Cheap Vol. 1	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	mbid	7ad52b01-89bb-4bb5-bf0a-44baec9065b7	7ad52b01-89bb-4bb5-bf0a-44baec9065b7	7ad52b01-89bb-4bb5-bf0a-44baec9065b7	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	musicbrainz_type	Album + Mixtape/Street	Album + Mixtape/Street	Album + Mixtape/Street	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	format	CD-R	CD-R	CD-R	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	area				OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	genres				OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	detail.rating				OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track_count	25	25	25	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.0.mbid	1607cf3a-67b0-4199-bd2f-7b44a6ec7a95	1607cf3a-67b0-4199-bd2f-7b44a6ec7a95	1607cf3a-67b0-4199-bd2f-7b44a6ec7a95	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.0.position	1	1	1	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.0.name	Intro	Intro	Intro	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.0.recording_mbid	60513d35-1b2a-4058-b972-92aa857b53ef	60513d35-1b2a-4058-b972-92aa857b53ef	60513d35-1b2a-4058-b972-92aa857b53ef	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.0.duration	0:44	0:44	0:44	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.0.duration_ms	44000	44000	44000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.1.mbid	7cef6002-ca5b-44cf-bfd6-4721ab3125f4	7cef6002-ca5b-44cf-bfd6-4721ab3125f4	7cef6002-ca5b-44cf-bfd6-4721ab3125f4	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.1.position	2	2	2	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.1.name	You’ll See	You’ll See	You’ll See	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.1.recording_mbid	7ecdf0d2-cfd6-4cd8-9647-1e200c89dc5d	7ecdf0d2-cfd6-4cd8-9647-1e200c89dc5d	7ecdf0d2-cfd6-4cd8-9647-1e200c89dc5d	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.1.duration	3:42	3:42	3:42	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.1.duration_ms	222000	222000	222000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.2.mbid	9b71e338-bfcd-4475-ab9e-d46d93afbf05	9b71e338-bfcd-4475-ab9e-d46d93afbf05	9b71e338-bfcd-4475-ab9e-d46d93afbf05	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.2.position	3	3	3	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.2.name	Coast to Coast	Coast to Coast	Coast to Coast	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.2.recording_mbid	024b873e-68a2-4b5b-9ed4-02097c3b6e0c	024b873e-68a2-4b5b-9ed4-02097c3b6e0c	024b873e-68a2-4b5b-9ed4-02097c3b6e0c	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.2.duration	2:39	2:39	2:39	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.2.duration_ms	159000	159000	159000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.3.mbid	d55bd1a7-5fc1-426f-aec9-441fdc2574a6	d55bd1a7-5fc1-426f-aec9-441fdc2574a6	d55bd1a7-5fc1-426f-aec9-441fdc2574a6	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.3.position	4	4	4	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.3.name	Interlude	Interlude	Interlude	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.3.recording_mbid	b7b934ab-1608-435f-9350-f9a75975acd0	b7b934ab-1608-435f-9350-f9a75975acd0	b7b934ab-1608-435f-9350-f9a75975acd0	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.3.duration	0:19	0:19	0:19	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.3.duration_ms	19000	19000	19000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.4.mbid	9a3c2557-1db4-4e94-ba8e-8c5830c04064	9a3c2557-1db4-4e94-ba8e-8c5830c04064	9a3c2557-1db4-4e94-ba8e-8c5830c04064	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.4.position	5	5	5	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.4.name	I Shot Ya	I Shot Ya	I Shot Ya	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.4.recording_mbid	8af51ddc-9316-4f51-975c-29caff7a1e54	8af51ddc-9316-4f51-975c-29caff7a1e54	8af51ddc-9316-4f51-975c-29caff7a1e54	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.4.duration	2:54	2:54	2:54	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.4.duration_ms	174000	174000	174000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.5.mbid	7fb0a026-a448-490c-9c2e-af067dca93a4	7fb0a026-a448-490c-9c2e-af067dca93a4	7fb0a026-a448-490c-9c2e-af067dca93a4	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.5.position	6	6	6	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.5.name	Re‐Up Anthem	Re‐Up Anthem	Re‐Up Anthem	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.5.recording_mbid	9f9100d3-566d-4778-be78-86aa269f3ca2	9f9100d3-566d-4778-be78-86aa269f3ca2	9f9100d3-566d-4778-be78-86aa269f3ca2	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.5.duration	3:42	3:42	3:42	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.5.duration_ms	222000	222000	222000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.6.mbid	5e38ee3f-bbe1-4734-a7fd-8cd78fb3e731	5e38ee3f-bbe1-4734-a7fd-8cd78fb3e731	5e38ee3f-bbe1-4734-a7fd-8cd78fb3e731	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.6.position	7	7	7	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.6.name	You Know My Style	You Know My Style	You Know My Style	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.6.recording_mbid	d8e25b74-b909-4b83-bf9f-326bfd1483db	d8e25b74-b909-4b83-bf9f-326bfd1483db	d8e25b74-b909-4b83-bf9f-326bfd1483db	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.6.duration	3:50	3:50	3:50	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.6.duration_ms	230000	230000	230000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.7.mbid	e30cab5c-f45f-4b26-b7c2-3bde2df62b92	e30cab5c-f45f-4b26-b7c2-3bde2df62b92	e30cab5c-f45f-4b26-b7c2-3bde2df62b92	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.7.position	8	8	8	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.7.name	Interlude	Interlude	Interlude	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.7.recording_mbid	5e4e4b14-2693-41cd-8def-be0f42095d84	5e4e4b14-2693-41cd-8def-be0f42095d84	5e4e4b14-2693-41cd-8def-be0f42095d84	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.7.duration	0:17	0:17	0:17	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.7.duration_ms	17000	17000	17000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.8.mbid	9f81e002-3aaf-42a3-81f6-6e96e8b22571	9f81e002-3aaf-42a3-81f6-6e96e8b22571	9f81e002-3aaf-42a3-81f6-6e96e8b22571	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.8.position	9	9	9	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.8.name	Drop It Like It’s Hot	Drop It Like It’s Hot	Drop It Like It’s Hot	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.8.recording_mbid	aa3eab50-3928-402c-ad15-3eecd7ebb58e	aa3eab50-3928-402c-ad15-3eecd7ebb58e	aa3eab50-3928-402c-ad15-3eecd7ebb58e	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.8.duration	3:52	3:52	3:52	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.8.duration_ms	232000	232000	232000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.9.mbid	72d827ad-7710-4133-9bc0-0473c5db18e2	72d827ad-7710-4133-9bc0-0473c5db18e2	72d827ad-7710-4133-9bc0-0473c5db18e2	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.9.position	10	10	10	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.9.name	Niggas Know	Niggas Know	Niggas Know	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.9.recording_mbid	5b36ffbc-e881-47bf-a688-8bbf11d7ccd9	5b36ffbc-e881-47bf-a688-8bbf11d7ccd9	5b36ffbc-e881-47bf-a688-8bbf11d7ccd9	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.9.duration	3:41	3:41	3:41	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.9.duration_ms	221000	221000	221000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.10.mbid	c3b2ca07-c349-437f-aca3-012c1ad680ff	c3b2ca07-c349-437f-aca3-012c1ad680ff	c3b2ca07-c349-437f-aca3-012c1ad680ff	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.10.position	11	11	11	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.10.name	Stay From Around Me	Stay From Around Me	Stay From Around Me	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.10.recording_mbid	8db3d8ca-708f-4dcf-83e8-2388f2c172d0	8db3d8ca-708f-4dcf-83e8-2388f2c172d0	8db3d8ca-708f-4dcf-83e8-2388f2c172d0	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.10.duration	3:22	3:22	3:22	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.10.duration_ms	202000	202000	202000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.11.mbid	27dcc6fa-0559-43fb-b543-d7fab7a56e78	27dcc6fa-0559-43fb-b543-d7fab7a56e78	27dcc6fa-0559-43fb-b543-d7fab7a56e78	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.11.position	12	12	12	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.11.name	Interlude	Interlude	Interlude	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.11.recording_mbid	8b32f71a-58c4-4c3a-8fa1-8aca13809add	8b32f71a-58c4-4c3a-8fa1-8aca13809add	8b32f71a-58c4-4c3a-8fa1-8aca13809add	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.11.duration	0:26	0:26	0:26	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.11.duration_ms	26000	26000	26000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.12.mbid	3c92a504-ff9b-4ebb-a355-e6e51267e241	3c92a504-ff9b-4ebb-a355-e6e51267e241	3c92a504-ff9b-4ebb-a355-e6e51267e241	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.12.position	13	13	13	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.12.name	Studin’ Yall	Studin’ Yall	Studin’ Yall	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.12.recording_mbid	72520c69-a377-4eba-b75a-7be6e84bb488	72520c69-a377-4eba-b75a-7be6e84bb488	72520c69-a377-4eba-b75a-7be6e84bb488	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.12.duration	3:49	3:49	3:49	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.12.duration_ms	229000	229000	229000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.13.mbid	d68f6eb2-671f-4eab-94be-8473f5b56c96	d68f6eb2-671f-4eab-94be-8473f5b56c96	d68f6eb2-671f-4eab-94be-8473f5b56c96	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.13.position	14	14	14	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.13.name	Interlude	Interlude	Interlude	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.13.recording_mbid	43619c5c-cc29-4011-a746-8333825ac6dc	43619c5c-cc29-4011-a746-8333825ac6dc	43619c5c-cc29-4011-a746-8333825ac6dc	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.13.duration	0:25	0:25	0:25	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.13.duration_ms	25000	25000	25000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.14.mbid	849710cc-312a-4768-aeab-c9057412f56e	849710cc-312a-4768-aeab-c9057412f56e	849710cc-312a-4768-aeab-c9057412f56e	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.14.position	15	15	15	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.14.name	Radical (Sandman Solo Freestyle)	Radical (Sandman Solo Freestyle)	Radical (Sandman Solo Freestyle)	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.14.recording_mbid	2056ef00-3ffb-4db3-80f1-7acfb2370d59	2056ef00-3ffb-4db3-80f1-7acfb2370d59	2056ef00-3ffb-4db3-80f1-7acfb2370d59	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.14.duration	2:01	2:01	2:01	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.14.duration_ms	121000	121000	121000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.15.mbid	5ec68101-ac43-437c-a81f-12c8d0ba7b98	5ec68101-ac43-437c-a81f-12c8d0ba7b98	5ec68101-ac43-437c-a81f-12c8d0ba7b98	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.15.position	16	16	16	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.15.name	Don’t Let Me Die (Liva Solo Freestyle)	Don’t Let Me Die (Liva Solo Freestyle)	Don’t Let Me Die (Liva Solo Freestyle)	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.15.recording_mbid	29aa33f6-9d15-42cf-8cd0-8a5144af62ae	29aa33f6-9d15-42cf-8cd0-8a5144af62ae	29aa33f6-9d15-42cf-8cd0-8a5144af62ae	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.15.duration	2:28	2:28	2:28	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.15.duration_ms	148000	148000	148000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.16.mbid	3f38f955-c2ea-46c1-bc51-d10ee5e656d9	3f38f955-c2ea-46c1-bc51-d10ee5e656d9	3f38f955-c2ea-46c1-bc51-d10ee5e656d9	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.16.position	17	17	17	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.16.name	Interlude	Interlude	Interlude	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.16.recording_mbid	2ead1c61-165a-4416-b302-e2e3d71b2702	2ead1c61-165a-4416-b302-e2e3d71b2702	2ead1c61-165a-4416-b302-e2e3d71b2702	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.16.duration	0:23	0:23	0:23	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.16.duration_ms	23000	23000	23000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.17.mbid	ce97756d-03f5-44ca-a09c-755a129b1e98	ce97756d-03f5-44ca-a09c-755a129b1e98	ce97756d-03f5-44ca-a09c-755a129b1e98	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.17.position	18	18	18	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.17.name	Just a B‐Boy	Just a B‐Boy	Just a B‐Boy	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.17.recording_mbid	171a95c6-0b94-49e8-81a3-9bfae33c9740	171a95c6-0b94-49e8-81a3-9bfae33c9740	171a95c6-0b94-49e8-81a3-9bfae33c9740	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.17.duration	3:59	3:59	3:59	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.17.duration_ms	239000	239000	239000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.18.mbid	4bd1a992-065c-4685-9f35-411a7d8e0ff3	4bd1a992-065c-4685-9f35-411a7d8e0ff3	4bd1a992-065c-4685-9f35-411a7d8e0ff3	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.18.position	19	19	19	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.18.name	Interlude	Interlude	Interlude	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.18.recording_mbid	1f36b9e4-4677-45c1-b258-6a5841dba0a7	1f36b9e4-4677-45c1-b258-6a5841dba0a7	1f36b9e4-4677-45c1-b258-6a5841dba0a7	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.18.duration	0:23	0:23	0:23	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.18.duration_ms	23000	23000	23000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.19.mbid	8a32f8cb-ced7-4beb-a95a-6e9b959192f2	8a32f8cb-ced7-4beb-a95a-6e9b959192f2	8a32f8cb-ced7-4beb-a95a-6e9b959192f2	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.19.position	20	20	20	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.19.name	The Sermon	The Sermon	The Sermon	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.19.recording_mbid	7aa9bef9-76f5-4961-97c2-d061ddc06424	7aa9bef9-76f5-4961-97c2-d061ddc06424	7aa9bef9-76f5-4961-97c2-d061ddc06424	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.19.duration	3:44	3:44	3:44	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.19.duration_ms	224000	224000	224000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.20.mbid	98bfd87c-d2ac-44c8-81e5-bc156a4a28de	98bfd87c-d2ac-44c8-81e5-bc156a4a28de	98bfd87c-d2ac-44c8-81e5-bc156a4a28de	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.20.position	21	21	21	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.20.name	Nothing Like It	Nothing Like It	Nothing Like It	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.20.recording_mbid	ae93e0fe-d247-4636-b3cc-63ef1377a407	ae93e0fe-d247-4636-b3cc-63ef1377a407	ae93e0fe-d247-4636-b3cc-63ef1377a407	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.20.duration	2:39	2:39	2:39	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.20.duration_ms	159000	159000	159000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.21.mbid	32448773-0cd8-4c65-9d9d-76541b62ac87	32448773-0cd8-4c65-9d9d-76541b62ac87	32448773-0cd8-4c65-9d9d-76541b62ac87	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.21.position	22	22	22	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.21.name	Queen Bitch	Queen Bitch	Queen Bitch	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.21.recording_mbid	5a8ed665-88c5-4ac9-9f17-6bfa9ab27e02	5a8ed665-88c5-4ac9-9f17-6bfa9ab27e02	5a8ed665-88c5-4ac9-9f17-6bfa9ab27e02	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.21.duration	3:24	3:24	3:24	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.21.duration_ms	204000	204000	204000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.22.mbid	870c04c7-1e79-49fc-a9bd-49c9b081c280	870c04c7-1e79-49fc-a9bd-49c9b081c280	870c04c7-1e79-49fc-a9bd-49c9b081c280	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.22.position	23	23	23	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.22.name	Cross the Border	Cross the Border	Cross the Border	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.22.recording_mbid	cc41755c-bbe0-413e-9f39-29e29d1a2383	cc41755c-bbe0-413e-9f39-29e29d1a2383	cc41755c-bbe0-413e-9f39-29e29d1a2383	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.22.duration	3:16	3:16	3:16	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.22.duration_ms	196000	196000	196000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.23.mbid	ee1e908d-ae79-4cd7-87fb-bff72b56c1bf	ee1e908d-ae79-4cd7-87fb-bff72b56c1bf	ee1e908d-ae79-4cd7-87fb-bff72b56c1bf	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.23.position	24	24	24	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.23.name	Pussy (remix)	Pussy (remix)	Pussy (remix)	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.23.recording_mbid	3221b7cd-32cb-4ae0-97a8-fb71ae1b76eb	3221b7cd-32cb-4ae0-97a8-fb71ae1b76eb	3221b7cd-32cb-4ae0-97a8-fb71ae1b76eb	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.23.duration	4:12	4:12	4:12	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.23.duration_ms	252000	252000	252000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.24.mbid	ef9780ef-ebf5-4492-91e8-de51dcedf109	ef9780ef-ebf5-4492-91e8-de51dcedf109	ef9780ef-ebf5-4492-91e8-de51dcedf109	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.24.position	25	25	25	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.24.name	Outro	Outro	Outro	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.24.recording_mbid	b731787e-1464-4a83-9b20-f36c0d215722	b731787e-1464-4a83-9b20-f36c0d215722	b731787e-1464-4a83-9b20-f36c0d215722	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.24.duration	1:19	1:19	1:19	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	track.24.duration_ms	79000	79000	79000	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	label_count	3	3	3	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	label.0.mbid	157afde4-4bf5-4039-8ad2-5a15acc85176	157afde4-4bf5-4039-8ad2-5a15acc85176	157afde4-4bf5-4039-8ad2-5a15acc85176	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	label.0.name	[no label]	[no label]	[no label]	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	label.0.catalog_numbers	[none]	[none]	[none]	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	label.1.mbid	95fd34cf-3e66-44e1-844d-25fe33e93928	95fd34cf-3e66-44e1-844d-25fe33e93928	95fd34cf-3e66-44e1-844d-25fe33e93928	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	label.1.name	Re‐Up Gang Records	Re‐Up Gang Records	Re‐Up Gang Records	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	label.1.catalog_numbers	[none]	[none]	[none]	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	label.2.mbid	23905b5a-6c04-444d-8b1a-e88f2116a7c6	23905b5a-6c04-444d-8b1a-e88f2116a7c6	23905b5a-6c04-444d-8b1a-e88f2116a7c6	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	label.2.name	Startrak Records	Startrak Records	Startrak Records	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	label.2.catalog_numbers	[none]	[none]	[none]	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	event_count	1	1	1	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	event.0.country	United States	United States	United States	OK
+4386	https://musicbrainz.org/release/7ad52b01-89bb-4bb5-bf0a-44baec9065b7	event.0.date	2004	2004	2004	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	name	The New Workout Plan	The New Workout Plan	The New Workout Plan	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	mbid	a7a27813-49bd-4c71-94f9-bfd4b3541e61	a7a27813-49bd-4c71-94f9-bfd4b3541e61	a7a27813-49bd-4c71-94f9-bfd4b3541e61	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	musicbrainz_type	Single	Single	Single	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	format	Enhanced CD	Enhanced CD	Enhanced CD	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	area				OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	genres	hip hop	hip hop	hip hop	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	detail.rating	5	5	5	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track_count	3	3	3	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track.0.mbid	9b4158fa-9661-451c-af88-1ec12fd5d77f	9b4158fa-9661-451c-af88-1ec12fd5d77f	9b4158fa-9661-451c-af88-1ec12fd5d77f	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track.0.position	1	1	1	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track.0.name	The New Workout Plan (album version explicit)	The New Workout Plan (album version explicit)	The New Workout Plan (album version explicit)	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track.0.recording_mbid	4016a862-db11-4a3f-8670-b630f86d88ec	4016a862-db11-4a3f-8670-b630f86d88ec	4016a862-db11-4a3f-8670-b630f86d88ec	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track.0.duration	5:22	5:22	5:22	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track.0.duration_ms	322000	322000	322000	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track.1.mbid	0fb66fa6-ce54-4b31-83d8-ac9fcd27640d	0fb66fa6-ce54-4b31-83d8-ac9fcd27640d	0fb66fa6-ce54-4b31-83d8-ac9fcd27640d	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track.1.position	2	2	2	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track.1.name	Heavy Hitters (dirty)	Heavy Hitters (dirty)	Heavy Hitters (dirty)	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track.1.recording_mbid	1ee4424e-b43a-4623-9edf-793838579caa	1ee4424e-b43a-4623-9edf-793838579caa	1ee4424e-b43a-4623-9edf-793838579caa	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track.1.duration	3:57	3:57	3:57	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track.1.duration_ms	237000	237000	237000	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track.2.mbid	ce5f0f62-6e1b-49c7-9e8e-69889a489af5	ce5f0f62-6e1b-49c7-9e8e-69889a489af5	ce5f0f62-6e1b-49c7-9e8e-69889a489af5	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track.2.position	3	3	3	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track.2.name	Workout Plan (short version)	Workout Plan (short version)	Workout Plan (short version)	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track.2.recording_mbid	177ef96c-2100-4f34-8164-774d9e0a6968	177ef96c-2100-4f34-8164-774d9e0a6968	177ef96c-2100-4f34-8164-774d9e0a6968	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track.2.duration	5:11	5:11	5:11	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	track.2.duration_ms	311000	311000	311000	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	label_count	1	1	1	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	label.0.mbid	4cccc72a-0bd0-433a-905e-dad87871397d	4cccc72a-0bd0-433a-905e-dad87871397d	4cccc72a-0bd0-433a-905e-dad87871397d	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	label.0.name	Roc‐A‐Fella Records	Roc‐A‐Fella Records	Roc‐A‐Fella Records	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	label.0.catalog_numbers	06024-988 042-0	06024-988 042-0	06024-988 042-0	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	event_count	1	1	1	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	event.0.country	Europe	Europe	Europe	OK
+3992	https://musicbrainz.org/release/a7a27813-49bd-4c71-94f9-bfd4b3541e61	event.0.date	2004	2004	2004	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	name	Say You Love Me Girl	Say You Love Me Girl	Say You Love Me Girl	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	mbid	c3ed08c6-34f4-4301-947d-ccc54a495add	c3ed08c6-34f4-4301-947d-ccc54a495add	c3ed08c6-34f4-4301-947d-ccc54a495add	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	musicbrainz_type	Single	Single	Single	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	format	7" Vinyl	7" Vinyl	7" Vinyl	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	area				OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	genres				OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	detail.rating				OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	track_count	2	2	2	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	track.0.mbid	bb57639f-d403-48a2-a99f-a590a6b3c56e	bb57639f-d403-48a2-a99f-a590a6b3c56e	bb57639f-d403-48a2-a99f-a590a6b3c56e	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	track.0.position	A	A	A	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	track.0.name	Say You Love Me Girl	Say You Love Me Girl	Say You Love Me Girl	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	track.0.recording_mbid	4b312bb2-a006-41b3-91ff-5a538fc5b7af	4b312bb2-a006-41b3-91ff-5a538fc5b7af	4b312bb2-a006-41b3-91ff-5a538fc5b7af	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	track.0.duration	3:44	3:44	3:44	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	track.0.duration_ms	224000	224000	224000	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	track.1.mbid	17bdef70-58ac-43b6-b76a-25eceeb7432c	17bdef70-58ac-43b6-b76a-25eceeb7432c	17bdef70-58ac-43b6-b76a-25eceeb7432c	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	track.1.position	B	B	B	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	track.1.name	Time	Time	Time	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	track.1.recording_mbid	2980cd0f-bd7c-4161-9636-e9374463a6bf	2980cd0f-bd7c-4161-9636-e9374463a6bf	2980cd0f-bd7c-4161-9636-e9374463a6bf	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	track.1.duration	3:52	3:52	3:52	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	track.1.duration_ms	232000	232000	232000	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	label_count	1	1	1	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	label.0.mbid	c62e3985-6370-446a-bfb8-f1f6122e9c33	c62e3985-6370-446a-bfb8-f1f6122e9c33	c62e3985-6370-446a-bfb8-f1f6122e9c33	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	label.0.name	Arista	Arista	Arista	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	label.0.catalog_numbers	AS 0542	AS 0542	AS 0542	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	event_count	1	1	1	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	event.0.country	United States	United States	United States	OK
+3589	https://musicbrainz.org/release/c3ed08c6-34f4-4301-947d-ccc54a495add	event.0.date	1980	1980	1980	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	name	The Survivor	The Survivor	The Survivor	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	mbid	d1387509-8101-40ed-ac61-3f554795ab5f	d1387509-8101-40ed-ac61-3f554795ab5f	d1387509-8101-40ed-ac61-3f554795ab5f	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	musicbrainz_type	Compilation	Compilation	Compilation	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	format	2×CD	2×CD	2×CD	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	area				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	genres				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	detail.rating				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track_count	38	38	38	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.0.mbid	16e6099f-3336-4fbb-b5f8-937b08727e88	16e6099f-3336-4fbb-b5f8-937b08727e88	16e6099f-3336-4fbb-b5f8-937b08727e88	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.0.position	1	1	1	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.0.name	Art Pepper	Art Pepper	Art Pepper	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.0.recording_mbid	b4752208-d838-4c53-b713-75b363c6c96a	b4752208-d838-4c53-b713-75b363c6c96a	b4752208-d838-4c53-b713-75b363c6c96a	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.0.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.0.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.1.mbid	b45381ff-17ff-4479-aab3-e1043f78e37c	b45381ff-17ff-4479-aab3-e1043f78e37c	b45381ff-17ff-4479-aab3-e1043f78e37c	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.1.position	2	2	2	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.1.name	Popo	Popo	Popo	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.1.recording_mbid	ddc3c6aa-e622-43dd-a6b2-298233ad2797	ddc3c6aa-e622-43dd-a6b2-298233ad2797	ddc3c6aa-e622-43dd-a6b2-298233ad2797	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.1.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.1.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.2.mbid	5e73095f-f617-46a2-9d10-bf0aca805195	5e73095f-f617-46a2-9d10-bf0aca805195	5e73095f-f617-46a2-9d10-bf0aca805195	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.2.position	3	3	3	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.2.name	Over the Rainbow	Over the Rainbow	Over the Rainbow	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.2.recording_mbid	22579d46-e1d8-4a90-b11f-2e7f6e80a7db	22579d46-e1d8-4a90-b11f-2e7f6e80a7db	22579d46-e1d8-4a90-b11f-2e7f6e80a7db	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.2.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.2.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.3.mbid	c7c7d7a9-09e2-41a8-a9e7-fbaa242667ad	c7c7d7a9-09e2-41a8-a9e7-fbaa242667ad	c7c7d7a9-09e2-41a8-a9e7-fbaa242667ad	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.3.position	4	4	4	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.3.name	The Count on Rush Street	The Count on Rush Street	The Count on Rush Street	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.3.recording_mbid	55c7b626-58b5-440f-8dc8-6b98ffbf1421	55c7b626-58b5-440f-8dc8-6b98ffbf1421	55c7b626-58b5-440f-8dc8-6b98ffbf1421	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.3.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.3.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.4.mbid	f0114570-336a-4763-8833-807c5cd7d20d	f0114570-336a-4763-8833-807c5cd7d20d	f0114570-336a-4763-8833-807c5cd7d20d	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.4.position	5	5	5	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.4.name	Brown Gold	Brown Gold	Brown Gold	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.4.recording_mbid	538d5781-2ba7-4675-8f93-4d66f795e14c	538d5781-2ba7-4675-8f93-4d66f795e14c	538d5781-2ba7-4675-8f93-4d66f795e14c	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.4.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.4.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.5.mbid	c43237cf-38f5-4dca-9355-e41bdb3b02e5	c43237cf-38f5-4dca-9355-e41bdb3b02e5	c43237cf-38f5-4dca-9355-e41bdb3b02e5	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.5.position	6	6	6	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.5.name	These Foolish Things	These Foolish Things	These Foolish Things	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.5.recording_mbid	57602490-21eb-45ef-af58-0fe0019d96b7	57602490-21eb-45ef-af58-0fe0019d96b7	57602490-21eb-45ef-af58-0fe0019d96b7	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.5.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.5.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.6.mbid	2d1273da-4e93-46d7-89c0-27c775cee635	2d1273da-4e93-46d7-89c0-27c775cee635	2d1273da-4e93-46d7-89c0-27c775cee635	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.6.position	7	7	7	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.6.name	Surf Ride	Surf Ride	Surf Ride	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.6.recording_mbid	6903a8fe-fa72-4682-880e-26ac2f1abead	6903a8fe-fa72-4682-880e-26ac2f1abead	6903a8fe-fa72-4682-880e-26ac2f1abead	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.6.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.6.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.7.mbid	a9881b45-4aa6-407c-ab62-528691d43a5f	a9881b45-4aa6-407c-ab62-528691d43a5f	a9881b45-4aa6-407c-ab62-528691d43a5f	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.7.position	8	8	8	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.7.name	Chili Pepper	Chili Pepper	Chili Pepper	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.7.recording_mbid	39707fad-02aa-4b40-99c6-fbe048778b85	39707fad-02aa-4b40-99c6-fbe048778b85	39707fad-02aa-4b40-99c6-fbe048778b85	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.7.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.7.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.8.mbid	4f07db28-cadf-4edb-8570-5012ad99c75f	4f07db28-cadf-4edb-8570-5012ad99c75f	4f07db28-cadf-4edb-8570-5012ad99c75f	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.8.position	9	9	9	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.8.name	Suzy the Poodle	Suzy the Poodle	Suzy the Poodle	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.8.recording_mbid	689497a9-4c9c-4dbf-9b78-6be81f6893d1	689497a9-4c9c-4dbf-9b78-6be81f6893d1	689497a9-4c9c-4dbf-9b78-6be81f6893d1	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.8.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.8.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.9.mbid	14f9c008-852f-475d-8129-f2d9471abe96	14f9c008-852f-475d-8129-f2d9471abe96	14f9c008-852f-475d-8129-f2d9471abe96	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.9.position	10	10	10	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.9.name	Tickle Toe	Tickle Toe	Tickle Toe	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.9.recording_mbid	f1ab0761-b690-4bbe-b236-445bd77957d3	f1ab0761-b690-4bbe-b236-445bd77957d3	f1ab0761-b690-4bbe-b236-445bd77957d3	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.9.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.9.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.10.mbid	dbe4aa28-75f0-4f06-97a9-5bfbb047cf7c	dbe4aa28-75f0-4f06-97a9-5bfbb047cf7c	dbe4aa28-75f0-4f06-97a9-5bfbb047cf7c	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.10.position	11	11	11	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.10.name	You and the Night and the Music	You and the Night and the Music	You and the Night and the Music	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.10.recording_mbid	38f3a609-b485-436f-8fed-656dbf318413	38f3a609-b485-436f-8fed-656dbf318413	38f3a609-b485-436f-8fed-656dbf318413	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.10.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.10.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.11.mbid	86fe035b-3940-4435-abf2-fd343782fd61	86fe035b-3940-4435-abf2-fd343782fd61	86fe035b-3940-4435-abf2-fd343782fd61	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.11.position	12	12	12	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.11.name	Straight Life	Straight Life	Straight Life	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.11.recording_mbid	2b074a94-f3df-4ccb-bc7d-cc97d7fb2c14	2b074a94-f3df-4ccb-bc7d-cc97d7fb2c14	2b074a94-f3df-4ccb-bc7d-cc97d7fb2c14	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.11.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.11.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.12.mbid	2f094dff-0ada-4044-9aaf-689520786a40	2f094dff-0ada-4044-9aaf-689520786a40	2f094dff-0ada-4044-9aaf-689520786a40	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.12.position	13	13	13	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.12.name	What's New?	What's New?	What's New?	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.12.recording_mbid	d2f4ef2a-6d64-41e5-aa89-fcf9eaaba4b0	d2f4ef2a-6d64-41e5-aa89-fcf9eaaba4b0	d2f4ef2a-6d64-41e5-aa89-fcf9eaaba4b0	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.12.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.12.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.13.mbid	2c261240-0f04-4def-b636-3e0a4a68147c	2c261240-0f04-4def-b636-3e0a4a68147c	2c261240-0f04-4def-b636-3e0a4a68147c	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.13.position	14	14	14	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.13.name	Deep Purple	Deep Purple	Deep Purple	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.13.recording_mbid	0a667179-d653-404d-8ae7-a8aef2cddb20	0a667179-d653-404d-8ae7-a8aef2cddb20	0a667179-d653-404d-8ae7-a8aef2cddb20	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.13.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.13.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.14.mbid	02d5873c-a7ab-472d-a250-14967dc7669b	02d5873c-a7ab-472d-a250-14967dc7669b	02d5873c-a7ab-472d-a250-14967dc7669b	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.14.position	15	15	15	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.14.name	Art's Oregano	Art's Oregano	Art's Oregano	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.14.recording_mbid	3251d99a-3e00-4166-9eee-36ea84139011	3251d99a-3e00-4166-9eee-36ea84139011	3251d99a-3e00-4166-9eee-36ea84139011	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.14.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.14.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.15.mbid	e309e8c5-2900-4d46-a1d5-07f1874592f4	e309e8c5-2900-4d46-a1d5-07f1874592f4	e309e8c5-2900-4d46-a1d5-07f1874592f4	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.15.position	16	16	16	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.15.name	Nutmeg	Nutmeg	Nutmeg	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.15.recording_mbid	b87c2f4c-4ab9-49a6-80c1-1796190c9999	b87c2f4c-4ab9-49a6-80c1-1796190c9999	b87c2f4c-4ab9-49a6-80c1-1796190c9999	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.15.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.15.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.16.mbid	7660dafa-c0e7-4d4b-a7fa-f6a97727a800	7660dafa-c0e7-4d4b-a7fa-f6a97727a800	7660dafa-c0e7-4d4b-a7fa-f6a97727a800	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.16.position	17	17	17	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.16.name	Ol'Croix	Ol'Croix	Ol'Croix	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.16.recording_mbid	cb9c8af6-1f61-4574-8785-6e7a01a82d2a	cb9c8af6-1f61-4574-8785-6e7a01a82d2a	cb9c8af6-1f61-4574-8785-6e7a01a82d2a	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.16.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.16.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.17.mbid	594fd650-086e-45fe-ac35-0119762dbc45	594fd650-086e-45fe-ac35-0119762dbc45	594fd650-086e-45fe-ac35-0119762dbc45	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.17.position	18	18	18	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.17.name	Tynan Time	Tynan Time	Tynan Time	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.17.recording_mbid	542c7ba3-6dc6-499a-b1a1-82ec73437cad	542c7ba3-6dc6-499a-b1a1-82ec73437cad	542c7ba3-6dc6-499a-b1a1-82ec73437cad	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.17.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.17.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.18.mbid	979b761d-39fa-428b-90ce-25e6c23cf419	979b761d-39fa-428b-90ce-25e6c23cf419	979b761d-39fa-428b-90ce-25e6c23cf419	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.18.position	19	19	19	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.18.name	Little Girl	Little Girl	Little Girl	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.18.recording_mbid	697dfe83-e31c-4461-b65d-206d14d99f31	697dfe83-e31c-4461-b65d-206d14d99f31	697dfe83-e31c-4461-b65d-206d14d99f31	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.18.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.18.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.19.mbid	00f57563-5d68-45d7-9830-ad72b347c708	00f57563-5d68-45d7-9830-ad72b347c708	00f57563-5d68-45d7-9830-ad72b347c708	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.19.position	20	20	20	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.19.name	Marty's Blues	Marty's Blues	Marty's Blues	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.19.recording_mbid	2a959066-64e2-4404-be64-16a6d0e7f07f	2a959066-64e2-4404-be64-16a6d0e7f07f	2a959066-64e2-4404-be64-16a6d0e7f07f	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.19.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.19.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.20.mbid	238e6519-b607-459c-89a3-259ddc382550	238e6519-b607-459c-89a3-259ddc382550	238e6519-b607-459c-89a3-259ddc382550	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.20.position	21	21	21	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.20.name	Abstract Art	Abstract Art	Abstract Art	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.20.recording_mbid	98bf0ad2-0ce9-4517-b68c-a3f859100075	98bf0ad2-0ce9-4517-b68c-a3f859100075	98bf0ad2-0ce9-4517-b68c-a3f859100075	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.20.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.20.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.21.mbid	0feabc00-7502-4fb2-be29-a274fb3840aa	0feabc00-7502-4fb2-be29-a274fb3840aa	0feabc00-7502-4fb2-be29-a274fb3840aa	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.21.position	22	22	22	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.21.name	You Got to My Head	You Got to My Head	You Got to My Head	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.21.recording_mbid	50347044-89ff-4068-bd06-251186f269dd	50347044-89ff-4068-bd06-251186f269dd	50347044-89ff-4068-bd06-251186f269dd	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.21.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.21.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.22.mbid	c3274fe3-8d1a-4311-b875-b5b02468c05c	c3274fe3-8d1a-4311-b875-b5b02468c05c	c3274fe3-8d1a-4311-b875-b5b02468c05c	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.22.position	1	1	1	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.22.name	Broadway	Broadway	Broadway	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.22.recording_mbid	2e9e52d8-6158-4238-aa3e-074ceb774128	2e9e52d8-6158-4238-aa3e-074ceb774128	2e9e52d8-6158-4238-aa3e-074ceb774128	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.22.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.22.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.23.mbid	bed1ba6b-c596-4e3a-a4b9-7e0ebcf8287f	bed1ba6b-c596-4e3a-a4b9-7e0ebcf8287f	bed1ba6b-c596-4e3a-a4b9-7e0ebcf8287f	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.23.position	2	2	2	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.23.name	Minority	Minority	Minority	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.23.recording_mbid	7c0ab9f9-005a-4f34-bb48-567c227032ac	7c0ab9f9-005a-4f34-bb48-567c227032ac	7c0ab9f9-005a-4f34-bb48-567c227032ac	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.23.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.23.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.24.mbid	8662f3ad-7052-47aa-a4c9-6df0c37965a6	8662f3ad-7052-47aa-a4c9-6df0c37965a6	8662f3ad-7052-47aa-a4c9-6df0c37965a6	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.24.position	3	3	3	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.24.name	Patricia	Patricia	Patricia	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.24.recording_mbid	b4953c59-44dd-4eee-9a66-c4aedd6076d8	b4953c59-44dd-4eee-9a66-c4aedd6076d8	b4953c59-44dd-4eee-9a66-c4aedd6076d8	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.24.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.24.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.25.mbid	f3f9e4b7-411e-42d1-ba88-09a05ce5d01f	f3f9e4b7-411e-42d1-ba88-09a05ce5d01f	f3f9e4b7-411e-42d1-ba88-09a05ce5d01f	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.25.position	4	4	4	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.25.name	Diane	Diane	Diane	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.25.recording_mbid	5b7a14a5-2d5f-482b-88eb-33476972e7df	5b7a14a5-2d5f-482b-88eb-33476972e7df	5b7a14a5-2d5f-482b-88eb-33476972e7df	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.25.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.25.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.26.mbid	2446c3f0-5ebd-4946-a098-40b9de6a64e7	2446c3f0-5ebd-4946-a098-40b9de6a64e7	2446c3f0-5ebd-4946-a098-40b9de6a64e7	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.26.position	5	5	5	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.26.name	What Is This Thing Called Love	What Is This Thing Called Love	What Is This Thing Called Love	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.26.recording_mbid	f554fd53-d9d3-4fa6-994d-e9feb8bc05e0	f554fd53-d9d3-4fa6-994d-e9feb8bc05e0	f554fd53-d9d3-4fa6-994d-e9feb8bc05e0	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.26.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.26.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.27.mbid	af5d7ed0-8c2e-46d4-8730-129c753d5160	af5d7ed0-8c2e-46d4-8730-129c753d5160	af5d7ed0-8c2e-46d4-8730-129c753d5160	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.27.position	6	6	6	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.27.name	Diane-A-Flow	Diane-A-Flow	Diane-A-Flow	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.27.recording_mbid	0d70a186-ac8b-4772-811d-a70106fe538d	0d70a186-ac8b-4772-811d-a70106fe538d	0d70a186-ac8b-4772-811d-a70106fe538d	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.27.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.27.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.28.mbid	c085c14f-d29f-4378-bc61-7ab49a3ff8c0	c085c14f-d29f-4378-bc61-7ab49a3ff8c0	c085c14f-d29f-4378-bc61-7ab49a3ff8c0	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.28.position	7	7	7	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.28.name	Blues Out	Blues Out	Blues Out	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.28.recording_mbid	485117c4-7cec-480f-8317-0680f8b5570f	485117c4-7cec-480f-8317-0680f8b5570f	485117c4-7cec-480f-8317-0680f8b5570f	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.28.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.28.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.29.mbid	70675739-e3c6-44be-8512-9e855fb50af3	70675739-e3c6-44be-8512-9e855fb50af3	70675739-e3c6-44be-8512-9e855fb50af3	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.29.position	8	8	8	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.29.name	You're Driving Me Crazy	You're Driving Me Crazy	You're Driving Me Crazy	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.29.recording_mbid	1d6b98db-89d8-4b58-9f15-b3a67cef0136	1d6b98db-89d8-4b58-9f15-b3a67cef0136	1d6b98db-89d8-4b58-9f15-b3a67cef0136	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.29.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.29.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.30.mbid	b6ff5234-00a4-4707-ac4f-63ecd8321dab	b6ff5234-00a4-4707-ac4f-63ecd8321dab	b6ff5234-00a4-4707-ac4f-63ecd8321dab	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.30.position	9	9	9	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.30.name	Tenor Blooz	Tenor Blooz	Tenor Blooz	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.30.recording_mbid	a7c38593-1b64-4d02-acca-a9b654a17a37	a7c38593-1b64-4d02-acca-a9b654a17a37	a7c38593-1b64-4d02-acca-a9b654a17a37	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.30.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.30.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.31.mbid	1bfd5b00-3759-4d9d-814e-c61a1331ff21	1bfd5b00-3759-4d9d-814e-c61a1331ff21	1bfd5b00-3759-4d9d-814e-c61a1331ff21	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.31.position	10	10	10	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.31.name	Cool Bunny	Cool Bunny	Cool Bunny	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.31.recording_mbid	e21fead3-57c7-4d45-9c8d-67ebe9d5f0bd	e21fead3-57c7-4d45-9c8d-67ebe9d5f0bd	e21fead3-57c7-4d45-9c8d-67ebe9d5f0bd	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.31.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.31.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.32.mbid	ecbf6306-997a-4f04-8430-7bf9675d6cb9	ecbf6306-997a-4f04-8430-7bf9675d6cb9	ecbf6306-997a-4f04-8430-7bf9675d6cb9	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.32.position	11	11	11	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.32.name	Straight Life	Straight Life	Straight Life	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.32.recording_mbid	6c593fda-0d54-4d5e-b971-bab16e572fbf	6c593fda-0d54-4d5e-b971-bab16e572fbf	6c593fda-0d54-4d5e-b971-bab16e572fbf	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.32.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.32.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.33.mbid	a276e26c-93ef-4248-9f1d-c85937b5f9ff	a276e26c-93ef-4248-9f1d-c85937b5f9ff	a276e26c-93ef-4248-9f1d-c85937b5f9ff	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.33.position	12	12	12	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.33.name	Tin Tin Deo	Tin Tin Deo	Tin Tin Deo	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.33.recording_mbid	aa7939fd-b273-4018-98e3-b61b2606802c	aa7939fd-b273-4018-98e3-b61b2606802c	aa7939fd-b273-4018-98e3-b61b2606802c	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.33.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.33.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.34.mbid	f3114823-371d-43ca-93d5-da9083356787	f3114823-371d-43ca-93d5-da9083356787	f3114823-371d-43ca-93d5-da9083356787	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.34.position	13	13	13	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.34.name	Bunny	Bunny	Bunny	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.34.recording_mbid	b3a3abed-7d55-4396-81c7-c520e988dd80	b3a3abed-7d55-4396-81c7-c520e988dd80	b3a3abed-7d55-4396-81c7-c520e988dd80	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.34.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.34.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.35.mbid	6a56b83b-cd3c-42c9-a4a7-cd82f7d845aa	6a56b83b-cd3c-42c9-a4a7-cd82f7d845aa	6a56b83b-cd3c-42c9-a4a7-cd82f7d845aa	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.35.position	14	14	14	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.35.name	Popo	Popo	Popo	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.35.recording_mbid	d7d35177-9353-4400-82ca-5dba4384b4d9	d7d35177-9353-4400-82ca-5dba4384b4d9	d7d35177-9353-4400-82ca-5dba4384b4d9	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.35.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.35.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.36.mbid	0a0a5f66-d1b0-4511-8555-df472e9466ac	0a0a5f66-d1b0-4511-8555-df472e9466ac	0a0a5f66-d1b0-4511-8555-df472e9466ac	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.36.position	15	15	15	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.36.name	Powder Puff	Powder Puff	Powder Puff	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.36.recording_mbid	5e086c10-10c0-4d3a-a3fa-7825a1f6d086	5e086c10-10c0-4d3a-a3fa-7825a1f6d086	5e086c10-10c0-4d3a-a3fa-7825a1f6d086	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.36.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.36.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.37.mbid	d41090e3-db7e-43d1-8d4a-e91826633a98	d41090e3-db7e-43d1-8d4a-e91826633a98	d41090e3-db7e-43d1-8d4a-e91826633a98	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.37.position	16	16	16	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.37.name	Diabolo's Dance	Diabolo's Dance	Diabolo's Dance	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.37.recording_mbid	ed177928-123b-4762-ace3-c222be7de1fd	ed177928-123b-4762-ace3-c222be7de1fd	ed177928-123b-4762-ace3-c222be7de1fd	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.37.duration	?:??	?:??	?:??	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	track.37.duration_ms				OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	label_count	1	1	1	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	label.0.mbid	d3806f18-463e-44eb-abd2-1aa8c6946db7	d3806f18-463e-44eb-abd2-1aa8c6946db7	d3806f18-463e-44eb-abd2-1aa8c6946db7	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	label.0.name	Le Chant du Monde	Le Chant du Monde	Le Chant du Monde	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	label.0.catalog_numbers	274 1605.06	274 1605.06	274 1605.06	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	event_count	1	1	1	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	event.0.country	France	France	France	OK
+9981	https://musicbrainz.org/release/d1387509-8101-40ed-ac61-3f554795ab5f	event.0.date	2008	2008	2008	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	name	Don’t Waste Your Time	Don’t Waste Your Time	Don’t Waste Your Time	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	mbid	cdb4e8f7-5011-432b-8aae-d7b982766b8a	cdb4e8f7-5011-432b-8aae-d7b982766b8a	cdb4e8f7-5011-432b-8aae-d7b982766b8a	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	musicbrainz_type	Single	Single	Single	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	format	CD	CD	CD	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	area				OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	genres				OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	detail.rating				OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	track_count	2	2	2	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	track.0.mbid	3a6f5fe4-ea97-434e-a50e-6d065b90c958	3a6f5fe4-ea97-434e-a50e-6d065b90c958	3a6f5fe4-ea97-434e-a50e-6d065b90c958	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	track.0.position	1	1	1	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	track.0.name	Don’t Waste Your Time	Don’t Waste Your Time	Don’t Waste Your Time	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	track.0.recording_mbid	bf672087-e0a7-4210-9ad9-e246efc3424c	bf672087-e0a7-4210-9ad9-e246efc3424c	bf672087-e0a7-4210-9ad9-e246efc3424c	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	track.0.duration	3:35	3:35	3:35	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	track.0.duration_ms	215000	215000	215000	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	track.1.mbid	a955d6cd-13e7-44e8-af66-6af8bdae231d	a955d6cd-13e7-44e8-af66-6af8bdae231d	a955d6cd-13e7-44e8-af66-6af8bdae231d	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	track.1.position	2	2	2	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	track.1.name	Fading	Fading	Fading	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	track.1.recording_mbid	a423100d-87f1-4f22-8ac3-6b61c7d61a34	a423100d-87f1-4f22-8ac3-6b61c7d61a34	a423100d-87f1-4f22-8ac3-6b61c7d61a34	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	track.1.duration	2:51	2:51	2:51	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	track.1.duration_ms	171000	171000	171000	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	label_count	2	2	2	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	label.0.mbid	dc435fb5-3c06-4e97-b1f6-f814f37703a3	dc435fb5-3c06-4e97-b1f6-f814f37703a3	dc435fb5-3c06-4e97-b1f6-f814f37703a3	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	label.0.name	19 Recordings	19 Recordings	19 Recordings	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	label.0.catalog_numbers	88697 17034 2	88697 17034 2	88697 17034 2	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	label.1.mbid	1ca5ed29-e00b-4ea5-b817-0bcca0e04946	1ca5ed29-e00b-4ea5-b817-0bcca0e04946	1ca5ed29-e00b-4ea5-b817-0bcca0e04946	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	label.1.name	RCA	RCA	RCA	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	label.1.catalog_numbers				OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	event_count	1	1	1	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	event.0.country	Europe	Europe	Europe	OK
+9930	https://musicbrainz.org/release/cdb4e8f7-5011-432b-8aae-d7b982766b8a	event.0.date	2007-12-14	2007-12-14	2007-12-14	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	name	La Belle Hélène (extraits)	La Belle Hélène (extraits)	La Belle Hélène (extraits)	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	mbid	3b80fe97-fc97-4b74-910b-96d7321890e6	3b80fe97-fc97-4b74-910b-96d7321890e6	3b80fe97-fc97-4b74-910b-96d7321890e6	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	musicbrainz_type	Album	Album	Album	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	format	12" Vinyl	12" Vinyl	12" Vinyl	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	area				OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	genres				OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	detail.rating				OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track_count	11	11	11	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.0.mbid	3e5749c6-e70f-49e0-b879-3aeb98c265cb	3e5749c6-e70f-49e0-b879-3aeb98c265cb	3e5749c6-e70f-49e0-b879-3aeb98c265cb	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.0.position	A1	A1	A1	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.0.name	La Belle Hélène : Acte I. Introduction, Choeur et Air d’Hélène : "Amour divin !" (Chœur, Hélène)	La Belle Hélène : Acte I. Introduction, Choeur et Air d’Hélène : "Amour divin !" (Chœur, Hélène)	La Belle Hélène : Acte I. Introduction, Choeur et Air d’Hélène : "Amour divin !" (Chœur, Hélène)	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.0.recording_mbid	2548dbc4-979d-441b-bd2e-392b5ffdd0ae	2548dbc4-979d-441b-bd2e-392b5ffdd0ae	2548dbc4-979d-441b-bd2e-392b5ffdd0ae	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.0.duration	8:08	8:08	8:08	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.0.duration_ms	488000	488000	488000	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.1.mbid	753c728e-2373-4d86-9b48-1dc8bf5f6efd	753c728e-2373-4d86-9b48-1dc8bf5f6efd	753c728e-2373-4d86-9b48-1dc8bf5f6efd	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.1.position	A2	A2	A2	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.1.name	La Belle Hélène : Acte I. Couplets et Cancan (Oreste, Calchas, Chœur)	La Belle Hélène : Acte I. Couplets et Cancan (Oreste, Calchas, Chœur)	La Belle Hélène : Acte I. Couplets et Cancan (Oreste, Calchas, Chœur)	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.1.recording_mbid	13ae7d77-ffd1-44cd-bd0c-15c191d49660	13ae7d77-ffd1-44cd-bd0c-15c191d49660	13ae7d77-ffd1-44cd-bd0c-15c191d49660	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.1.duration	2:57	2:57	2:57	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.1.duration_ms	177000	177000	177000	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.2.mbid	23de5eb2-ca35-4e2a-aa48-fd40aa669284	23de5eb2-ca35-4e2a-aa48-fd40aa669284	23de5eb2-ca35-4e2a-aa48-fd40aa669284	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.2.position	A3	A3	A3	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.2.name	La Belle Hélène : Acte I. Le Jugement de Pâris : "Au Mont Ida"	La Belle Hélène : Acte I. Le Jugement de Pâris : "Au Mont Ida"	La Belle Hélène : Acte I. Le Jugement de Pâris : "Au Mont Ida"	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.2.recording_mbid	58b1a1ba-f00a-4722-85ec-9d597ee2f4be	58b1a1ba-f00a-4722-85ec-9d597ee2f4be	58b1a1ba-f00a-4722-85ec-9d597ee2f4be	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.2.duration	3:44	3:44	3:44	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.2.duration_ms	224000	224000	224000	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.3.mbid	34867f03-633a-4e42-9c83-ae51ccc6b772	34867f03-633a-4e42-9c83-ae51ccc6b772	34867f03-633a-4e42-9c83-ae51ccc6b772	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.3.position	A4	A4	A4	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.3.name	La Belle Hélène : Acte I. Couplets des rois	La Belle Hélène : Acte I. Couplets des rois	La Belle Hélène : Acte I. Couplets des rois	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.3.recording_mbid	19b0b805-81b8-4d95-b998-6141b7491774	19b0b805-81b8-4d95-b998-6141b7491774	19b0b805-81b8-4d95-b998-6141b7491774	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.3.duration	3:17	3:17	3:17	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.3.duration_ms	197000	197000	197000	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.4.mbid	2453a4a6-5777-41da-b0f3-311296da2998	2453a4a6-5777-41da-b0f3-311296da2998	2453a4a6-5777-41da-b0f3-311296da2998	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.4.position	A5	A5	A5	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.4.name	La Belle Hélène : Acte I. Final de l’Acte I	La Belle Hélène : Acte I. Final de l’Acte I	La Belle Hélène : Acte I. Final de l’Acte I	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.4.recording_mbid	72c035ea-774b-4283-8034-ae4214ff7410	72c035ea-774b-4283-8034-ae4214ff7410	72c035ea-774b-4283-8034-ae4214ff7410	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.4.duration	8:49	8:49	8:49	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.4.duration_ms	529000	529000	529000	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.5.mbid	5ee53f86-8b87-4b55-890b-51cdf143c22e	5ee53f86-8b87-4b55-890b-51cdf143c22e	5ee53f86-8b87-4b55-890b-51cdf143c22e	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.5.position	B1	B1	B1	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.5.name	La Belle Hélène : Acte II. Invocation à Vénus (Hélène)	La Belle Hélène : Acte II. Invocation à Vénus (Hélène)	La Belle Hélène : Acte II. Invocation à Vénus (Hélène)	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.5.recording_mbid	89f6b331-718a-4ec0-813d-191cc4c88d16	89f6b331-718a-4ec0-813d-191cc4c88d16	89f6b331-718a-4ec0-813d-191cc4c88d16	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.5.duration	3:26	3:26	3:26	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.5.duration_ms	206000	206000	206000	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.6.mbid	08b5508d-2d92-4079-9a96-d1426ba246a3	08b5508d-2d92-4079-9a96-d1426ba246a3	08b5508d-2d92-4079-9a96-d1426ba246a3	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.6.position	B2	B2	B2	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.6.name	La Belle Hélène : Acte II. Duo (Hélène, Pâris)	La Belle Hélène : Acte II. Duo (Hélène, Pâris)	La Belle Hélène : Acte II. Duo (Hélène, Pâris)	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.6.recording_mbid	bffcadc0-018d-45c6-8ae5-3f3702f1ebb8	bffcadc0-018d-45c6-8ae5-3f3702f1ebb8	bffcadc0-018d-45c6-8ae5-3f3702f1ebb8	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.6.duration	9:02	9:02	9:02	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.6.duration_ms	542000	542000	542000	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.7.mbid	095124fd-606a-40a4-856c-c1a18468a33e	095124fd-606a-40a4-856c-c1a18468a33e	095124fd-606a-40a4-856c-c1a18468a33e	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.7.position	B3	B3	B3	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.7.name	La Belle Hélène : Acte II. Final de l’acte II	La Belle Hélène : Acte II. Final de l’acte II	La Belle Hélène : Acte II. Final de l’acte II	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.7.recording_mbid	0fe80740-2820-4f58-b048-599276df0e17	0fe80740-2820-4f58-b048-599276df0e17	0fe80740-2820-4f58-b048-599276df0e17	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.7.duration	6:36	6:36	6:36	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.7.duration_ms	396000	396000	396000	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.8.mbid	e4e7fc8e-473c-4e38-a5c4-083c6136bca8	e4e7fc8e-473c-4e38-a5c4-083c6136bca8	e4e7fc8e-473c-4e38-a5c4-083c6136bca8	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.8.position	B4	B4	B4	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.8.name	La Belle Hélène : Acte III. Ronde (Oreste, choeur)	La Belle Hélène : Acte III. Ronde (Oreste, choeur)	La Belle Hélène : Acte III. Ronde (Oreste, choeur)	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.8.recording_mbid	c9d86875-f80c-418c-9685-5b3e9a775125	c9d86875-f80c-418c-9685-5b3e9a775125	c9d86875-f80c-418c-9685-5b3e9a775125	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.8.duration	1:48	1:48	1:48	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.8.duration_ms	108000	108000	108000	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.9.mbid	f3d80bb4-426d-4a78-9f3a-3c6291f36d5d	f3d80bb4-426d-4a78-9f3a-3c6291f36d5d	f3d80bb4-426d-4a78-9f3a-3c6291f36d5d	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.9.position	B5	B5	B5	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.9.name	La Belle Hélène : Acte III. Trio patriotique (Ménélas, Agamemnon, Calchas)	La Belle Hélène : Acte III. Trio patriotique (Ménélas, Agamemnon, Calchas)	La Belle Hélène : Acte III. Trio patriotique (Ménélas, Agamemnon, Calchas)	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.9.recording_mbid	38c6eada-34af-4b7f-b757-d13395f6f1ab	38c6eada-34af-4b7f-b757-d13395f6f1ab	38c6eada-34af-4b7f-b757-d13395f6f1ab	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.9.duration	5:42	5:42	5:42	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.9.duration_ms	342000	342000	342000	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.10.mbid	d92eab0d-7d3c-42f7-8052-313e15f33fa9	d92eab0d-7d3c-42f7-8052-313e15f33fa9	d92eab0d-7d3c-42f7-8052-313e15f33fa9	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.10.position	B6	B6	B6	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.10.name	La Belle Hélène : Acte III. Final de l’acte III	La Belle Hélène : Acte III. Final de l’acte III	La Belle Hélène : Acte III. Final de l’acte III	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.10.recording_mbid	598e1a24-d099-485a-a878-131620e0cd18	598e1a24-d099-485a-a878-131620e0cd18	598e1a24-d099-485a-a878-131620e0cd18	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.10.duration	2:14	2:14	2:14	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	track.10.duration_ms	134000	134000	134000	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	label_count	1	1	1	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	label.0.mbid	6d38d6d2-bea8-46cf-b48e-a6195fd85f12	6d38d6d2-bea8-46cf-b48e-a6195fd85f12	6d38d6d2-bea8-46cf-b48e-a6195fd85f12	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	label.0.name	Philips	Philips	Philips	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	label.0.catalog_numbers	837.498	837.498	837.498	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	event_count	1	1	1	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	event.0.country	France	France	France	OK
+9916	https://musicbrainz.org/release/3b80fe97-fc97-4b74-910b-96d7321890e6	event.0.date	1962	1962	1962	OK

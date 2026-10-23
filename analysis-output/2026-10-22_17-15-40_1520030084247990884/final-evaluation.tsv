@@ -1,0 +1,17 @@
+query_id	method	k	retrieved	relevant_total	relevant_retrieved	precision_at_k	recall_at_k	rr_at_k
+homework	classic	5	3	1	1	0.2	1.0	1.0
+homework	smooth	5	3	1	1	0.2	1.0	1.0
+discovery	classic	5	5	1	1	0.2	1.0	0.25
+discovery	smooth	5	5	1	1	0.2	1.0	0.25
+nina	classic	5	5	1	1	0.2	1.0	1.0
+nina	smooth	5	5	1	1	0.2	1.0	1.0
+metallica	classic	5	5	2	2	0.4	1.0	1.0
+metallica	smooth	5	5	2	2	0.4	1.0	1.0
+radiohead	classic	5	2	1	1	0.2	1.0	1.0
+radiohead	smooth	5	2	1	1	0.2	1.0	1.0
+lemonade	classic	5	1	1	1	0.2	1.0	1.0
+lemonade	smooth	5	1	1	1	0.2	1.0	1.0
+damn	classic	5	1	1	1	0.2	1.0	1.0
+damn	smooth	5	1	1	1	0.2	1.0	1.0
+negative	classic	5	0	0	0			
+negative	smooth	5	0	0	0			
