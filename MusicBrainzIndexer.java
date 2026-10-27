@@ -95,6 +95,7 @@ public class MusicBrainzIndexer {
         return index;
     }
     static void persist(MusicBrainzIndex index, Path input, Path output, Map<String, String> hashes, int warnings) throws IOException {
+        MusicBrainzSimilarity.persist(input, output);
         try (var writer = Files.newBufferedWriter(output.resolve("documents.tsv"), StandardCharsets.UTF_8)) {
             writer.write("doc_id\tpage_id\tsource_url\tentity_type\tname\tartist_credit\tformat\tindexed_text\ttoken_count\n");
             for (var doc : index.documents) writer.write(doc.id() + "\t" + MusicBrainzIndex.cell(doc.pageId()) + "\t"

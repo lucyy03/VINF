@@ -8,7 +8,7 @@ import java.util.Locale;
 public class MusicBrainzSearch {
     public static void main(String[] args) throws Exception {
         Path directory = null, queries = null, save = null;
-        String query = null, match = "all";
+        String query = null, match = "all", similar = null;
         MusicBrainzIndex.Method method = MusicBrainzIndex.Method.CLASSIC;
         MusicBrainzIndex.Ranking ranking = MusicBrainzIndex.Ranking.ALBUM_FIELDS;
         boolean compare = false; int top = 10;
@@ -22,15 +22,17 @@ public class MusicBrainzSearch {
                 case "--method" -> method = MusicBrainzIndex.Method.valueOf(args[i].toUpperCase(Locale.ROOT));
                 case "--ranking" -> ranking = MusicBrainzIndex.Ranking.valueOf(args[i].toUpperCase(Locale.ROOT));
                 case "--match" -> match = args[i];
+                case "--similar" -> similar = args[i];
                 case "--top" -> top = Integer.parseInt(args[i]);
                 case "--queries" -> queries = Path.of(args[i]);
                 case "--save" -> save = Path.of(args[i]);
                 default -> throw new IllegalArgumentException("Unknown option: " + key);
             }
         }
-        if (top < 1 || !List.of("all", "any").contains(match) || (query == null) == (queries == null)
+        if (top < 1 || !List.of("all", "any").contains(match)
+            || (similar != null && !List.of("artist", "songs").contains(similar)) || (query == null) == (queries == null)
             || (query != null && MusicBrainzIndex.tokenize(query).isEmpty())) throw new IllegalArgumentException(
-                "Use [--index DIR] [--method classic|smooth|--compare] [--match all|any] [--top N] "
+                "Use [--index DIR] [--method classic|smooth|--compare] [--match all|any] [--similar artist|songs] [--top N] "
                 + "[--ranking cosine|album_fields] [--save FILE] --query words... OR --queries queries.tsv");
         if (directory == null) {
             Path root = Path.of("index-output").toAbsolutePath().normalize();
@@ -38,6 +40,7 @@ public class MusicBrainzSearch {
             if (!root.equals(directory.getParent())) throw new IOException("Invalid latest-index pointer");
         }
         MusicBrainzIndex index = MusicBrainzIndex.load(directory);
+        if (similar != null) index = MusicBrainzSimilarity.load(directory, similar);
         java.util.Map<String,String> firstDates = new java.util.HashMap<>();
         java.util.Map<String,java.util.List<String>> editions = new java.util.HashMap<>();
         if (Files.exists(directory.resolve("albums.tsv")))
@@ -54,7 +57,8 @@ public class MusicBrainzSearch {
                 || MusicBrainzIndex.tokenize(request.get("query")).isEmpty())
                 throw new IllegalArgumentException("Queries require distinct IDs and nonempty words");
             for (var selected : compare ? MusicBrainzIndex.Method.values() : new MusicBrainzIndex.Method[]{method}) {
-                var hits = index.search(request.get("query"), selected, match.equals("all"), top, ranking);
+                var hits = similar == null ? index.search(request.get("query"), selected, match.equals("all"), top, ranking)
+                    : MusicBrainzSimilarity.search(index, request.get("query"), selected, top);
                 int rank = 0;
                 for (var hit : hits) {
                     var doc = hit.document();

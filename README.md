@@ -165,6 +165,19 @@ mvn "-Dmaven.repo.local=.maven-repository" exec:java "-Dexec.mainClass=MusicBrai
 Place options before `--query`; the remaining arguments are the query text. Default
 `--match all` requires all distinct query tokens. `--match any` accepts any known
 token and ignores unknown tokens. All-mode with any unknown token returns no hits.
+Use `--similar artist --top 10 --query Radiohead` for similar artists, or
+`--similar songs --top 10 --query Paranoid Android Radiohead` for similar songs.
+Similarity uses TF-IDF cosine over shared genres/tags, excluding the selected seed.
+Song profiles inherit tags from their release and credited artists; this is a
+metadata approximation, not audio analysis. Names do not contribute to similarity.
+Use a MusicBrainz URL or song title followed by artist to resolve ambiguous names.
+Only fetched artists/tracks with shared metadata can appear; fewer than N results
+may be available. `--top N` works in all modes and defaults to 10.
+Rebuild the index with MusicBrainzIndexer to create the similarity profile tables
+(works for both album and page indexes). No new crawl is required if the extracted
+data already contains the artists, tracks and tags. Old indexes still support
+keyword search, but similarity reports a rebuild instruction.
+
 Blank queries are rejected. This is keyword retrieval, not natural-language QA,
 phrase search, field filters or structured date filtering. For example `Japan 1997`
 can match a document with Japan in an event and 1997 in its title, even if its release

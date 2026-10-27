@@ -38,6 +38,7 @@ public class IndexChecks {
         var tied = ties.search("same", MusicBrainzIndex.Method.CLASSIC, true, 10);
         check(tied.size() == 2 && tied.get(0).document().id() == 1, "Deterministic tie order and nonzero common-term IDF");
         albumRankingChecks();
+        similarityChecks();
         diskChecks();
         System.out.println("Offline index checks passed: TF, DF, both IDFs, cosine scores, AND/OR, Unicode, rebuild/load and invalid inputs.");
     }
@@ -57,6 +58,41 @@ public class IndexChecks {
             check(index.search("Ocean missing", method, true, 10, MusicBrainzIndex.Ranking.ALBUM_FIELDS).isEmpty(), "Boost never bypasses AND matching");
             check(index.search("missing", method, false, 10, MusicBrainzIndex.Ranking.ALBUM_FIELDS).isEmpty(), "Boost never invents candidates");
         }
+    }
+    private static void similarityChecks() throws Exception {
+        Files.createDirectories(Path.of("target"));
+        Path work = Files.createTempDirectory(Path.of("target"), "similarity-check-");
+        Path input = Files.createDirectories(work.resolve("input"));
+        Path output = Files.createDirectories(work.resolve("output"));
+        Files.writeString(input.resolve("entities.tsv"), "page_id\tsource_url\tentity_type\tname\tartist_credit\tartist_mbids\tgenres\n"
+            + "1\thttps://musicbrainz.org/artist/a\tartist\tAlpha\t\t\trock;alternative rock\n"
+            + "2\thttps://musicbrainz.org/artist/b\tartist\tBeta\t\t\trock;alternative rock\n"
+            + "3\thttps://musicbrainz.org/artist/c\tartist\tGamma\t\t\tjazz\n"
+            + "4\tr1\trelease\tAlbum One\tAlpha\ta\t\n"
+            + "5\tr2\trelease\tAlbum Two\tBeta\tb\t\n"
+            + "6\tr3\trelease\tAlbum Three\tGamma\tc\t\n");
+        Files.writeString(input.resolve("tracks.tsv"), "source_url\tname\trecording_mbid\n"
+            + "r1\tSong One\ts1\nr1\tSong One\ts1\nr2\tSong Two\ts2\nr3\tSong Three\ts3\n");
+        MusicBrainzSimilarity.persist(input, output);
+        var artists = MusicBrainzSimilarity.load(output, "artist");
+        var songs = MusicBrainzSimilarity.load(output, "songs");
+        check(songs.documents.size() == 3, "Deduplicate recordings across editions");
+        for (var method : MusicBrainzIndex.Method.values()) {
+            var hits = MusicBrainzSimilarity.search(artists, "Alpha", method, 10);
+            check(hits.size() == 1 && hits.get(0).document().name().equals("Beta"), "Similar artists exclude seed and unrelated genres");
+            close(1, hits.get(0).score(), "Identical genre profiles");
+            hits = MusicBrainzSimilarity.search(songs, "Song One Alpha", method, 10);
+            check(hits.size() == 1 && hits.get(0).document().name().equals("Song Two"), "Song similarity inherits artist genres");
+            check(MusicBrainzSimilarity.search(songs, "https://musicbrainz.org/recording/s1", method, 1).size() == 1, "URL seed and top limit");
+        }
+        artists.add("7", "empty", "artist", "Empty", "", "", "");
+        for (String query : List.of("Missing", "Empty")) {
+            try { MusicBrainzSimilarity.search(artists, query, MusicBrainzIndex.Method.CLASSIC, 10); throw new AssertionError("Invalid seed accepted"); }
+            catch (IllegalArgumentException expected) { }
+        }
+        artists.add("8", "duplicate", "artist", "Alpha", "", "", "rock");
+        try { MusicBrainzSimilarity.search(artists, "Alpha", MusicBrainzIndex.Method.CLASSIC, 10); throw new AssertionError("Ambiguous seed accepted"); }
+        catch (IllegalArgumentException expected) { }
     }
     private static void diskChecks() throws Exception {
         Files.createDirectories(Path.of("target"));
